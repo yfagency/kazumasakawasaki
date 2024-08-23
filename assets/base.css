@@ -3566,3 +3566,50 @@ details-disclosure > details {
     transform: translateX(100%) scaleX(0);
   }
 }
+
+/* ########################## */
+/* ##### CUSTOM YF CODE ##### */
+/* ########################## */
+
+/* GLOBAL? */
+.page-width {
+  max-width: 1600px;
+  padding: 0;
+}
+
+/* NAV */
+.utility-bar,
+.header__icons {
+  display: none;
+}
+
+.header__heading-logo {
+  width: 424px;
+}
+
+.header--middle-left {
+  grid-template-columns: auto 1fr;
+  grid-template-areas: 'heading navigation';
+  text-align: right;
+}
+
+.header:not(.drawer-menu).page-width {
+  padding: 0;
+  height: 90px;
+}
+
+.header__heading-link {
+  padding: 0;
+}
+
+.header__menu-item span {
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
