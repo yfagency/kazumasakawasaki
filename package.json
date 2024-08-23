@@ -1,0 +1,11 @@
+{
+  "name": "kazumasakawasaki",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "start": "shopify theme dev --store=kazumasakawasaki"
+  },
+  "author": "",
+  "license": "ISC"
+}
