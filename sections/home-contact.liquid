@@ -1,0 +1,153 @@
+<style>
+  .home-contact {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.50);
+    background: #00004E;
+    color: #fff;
+  }
+
+  .home-contact__container {
+    padding: 70px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 586px;
+  }
+
+  .home-contact__container form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .home-contact__container h2 {
+    color: #FFF;
+    font-family: "Open Sans", sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 0 0 50px;
+  }
+
+  .home-contact__container input {
+    display: flex;
+    padding: 18px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #FFF;
+    background: none;
+    outline: none;
+    width: 100%;
+    color: #fff;
+    color: #FFF;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1; /* 150% */
+    outline: none;
+  }
+
+  .home-contact__container textarea {
+    display: flex;
+    padding: 18px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #FFF;
+    background: none;
+    outline: none;
+    width: 100%;
+    resize: none;
+    color: #fff;
+    color: #FFF;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1; /* 150% */
+    outline: none;
+    height: 200px;
+  }
+
+  .home-contact__container ::placeholder {
+    color: #FFF;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1; /* 150% */
+    text-transform: capitalize;
+  }
+
+  :focus {
+    outline:none !important;
+    outline-offset: unset !important;
+    box-shadow: none !important;
+  }
+
+  .home-contact__container button {
+    display: flex;
+    padding: 18px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    color: #00004E;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    text-transform: uppercase;
+    background: #FFF;
+  }
+
+  #postMsg {
+    display: none;
+  }
+
+  form ::selection {
+    background: #ccc;
+  }
+</style>
+
+<section class="home-contact">
+  <div class="home-contact__container page-width">
+    <h2>contact us</h2>
+    <form id="contact_form" method="post" action="/contact#postMsg" accept-charset="UTF-8" class="contact-form">
+      <input type="hidden" name="form_type" value="contact">
+      <input type="hidden" name="utf8" value="✓">
+      
+      <input placeholder="name" type="text" name="contact[name]" id="contact-name" required>
+      <input placeholder="email" type="email" name="contact[email]" id="contact-email" required>
+
+      <textarea placeholder="message" name="contact[message]" id="contact-message" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+    <p id="postMsg">Your message has been sent.</p>
+  </div>
+</section>
+
+<script>
+  // Get the query string from the URL
+const queryString = window.location.search;
+
+// Create a URLSearchParams object
+const params = new URLSearchParams(queryString);
+
+// Check if 'contact_posted' parameter is 'true'
+if (params.get('contact_posted') === 'true') {
+  // The parameter is present and equals 'true'
+  document.getElementById("postMsg").style.display = "block";
+  document.getElementById("contact_form").style.display = "none";
+} else {
+  // The parameter is not present or not 'true'
+  console.log('Contact not posted.');
+}
+</script>

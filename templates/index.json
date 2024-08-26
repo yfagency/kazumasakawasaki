@@ -8,11 +8,27 @@
     },
     "home-kawasaki-way": {
       "type": "home-kawasaki-way"
+    },
+    "home-spa": {
+      "type": "home-spa"
+    },
+    "home-academy": {
+      "type": "home-academy"
+    },
+    "home-news": {
+      "type": "home-news"
+    },
+    "home-contact": {
+      "type": "home-contact"
     }
   },
   "order": [
     "home-hero",
     "home-products",
-    "home-kawasaki-way"
+    "home-kawasaki-way",
+    "home-spa",
+    "home-academy",
+    "home-news",
+    "home-contact"
   ]
 }

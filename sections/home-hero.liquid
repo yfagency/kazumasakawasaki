@@ -7,7 +7,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     max-height: calc(100vh - 90px);
-    aspect-ratio: 16/9;
+    aspect-ratio: 2.11/1;
     width: 100%;
   }
 
@@ -20,8 +20,8 @@
 
   .home-hero__card:first-child {
     background: url('https://cdn.shopify.com/s/files/1/0892/7651/4595/files/15a7c0edfb00a5503a390e9e4901c341.jpg?v=1724394183');
-    background-size: cover;
-    background-position: center;
+    background-size: 140%;
+    background-position: bottom 0 right 0;
   }
 
   .home-hero__card:nth-child(2) {
@@ -89,6 +89,7 @@
   .home-hero__wave1 {
     position: absolute;
     bottom: 0;
+    width: 100%;
   }
 
   .home-hero__wave2 {
@@ -120,6 +121,53 @@
     bottom: 0;
     margin: 0 auto 20px;
     width: 100%;
+  }
+
+  /* Laptop */
+  @media screen and (max-width: 1024px) {
+    .home-hero__circle h2 {
+      margin: 0 0 10px;
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    .home-hero__circle span {
+      font-size: 16px;
+    }
+
+    .home-hero__circle {
+      width: 100%;
+      height: 50%;
+      border-radius: 100%;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+
+    .home-hero__bottomText {
+      font-family: "Bodoni Moda", sans-serif;
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    .home-hero__card {
+      align-items: baseline;
+    }
+
+    .home-hero__logo img {
+      height: 40px;
+    }
+
+    .home-hero__logo {
+      bottom: 60px;
+    }
+
+    .home-hero__wave2 {
+      height: 80%;
+    }
+
+    .home-hero__bottomText {
+      line-height: 1;
+    }
   }
 </style>
 

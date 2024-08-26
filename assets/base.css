@@ -3572,6 +3572,10 @@ details-disclosure > details {
 /* ########################## */
 
 /* GLOBAL? */
+body {
+  overflow-x: hidden;
+}
+
 .page-width {
   max-width: 1600px;
   padding: 0;
@@ -3612,4 +3616,31 @@ details-disclosure > details {
   font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
+}
+
+/* NAV (Laptop) */
+@media screen and (max-width: 1024px) {
+  .header:not(.drawer-menu).page-width {
+    padding: 20px;
+    height: auto;
+  }
+
+  .header img {
+    max-height: px;
+  }
+
+  .header a {
+    padding: 0;
+  }
+
+  .header .list-menu {
+    margin-top: 16px;
+    display: flex;
+    gap: 32px;
+  }
+
+  .header--middle-left {
+    display: flex;
+    flex-direction: column;
+  }
 }
