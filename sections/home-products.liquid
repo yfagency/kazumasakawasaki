@@ -99,6 +99,33 @@
     position: relative;
     width: fit-content;
   }
+
+  /* Laptop */
+  @media screen and (max-width: 1024px) {
+    .home-products__cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .home-products__container {
+      padding: 50px 20px;
+    }
+  }
+
+  /* Mobile */
+  @media screen and (max-width: 600px) {
+    .home-products p {
+      width: 100%;
+    }
+
+    .home-products__cards {
+      gap: 20px;
+    }
+
+    .home-products__item h3 {
+      font-size: 16px;
+    }
+  }
 </style>
 
 <section class="home-products">

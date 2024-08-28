@@ -169,6 +169,83 @@
       line-height: 1;
     }
   }
+
+  /* Mobile */
+  @media screen and (max-width: 600px) {
+    .home-hero__main {
+      display: flex;
+      flex-direction: column;
+      max-height: auto;
+      aspect-ratio: unset;
+      width: 100%;
+    }
+
+    .home-hero__circle {
+      width: auto;
+      height: 100%;
+      flex-shrink: 0;
+      border-radius: 100%;
+      background: rgba(8, 5, 69, 0.80);
+      display: grid;
+      text-align: left;
+      align-items: start;
+      align-content: center;
+      margin: 0 auto;
+      aspect-ratio: 1/1;
+      margin: -30% 0 0 -10%;
+      border-top-left-radius: 0;
+      padding: 25% 0 0 6%;
+    }
+
+    .home-hero__card {
+      aspect-ratio: 3/2;
+      overflow: hidden;
+    }
+
+    .home-hero__circle h2 {
+      color: #FFF;
+      margin: 0 0 10px;
+      text-align: center;
+      text-shadow: 0px 4px 44px rgba(0, 0, 78, 0.25);
+      font-family: "Bodoni Moda", serif;
+      font-size: 7.5vw;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 100%; /* 40px */
+      letter-spacing: 2.8px;
+      text-transform: uppercase;
+    }
+
+    .home-hero__circle span {
+      color: #DF1616;
+      text-align: center;
+      text-shadow: 0px 4px 44px rgba(0, 0, 78, 0.25);
+      font-family: "Bodoni Moda", serif;
+      font-size: 2.5vw;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 100%; /* 18px */
+      letter-spacing: 1.62px;
+      text-transform: uppercase;
+    }
+
+    .home-hero__bottomText {
+      display: none;
+    }
+
+    .home-hero__logo {
+      bottom: 0;
+    }
+
+    .home-hero__wave1,
+    .home-hero__wave2 {
+      height: 100px;
+    }
+
+    .home-hero__logo img {
+      height: 48px;
+    }
+  }
 </style>
 
 <section class="home-hero">
@@ -193,13 +270,8 @@
     </div>
   </div>
   <div class="home-hero__bottom">
-    <svg class="home-hero__wave1" xmlns="http://www.w3.org/2000/svg" width="1920" height="134" viewBox="0 0 1920 134" fill="none">
-      <path d="M766.909 30.6886C257.66 -112.251 245.284 302.574 -676.686 88.664L-720 472H1866.47C1954.95 316.899 2179.39 8.38171 1995.79 58.177C1406.1 218.109 990.285 93.3873 766.909 30.6886Z" fill="#080545" fill-opacity="0.5"/>
-    </svg>
-    <svg class="home-hero__wave2" xmlns="http://www.w3.org/2000/svg" width="1920" height="196" viewBox="0 0 1920 196" fill="none">
-      <path d="M1099.4 30.6886C644.437 -112.251 633.38 302.574 -190.303 88.664L-229 472H2081.74C2160.79 316.899 2361.3 8.38171 2197.27 58.177C1670.45 218.109 1298.96 93.3873 1099.4 30.6886Z" fill="#080545" fill-opacity="0.7"/>
-    </svg>
-
+    <img class="home-hero__wave1" src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/kk-home-wave1.svg?v=1724821827" />
+    <img class="home-hero__wave2" src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/kk-home-wave2.svg?v=1724821630" />
     <div class="home-hero__logo">
       <img src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/KAZU.svg?v=1724395912" />
     </div>

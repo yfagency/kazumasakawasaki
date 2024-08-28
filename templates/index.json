@@ -20,10 +20,14 @@
     },
     "home-contact": {
       "type": "home-contact"
+    },
+    "home-kk-way-content": {
+      "type": "home-kk-way-content"
     }
   },
   "order": [
     "home-hero",
+    "home-kk-way-content",
     "home-products",
     "home-kawasaki-way",
     "home-spa",

@@ -84,12 +84,59 @@
     width: fit-content;
     border: 1px solid #FFF;
   }
+
+  /* Laptop */
+  @media screen and (max-width: 1024px) {
+    .home-kkWay h2 {
+      font-size: 3.25vw;
+      margin-top: 10px;
+    }
+
+    .home-kkWay__container {
+      padding: 50px 20px;
+    }
+  }
+
+  /* Mobile */
+  @media screen and (max-width: 600px) {
+    .home-kkWay {
+      aspect-ratio: 4/3;
+    }
+
+    .home-kkWay__bgLeft {
+      left: -20%;
+    }
+
+    .home-kkWay__imgRight {
+      right: -29%;
+    }
+
+    .home-kkWay p {
+      margin: 10px 0 20px;
+      font-size: 3vw;
+    }
+
+    .home-kkWay a {
+      padding: 0 0 5px 0;
+      border: 0;
+      border-bottom: 2px solid #fff;
+    }
+
+    .home-kkWay h2 {
+      width: 50%;
+      text-wrap: pretty;
+    }
+
+    .home-kkWay h2 br {
+      display: none;
+    }
+  }
 </style>
 
 <section class="home-kkWay">
   <div class="page-width home-kkWay__container">
     <span>KAWASAKI way</span>
-    <h2>If your appearance changes,<br>what's inside changes,<br>and vice versa.</h2>
+    <h2>If your appearance changes, <br>what's inside changes, <br>and vice versa.</h2>
     <p>Kazumasa Kawasaki</p>
     <a>learn more</a>
   </div>

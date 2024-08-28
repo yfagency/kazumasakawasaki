@@ -76,6 +76,24 @@
     gap: 10px;
     border-bottom: 2px solid #00004E;
   }
+
+  /* Laptop */
+  @media screen and (max-width: 1024px) {
+    .home-news__container {
+      padding: 50px 20px;
+    }
+  }
+
+  /* Mobile */
+  @media screen and (max-width: 600px) {
+    .home-news__posts {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .home-news__posts h3 {
+      font-size: 16px;
+    }
+  }
 </style>
 
 <section class="home-news">
