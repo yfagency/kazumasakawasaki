@@ -1,0 +1,117 @@
+<style>
+  .home-news__container {
+    padding: 100px 0;
+  }
+
+  .home-news__title {
+    text-align: center;
+    color: #000;
+    text-align: center;
+    font-family: "Bodoni Moda", serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0 0 80px;
+  }
+
+  .home-news__posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+  }
+
+  .home-news__posts img {
+    aspect-ratio: 4/5;
+    object-fit: cover;
+  }
+
+  .home-news__posts p {
+    color: #DF1616;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    margin: 20px 0 10px;
+    text-transform: uppercase;
+  }
+
+  .home-news__posts h3 {
+    color: #000;
+    font-family: "Open Sans", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 30.8px */
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .home-news__postItem {
+    text-decoration: none;
+  }
+
+  .home-news__cta {
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+    justify-content: center;
+  }
+
+  .home-news__cta a {
+    color: #00004E;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    display: flex;
+    padding: 5px 2px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 2px solid #00004E;
+  }
+
+  /* Laptop */
+  @media screen and (max-width: 1024px) {
+    .home-news__container {
+      padding: 50px 20px;
+    }
+  }
+
+  /* Mobile */
+  @media screen and (max-width: 600px) {
+    .home-news__posts {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .home-news__posts h3 {
+      font-size: 16px;
+    }
+  }
+</style>
+
+<section class="home-news">
+  <div class="home-news__container page-width">
+    <h2 class="home-news__title">events & news</h2>
+    <div class="home-news__posts">
+      {% for article in blogs.news.articles %}
+        <a href="{{ article.url }}" class="home-news__postItem">
+          <img width="100%" src="{{ article.image.src | img_url: 'large' }}" alt="{{ article.title }}">
+            {% for tag in article.tags %}
+              <p class="tag">{{ tag }}</p>
+            {% endfor %}
+          <h3>{{ article.title }}</h3>
+        </a>
+      {% endfor %}
+    </div>
+    <div class="home-news__cta">
+      <a>see more</a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,281 @@
+<style>
+  .home-hero {
+    position: relative;
+  }
+
+  .home-hero__main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-height: calc(100vh - 90px);
+    aspect-ratio: 2.11/1;
+    width: 100%;
+  }
+
+  .home-hero__card {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+  }
+
+  .home-hero__card:first-child {
+    background: url('https://cdn.shopify.com/s/files/1/0892/7651/4595/files/15a7c0edfb00a5503a390e9e4901c341.jpg?v=1724394183');
+    background-size: 140%;
+    background-position: bottom 0 right 0;
+  }
+
+  .home-hero__card:nth-child(2) {
+    background: url('https://cdn.shopify.com/s/files/1/0892/7651/4595/files/2b9f120aed568ee24846dcdfc21c31f7.jpg?v=1724394376');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .home-hero__card:nth-child(3) {
+    background: url('https://cdn.shopify.com/s/files/1/0892/7651/4595/files/b6844c18f1ed35f2d9f2aa1368cde14e.jpg?v=1724394457');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .home-hero__circle {
+    width: 338px;
+    height: 338px;
+    flex-shrink: 0;
+    border-radius: 338px;
+    background: rgba(8, 5, 69, 0.80);
+    display: grid;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+  }
+
+  .home-hero__circle h2 {
+    color: #FFF;
+    margin: 0 0 10px;
+    text-align: center;
+    text-shadow: 0px 4px 44px rgba(0, 0, 78, 0.25);
+    font-family: "Bodoni Moda", serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 40px */
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+  }
+
+  .home-hero__circle span {
+    color: #DF1616;
+    text-align: center;
+    text-shadow: 0px 4px 44px rgba(0, 0, 78, 0.25);
+    font-family: "Bodoni Moda", serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 18px */
+    letter-spacing: 1.62px;
+    text-transform: uppercase;
+  }
+
+  .home-hero__bottom {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 196px;
+    bottom: 0;
+  }
+
+  .home-hero__wave1 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .home-hero__wave2 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .home-hero__logo {
+    display: block;
+    position: absolute;
+    bottom: 80px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .home-hero__bottomText {
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 4px 22.1px rgba(0, 0, 0, 0.40);
+    font-family: "Belfast SF";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 9px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto 20px;
+    width: 100%;
+  }
+
+  /* Laptop */
+  @media screen and (max-width: 1024px) {
+    .home-hero__circle h2 {
+      margin: 0 0 10px;
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    .home-hero__circle span {
+      font-size: 16px;
+    }
+
+    .home-hero__circle {
+      width: 100%;
+      height: 50%;
+      border-radius: 100%;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+
+    .home-hero__bottomText {
+      font-family: "Bodoni Moda", sans-serif;
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    .home-hero__card {
+      align-items: baseline;
+    }
+
+    .home-hero__logo img {
+      height: 40px;
+    }
+
+    .home-hero__logo {
+      bottom: 60px;
+    }
+
+    .home-hero__wave2 {
+      height: 80%;
+    }
+
+    .home-hero__bottomText {
+      line-height: 1;
+    }
+  }
+
+  /* Mobile */
+  @media screen and (max-width: 600px) {
+    .home-hero__main {
+      display: flex;
+      flex-direction: column;
+      max-height: auto;
+      aspect-ratio: unset;
+      width: 100%;
+    }
+
+    .home-hero__circle {
+      width: auto;
+      height: 100%;
+      flex-shrink: 0;
+      border-radius: 100%;
+      background: rgba(8, 5, 69, 0.80);
+      display: grid;
+      text-align: left;
+      align-items: start;
+      align-content: center;
+      margin: 0 auto;
+      aspect-ratio: 1/1;
+      margin: -30% 0 0 -10%;
+      border-top-left-radius: 0;
+      padding: 25% 0 0 6%;
+    }
+
+    .home-hero__card {
+      aspect-ratio: 3/2;
+      overflow: hidden;
+    }
+
+    .home-hero__circle h2 {
+      color: #FFF;
+      margin: 0 0 10px;
+      text-align: center;
+      text-shadow: 0px 4px 44px rgba(0, 0, 78, 0.25);
+      font-family: "Bodoni Moda", serif;
+      font-size: 7.5vw;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 100%; /* 40px */
+      letter-spacing: 2.8px;
+      text-transform: uppercase;
+    }
+
+    .home-hero__circle span {
+      color: #DF1616;
+      text-align: center;
+      text-shadow: 0px 4px 44px rgba(0, 0, 78, 0.25);
+      font-family: "Bodoni Moda", serif;
+      font-size: 2.5vw;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 100%; /* 18px */
+      letter-spacing: 1.62px;
+      text-transform: uppercase;
+    }
+
+    .home-hero__bottomText {
+      display: none;
+    }
+
+    .home-hero__logo {
+      bottom: 0;
+    }
+
+    .home-hero__wave1,
+    .home-hero__wave2 {
+      height: 100px;
+    }
+
+    .home-hero__logo img {
+      height: 48px;
+    }
+  }
+</style>
+
+<section class="home-hero">
+  <div class="home-hero__main">
+    <div class="home-hero__card">
+      <div class="home-hero__circle">
+        <h2>products</h2>
+        <span>kazumasa kawasaki</span>
+      </div>
+    </div>
+    <div class="home-hero__card">
+      <div class="home-hero__circle">
+        <h2>le spa de</h2>
+        <span>kazumasa kawasaki</span>
+      </div>
+    </div>
+    <div class="home-hero__card">
+      <div class="home-hero__circle">
+        <h2>academy</h2>
+        <span>kazumasa kawasaki</span>
+      </div>
+    </div>
+  </div>
+  <div class="home-hero__bottom">
+    <img class="home-hero__wave1" src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/kk-home-wave1.svg?v=1724821827" />
+    <img class="home-hero__wave2" src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/kk-home-wave2.svg?v=1724821630" />
+    <div class="home-hero__logo">
+      <img src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/KAZU.svg?v=1724395912" />
+    </div>
+
+    <h3 class="home-hero__bottomText">KAWASAKI way</h3>
+  </div>
+</section>
