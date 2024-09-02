@@ -337,8 +337,19 @@
     margin: 0 auto 60px;
   }
 
+  .products-locations__gMapLink {
+    display: none;
+  }
+
   /* Mobile */
   @media screen and (max-width: 600px) {
+    .products-locations__gMapLink {
+      display: block;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      margin-top: 20px;
+    }
+
     .products-locations__container {
       display: flex;
       flex-direction: column;
@@ -684,7 +695,7 @@
     <span class="products-intro__subtitle">Kazumasa Kawasaki</span>
     <h2 class="products-intro__title">Original Products</h2>
     <p class="products-intro__text">At the heart of The Kawasaki Way lies the belief that your appearance and internal health are intimately connected. Our original products, crafted from meticulously selected Japanese plant materials, provide a holistic daily care routine for your face and body. Experience the swift, transformative power of The Kawasaki Way, bringing balance and vitality to both your inner self and outward beauty.</p>
-    <a class="products-intro__link">buy now</a>
+    <a href="#products" class="products-intro__link">buy now</a>
   </div>
 </section>
 
@@ -697,46 +708,55 @@
       <div class="products-locations__item" data-index="0">
         <h3 class="products-locations__itemTitle">ALTIS OFFICIAL SHOP (JAPAN)</h3>
         <p class="products-locations__itemAddress">B1 Portofino 3-15-5 Kita-Aoyama, Minato-ku, Tokyo, Japan</p>
+        <a class="products-locations__gMapLink" href="https://maps.app.goo.gl/ZrHQ3BFDS6QL8tKu9" target="_blank">Google Maps</a>
         <span class="products-locations__line"></span>
       </div>
       <div class="products-locations__item" data-index="1">
         <h3 class="products-locations__itemTitle">NEODERME MONACO (MONACO)</h3>
         <p class="products-locations__itemAddress">3 Rue Plati, 98000 Monaco<br>contact@kazumasakawasaki.com</p>
+        <a class="products-locations__gMapLink" href="https://maps.app.goo.gl/QTknMfJEV48mjMvX9" target="_blank">Google Maps</a>
         <span class="products-locations__line"></span>
       </div>
       <div class="products-locations__item" data-index="2">
         <h3 class="products-locations__itemTitle">Pharmacy G.Marsan (MONACO)</h3>
         <p class="products-locations__itemAddress">1 Rue Grimaldi, 98000 Monaco<br>+377 93 30 21 01</p>
+        <a class="products-locations__gMapLink" href="https://maps.app.goo.gl/u5MSTuR43uMhrBU16" target="_blank">Google Maps</a>
         <span class="products-locations__line"></span>
       </div>
       <div class="products-locations__item" data-index="3">
         <h3 class="products-locations__itemTitle">NEODERME MEDICAL SPA (FRANCE)</h3>
         <p class="products-locations__itemAddress">25 Bd General Leclerc , 06240 Beausoleil , France<br>+33 4 22 16 48 15</p>
+        <a class="products-locations__gMapLink" href="https://maps.app.goo.gl/abcrfzgfhc6ofmxQA" target="_blank">Google Maps</a>
         <span class="products-locations__line"></span>
       </div>
       <div class="products-locations__item" data-index="4">
         <h3 class="products-locations__itemTitle">LAUREL INTERNATIONAL SA (SWISS)</h3>
         <p class="products-locations__itemAddress">Via Serafino Balestra 7, 6900 Lugano, Swiss</p>
+        <a class="products-locations__gMapLink" href="https://maps.app.goo.gl/SCaBbVcyp46Uweo87" target="_blank">Google Maps</a>
         <span class="products-locations__line"></span>
       </div>
       <div class="products-locations__item" data-index="5">
         <h3 class="products-locations__itemTitle">The Sanchaya  (INDONESIA)</h3>
         <p class="products-locations__itemAddress">Lagoi Bay, Bintan, Riau Islands, Indonesia<br>www.thesanchaya.com</p>
+        <a class="products-locations__gMapLink" href="https://maps.app.goo.gl/ubU4y5upiS5o3ELh9" target="_blank">Google Maps</a>
         <span class="products-locations__line"></span>
       </div>
       <div class="products-locations__item" data-index="6">
         <h3 class="products-locations__itemTitle">ST. GREGORY SPA  Pan Pacific Singapore (SINGAPORE)</h3>
         <p class="products-locations__itemAddress">7 Raffles Boulevard Marina Square, Level 4, Singapore 039595<br>+65 6826 8140<br>www.stgregoryspa.com</p>
+        <a class="products-locations__gMapLink" href="https://maps.app.goo.gl/o5cjp5g8QghgLXZE8" target="_blank">Google Maps</a>
         <span class="products-locations__line"></span>
       </div>
       <div class="products-locations__item" data-index="7">
         <h3 class="products-locations__itemTitle">ST. GREGORY SPA  PARKROYAL on BeachRoad (SINGAPORE)</h3>
         <p class="products-locations__itemAddress">7500 Beach Road, Level 4, Singapore 199591<br>+65 6505 5755<br>www.stgregoryspa.com</p>
+        <a class="products-locations__gMapLink" href="https://maps.app.goo.gl/ME8PDptrisgnv8zb9" target="_blank">Google Maps</a>
         <span class="products-locations__line"></span>
       </div>
       <div class="products-locations__item" data-index="8">
         <h3 class="products-locations__itemTitle">ST. GREGORY SPA  PARKROYAL on Pickering (SINGAPORE)</h3>
         <p class="products-locations__itemAddress">3 Upper Pickering Street, Level 5, Singapore 058289<br>+65 6809 8870<br>www.stgregoryspa.com</p>
+        <a class="products-locations__gMapLink" href="https://maps.app.goo.gl/TKE89hvVei5hV7gWA" target="_blank">Google Maps</a>
         <span class="products-locations__line"></span>
       </div>
     </div>
@@ -810,27 +830,27 @@
     <h2 class="products-kkWay__title">explore the kawasaki way</h2>
     <p class="products-kkWay__text">Discover how The Kawasaki Way can make your life beautiful and healthy. Try our products and treatments.</p>
     <div class="products-kkWay__cards">
-      <div class="products-kkWay__item">
+      <a href="https://www.kazumasakawasaki.com/kawasaki-way" target="_blank" class="products-kkWay__item">
         <img src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/3b041cdc6a82323b4f3ff2aacb9be1bd.png?v=1725005473" />
         <div class="products-kkWay__cardBottom">
           <h3 class="products-kkWay__cardTitle">kawasaki way</h3>
           <span class="products-kkWay__cardSubtitle">kazumasa kawasaki</span>
         </div>
-      </div>
-      <div class="products-kkWay__item">
+      </a>
+      <a href="https://www.kazumasakawasaki.jp/" target="_blank" class="products-kkWay__item">
         <img src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/4b09b60a99c28451d9171ba20c1b8841.png?v=1725006521" />
         <div class="products-kkWay__cardBottom">
           <h3 class="products-kkWay__cardTitle">le spa de</h3>
           <span class="products-kkWay__cardSubtitle">kazumasa kawasaki</span>
         </div>
-      </div>
-      <div class="products-kkWay__item">
+      </a>
+      <a href="https://www.kawasaki-academy.com/" target="_blank" class="products-kkWay__item">
         <img src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/63aa50857e9f6a57ab233f676a2ca893.png?v=1725006617" />
         <div class="products-kkWay__cardBottom">
           <h3 class="products-kkWay__cardTitle">academy</h3>
           <span class="products-kkWay__cardSubtitle">kazumasa kawasaki</span>
         </div>
-      </div>
+      </a>
     </div>
   </div>
 </section>
