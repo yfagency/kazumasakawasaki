@@ -1,5 +1,836 @@
-<section>
-  <div>
-    product page
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<style>
+  /* ########## HERO ########## */
+  .products-hero {
+    position: relative;
+    color: #fff;
+    aspect-ratio: 2/1;
+    display: flex;
+    align-items: center;
+  }
+
+  .products-hero__container {
+    padding: 100px 20px;
+  }
+
+  .products-hero__left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 35%;
+  }
+
+  .products-hero__blueBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: -1;
+    width: 75%;
+    object-fit: cover;
+    object-position: right;
+  }
+
+  .products-hero__picture {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    z-index: -2;
+    right: -5%;
+  }
+
+  .products-hero__subtitle {
+    color: #DF1616;
+    text-shadow: 0px 4px 44px rgba(0, 0, 78, 0.25);
+    font-family: "Bodoni Moda", serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 18px */
+    letter-spacing: 1.62px;
+    text-transform: uppercase;
+  }
+
+  .products-hero__title {
+    color: #FFF;
+    font-family: "Bodoni Moda", serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 72px */
+    letter-spacing: 4.8px;
+    text-transform: uppercase;
+    margin: 5px 0 30px;
+  }
+
+  .products-hero__text {
+    color: #FFF;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+    margin: 0 0 60px;
+  }
+
+  .products-hero__button {
+    color: #FFF;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    display: flex;
+    height: 52px;
+    padding: 15px 70px;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #FFF;
+    text-decoration: none;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper .swiper-slide {
+    height: auto;
+  }
+
+  /* Laptop */
+  @media screen and (max-width: 1599px) {
+    .swiper .swiper-slide {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    .products-hero {
+      aspect-ratio: unset;
+      display: flex;
+      align-items: center;
+    }
+
+    .products-hero__left {
+      display: flex;
+      align-items: flex-start;
+      max-width: 75%;
+    }
+
+    .products-hero__container {
+      background: rgb(0 0 78 / 80%);
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    .products-hero__picture {
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+      z-index: -2;
+      right: 0;
+      object-position: right;
+    }
+
+    .products-hero__blueBg {
+      display: none;
+    }
+  }
+
+  /* Mobile */
+  @media screen and (max-width: 600px) {
+    .products-hero__left {
+      max-width: 100%;
+    }
+
+    .products-hero__title {
+      font-size: 40px;
+    }
+
+    .products-hero__container {
+      padding: 50px 20px;
+    }
+
+    .products-hero__text {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  }
+
+  /* ########## INTRO ########## */
+  .products-intro {
+    background: url('https://cdn.shopify.com/s/files/1/0892/7651/4595/files/bg_1.jpg?v=1724999756');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .products-intro__container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 160px 20px;
+    max-width: 812px;
+  }
+
+  .products-intro__subtitle {
+    color: #DF1616;
+    text-align: center;
+    text-shadow: 0px 4px 44px rgba(0, 0, 78, 0.25);
+    font-family: "Bodoni Moda", serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 18px */
+    letter-spacing: 1.62px;
+    text-transform: uppercase;
+  }
+
+  .products-intro__title {
+    color: #111;
+    text-align: center;
+    font-family: "Bodoni Moda", serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 96px */
+    letter-spacing: 4.8px;
+    text-transform: uppercase;
+    margin: 0 0 20px;
+  }
+
+  .products-intro__text {
+    color: #111;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+    margin: 0 0 50px;
+  }
+
+  .products-intro__link {
+    color: #FFF;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    display: flex;
+    padding: 15px 70px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #00004E;
+  }
+
+  /* Mobile */
+  @media screen and (max-width: 600px) {
+    .products-intro__title {
+      font-size: 40px;
+      line-height: 1.5;
+    }
+
+    .products-intro__text {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .products-intro__container {
+      padding: 100px 20px;
+    }
+  }
+
+  /* ########## LOCATIONS ########## */
+  .products-locations {
+    padding: 100px 20px;
+  }
+
+  .products-locations__item {
+    margin-right: 40px;
+    cursor: pointer;
+  }
+
+  .products-locations__itemTitle {
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 30.8px */
+    text-transform: uppercase;
+    margin: 0 0 5px;
+  }
+
+  .products-locations__itemAddress {
+    color: #111;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    margin: 0 0 40px;
+  }
+
+  .products-locations__line {
+    display: block;
+    width: 137px;
+    height: 3px;
+    background: #DF1616;
+    transition: .3s;
+  }
+
+  .products-locations__container {
+    display: grid;
+    grid-template-columns: 0.75fr 1.25fr;
+    gap: 40px;
+  }
+
+  .products-locations__list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    height: 600px;
+    overflow-y: scroll;
+  }
+
+  .map {
+    display: none;
+  }
+
+  .map.active {
+    display: block;
+  }
+
+  .products-locations__item.active {
+    background: #f2f2f2;
+  }
+
+  .products-locations__item.active .products-locations__line  {
+    width: 100%;
+    transition: .3s;
+  }
+
+  .products-locations h2 {
+    text-align: center;
+    color: #000;
+    text-align: center;
+    font-family: "Bodoni Moda", serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0 auto 60px;
+  }
+
+  /* Mobile */
+  @media screen and (max-width: 600px) {
+    .products-locations__container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .products-locations__map {
+      display: none;
+    }
+
+    .products-locations__list {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      height: 100%;
+      overflow-x: scroll;
+      margin-right: 100px;
+      width: 100%;
+      align-items: center;
+    }
+
+    .products-locations h2 {
+      margin-bottom: 20px;
+    }
+
+    .products-locations__itemTitle {
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 1.5;
+    }
+
+    .products-locations {
+      padding: 50px 20px;
+    }
+
+    .products-locations__item {
+      margin-right: 0;
+      cursor: pointer;
+      min-width: 75vw;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+      padding: 20px;
+      border-radius: 10px;
+      height: 100%;
+      align-self: stretch;
+      height: auto;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .products-locations__line {
+      display: none;
+    }
+
+    .products-locations__itemAddress {
+      margin: 0;
+    }
+
+    .products-locations__item.active {
+      background: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+    }
+  }
+
+  /* ########## GUIDE ########## */
+  .products-guide__title {
+    color: #000;
+    font-family: "Open Sans", sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 0 0 20px;
+  }
+
+  .products-guide__subtitle {
+    color: #111;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    margin: 0 0 50px;
+    max-width: 400px;
+    text-wrap: pretty;
+  }
+
+  .products-guide__link {
+    color: #FFF;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    display: flex;
+    padding: 15px 70px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #00004E;
+  }
+
+  .products-guide__container img {
+    width: 100%;
+  }
+
+  .products-guide__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 100px;
+    align-items: center;
+    padding: 100px 20px;
+  }
+
+  .products-guide__container > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Laptop */
+  @media screen and (max-width: 1024px) {
+    .products-guide__container {
+      gap: 50px;
+      align-items: center;
+      padding: 50px 20px;
+    }
+  }
+
+  /* Mobile */
+  @media screen and (max-width: 600px) {
+    .products-guide__container {
+      gap: 40px;
+      padding: 50px 20px;
+    }
+
+    .products-guide__subtitle {
+      max-width: 100%;
+    }
+  }
+
+  /* ########## KK WAY ########## */
+  .products-kkWay__container {
+    text-align: center;
+    padding: 100px 20px;
+  }
+
+  .products-kkWay__title {
+    color: #000;
+    text-align: center;
+    font-family: "Bodoni Moda", serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0 0 20px;
+  }
+
+  .products-kkWay__text {
+    color: #111;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+    margin: 0 auto 60px;
+    max-width: 700px;
+  }
+
+  .products-kkWay__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+  }
+
+  .products-kkWay__item {
+    aspect-ratio: 5/6;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .products-kkWay__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .products-kkWay__cardTitle {
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 4px 44px rgba(0, 0, 78, 0.25);
+    font-family: "Bodoni Moda", serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 40px */
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    margin: 0 0 5px;
+  }
+
+  .products-kkWay__cardSubtitle {
+    color: #DF1616;
+    text-align: center;
+    text-shadow: 0px 4px 44px rgba(0, 0, 78, 0.25);
+    font-family: "Trivia Serif Regular";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 18px */
+    letter-spacing: 1.62px;
+    text-transform: uppercase;
+  }
+
+  .products-kkWay__cardBottom {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    background: #1C1952;
+  }
+
+  /* Laptop */
+  @media screen and (max-width: 1024px) {
+    .products-kkWay__cardTitle {
+      font-size: 32px;
+      line-height: 1.25;
+    }
+
+    .products-kkWay__cards {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+  }
+
+  /* Mobile */
+  @media screen and (max-width: 600px) {
+    .products-kkWay__container {
+      padding: 50px 20px;
+    }
+
+    .products-kkWay__text {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .products-kkWay__cards {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+</style>
+
+<section class="products-hero">
+  <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide products-hero">
+        <div class="products-hero__container page-width">
+        <div class="products-hero__left">
+          <span class="products-hero__subtitle">Kazumasa Kawasaki</span>
+          <h1 class="products-hero__title">Essence</h1>
+          <p class="products-hero__text">Immerse your skin in the luxurious pleasure of our Beauty Essence. This formula glides smoothly onto your skin, infusing it with moisture and resilience for a youthful glow. Suitable for all skin types, it elevates your skincare routine to an art form.</p>
+          <a href="/products/kazumasa-kawasaki-essence" class="products-hero__button">buy now</a>
+        </div>
+      </div>
+      <img class="products-hero__blueBg" src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/kk-products-hero-blue-background.svg?v=1724993611" />
+      <img class="products-hero__picture" src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/PMAWT5R9_output_0_1.jpg?v=1724995435" />
+      </div>
+      <div class="swiper-slide products-hero">
+        <div class="products-hero__container page-width">
+        <div class="products-hero__left">
+          <span class="products-hero__subtitle">Kazumasa Kawasaki</span>
+          <h1 class="products-hero__title">Original Products</h1>
+          <p class="products-hero__text">At the heart of The Kawasaki Way lies the belief that your appearance and internal health are intimately connected. Our original products, crafted from meticulously selected Japanese plant materials, provide a holistic daily care routine for your face and body. Experience the swift, transformative power of The Kawasaki Way, bringing balance and vitality to both your inner self and outward beauty.</p>
+          <a href="/products/kazumasa-kawasaki-cream" class="products-hero__button">buy now</a>
+        </div>
+      </div>
+      <img class="products-hero__blueBg" src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/kk-products-hero-blue-background.svg?v=1724993611" />
+      <img class="products-hero__picture" src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/image_425.jpg?v=1724996566" />
+      </div>
+      <div class="swiper-slide products-hero">
+        <div class="products-hero__container page-width">
+        <div class="products-hero__left">
+          <span class="products-hero__subtitle">Kazumasa Kawasaki</span>
+          <h1 class="products-hero__title">PLANT FERMENTATION FOOD</h1>
+          <p class="products-hero__text">More than 80 plant materials are fermented and roasted to be used as everyday nutrition, beauty, and health support for people who like to enjoy an active life.</p>
+          <a href="/products/kazumasa-kawasaki-plant-fermentation-food" class="products-hero__button">buy now</a>
+        </div>
+      </div>
+      <img class="products-hero__blueBg" src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/kk-products-hero-blue-background.svg?v=1724993611" />
+      <img class="products-hero__picture" src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/slider3.png?v=1724997104" />
+      </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
+</section>
+
+<script>
+  const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    
+    // autoplay: {
+    //   delay: 5000,
+    // },
+  });
+</script>
+
+<section class="products-intro">
+  <div class="products-intro__container page-width">
+    <span class="products-intro__subtitle">Kazumasa Kawasaki</span>
+    <h2 class="products-intro__title">Original Products</h2>
+    <p class="products-intro__text">At the heart of The Kawasaki Way lies the belief that your appearance and internal health are intimately connected. Our original products, crafted from meticulously selected Japanese plant materials, provide a holistic daily care routine for your face and body. Experience the swift, transformative power of The Kawasaki Way, bringing balance and vitality to both your inner self and outward beauty.</p>
+    <a class="products-intro__link">buy now</a>
+  </div>
+</section>
+
+{% section 'home-products' %}
+
+<section class="products-locations">
+  <h2 class="page-width">shop list</h2>
+  <div class="products-locations__container page-width">
+    <div class="products-locations__list">
+      <div class="products-locations__item" data-index="0">
+        <h3 class="products-locations__itemTitle">ALTIS OFFICIAL SHOP (JAPAN)</h3>
+        <p class="products-locations__itemAddress">B1 Portofino 3-15-5 Kita-Aoyama, Minato-ku, Tokyo, Japan</p>
+        <span class="products-locations__line"></span>
+      </div>
+      <div class="products-locations__item" data-index="1">
+        <h3 class="products-locations__itemTitle">NEODERME MONACO (MONACO)</h3>
+        <p class="products-locations__itemAddress">3 Rue Plati, 98000 Monaco<br>contact@kazumasakawasaki.com</p>
+        <span class="products-locations__line"></span>
+      </div>
+      <div class="products-locations__item" data-index="2">
+        <h3 class="products-locations__itemTitle">Pharmacy G.Marsan (MONACO)</h3>
+        <p class="products-locations__itemAddress">1 Rue Grimaldi, 98000 Monaco<br>+377 93 30 21 01</p>
+        <span class="products-locations__line"></span>
+      </div>
+      <div class="products-locations__item" data-index="3">
+        <h3 class="products-locations__itemTitle">NEODERME MEDICAL SPA (FRANCE)</h3>
+        <p class="products-locations__itemAddress">25 Bd General Leclerc , 06240 Beausoleil , France<br>+33 4 22 16 48 15</p>
+        <span class="products-locations__line"></span>
+      </div>
+      <div class="products-locations__item" data-index="4">
+        <h3 class="products-locations__itemTitle">LAUREL INTERNATIONAL SA (SWISS)</h3>
+        <p class="products-locations__itemAddress">Via Serafino Balestra 7, 6900 Lugano, Swiss</p>
+        <span class="products-locations__line"></span>
+      </div>
+      <div class="products-locations__item" data-index="5">
+        <h3 class="products-locations__itemTitle">The Sanchaya  (INDONESIA)</h3>
+        <p class="products-locations__itemAddress">Lagoi Bay, Bintan, Riau Islands, Indonesia<br>www.thesanchaya.com</p>
+        <span class="products-locations__line"></span>
+      </div>
+      <div class="products-locations__item" data-index="6">
+        <h3 class="products-locations__itemTitle">ST. GREGORY SPA  Pan Pacific Singapore (SINGAPORE)</h3>
+        <p class="products-locations__itemAddress">7 Raffles Boulevard Marina Square, Level 4, Singapore 039595<br>+65 6826 8140<br>www.stgregoryspa.com</p>
+        <span class="products-locations__line"></span>
+      </div>
+      <div class="products-locations__item" data-index="7">
+        <h3 class="products-locations__itemTitle">ST. GREGORY SPA  PARKROYAL on BeachRoad (SINGAPORE)</h3>
+        <p class="products-locations__itemAddress">7500 Beach Road, Level 4, Singapore 199591<br>+65 6505 5755<br>www.stgregoryspa.com</p>
+        <span class="products-locations__line"></span>
+      </div>
+      <div class="products-locations__item" data-index="8">
+        <h3 class="products-locations__itemTitle">ST. GREGORY SPA  PARKROYAL on Pickering (SINGAPORE)</h3>
+        <p class="products-locations__itemAddress">3 Upper Pickering Street, Level 5, Singapore 058289<br>+65 6809 8870<br>www.stgregoryspa.com</p>
+        <span class="products-locations__line"></span>
+      </div>
+    </div>
+    <div class="products-locations__map">
+      <iframe class="map" data-index="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.5119277418194!2d139.70682797723944!3d35.66439487259285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d716aa7febd%3A0xa037ea1b4d4db1c2!2sPortofino%20Aoyama!5e0!3m2!1sen!2sjp!4v1725001339776!5m2!1sen!2sjp" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      <iframe class="map" data-index="1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.9744190955416!2d7.413653377472751!3d43.73185827109859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cdc2f2aa11f1f7%3A0x865ee65963ef082e!2s3%20Rue%20Plati%2C%2098000%20Monaco!5e0!3m2!1sen!2sjp!4v1725002009249!5m2!1sen!2sjp" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      <iframe class="map" data-index="2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.9275997544287!2d7.416112877472765!3d43.73283087109858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cdc28d72d426f3%3A0x7b4112f12cbf9d10!2s1%20Rue%20Grimaldi%2C%2098000%20Monaco!5e0!3m2!1sen!2sjp!4v1725003040223!5m2!1sen!2sjp" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      <iframe class="map" data-index="3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.413557732816!2d7.42480737747306!3d43.74350817109815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cdc27cd2c6caff%3A0x8dbdfcba04a237f!2s25%20Bd%20du%20General%20Leclerc%2C%2006240%20Beausoleil%2C%20France!5e0!3m2!1sen!2sjp!4v1725003096260!5m2!1sen!2sjp" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      <iframe class="map" data-index="4" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2771.1439984541516!2d8.951593777545487!3d46.008318071088006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47842d8bc4c74c8b%3A0xdf3347b250827579!2sVia%20Serafino%20Balestra%207%2C%206900%20Lugano%2C%20Switzerland!5e0!3m2!1sen!2sjp!4v1725003144420!5m2!1sen!2sjp" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      <iframe class="map" data-index="5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.904415274843!2d104.362511575855!3d1.1772822309833422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31dbd5f97bb0fea1%3A0xcc1356fcbd567b86!2sPublic%20Lagoi%20Bay!5e0!3m2!1sen!2sjp!4v1725003239544!5m2!1sen!2sjp" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      <iframe class="map" data-index="6" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8033223788707!2d103.85601027675295!3d1.292417598695305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19a8f0c90bb1%3A0xd68bb4dc42f9f2f4!2sPan%20Pacific%20Singapore!5e0!3m2!1sen!2sjp!4v1725003317483!5m2!1sen!2sjp" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      <iframe class="map" data-index="7" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7916517580666!2d103.85803067675288!3d1.2998268986878436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19b1be74cdb7%3A0xdc01759f24971744!2sPARKROYAL%20on%20Beach%20Road!5e0!3m2!1sen!2sjp!4v1725003387215!5m2!1sen!2sjp" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      <iframe class="map" data-index="8" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.813782077765!2d103.84355407675284!3d1.2857407987020455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da190b152d690b%3A0xcceead8c67161ae3!2s3%20Upper%20Pickering%20St%2C%20Level%205%2C%20Singapore%20058289!5e0!3m2!1sen!2sjp!4v1725003433703!5m2!1sen!2sjp" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+
+  <script>
+    // Function to update the active map and address
+    function updateActiveMap(index) {
+      // Remove 'active' class from all maps
+      document.querySelectorAll('.map').forEach(map => {
+        map.classList.remove('active');
+      });
+      
+      // Remove 'active' class from all address items
+      document.querySelectorAll('.products-locations__item').forEach(item => {
+        item.classList.remove('active');
+      });
+      
+      // Add 'active' class to the selected map
+      document.querySelector('.map[data-index="' + index + '"]').classList.add('active');
+      
+      // Add 'active' class to the selected address item
+      document.querySelector('.products-locations__item[data-index="' + index + '"]').classList.add('active');
+    }
+
+    // Set the first map and address as active by default
+    updateActiveMap(0);
+
+    // Add click event listener to all address items
+    document.querySelectorAll('.products-locations__item').forEach(address => {
+      address.addEventListener('click', function() {
+        let index = this.getAttribute('data-index');
+        updateActiveMap(index);
+      });
+    });
+  </script>
+</section>
+
+<section class="products-guide">
+  <div class="products-guide__container page-width">
+    <img src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/shoppingguide.png?v=1725004328" />
+    <div>
+      <h2 class="products-guide__title">Shopping Guide</h2>
+      <p class="products-guide__subtitle">For essential payment and shipping information, please consult our comprehensive shopping guide.</p>
+      <a class="products-guide__link">shopping guide</a>
+    </div>
+  </div>
+</section>
+
+<section class="products-kkWay">
+  <div class="products-kkWay__container page-width">
+    <h2 class="products-kkWay__title">explore the kawasaki way</h2>
+    <p class="products-kkWay__text">Discover how The Kawasaki Way can make your life beautiful and healthy. Try our products and treatments.</p>
+    <div class="products-kkWay__cards">
+      <div class="products-kkWay__item">
+        <img src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/3b041cdc6a82323b4f3ff2aacb9be1bd.png?v=1725005473" />
+        <div class="products-kkWay__cardBottom">
+          <h3 class="products-kkWay__cardTitle">kawasaki way</h3>
+          <span class="products-kkWay__cardSubtitle">kazumasa kawasaki</span>
+        </div>
+      </div>
+      <div class="products-kkWay__item">
+        <img src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/4b09b60a99c28451d9171ba20c1b8841.png?v=1725006521" />
+        <div class="products-kkWay__cardBottom">
+          <h3 class="products-kkWay__cardTitle">le spa de</h3>
+          <span class="products-kkWay__cardSubtitle">kazumasa kawasaki</span>
+        </div>
+      </div>
+      <div class="products-kkWay__item">
+        <img src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/63aa50857e9f6a57ab233f676a2ca893.png?v=1725006617" />
+        <div class="products-kkWay__cardBottom">
+          <h3 class="products-kkWay__cardTitle">academy</h3>
+          <span class="products-kkWay__cardSubtitle">kazumasa kawasaki</span>
+        </div>
+      </div>
+    </div>
   </div>
 </section>

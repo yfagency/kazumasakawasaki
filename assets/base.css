@@ -3598,7 +3598,7 @@ body {
 }
 
 .header:not(.drawer-menu).page-width {
-  padding: 0;
+  padding: 0 20px;
   height: 90px;
 }
 
@@ -3660,8 +3660,8 @@ body {
     text-align: center;
   }
 
-  .header__heading {
-    margin-right: 40px;
+  .header__heading-link {
+    margin-right: 40px !important;
   }
 
   ul.menu-drawer__menu.has-submenu.list-menu {
