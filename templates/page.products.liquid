@@ -642,7 +642,7 @@
         </div>
       </div>
       <img class="products-hero__blueBg" src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/kk-products-hero-blue-background.svg?v=1724993611" />
-      <img class="products-hero__picture" src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/image_425.jpg?v=1724996566" />
+     {{ images['image_425.jpg'] | image_url: width: 1000 | image_tag: class: 'products-hero__picture' }} 
       </div>
       <div class="swiper-slide products-hero">
         <div class="products-hero__container page-width">
@@ -684,9 +684,9 @@
       prevEl: '.swiper-button-prev',
     },
     
-    // autoplay: {
-    //   delay: 5000,
-    // },
+    autoplay: {
+      delay: 5000,
+    },
   });
 </script>
 
@@ -699,7 +699,171 @@
   </div>
 </section>
 
-{% section 'home-products' %}
+<style>
+  .home-products h2 {
+    color: #000;
+    text-align: center;
+    font-family: "Trivia Serif Regular";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0 0 20px;
+  }
+
+  .home-products p {
+    color: #111;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+    margin: 0 auto;
+    width: 60%;
+  }
+
+  .home-products__container {
+    padding: 100px 0;
+  }
+
+  .home-products__cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 50px;
+  }
+
+  .home-products__item {
+    width: 100%;
+    text-align: center;
+  }
+
+  .home-products__item img {
+    width: 100%;
+    object-fit: contain;
+    aspect-ratio: 1/1;
+  }
+
+  .home-products__item h3 {
+    color: #111;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 120% */
+    margin: 0;
+    padding: 10px 20px 15px;
+  }
+
+  .home-products__line {
+    width: 96px;
+    height: 1px;
+    background: #000;
+    display: block;
+    margin: 0 auto 15px;
+  }
+
+  .home-products__item p {
+    color: #111;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 133.333% */
+  }
+
+  .home-products__item a {
+    text-decoration: none;
+  }
+
+  .home-products__button {
+    color: #FFF;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    display: flex;
+    padding: 15px 70px;
+    justify-content: center;
+    align-items: center;
+    background: #00004E;
+    margin: 50px auto 0;
+    align-self: auto;
+    position: relative;
+    width: fit-content;
+  }
+
+  .products-productLink {
+    color: #00004E;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 35px;
+    border-bottom: 2px solid #00004E;
+    padding-bottom: 5px;
+  }
+
+  /* Laptop */
+  @media screen and (max-width: 1024px) {
+    .home-products__cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .home-products__container {
+      padding: 50px 20px;
+    }
+  }
+
+  /* Mobile */
+  @media screen and (max-width: 600px) {
+    .home-products p {
+      width: 100%;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .home-products__cards {
+      gap: 20px;
+    }
+
+    .home-products__item h3 {
+      font-size: 16px;
+    }
+  }
+</style>
+
+<section id="products" class="home-products">
+  <div class="page-width home-products__container">
+    <h2>products</h2>
+    <p>Crafted for a Beautiful, Healthy Life. Our products are designed to seamlessly support your journey to beauty and wellness, enhancing your daily routine with natural elegance.</p>
+    <div class="home-products__cards">
+      {% for product in collections['frontpage'].products limit: 4 %}
+        <div class="home-products__item">
+          <a href="{{ product.url }}">
+            <img src="{{ product.featured_image | img_url: 'large' }}" alt="{{ product.title }}">
+            <h3>{{ product.title }}</h3>
+            <span class="home-products__line"></span>
+            <p>{{ product.price | money }}</p>
+            <a class="products-productLink" href="{{ product.url }}">BUY NOW</a>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
 
 <section class="products-locations">
   <h2 class="page-width">shop list</h2>
@@ -831,21 +995,21 @@
     <p class="products-kkWay__text">Discover how The Kawasaki Way can make your life beautiful and healthy. Try our products and treatments.</p>
     <div class="products-kkWay__cards">
       <a href="https://www.kazumasakawasaki.com/kawasaki-way" target="_blank" class="products-kkWay__item">
-        <img src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/3b041cdc6a82323b4f3ff2aacb9be1bd.png?v=1725005473" />
+        {{ images['3b041cdc6a82323b4f3ff2aacb9be1bd.png'] | image_url: width: 750 | image_tag }}
         <div class="products-kkWay__cardBottom">
           <h3 class="products-kkWay__cardTitle">kawasaki way</h3>
           <span class="products-kkWay__cardSubtitle">kazumasa kawasaki</span>
         </div>
       </a>
       <a href="https://www.kazumasakawasaki.jp/" target="_blank" class="products-kkWay__item">
-        <img src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/4b09b60a99c28451d9171ba20c1b8841.png?v=1725006521" />
-        <div class="products-kkWay__cardBottom">
+      {{ images['4b09b60a99c28451d9171ba20c1b8841.png'] | image_url: width: 750 | image_tag }}
+      <div class="products-kkWay__cardBottom">
           <h3 class="products-kkWay__cardTitle">le spa de</h3>
           <span class="products-kkWay__cardSubtitle">kazumasa kawasaki</span>
         </div>
       </a>
       <a href="https://www.kawasaki-academy.com/" target="_blank" class="products-kkWay__item">
-        <img src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/63aa50857e9f6a57ab233f676a2ca893.png?v=1725006617" />
+        {{ images['63aa50857e9f6a57ab233f676a2ca893.png'] | image_url: width: 750 | image_tag }}
         <div class="products-kkWay__cardBottom">
           <h3 class="products-kkWay__cardTitle">academy</h3>
           <span class="products-kkWay__cardSubtitle">kazumasa kawasaki</span>

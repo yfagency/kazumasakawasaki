@@ -3658,7 +3658,7 @@ a {
 }
 
 /* NAV (Mobile) */
-@media screen and (max-width: 600px) {
+@media (orientation: portrait) {
   .header--middle-left {
     grid-template-columns: auto 1fr auto;
     grid-template-areas: 'heading navigation icons';
