@@ -7,7 +7,7 @@
     text-align: center;
     color: #000;
     text-align: center;
-    font-family: "Bodoni Moda", serif;
+    font-family: "Libre Bodoni", serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 400;
@@ -34,7 +34,8 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px; /* 150% */
+    line-height: 24px;
+    /* 150% */
     margin: 20px 0 10px;
     text-transform: uppercase;
   }
@@ -45,7 +46,8 @@
     font-size: 22px;
     font-style: normal;
     font-weight: 500;
-    line-height: 140%; /* 30.8px */
+    line-height: 140%;
+    /* 30.8px */
     text-transform: uppercase;
     margin: 0;
   }
@@ -96,18 +98,18 @@
   }
 </style>
 
-<section class="home-news">
+<section style="display: none;" class="home-news">
   <div class="home-news__container page-width">
     <h2 class="home-news__title">events & news</h2>
     <div class="home-news__posts">
       {% for article in blogs.news.articles %}
-        <a href="{{ article.url }}" class="home-news__postItem">
-          <img width="100%" src="{{ article.image.src | img_url: 'large' }}" alt="{{ article.title }}">
-            {% for tag in article.tags %}
-              <p class="tag">{{ tag }}</p>
-            {% endfor %}
-          <h3>{{ article.title }}</h3>
-        </a>
+      <a href="{{ article.url }}" class="home-news__postItem">
+        <img width="100%" src="{{ article.image.src | img_url: 'large' }}" alt="{{ article.title }}">
+        {% for tag in article.tags %}
+        <p class="tag">{{ tag }}</p>
+        {% endfor %}
+        <h3>{{ article.title }}</h3>
+      </a>
       {% endfor %}
     </div>
     <div class="home-news__cta">
