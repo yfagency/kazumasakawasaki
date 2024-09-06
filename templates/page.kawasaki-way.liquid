@@ -1,5 +1,113 @@
-<section>
-  <div>
-    KK way
+<style>
+  /* NAV */
+  .header-wrapper {
+    position: absolute;
+    width: 100%;
+    background: none;
+    filter: invert(1);
+    border: none;
+  }
+
+  /* HERO */
+  .kkWay-hero {
+    background: url('https://cdn.shopify.com/s/files/1/0892/7651/4595/files/kawasaki_way_bg.svg?v=1725525516');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .kkWay-hero__container {
+    padding: 100px 20px;
+    text-align: center;
+  }
+
+  .kkWay-hero__subtitle {
+    color: #DF1616;
+    text-align: center;
+    text-shadow: 0px 4px 44px rgba(0, 0, 78, 0.25);
+    font-family: "Libre Bodoni", serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    /* 18px */
+    letter-spacing: 1.62px;
+    text-transform: uppercase;
+  }
+
+  .kkWay-hero__title {
+    color: #FFF;
+    font-family: "Libre Bodoni", serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 96px */
+    letter-spacing: 4.8px;
+    text-transform: uppercase;
+    margin: 0 0 20px;
+  }
+
+  .kkWay-hero__text {
+    color: #FFF;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 150% */
+    max-width: 812px;
+    margin: 0 auto;
+    text-wrap: pretty;
+  }
+
+  .kkWay-hero__link {
+    color: #FFF;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+    display: inline-block;
+    margin-top: 50px;
+  }
+
+  @media (orientation: portrait) {
+    .kkWay-hero {
+      height: 100%;
+      padding-top: 90px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .kkWay-hero__title {
+      font-size: 32px;
+    }
+  }
+</style>
+
+<section class="kkWay-hero">
+  <div class="kkWay-hero__container page-width">
+    <span class="kkWay-hero__subtitle">Treatment and Products</span>
+    <h1 class="kkWay-hero__title">the Kawasaki Way</h1>
+    <p class="kkWay-hero__text">Discover the transformative power of The Kawasaki Way, where your appearance and
+      internal health unite in harmonious balance. Our original products, crafted from meticulously selected Japanese
+      plant materials, offer a holistic daily care routine for your face and body. Experience the profound benefits of
+      The Kawasaki Way, a method that swiftly enhances both your inner well-being and outward appearance. Embrace
+      change, for when your appearance transforms, so does your inner self, and when your inner self evolves, your
+      beauty shines even brighter.</p>
+    <a class="kkWay-hero__link">learn more</a>
   </div>
 </section>

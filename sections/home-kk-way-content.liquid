@@ -1,6 +1,6 @@
 <style>
   .home-kkWayContent {
-    padding: 40px 0px 100px 0px;
+    padding: 200px 0px;
     background: #080545;
     color: #fff;
   }
@@ -19,7 +19,8 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px; /* 150% */
+    line-height: 24px;
+    /* 150% */
     max-width: 576px;
     margin: 0;
   }
@@ -37,17 +38,44 @@
     padding-bottom: 5px;
   }
 
-  /* Mobile */
-  @media screen and (max-width: 600px) {
+  .home-kkWayContent__logo {
+    width: 7.86vw;
+    max-width: 125.767px;
+    min-width: 48px;
+  }
+
+  .home-kkWayContent__title {
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 4px 22.1px rgba(0, 0, 0, 0.40);
+    font-family: "Libre Bodoni", serif;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 12.6px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  @media (orientation: portrait) {
     .home-kkWayContent {
-      padding: 50px 20px;
+      padding: 100px 20px;
+    }
+
+    .home-kkWayContent__title {
+      font-size: 32px;
     }
   }
 </style>
 
-<section class="home-kkWayContent">
+<section id="kkWaySection" class="home-kkWayContent">
   <div class="home-kkWayContent__container page-width">
-    <p>Transform your beauty and well-being with The Kawasaki Way. Experience the profound connection between your appearance and internal health, where change in one inspires change in the other.</p>
-    <a>learn more</a>
+    <img class="home-kkWayContent__logo"
+      src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/KAZU.svg?v=1724395912" />
+    <h1 class="home-kkWayContent__title">KAWASAKI way</h1>
+    <p>Transform your beauty and well-being with The Kawasaki Way. Experience the profound connection between your
+      appearance and internal health, where change in one inspires change in the other.</p>
+    <a href="/pages/products" target="_blank">About our products</a>
   </div>
 </section>

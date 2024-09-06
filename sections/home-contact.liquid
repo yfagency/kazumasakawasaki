@@ -115,6 +115,17 @@
     background: #ccc;
   }
 
+  .home-contact button {
+    border: thin solid #fff;
+    box-sizing: border-box;
+  }
+
+  .home-contact button:hover {
+    color: #fff;
+    background: none;
+    cursor: pointer;
+  }
+
   /* Mobile */
   @media screen and (max-width: 600px) {
     .home-contact__container {
@@ -127,7 +138,7 @@
   }
 </style>
 
-<section class="home-contact">
+<section id="contact_section" class="home-contact">
   <div class="home-contact__container page-width">
     <h2>contact us</h2>
     <form id="contact_form" method="post" action="/contact#postMsg" accept-charset="UTF-8" class="contact-form">
