@@ -3627,6 +3627,10 @@ nav.header__inline-menu {
   margin-left: auto;
 }
 
+.header__icon--cart {
+  display: none !important;
+}
+
 /* NAV (Laptop) */
 @media screen and (max-width: 1024px) {
   .header:not(.drawer-menu).page-width {

@@ -1,3 +1,26 @@
+<style>
+  .article-card__readMoreButton {
+    color: #00004E;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #00004E;
+  }
+
+  p.article-card__excerpt {
+    margin-bottom: 10px !important;
+  }
+
+  span.circle-divider {
+    display: block;
+    margin-bottom: 25px;
+  }
+</style>
+
 {% comment %}
   Renders an article card for a given blog with settings to either show the image or not.
 
@@ -116,13 +139,10 @@
         <div class="card__information">
           <h3 class="card__heading{% if show_excerpt %} h2{% endif %}">
             <a href="{{ article.url }}" class="full-unstyled-link">
-              {{ article.title | truncate: 50 | escape }}
+              {{ article.title | escape }}
             </a>
           </h3>
           <div class="article-card__info caption-with-letter-spacing h5">
-            {%- if show_date -%}
-              <span class="circle-divider">{{ article.published_at | time_tag: format: 'date' }}</span>
-            {%- endif -%}
             {%- if show_author -%}
               <span>{{ article.author }}</span>
             {%- endif -%}
@@ -131,11 +151,14 @@
             {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
               <p class="article-card__excerpt rte-width">
                 {%- if article.excerpt.size > 0 -%}
-                  {{ article.excerpt | strip_html | truncatewords: 30 }}
+                  {{ article.excerpt | strip_html | truncatewords: 20 }}
                 {%- else -%}
-                  {{ article.content | strip_html | truncatewords: 30 }}
+                  {{ article.content | strip_html | truncatewords: 20 }}
                 {%- endif -%}
               </p>
+            {%- endif -%}
+            {%- if show_date -%}
+              <span class="circle-divider">{{ article.published_at | time_tag: format: 'date' }}</span>
             {%- endif -%}
             <div class="article-card__footer">
               {%- if article.comments_count > 0 and blog.comments_enabled? -%}
@@ -143,6 +166,7 @@
               {%- endif -%}
             </div>
           {%- endif -%}
+          <a class="article-card__readMoreButton">read more</a>
         </div>
         {%- if show_badge -%}
           <div class="card__badge {{ settings.badge_position }}">
