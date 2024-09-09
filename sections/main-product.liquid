@@ -5,6 +5,34 @@
   .color-scheme-2 {
     --gradient-background: none !important;
   }
+
+  /* Hide Quantity, Add to cart, and Buy buttons */
+  .product-form__input,
+  .product-form__buttons {
+    display: none !important;
+  }
+
+  .related-products {
+    padding: 0 20px;
+  }
+
+  .mainProduct__preOrderButton {
+    color: #FFF;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    display: flex;
+    padding: 15px 70px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #00004E;
+    display: inline-flex;
+  }
 </style>
 
 <product-info
@@ -149,6 +177,9 @@
                     {{ form | payment_terms }}
                   {%- endform -%}
                 </div>
+
+                <a class="mainProduct__preOrderButton" href="/#contact_section">Pre Order Now</a>
+
               {%- when 'inventory' -%}
                 <p
                   class="product__inventory{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.inventory_management != 'shopify' %} visibility-hidden{% endif %}"
