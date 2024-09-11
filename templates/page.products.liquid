@@ -880,19 +880,7 @@
     <h2>kazumasa kawasaki collection</h2>
     <p>Crafted for a Beautiful, Healthy Life. Our products are designed to seamlessly support your journey to beauty and
       wellness, enhancing your daily routine with natural elegance.</p>
-    <div class="home-products__cards">
-      {% for product in collections['frontpage'].products limit: 4 %}
-      <div class="home-products__item">
-        <a href="{{ product.url }}">
-          <img src="{{ product.featured_image | img_url: 'large' }}" alt="{{ product.title }}">
-          <h3>{{ product.title }}</h3>
-          <span class="home-products__line"></span>
-          <p>{{ product.price | money }}</p>
-          <a class="products-productLink" href="{{ product.url }}">BUY NOW</a>
-        </a>
-      </div>
-      {% endfor %}
-    </div>
+      {% render 'products-row' %}
   </div>
 </section>
 
