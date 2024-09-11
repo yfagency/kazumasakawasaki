@@ -1,0 +1,112 @@
+<style>
+  .home-products__cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 50px;
+  }
+
+  .home-products__item {
+    width: 100%;
+    text-align: center;
+  }
+
+  .home-products__item img {
+    width: 100%;
+    object-fit: contain;
+    aspect-ratio: 1/1;
+    transition: .3s;
+  }
+
+  .home-products__item:hover img {
+    transform: scale(1.05);
+    transition: .3s;
+  }
+
+  .home-products__item a > div {
+    overflow: hidden;
+  }
+
+  .home-products__item h3 {
+    color: #111;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 120% */
+    margin: 0;
+    padding: 10px 20px 15px;
+  }
+
+  .home-products__line {
+    width: 96px;
+    height: 1px;
+    background: #000;
+    display: block;
+    margin: 0 auto 15px;
+  }
+
+  .home-products__item p {
+    color: #111;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 133.333% */
+  }
+
+  .home-products__item a {
+    text-decoration: none;
+  }
+
+  .products-productLink {
+    color: #00004E;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 35px;
+    border-bottom: 2px solid #00004E;
+    padding-bottom: 5px;
+  }
+
+  /* Laptop */
+  @media screen and (max-width: 1024px) {
+    .home-products__cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  /* Mobile */
+  @media screen and (max-width: 600px) {
+    .home-products__cards {
+      gap: 20px;
+    }
+
+    .home-products__item h3 {
+      font-size: 16px;
+    }
+  }
+</style>
+
+<div class="home-products__cards">
+  {% for product in collections['frontpage'].products limit: 4 %}
+    <div class="home-products__item">
+      <a href="{{ product.url }}">
+        <div>
+          <img src="{{ product.featured_image | img_url: 'large' }}" alt="{{ product.title }}">
+        </div>
+        <h3>{{ product.title }}</h3>
+        <span class="home-products__line"></span>
+        <p>{{ product.price | money }}</p>
+        <a class="products-productLink" href="{{ product.url }}">BUY NOW</a>
+      </a>
+    </div>
+  {% endfor %}
+</div>
