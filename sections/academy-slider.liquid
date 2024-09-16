@@ -1,0 +1,282 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<style>
+  .academySlider {
+    position: relative;
+    aspect-ratio: 2/1;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .academySlider__container {
+    padding: 100px 20px;
+    width: 100%;
+  }
+
+  .academySlider__container > div {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .academySlider__title {
+    color: #FFF;
+    font-family: "Bodoni Moda", serif;
+    font-size: 2.083vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+  }
+
+  .academySlider__text1 {
+    color: #FFF;
+    font-family: "Open Sans";
+    font-size: 1.042vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5; /* 150% */
+    margin: 0 0 50px;
+  }
+
+  .academySlider__profile {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+  }
+
+  .academySlider__profileImg {
+    width: 5.104vw;
+    border-radius: 100px;
+  }
+
+  .academySlider__profileTitle {
+    color: #FFF;
+    font-family: "Open Sans";
+    font-size: 0.938vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 25.2px */
+    text-transform: uppercase;
+    margin: 0 0 0.521vw;
+  }
+
+  .academySlider__profileText {
+    color: rgba(255, 255, 255, 0.80);
+    font-family: "Open Sans";
+    font-size: 0.833vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5; /* 150% */
+    margin: 0;
+  }
+
+  .academySlider__text2 {
+    color: #FFF;
+    font-family: "Open Sans";
+    font-size: 0.833vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5; /* 150% */
+    margin: 0.521vw 0 0.521vw;
+  }
+
+  .academySlider__text3 {
+    color: rgba(255, 255, 255, 0.80);
+    font-family: "Open Sans";
+    font-size: 0.833vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5; /* 150% */
+    margin: 0 0 2.604vw;
+  }
+
+  .academySlider__link {
+    color: #FFF;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    display: flex;
+    padding: 15px 70px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #FFF;
+  }
+
+  .academySlider__shapeBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 70%;
+    object-fit: cover;
+    object-position: right;
+  }
+
+  .academySlider__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -2;
+    height: 100%;
+    width: 60%;
+    object-fit: cover;
+    object-position: left;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper .swiper-slide {
+    height: auto;
+  }
+
+  .swiper-wrapper {
+    position: relative;
+  }
+
+  .academySliderMain {
+    position: relative;
+  }
+
+  .swiper-pagination2 {
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    z-index: 10;
+  }
+</style>
+
+<section class="academySliderMain">
+  <div class="swiper2">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <div class="academySlider swiper-slide">
+        <div class="academySlider__container page-width">
+          <div>
+            <h2 class="academySlider__title">Kart Exercises</h2>
+            <p class="academySlider__text1">Enjoy a fun, fat-burning workout with karting exercises designed by racing driver Naoki Yokomizo to relieve stress and have fun!</p>
+            <div class="academySlider__profile">
+              <img class="academySlider__profileImg" src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/academy-slider-profileimg-1.png?v=1726206648" />
+              <div>
+                <h3 class="academySlider__profileTitle">Naoki Yokomizo</h3>
+                <p class="academySlider__profileText">Racing Driver</p>
+              </div>
+            </div>
+            <p class="academySlider__text2">A celebrated racing driver with numerous titles in SUPER GT and international races, Naoki is also a fashion model and magazine contributor.</p>
+            <p class="academySlider__text3">Super GT Series Champion · Asian Le Mans Series Champion · Blancpain World Challenge Asia, First Japanese Winner · CEC Series Champion (First Japanese) · KL City GP First Champion</p>
+            <a class="academySlider__link">learn more</a>
+          </div>
+        </div>
+        <img class="academySlider__shapeBg" src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/academy-slider-bg.svg?v=1726206756" />
+        <img class="academySlider__img" src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/academy-slide-img1.jpg?v=1726207210" />
+      </div>
+
+      <div class="academySlider swiper-slide">
+        <div class="academySlider__container page-width">
+          <div>
+            <h2 class="academySlider__title">Makeup</h2>
+            <p class="academySlider__text1">Discover your unique beauty with expert makeup techniques that enhance facial expressions and create stunning looks.</p>
+            <div class="academySlider__profile">
+              <img class="academySlider__profileImg" src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/academy-slider-profileimg-2.jpg?v=1726210921" />
+              <div>
+                <h3 class="academySlider__profileTitle">Yoko Kinoshita</h3>
+                <p class="academySlider__profileText">Hair and Makeup Artist</p>
+              </div>
+            </div>
+            <p class="academySlider__text2">Renowned for her "natural and gorgeous" style, Yoko is a leading figure in the Japanese beauty world, offering makeup lessons to actresses, cultural icons, and corporate clients.</p>
+            <a class="academySlider__link">learn more</a>
+          </div>
+        </div>
+        <img class="academySlider__shapeBg" src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/academy-slider-bg.svg?v=1726206756" />
+        <img class="academySlider__img" src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/academy-slide-img2.jpg?v=1726210977" />
+      </div>
+
+      <div class="academySlider swiper-slide">
+        <div class="academySlider__container page-width">
+          <div>
+            <h2 class="academySlider__title">Training</h2>
+            <p class="academySlider__text1">Improve your metabolic efficiency with training lessons that teach functional movements for a more active lifestyle.</p>
+            <div class="academySlider__profile">
+              <img class="academySlider__profileImg" src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/academy-slider-profileimg-3.jpg?v=1726211112" />
+              <div>
+                <h3 class="academySlider__profileTitle">Shigehito Hara</h3>
+                <p class="academySlider__profileText">Trainer</p>
+              </div>
+            </div>
+            <p class="academySlider__text2">With a degree in advanced fitness techniques, Shigehito has 15 years of experience training diplomats, CEOs, and Hollywood stars, offering personalized fitness solutions.</p>
+            <a class="academySlider__link">learn more</a>
+          </div>
+        </div>
+        <img class="academySlider__shapeBg" src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/academy-slider-bg.svg?v=1726206756" />
+        <img class="academySlider__img" src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/academy-slide-img3.jpg?v=1726211296" />
+      </div>
+
+      <div class="academySlider swiper-slide">
+        <div class="academySlider__container page-width">
+          <div>
+            <h2 class="academySlider__title">Dance</h2>
+            <p class="academySlider__text1">Awaken your body and mind with joyful dance sessions that energize and rejuvenate, fostering physical and mental well-being.</p>
+            <div class="academySlider__profile">
+              <img class="academySlider__profileImg" src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/academy-slider-profileimg-4.png?v=1726211401" />
+              <div>
+                <h3 class="academySlider__profileTitle">Chika Uehara</h3>
+                <p class="academySlider__profileText">Dance Instructor</p>
+              </div>
+            </div>
+            <p class="academySlider__text2">A Tokyo Disneyland performer and KAZUMASA KAWASAKI ACADEMY graduate, Chika brings her expertise to life as an inspiring dance instructor.</p>
+            <a class="academySlider__link">learn more</a>
+          </div>
+        </div>
+        <img class="academySlider__shapeBg" src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/academy-slider-bg.svg?v=1726206756" />
+        <img class="academySlider__img" src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/academy-slide-img4.jpg?v=1726211456" />
+      </div>
+    
+      </div>
+<!-- If we need pagination -->
+<div class="swiper-pagination2"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</section>
+
+<script>
+  const swiper2 = new Swiper('.swiper2', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination2',
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    autoplay: {
+      delay: 5000,
+    },
+  });
+</script>

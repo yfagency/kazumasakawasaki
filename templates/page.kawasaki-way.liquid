@@ -256,7 +256,7 @@
   }
 
   .kkWay-story__container {
-    padding: 100px 0;
+    padding: 100px 0 600px;
   }
 
   .kkWay-story__title {
@@ -285,7 +285,7 @@
 
   .kkWay-story__timeline {
     position: relative;
-    margin-top: 600px;
+    margin: 600px 0;
   }
 
   .kkWay-story__mainLine {
@@ -297,31 +297,22 @@
     top: 50%;
   }
 
-  .kkWay-story__1998 {
+  .kkWay-story__card {
     position: absolute;
     bottom: 0;
     left: 174px;
     padding-bottom: 53px;
   }
 
-  .kkWay-story__1998_pipe {
-    width: 2px;
-    height: 123px;
-    background: rgba(0, 0, 78, 0.30);
-    display: block;
-    position: absolute;
-    bottom: 0;
-  }
-
-  .kkWay-story__1998_circle {
+  .kkWay-story__cardCircle {
     width: 30px;
     height: 30px;
     background: #1C1952;
     border-radius: 100px;
-    position: absolute;
-    bottom: 123px;
     left: -15px;
     display: block;
+    position: absolute;
+    top: 20px;
   }
 
   .kkWay-story__cardTitle {
@@ -331,10 +322,10 @@
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: 1;
     letter-spacing: 2.4px;
     text-transform: uppercase;
-    margin: 0 0 3px;
+    margin: 0 0 10px;
   }
 
   .kkWay-story__cardText {
@@ -346,8 +337,23 @@
     font-weight: 400;
     line-height: 24px; /* 171.429% */
     margin: 0;
-    width: 12.438vw;
-    max-width: 199px;
+    width: 100%;
+    max-width: 255px;
+    border: 2px solid red;
+  }
+
+  .kkWay-story__card.y2003 {
+    left: 391px;
+    top: 50px;
+  }
+
+  .kkWay-story__card.y2004 {
+    left: 756px;
+    bottom: 229px;
+  }
+
+  .kkWay-story__card.y2008 {
+    left: 816px;
   }
 
   /* EFFECT */
@@ -463,12 +469,31 @@
     <p class="kkWay-story__text">Kazumasa Kawasaki's innovative approach has been featured on TV, in magazines, and across media worldwide. He continues to expand his influence in diverse fields, embodying a commitment to holistic beauty and well-being.</p>
     <div class="kkWay-story__timeline">
       <span class="kkWay-story__mainLine"></span>
-      <div class="kkWay-story__1998">
-        <span class="kkWay-story__1998_pipe"></span>
-        <span class="kkWay-story__1998_circle"></span>
+
+      <div class="kkWay-story__card">
+        <span class="kkWay-story__cardCircle"></span>
         <h3 class="kkWay-story__cardTitle">1998</h3>
         <p class="kkWay-story__cardText">Began beauty and health activities inspired by personal health challenges.</p>
       </div>
+
+      <div class="kkWay-story__card y2003">
+        <span class="kkWay-story__cardCircle"></span>
+        <h3 class="kkWay-story__cardTitle">2003</h3>
+        <p class="kkWay-story__cardText">Presented products to Pope John Paul II, receiving gratitude from the Vatican. Invited to perform treatments for cardinals and scholars.</p>
+      </div>
+      
+      <div class="kkWay-story__card y2004">
+        <span class="kkWay-story__cardCircle"></span>
+        <h3 class="kkWay-story__cardTitle">2004</h3>
+        <p class="kkWay-story__cardText">Met with Italian Undersecretary of Foreign Affairs, featured in Italian media. Collaborated with the Italian Association of Friends of Parkinson's Disease.</p>
+      </div>
+
+      <div class="kkWay-story__card y2008">
+        <span class="kkWay-story__cardCircle"></span>
+        <h3 class="kkWay-story__cardTitle">2008</h3>
+        <p class="kkWay-story__cardText">Gained acclaim in New York, treated VIPs, and featured in international media.</p>
+      </div>
+
     </div>
   </div>
 </section>

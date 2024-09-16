@@ -1,3 +1,394 @@
-<section>
-  <div>ACADEMY</div>
+<style>
+  /* STORY */
+  .academy-story {
+    background: url('https://cdn.shopify.com/s/files/1/0892/7651/4595/files/bg_1.jpg?v=1724999756');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .academy-story__container {
+    padding: 100px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .academy-story__topText {
+    color: #000;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3.6px;
+    margin: 0 0 10px;
+  }
+
+  .academy-story__title {
+    color: #000;
+    text-align: center;
+    font-family: "Bodoni Moda", serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin: 0 0 40px;
+  }
+
+  .academy-story__subtitle {
+    color: #000;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 0 0 20px;
+  }
+
+  .academy-story__text {
+    color: #111;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+    margin: 0 auto 50px;
+    max-width: 812px;
+  }
+
+  .academy-story__link {
+    color: #FFF;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    display: flex;
+    padding: 15px 70px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #00004E;
+  }
+
+  /* COURSE */
+  .academy-course__container {
+    padding: 100px 20px;
+  }
+
+  .academy-course__topText {
+    display: block;
+    color: #DF1616;
+    text-align: center;
+    text-shadow: 0px 4px 44px rgba(0, 0, 78, 0.25);
+    font-family: "Bodoni Moda", serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 18px */
+    letter-spacing: 1.62px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .academy-course__title {
+    color: #111;
+    text-align: center;
+    font-family: "Bodoni Moda", serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 96px */
+    letter-spacing: 4.8px;
+    text-transform: uppercase;
+    margin: 0 0 20px;
+  }
+
+  .academy-course__text {
+    color: #111;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+    margin: 0 auto 70px;
+    max-width: 812px;
+  }
+
+  .academy-course__container > div {
+    display: grid;
+    grid-template-columns: 1.25fr .75fr;
+    gap: 5.052vw;
+    align-items: center;
+  }
+
+  .academy-course__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .academy-course__container img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .academy-course__rightTitle {
+    color: #000;
+    font-family: "Open Sans", sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 0 0 15px;
+  }
+
+  .academy-course__rightText {
+    color: #111;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    margin: 0 0 40px;
+  }
+
+  .academy-course__rightLink {
+    color: #FFF;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    display: flex;
+    padding: 15px 70px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #00004E;
+  }
+
+  .academy-course__bottomTitle {
+    color: #000;
+    text-align: center;
+    font-family: "Bodoni Moda", serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin: 100px 0 20px;
+  }
+
+  .academy-course__bottomText {
+    color: #111;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+    max-width: 899px;
+    margin: 0 auto;
+  }
+
+  /* FEATURES */
+  .academy-features {
+    background: #F6F6F6;
+  }
+
+  .academy-features__container {
+    padding: 100px 20px;
+    text-align: center;
+  }
+
+  .academy-features__title {
+    color: #000;
+    text-align: center;
+    font-family: "Bodoni Moda", serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4.8px;
+    text-transform: uppercase;
+    margin: 0 0 80px;
+  }
+
+  .academy-features__container > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .academy-features__container img {
+    width: 80%;
+    border-radius: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+
+  .academy-features__cardTitle {
+    color: #000;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 26.4px */
+    text-transform: uppercase;
+    margin: 20px 0 10px;
+  }
+
+  .academy-features__cardText {
+    color: #111;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    margin: 0;
+  }
+
+  .academy-features__button {
+    color: #FFF;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    padding: 15px 70px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #00004E;
+    margin-top: 80px;
+    display: inline-block;
+  }
+</style>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<section class="products-hero">
+  <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      {% render 'slide', slideTitle: 'Academy', slideSubtitle: 'Designing Your Life Like Art', slideText: 'The journey to beauty and health often requires effort, which many find challenging. Yet, when we discover a deep-seated "desire" within us, akin to the instinctual need for food or sleep, this journey becomes joyful and effortless. This is the inspiration behind The Kawasaki Way.', btnText: 'learn more', slideImg: 'https://cdn.shopify.com/s/files/1/0892/7651/4595/files/kz-diploma.png?v=1726201030' %}
+
+      {% render 'slide', slideTitle: 'Academy', slideSubtitle: 'Graduation Ceremony', slideText: 'Celebrate your achievement with a graduation ceremony in prestigious locations like Monaco and Italy, offering a memorable conclusion to your journey.', btnText: 'learn more', slideImg: 'https://cdn.shopify.com/s/files/1/0892/7651/4595/files/kk-academy-slide2.jpg?v=1726203031' %}
+
+      {% render 'slide', slideTitle: 'Academy', slideSubtitle: 'Visit Monaco', slideText: 'Celebrate your achievement with a graduation ceremony in prestigious locations like Monaco and Italy, offering a memorable conclusion to your journey.', btnText: 'learn more', slideImg: 'https://cdn.shopify.com/s/files/1/0892/7651/4595/files/kk-academy-slide3.jpg?v=1726203112' %}
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
 </section>
+
+<script>
+  const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    autoplay: {
+      delay: 5000,
+    },
+  });
+</script>
+
+<section class="academy-story">
+  <div class="academy-story__container page-width">
+    <h3 class="academy-story__topText">ACADEMY</h3>
+    <h2 class="academy-story__title">KAZUMASA KAWASAKI</h2>
+    <h3 class="academy-story__subtitle">Our story</h3>
+    <p class="academy-story__text">Established in 2013, Kawasaki Academy is dedicated to imparting the essential knowledge and skills for a fulfilling life. Our academy is a sanctuary where you can connect with your inner self, restore the natural balance between mind and body, and cultivate the dreams and goals that shape your future.
+    <br><br>
+    Our guiding philosophy is to teach the foundational principles necessary for living happily and healthily, empowering you to transform your life from the inside out.</p>
+    <a class="academy-story__link">learn more</a>
+  </div>
+</section>
+
+<section class="academy-course">
+  <div class="academy-course__container page-width">
+    <span class="academy-course__topText">Kazumasa Kawasaki</span>
+    <h2 class="academy-course__title">basic course</h2>
+    <p class="academy-course__text">Our basic course is ideal for those who want to care for loved ones, improve themselves, or acquire professional skills. Gain the knowledge and techniques of The Kawasaki Way across 30 immersive sessions.</p>
+    <div>
+      <img class="academy-course__img" src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/63aa50857e9f6a57ab233f676a2ca893.png?v=1725006617" />
+      <div class="academy-course__right">
+        <h3 class="academy-course__rightTitle">About the Course</h3>
+        <p class="academy-course__rightText">Whether you're learning as a hobby or aiming to become a professional, our courses offer a comprehensive education. During lectures, professional instructors demonstrate treatments using students as models. By the end of the course, you'll have mastered The Kawasaki Way through hands-on experience.</p>
+        <a class="academy-course__rightLink">learn more</a>
+      </div>
+    </div>
+    <h3 class="academy-course__bottomTitle">Special Programs</h3>
+    <p class="academy-course__bottomText">Our special programs feature experts from various fields who share insights into beauty and health. Enrich your experience with walking lessons by professional models, cultural and etiquette lectures, golf lessons, and more!</p>
+  </div>
+</section>
+
+{% section 'academy-slider' %}
+
+<section class="academy-features">
+  <div class="academy-features__container page-width">
+    <h2 class="academy-features__title">4 Reasons to Choose Us</h2>
+    <div>
+      <div class="academy-features__card">
+        <img class="academy-features__cardImg" src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/kk-academy-slide3.jpg?v=1726203112" />
+        <h3 class="academy-features__cardTitle">Graduation Ceremony</h3>
+        <p class="academy-features__cardText">Celebrate your achievement with a graduation ceremony in prestigious locations like Monaco and Italy, offering a memorable conclusion to your journey.</p>
+      </div>
+      <div class="academy-features__card">
+        <img class="academy-features__cardImg" src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/kk-home-academy.jpg?v=1724648347" />
+        <h3 class="academy-features__cardTitle">Special Programs</h3>
+        <p class="academy-features__cardText">Learn from industry professionals who offer unique insights into beauty and health, including model walking lessons, cultural etiquette, and more!</p>
+      </div>
+      <div class="academy-features__card">
+        <img class="academy-features__cardImg" src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/63aa50857e9f6a57ab233f676a2ca893.png?v=1725006617" />
+        <h3 class="academy-features__cardTitle">Back up</h3>
+        <p class="academy-features__cardText">Enjoy exclusive support and resources available only to students, enhancing your educational experience.</p>
+      </div>
+      <div class="academy-features__card">
+        <img class="academy-features__cardImg" src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/kz-diploma.png?v=1726201030" />
+        <h3 class="academy-features__cardTitle">Career</h3>
+        <p class="academy-features__cardText">Explore success stories of students who have achieved their dreams post-graduation, inspiring your own journey to success.</p>
+      </div>
+    </div>
+    <a class="academy-features__button">learn more</a>
+  </div>
+</section>
+
+{% section 'academy-reviews' %}
