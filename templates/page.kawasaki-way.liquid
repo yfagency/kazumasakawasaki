@@ -82,7 +82,7 @@
 
   @media (orientation: portrait) {
     .kkWay-hero {
-      height: 100%;
+      height: 100vh;
       padding-top: 90px;
       display: flex;
       flex-direction: column;
@@ -159,6 +159,18 @@
     align-items: center;
     gap: 10px;
     background: #00004E;
+  }
+
+  @media (max-width: 1024px) {
+    .kkWay-philo__container {
+      gap: 50px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .kkWay-philo__container {
+      flex-direction: column;
+    }
   }
 
   /* ABOUT */
@@ -250,13 +262,45 @@
     object-position: 0;
   }
 
+  @media (max-width: 1280px) {
+    .kkWay-about__text {
+      padding-right: 0;
+    }
+  }
+
   /* STORY */
   .kkWay-story {
     background: #F6F6F6;
   }
 
+  .kkWay-story__timelineBox::-webkit-scrollbar {
+    width: 12px;
+    height: 8px;
+  }
+
+  .kkWay-story__timelineBox::-webkit-scrollbar-button {
+    display: none; /* Remove the arrows */
+  }
+
+  .kkWay-story__timelineBox::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  .kkWay-story__timelineBox::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 6px;
+  }
+
+  .kkWay-story__timelineBox::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
   .kkWay-story__container {
-    padding: 100px 0 600px;
+    padding: 100px 0;
+  }
+
+  .kkWay-story__timelineBox {
+    overflow-x: scroll;
   }
 
   .kkWay-story__title {
@@ -285,7 +329,9 @@
 
   .kkWay-story__timeline {
     position: relative;
-    margin: 600px 0;
+    width: 3264px;
+    display: inline-block;
+    margin: 534px 0;
   }
 
   .kkWay-story__mainLine {
@@ -339,7 +385,6 @@
     margin: 0;
     width: 100%;
     max-width: 255px;
-    border: 2px solid red;
   }
 
   .kkWay-story__card.y2003 {
@@ -354,6 +399,245 @@
 
   .kkWay-story__card.y2008 {
     left: 816px;
+  }
+
+  .kkWay-story__card.y2009 {
+    left: 1206px;
+    top: 350px;
+  }
+
+  .kkWay-story__card.y2011 {
+    left: 1374px;
+    bottom: 50px;
+  }
+
+  .kkWay-story__card.y2013 {
+    left: 1468px;
+    top: 50px;
+  }
+  
+  .kkWay-story__card.y2014 {
+    left: 1904px;
+    bottom: 265px;
+  }
+  
+  .kkWay-story__card.y2015 {
+    left: 2031px;
+    top: 179px;
+  }
+  
+  .kkWay-story__card.y2016 {
+    left: 2228px;
+    bottom: 50px;
+  }
+  
+  .kkWay-story__card.y2017 {
+    left: 2489px;
+    top: 301px;
+  }
+  
+  .kkWay-story__card.y2018 {
+    left: 2597px;
+    top: 50px;
+  }
+  
+  .kkWay-story__card.y2019 {
+    left: 2853px;
+    bottom: 241px;
+  }
+  
+  .kkWay-story__card.y2020 {
+    left: 2968px;
+    bottom: 50px;
+  }
+
+  .kkWay-story__pipeY1998 {
+    width: 2px;
+    height: 120px;
+    background: rgba(0, 0, 78, 0.30);
+    display: block;
+    position: absolute;
+    left: 173px;
+    bottom: 0;
+    z-index: 0;
+  }
+  
+  .kkWay-story__pipeY2003 {
+    width: 2px;
+    height: 100px;
+    background: rgba(0, 0, 78, 0.30);
+    display: block;
+    position: absolute;
+    left: 390px;
+    top: 0;
+    z-index: 0;
+  }
+  
+  .kkWay-story__pipeY2004 {
+    width: 2px;
+    height: 420px;
+    background: rgba(0, 0, 78, 0.30);
+    display: block;
+    position: absolute;
+    left: 755px;
+    bottom: 0;
+    z-index: 0;
+  }
+  
+  .kkWay-story__pipeY2008 {
+    width: 2px;
+    height: 120px;
+    background: rgba(0, 0, 78, 0.30);
+    display: block;
+    position: absolute;
+    left: 815px;
+    bottom: 0;
+    z-index: 0;
+  }
+  
+  .kkWay-story__pipeY2009 {
+    width: 2px;
+    height: 390px;
+    background: rgba(0, 0, 78, 0.30);
+    display: block;
+    position: absolute;
+    left: 1205px;
+    top: 0;
+    z-index: 0;
+  }
+  
+  .kkWay-story__pipeY2011 {
+    width: 2px;
+    height: 220px;
+    background: rgba(0, 0, 78, 0.30);
+    display: block;
+    position: absolute;
+    left: 1373px;
+    bottom: 0;
+    z-index: 0;
+  }
+  
+  .kkWay-story__pipeY2013 {
+    width: 2px;
+    height: 100px;
+    background: rgba(0, 0, 78, 0.30);
+    display: block;
+    position: absolute;
+    left: 1467px;
+    top: 0;
+    z-index: 0;
+  }
+  
+  .kkWay-story__pipeY2014 {
+    width: 2px;
+    height: 400px;
+    background: rgba(0, 0, 78, 0.30);
+    display: block;
+    position: absolute;
+    left: 1903px;
+    bottom: 0;
+    z-index: 0;
+  }
+  
+  .kkWay-story__pipeY2015 {
+    width: 2px;
+    height: 200px;
+    background: rgba(0, 0, 78, 0.30);
+    display: block;
+    position: absolute;
+    left: 2030px;
+    top: 0;
+    z-index: 0;
+  }
+  
+  .kkWay-story__pipeY2016 {
+    width: 2px;
+    height: 190px;
+    background: rgba(0, 0, 78, 0.30);
+    display: block;
+    position: absolute;
+    left: 2227px;
+    bottom: 0;
+    z-index: 0;
+  }
+  
+  .kkWay-story__pipeY2017 {
+    width: 2px;
+    height: 325px;
+    background: rgba(0, 0, 78, 0.30);
+    display: block;
+    position: absolute;
+    left: 2488px;
+    top: 0;
+    z-index: 0;
+  }
+  
+  .kkWay-story__pipeY2018 {
+    width: 2px;
+    height: 85px;
+    background: rgba(0, 0, 78, 0.30);
+    display: block;
+    position: absolute;
+    left: 2596px;
+    top: 0;
+    z-index: 0;
+  }
+  
+  .kkWay-story__pipeY2019 {
+    width: 2px;
+    height: 455px;
+    background: rgba(0, 0, 78, 0.30);
+    display: block;
+    position: absolute;
+    left: 2852px;
+    bottom: 0;
+    z-index: 0;
+  }
+  
+  .kkWay-story__pipeY2020 {
+    width: 2px;
+    height: 155px;
+    background: rgba(0, 0, 78, 0.30);
+    display: block;
+    position: absolute;
+    left: 2967px;
+    bottom: 0;
+    z-index: 0;
+  }
+
+  @media (max-width: 1024px) {
+    .kkWay-story__timeline {
+      position: relative;
+      width: 100%;
+      display: inline-block;
+      margin: 0;
+    }
+
+    .kkWay-story__card {
+      display: block !important;
+      position: relative !important;
+      left: 0 !important;
+      bottom: 0 !important;
+      top: 0 !important;
+      right: 0 !important;
+      margin: 50px !important;
+    }
+
+    .kkWay-story__cardText {
+      max-width: 100%;
+    }
+
+    .kkWay-story__timelineBox {
+      overflow-x: hidden;
+    }
+
+    .kkWay-story__mainLine {
+      display: none;
+    }
+
+    [class^="kkWay-story__pipe"] {
+      display: none;
+    }
   }
 
   /* EFFECT */
@@ -467,7 +751,8 @@
   <div class="kkWay-story__container">
     <h2 class="kkWay-story__title">Story</h2>
     <p class="kkWay-story__text">Kazumasa Kawasaki's innovative approach has been featured on TV, in magazines, and across media worldwide. He continues to expand his influence in diverse fields, embodying a commitment to holistic beauty and well-being.</p>
-    <div class="kkWay-story__timeline">
+    <div class="kkWay-story__timelineBox">
+      <div class="kkWay-story__timeline">
       <span class="kkWay-story__mainLine"></span>
 
       <div class="kkWay-story__card">
@@ -494,6 +779,82 @@
         <p class="kkWay-story__cardText">Gained acclaim in New York, treated VIPs, and featured in international media.</p>
       </div>
 
+      <div class="kkWay-story__card y2009">
+        <span class="kkWay-story__cardCircle"></span>
+        <h3 class="kkWay-story__cardTitle">2009</h3>
+        <p class="kkWay-story__cardText">Performed treatments for celebrities, including Miss Universe USA executives, models, and Hollywood stars before the Oscars.</p>
+      </div>
+
+      <div class="kkWay-story__card y2011">
+        <span class="kkWay-story__cardCircle"></span>
+        <h3 class="kkWay-story__cardTitle">2011</h3>
+        <p class="kkWay-story__cardText">Performed treatments for celebrities, including Miss Universe USA executives, models, and Hollywood stars before the Oscars.</p>
+      </div>
+
+      <div class="kkWay-story__card y2013">
+        <span class="kkWay-story__cardCircle"></span>
+        <h3 class="kkWay-story__cardTitle">2013</h3>
+        <p class="kkWay-story__cardText">Published first book, "Become the Body You Want to Be! The Miraculous KAWASAKI Method." Opened KAWASAKI ACADEMY for treatment techniques.</p>
+      </div>
+      
+      <div class="kkWay-story__card y2014">
+        <span class="kkWay-story__cardCircle"></span>
+        <h3 class="kkWay-story__cardTitle">2014</h3>
+        <p class="kkWay-story__cardText">Trained therapists at Thermes Marins Monte Carlo, Royal Spa of Monaco.</p>
+      </div>
+      
+      <div class="kkWay-story__card y2015">
+        <span class="kkWay-story__cardCircle"></span>
+        <h3 class="kkWay-story__cardTitle">2015</h3>
+        <p class="kkWay-story__cardText">Opened Le Spa de KAZUMASA KAWASAKI in Tokyo.</p>
+      </div>
+      
+      <div class="kkWay-story__card y2016">
+        <span class="kkWay-story__cardCircle"></span>
+        <h3 class="kkWay-story__cardTitle">2016</h3>
+        <p class="kkWay-story__cardText">Introduced KAWASAKI WAY treatments at THE SANCHAYA, Indonesia.</p>
+      </div>
+      
+      <div class="kkWay-story__card y2017">
+        <span class="kkWay-story__cardCircle"></span>
+        <h3 class="kkWay-story__cardTitle">2017</h3>
+        <p class="kkWay-story__cardText">Launched products in Monaco, participated in global beauty events, and opened a flagship store in Tokyo.</p>
+      </div>
+      
+      <div class="kkWay-story__card y2018">
+        <span class="kkWay-story__cardCircle"></span>
+        <h3 class="kkWay-story__cardTitle">2018</h3>
+        <p class="kkWay-story__cardText">Presented at TOP MARQUES MONACO, introduced products in Singapore.</p>
+      </div>
+      
+      <div class="kkWay-story__card y2019">
+        <span class="kkWay-story__cardCircle"></span>
+        <h3 class="kkWay-story__cardTitle">2019</h3>
+        <p class="kkWay-story__cardText">Achieved historic product placement at Yacht Club Monaco, knighted for contributions to culture and society, established U.S. presence.</p>
+      </div>
+      
+      <div class="kkWay-story__card y2020">
+        <span class="kkWay-story__cardCircle"></span>
+        <h3 class="kkWay-story__cardTitle">2020</h3>
+        <p class="kkWay-story__cardText">Introduced methods at Yacht Club Monaco.</p>
+      </div>
+
+      <span class="kkWay-story__pipeY1998"></span>
+      <span class="kkWay-story__pipeY2003"></span>
+      <span class="kkWay-story__pipeY2004"></span>
+      <span class="kkWay-story__pipeY2008"></span>
+      <span class="kkWay-story__pipeY2009"></span>
+      <span class="kkWay-story__pipeY2011"></span>
+      <span class="kkWay-story__pipeY2013"></span>
+      <span class="kkWay-story__pipeY2014"></span>
+      <span class="kkWay-story__pipeY2015"></span>
+      <span class="kkWay-story__pipeY2016"></span>
+      <span class="kkWay-story__pipeY2017"></span>
+      <span class="kkWay-story__pipeY2018"></span>
+      <span class="kkWay-story__pipeY2019"></span>
+      <span class="kkWay-story__pipeY2020"></span>
+    </div>
+
     </div>
   </div>
 </section>
@@ -508,3 +869,50 @@
     </div>
   </div>
 </section>
+
+<style>
+  .kkWay-story__timelineBox {
+    overflow-x: auto;
+    cursor: grab;
+  }
+
+  .kkWay-story__timelineBox:active {
+    cursor: grabbing;
+  }
+
+  .kkWay-story__timelineBox *::selection {
+    background: none;
+  }
+</style>
+
+<script>
+  const scrollableSection = document.querySelector('.kkWay-story__timelineBox');
+  let isDown = false;
+  let startX;
+  let scrollLeft;
+
+  scrollableSection.addEventListener('mousedown', (e) => {
+    isDown = true;
+    scrollableSection.classList.add('active');
+    startX = e.pageX - scrollableSection.offsetLeft;
+    scrollLeft = scrollableSection.scrollLeft;
+  });
+
+  scrollableSection.addEventListener('mouseleave', () => {
+    isDown = false;
+    scrollableSection.classList.remove('active');
+  });
+
+  scrollableSection.addEventListener('mouseup', () => {
+    isDown = false;
+    scrollableSection.classList.remove('active');
+  });
+
+  scrollableSection.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - scrollableSection.offsetLeft;
+    const walk = (x - startX) * 2; // Adjust the multiplier for scroll speed
+    scrollableSection.scrollLeft = scrollLeft - walk;
+  });
+</script>

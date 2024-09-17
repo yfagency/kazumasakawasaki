@@ -74,7 +74,6 @@
     font-style: normal;
     font-weight: 700;
     line-height: 100%;
-    /* 18px */
     letter-spacing: 1.62px;
     text-transform: uppercase;
   }
@@ -89,24 +88,32 @@
     background: #1C1952;
   }
 
-  /* Laptop */
-  @media screen and (max-width: 1024px) {
+  @media (max-width: 1024px) {
     .products-kkWay__cardTitle {
-      font-size: 32px;
+      font-size: 2vw;
       line-height: 1.25;
     }
 
+    .products-kkWay__cardSubtitle {
+      font-size: 1vw;
+    }
+
     .products-kkWay__cards {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 40px;
+      gap: 10px;
     }
   }
 
-  /* Mobile */
-  @media screen and (max-width: 600px) {
+  @media (max-width: 600px) {
     .products-kkWay__container {
       padding: 50px 20px;
+    }
+
+    .products-kkWay__cardTitle {
+      font-size: 24px;
+    }
+
+    .products-kkWay__cardSubtitle {
+      font-size: 14px;
     }
 
     .products-kkWay__text {
