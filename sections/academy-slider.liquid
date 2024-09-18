@@ -95,7 +95,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 1.5; /* 150% */
-    margin: 0 0 2.604vw;
+    margin: 0;
   }
 
   .academySlider__link {
@@ -113,6 +113,7 @@
     align-items: center;
     gap: 10px;
     border: 1px solid #FFF;
+    margin-top: 2.604vw;
   }
 
   .academySlider__shapeBg {
@@ -142,8 +143,10 @@
     height: 100%;
   }
 
-  .swiper .swiper-slide {
-    height: auto;
+  .swiper-slide {
+    height: auto !important;
+    display: flex !important;
+    align-items: center !important;
   }
 
   .swiper-wrapper {
@@ -160,6 +163,133 @@
     margin: 0 auto;
     display: block;
     z-index: 10;
+  }
+
+  @media (max-width: 768px) {
+    .academySlider {
+      position: relative;
+      aspect-ratio: unset;
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
+
+    .academySlider__container {
+      padding: 50px 20px;
+      width: 100%;
+      background: #00004E;
+      box-sizing: border-box;
+    }
+
+    .academySlider__shapeBg {
+      display: none;
+    }
+
+    .academySlider__container > div {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .academySlider__img {
+      position: relative;
+      top: 0;
+      right: 0;
+      z-index: -2;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: left;
+    }
+
+    .academySlider__title {
+      color: #FFF;
+      font-family: "Bodoni Moda", serif;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      margin: 0 0 10px;
+    }
+
+    .academySlider__text1 {
+      color: #FFF;
+      font-family: "Open Sans";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.5; /* 150% */
+      margin: 0 0 20px;
+    }
+
+    .academySlider__profileImg {
+      width: 50px;
+      border-radius: 100px;
+    }
+
+    .academySlider__profileTitle {
+      color: #FFF;
+      font-family: "Open Sans";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 140%; /* 25.2px */
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    .academySlider__profileText {
+      color: rgba(255, 255, 255, 0.80);
+      font-family: "Open Sans";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.5; /* 150% */
+      margin: 0;
+    }
+
+    .academySlider__text2 {
+      color: #FFF;
+      font-family: "Open Sans";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.5; /* 150% */
+      margin: 10px 0 10px;
+    }
+
+    .academySlider__text3 {
+      color: rgba(255, 255, 255, 0.80);
+      font-family: "Open Sans";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.5; /* 150% */
+      margin: 0;
+    }
+
+    .academySlider__link {
+      color: #FFF;
+      text-align: center;
+      font-family: "Open Sans";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
+      display: flex;
+      padding: 15px 70px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border: 1px solid #FFF;
+      margin-top: 20px;
+    }
   }
 </style>
 
