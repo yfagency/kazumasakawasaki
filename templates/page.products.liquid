@@ -7,7 +7,6 @@
   .products-hero {
     position: relative;
     color: #fff;
-    aspect-ratio: 2/1;
     display: flex;
     align-items: center;
   }
@@ -21,6 +20,10 @@
     flex-direction: column;
     align-items: flex-start;
     max-width: 35%;
+  }
+
+  .products-hero__mobileBg {
+    display: none;
   }
 
   .products-hero__blueBg {
@@ -48,12 +51,11 @@
   .products-hero__subtitle {
     color: #DF1616;
     text-shadow: 0px 4px 44px rgba(0, 0, 78, 0.25);
-    font-family: "Bodoni Moda", serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 18px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 100%;
-    /* 18px */
     letter-spacing: 1.62px;
     text-transform: uppercase;
   }
@@ -65,7 +67,6 @@
     font-style: normal;
     font-weight: 400;
     line-height: 120%;
-    /* 72px */
     letter-spacing: 4.8px;
     text-transform: uppercase;
     margin: 5px 0 30px;
@@ -78,7 +79,6 @@
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
-    /* 150% */
     margin: 0 0 60px;
   }
 
@@ -109,63 +109,90 @@
     height: auto;
   }
 
-  /* Laptop */
-  @media screen and (max-width: 1599px) {
-    .swiper .swiper-slide {
-      display: flex;
-      flex-direction: column-reverse;
-    }
-
-    .products-hero {
-      aspect-ratio: unset;
-      display: flex;
-      align-items: center;
-    }
-
-    .products-hero__left {
-      display: flex;
-      align-items: flex-start;
-      max-width: 75%;
-    }
-
-    .products-hero__container {
-      background: rgb(0 0 78 / 80%);
-      height: 100%;
-      display: flex;
-      align-items: center;
-    }
-
-    .products-hero__picture {
-      width: 100%;
-      object-fit: cover;
-      height: 100%;
-      z-index: -2;
-      right: 0;
-      object-position: right;
-    }
-
-    .products-hero__blueBg {
-      display: none;
-    }
-  }
-
-  /* Mobile */
-  @media screen and (max-width: 600px) {
-    .products-hero__left {
-      max-width: 100%;
-    }
-
+  @media (max-width: 1280px) {
     .products-hero__title {
       font-size: 40px;
-    }
-
-    .products-hero__container {
-      padding: 50px 20px;
+      line-height: 120%;
+      margin: 5px 0 30px;
     }
 
     .products-hero__text {
       font-size: 16px;
       line-height: 1.5;
+      margin: 0 0 60px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .products-hero__blueBg {
+      width: 85%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .products-hero {
+      align-items: baseline;
+    }
+
+    .products-hero__subtitle {
+      font-family: "Open Sans", sans-serif;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 100%;
+      letter-spacing: 1.26px;
+      text-transform: uppercase;
+    }
+
+    .products-hero__text {
+      font-size: 14px;
+      line-height: 1.5;
+      margin: 0 0 60px;
+    }
+
+    .products-hero__container {
+      position: relative;
+      padding: 50px 20px 250px;
+    }
+
+    .products-hero__left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 100%;
+      text-align: center;
+    }
+
+    .products-hero__blueBg {
+      display: none;
+    }
+
+    .products-hero__mobileBg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      object-fit: cover;
+      object-position: bottom;
+    }
+
+    .products-hero__picture {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+      z-index: -2;
+      right: 0;
+    }
+
+    .swiper .swiper-slide:first-child .products-hero__picture,
+    .swiper .swiper-slide:last-child .products-hero__picture {
+      object-position: 80%;
     }
   }
 
@@ -349,8 +376,7 @@
     display: none;
   }
 
-  /* Mobile */
-  @media screen and (max-width: 600px) {
+  @media (max-width: 600px) {
     .products-locations__gMapLink {
       display: block;
       font-family: 'Open Sans', sans-serif;
@@ -442,7 +468,6 @@
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    /* 150% */
     margin: 0 0 50px;
     max-width: 400px;
     text-wrap: pretty;
@@ -519,6 +544,7 @@
               formula glides smoothly onto your skin, infusing it with moisture and resilience for a youthful glow.
               Suitable for all skin types, it elevates your skincare routine to an art form.</p>
             <a href="/products/kazumasa-kawasaki-essence" class="products-hero__button">View product</a>
+            <img class="products-hero__mobileBg" src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/products-hero-mobile-bg.svg?v=1726642585" />
           </div>
         </div>
         <img class="products-hero__blueBg"
@@ -537,6 +563,7 @@
               swift, transformative power of The Kawasaki Way, bringing balance and vitality to both your inner self and
               outward beauty.</p>
             <a href="/products/kazumasa-kawasaki-cream" class="products-hero__button">View product</a>
+            <img class="products-hero__mobileBg" src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/products-hero-mobile-bg.svg?v=1726642585" />
           </div>
         </div>
         <img class="products-hero__blueBg"
@@ -551,6 +578,7 @@
             <p class="products-hero__text">More than 80 plant materials are fermented and roasted to be used as everyday
               nutrition, beauty, and health support for people who like to enjoy an active life.</p>
             <a href="/products/kazumasa-kawasaki-plant-fermentation-food" class="products-hero__button">View product</a>
+            <img class="products-hero__mobileBg" src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/products-hero-mobile-bg.svg?v=1726642585" />
           </div>
         </div>
         <img class="products-hero__blueBg"
@@ -586,9 +614,9 @@
       prevEl: '.swiper-button-prev',
     },
 
-    autoplay: {
-      delay: 5000,
-    },
+    // autoplay: {
+    //   delay: 5000,
+    // },
   });
 </script>
 

@@ -13,6 +13,8 @@
     text-align: left;
     align-items: baseline;
     padding: 0 20px;
+    position: relative;
+    z-index: 2;
   }
 
   .home-kkWay__bgLeft {
@@ -21,14 +23,14 @@
     height: 100%;
     width: 100%;
     left: -13%;
-    z-index: -1;
+    z-index: 1;
   }
 
   .home-kkWay__imgRight {
     position: absolute;
     top: 0;
     right: -7%;
-    z-index: -2;
+    z-index: 0;
     object-fit: cover;
     object-position: right;
     height: 100%;
@@ -42,7 +44,6 @@
     font-style: normal;
     font-weight: 700;
     line-height: 100%;
-    /* 18px */
     letter-spacing: 1.62px;
     text-transform: uppercase;
   }
@@ -55,7 +56,6 @@
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
-    /* 70px */
     text-transform: uppercase;
     margin: 0;
   }
@@ -68,7 +68,6 @@
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
-    /* 28px */
     margin: 10px 0 60px;
   }
 
@@ -107,11 +106,12 @@
     }
 
     .home-kkWay__bgLeft {
-      display: none;
+      display: block;
     }
 
     .home-kkWay__imgRight {
       right: -29%;
+      z-index: 0;
     }
 
     .home-kkWay p {
