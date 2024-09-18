@@ -81,6 +81,26 @@
     text-align: center;
     margin-top: 50px;
   }
+
+  @media (max-width: 768px) {
+    .academy-reviews__slide > div {
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .swiper3 .swiper-slide {
+      height: auto;
+      width: 100%;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+
+    .swiper-pagination3 {
+      margin-top: 20px;
+    }
+  }
 </style>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -148,8 +168,8 @@
       prevEl: '.swiper-button-prev',
     },
 
-    autoplay: {
-      delay: 5000,
-    },
+    // autoplay: {
+    //   delay: 5000,
+    // },
   });
 </script>
