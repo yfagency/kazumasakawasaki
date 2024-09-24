@@ -67,6 +67,170 @@
       height: 50vh;
     }
   }
+
+  /* product-topSection */
+  .product-topSection {
+    background: linear-gradient(262deg, #00004E 4.08%, #322E7D 51.07%, #00004E 92.49%);
+    color: #fff;
+    position: relative;
+  }
+
+  .product.grid {
+    display: grid;
+    grid-template-columns: 1fr 31.25vw 1fr;
+    align-items: center;
+    padding: 50px 8.333vw 10.417vw;
+    gap: 2.604vw !important;
+  }
+
+  .product.grid > div:nth-child(2) {
+    max-width: 624px !important;
+  }
+
+  .product-topSection__subtitle {
+    color: #DF1616;
+    text-shadow: 0px 4px 44px rgba(0, 0, 78, 0.25);
+    font-family: "Bodoni Moda", serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 1.62px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .product-topSection__title {
+    color: #FFF;
+    font-family: "Bodoni Moda", serif;
+    font-size: clamp(24px, 3.125vw, 60px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 4.8px;
+    text-transform: uppercase;
+    margin: 0 0 20px;
+  }
+
+  .product-topSection .product__description {
+    color: #FFF;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  .product-topSection .product__description strong {
+    color: rgba(255, 255, 255, 0.80);
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1; /* 187.5% */
+  }
+
+  .product-topSection .price__regular .price-item--regular {
+    color: #FFF;
+    font-family: "Bodoni Moda", serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 142.857% */
+    letter-spacing: 1.68px;
+    text-transform: uppercase;
+    margin: 0 0 50px;
+  }
+
+  .product-topSection__button {
+    color: #FFF;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 15px 70px;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #FFF;
+  }
+
+  .product-topSection__description {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+
+  .product-topSection .product__description {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .product-topSection .share-button {
+    display: none;
+  }
+
+  .product-topSection .grid__item.product__media-wrapper {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  .product-topSection__rectangle {
+    height: 16.406vw;
+    background: rgba(0, 0, 78, 0.80);
+    width: 100%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+  }
+
+  .product-topSection .product.grid {
+    z-index: 1;
+    position: relative;
+  }
+
+  [id^="MainProduct-template"] {
+    padding: 0 !important;
+  }
+
+  button.slider-button.slider-button--next,
+  button.slider-button.slider-button--prev {
+    color: #fff !important;
+  }
+
+  .slider-button[disabled] .icon {
+    color: #fff !important;
+    opacity: .25;
+  }
+
+  @media (max-width: 1280px) {
+    .product.grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .product-topSection__rectangle {
+      display: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .product.grid {
+      grid-template-columns: 1fr;
+      align-items: center;
+      padding: 50px 20px;
+      gap: 40px !important;
+    }
+
+    .product.grid > div:first-child {
+      grid-row: 2;
+    }
+  }
 </style>
 
 <product-info
@@ -144,12 +308,59 @@
   {%- endif -%}
 
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
-  <div class="page-width">
+
+  <div class="product-topSection">
+
+  <span class="product-topSection__rectangle"></span>
+
     <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
+      <div>
+        <p class="product-topSection__subtitle">Kazumasa Kawasaki</p>
+        <h1 class="product-topSection__title">{{ product.title | escape }}</h1>
+
+          <div id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
+            {%- render 'price',
+              product: product,
+              use_variant: true,
+              show_badges: true,
+              price_class: 'price--large'
+            -%}
+          </div>
+          {%- if product.quantity_price_breaks_configured? -%}
+            <div class="volume-pricing-note" id="Volume-Note-{{ section.id }}">
+              <span>{{ 'products.product.volume_pricing.note' | t }}</span>
+            </div>
+          {%- endif -%}
+          {%- if cart.taxes_included or cart.duties_included or shop.shipping_policy.body != blank -%}
+            <div class="product__tax caption rte">
+              {%- if cart.duties_included and cart.taxes_included -%}
+                {{ 'products.product.duties_and_taxes_included' | t }}
+              {%- elsif cart.taxes_included -%}
+                {{ 'products.product.taxes_included' | t }}
+              {%- elsif cart.duties_included -%}
+                {{ 'products.product.duties_included' | t }}
+              {%- endif -%}
+              {%- if shop.shipping_policy.body != blank -%}
+                {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+              {%- endif -%}
+            </div>
+          {%- endif -%}
+          <div {{ block.shopify_attributes }}>
+            {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
+            {%- form 'product', product, id: product_form_installment_id, class: 'installment caption-large' -%}
+              <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+              {{ form | payment_terms }}
+            {%- endform -%}
+          </div>
+
+          <a class="product-topSection__button" href="/#contact_section">Pre Order Now</a>
+      </div>
+
       <div class="grid__item product__media-wrapper">
         {% render 'product-media-gallery', variant_images: variant_images %}
       </div>
-      <div class="product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+
+      <div class="product-topSection__description product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
         <section
           id="ProductInfo-{{ section.id }}"
           class="product__info-container{% if section.settings.enable_sticky_info %} product__column-sticky{% endif %}"
@@ -160,59 +371,6 @@
             {%- case block.type -%}
               {%- when '@app' -%}
                 {% render block %}
-              {%- when 'text' -%}
-                <p
-                  class="product__text inline-richtext{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
-                  {{ block.shopify_attributes }}
-                >
-                  {{- block.settings.text -}}
-                </p>
-              {%- when 'title' -%}
-                <div class="product__title" {{ block.shopify_attributes }}>
-                  <h1>{{ product.title | escape }}</h1>
-                  <a href="{{ product.url }}" class="product__title">
-                    <h2 class="h1">
-                      {{ product.title | escape }}
-                    </h2>
-                  </a>
-                </div>
-              {%- when 'price' -%}
-                <div id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
-                  {%- render 'price',
-                    product: product,
-                    use_variant: true,
-                    show_badges: true,
-                    price_class: 'price--large'
-                  -%}
-                </div>
-                {%- if product.quantity_price_breaks_configured? -%}
-                  <div class="volume-pricing-note" id="Volume-Note-{{ section.id }}">
-                    <span>{{ 'products.product.volume_pricing.note' | t }}</span>
-                  </div>
-                {%- endif -%}
-                {%- if cart.taxes_included or cart.duties_included or shop.shipping_policy.body != blank -%}
-                  <div class="product__tax caption rte">
-                    {%- if cart.duties_included and cart.taxes_included -%}
-                      {{ 'products.product.duties_and_taxes_included' | t }}
-                    {%- elsif cart.taxes_included -%}
-                      {{ 'products.product.taxes_included' | t }}
-                    {%- elsif cart.duties_included -%}
-                      {{ 'products.product.duties_included' | t }}
-                    {%- endif -%}
-                    {%- if shop.shipping_policy.body != blank -%}
-                      {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
-                    {%- endif -%}
-                  </div>
-                {%- endif -%}
-                <div {{ block.shopify_attributes }}>
-                  {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
-                  {%- form 'product', product, id: product_form_installment_id, class: 'installment caption-large' -%}
-                    <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-                    {{ form | payment_terms }}
-                  {%- endform -%}
-                </div>
-
-                <a class="mainProduct__preOrderButton" href="/#contact_section">Pre Order Now</a>
 
               {%- when 'inventory' -%}
                 <p

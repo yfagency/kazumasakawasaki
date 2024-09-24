@@ -1,4 +1,178 @@
 <style>
+  /* ########## HERO ########## */
+  .products-hero {
+    position: relative;
+    color: #fff;
+    display: flex;
+    align-items: center;
+  }
+
+  .products-hero__container {
+    padding: 100px 20px;
+    width: 100%;
+  }
+
+  .products-hero__left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 36.667vw;
+  }
+
+  .products-hero__blueBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: -1;
+    width: 100%;
+    object-fit: cover;
+    object-position: right;
+  }
+
+  .products-hero__picture {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    z-index: -2;
+    right: -5%;
+  }
+
+  .products-hero__subtitle {
+    color: #DF1616;
+    text-shadow: 0px 4px 44px rgba(0, 0, 78, 0.25);
+    font-family: "Bodoni Moda", serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 1.62px;
+    text-transform: uppercase;
+  }
+
+  .products-hero__title {
+    color: #FFF;
+    font-family: "Bodoni Moda", serif;
+    font-size: clamp(24px, 3.75vw, 60px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 4.8px;
+    text-transform: uppercase;
+    margin: 5px 0 30px;
+  }
+
+  .slideSubtitle {
+    color: #FFF;
+    font-family: "Open Sans", sans-serif;
+    font-size: clamp(16px, 1.375vw, 22px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    text-transform: uppercase;
+    margin: 0 0 30px;
+  }
+
+  .products-hero__text {
+    color: #FFF;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0 0 60px;
+  }
+
+  .products-hero__button {
+    color: #FFF;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    text-transform: uppercase;
+    display: flex;
+    padding: 15px 70px;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #FFF;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper .swiper-slide {
+    height: auto;
+    align-items: center;
+    display: flex;
+  }
+
+  /* Laptop */
+  @media screen and (max-width: 1599px) {
+    .swiper .swiper-slide {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    .products-hero {
+      aspect-ratio: unset;
+      display: flex;
+      align-items: center;
+    }
+
+    .products-hero__left {
+      display: flex;
+      align-items: flex-start;
+      max-width: 75%;
+    }
+
+    .products-hero__container {
+      background: rgb(0 0 78 / 80%);
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    .products-hero__picture {
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+      z-index: -2;
+      right: 0;
+      object-position: right;
+    }
+
+    .products-hero__blueBg {
+      display: none;
+    }
+  }
+
+  /* Mobile */
+  @media screen and (max-width: 600px) {
+    .products-hero__left {
+      max-width: 100%;
+    }
+
+    .products-hero__title {
+      font-size: 40px;
+    }
+
+    .products-hero__container {
+      padding: 50px 20px;
+    }
+
+    .products-hero__text {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  }
+
   /* STORY */
   .academy-story {
     background: url('https://cdn.shopify.com/s/files/1/0892/7651/4595/files/bg_1.jpg?v=1724999756');
@@ -254,6 +428,7 @@
     border-radius: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
+    margin: 0 auto;
   }
 
   .academy-features__cardTitle {
@@ -315,15 +490,19 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+{% assign image1_url = images['kz-diploma.png'] | image_url: width: '1000' %}
+{% assign image2_url = images['kk-academy-slide2.jpg'] | image_url: width: '1000' %}
+{% assign image3_url = images['kk-academy-slide3.jpg'] | image_url: width: '1000' %}
+
 <section class="products-hero">
   <div class="swiper">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
-      {% render 'slide', slideTitle: 'Academy', slideSubtitle: 'Designing Your Life Like Art', slideText: 'The journey to beauty and health often requires effort, which many find challenging. Yet, when we discover a deep-seated "desire" within us, akin to the instinctual need for food or sleep, this journey becomes joyful and effortless. This is the inspiration behind The Kawasaki Way.', btnText: 'learn more', slideImg: 'https://cdn.shopify.com/s/files/1/0892/7651/4595/files/kz-diploma.png?v=1726201030' %}
+      {% render 'slide', slideTitle: 'Academy', slideSubtitle: 'Designing Your Life Like Art', slideText: 'The journey to beauty and health often requires effort, which many find challenging. Yet, when we discover a deep-seated "desire" within us, akin to the instinctual need for food or sleep, this journey becomes joyful and effortless. This is the inspiration behind The Kawasaki Way.', btnText: 'learn more', slideImg: image1_url, btnLink: '/#contact_section' %}
 
-      {% render 'slide', slideTitle: 'Academy', slideSubtitle: 'Graduation Ceremony', slideText: 'Celebrate your achievement with a graduation ceremony in prestigious locations like Monaco and Italy, offering a memorable conclusion to your journey.', btnText: 'learn more', slideImg: 'https://cdn.shopify.com/s/files/1/0892/7651/4595/files/kk-academy-slide2.jpg?v=1726203031' %}
+      {% render 'slide', slideTitle: 'Academy', slideSubtitle: 'Graduation Ceremony', slideText: 'Celebrate your achievement with a graduation ceremony in prestigious locations like Monaco and Italy, offering a memorable conclusion to your journey.', btnText: 'learn more', slideImg: image2_url, btnLink: '/#contact_section' %}
 
-      {% render 'slide', slideTitle: 'Academy', slideSubtitle: 'Visit Monaco', slideText: 'Celebrate your achievement with a graduation ceremony in prestigious locations like Monaco and Italy, offering a memorable conclusion to your journey.', btnText: 'learn more', slideImg: 'https://cdn.shopify.com/s/files/1/0892/7651/4595/files/kk-academy-slide3.jpg?v=1726203112' %}
+      {% render 'slide', slideTitle: 'Academy', slideSubtitle: 'Visit Monaco', slideText: 'Celebrate your achievement with a graduation ceremony in prestigious locations like Monaco and Italy, offering a memorable conclusion to your journey.', btnText: 'learn more', slideImg: image3_url, btnLink: '/#contact_section' %}
     </div>
     <!-- If we need pagination -->
     <div class="swiper-pagination"></div>
@@ -365,7 +544,7 @@
     <p class="academy-story__text">Established in 2013, Kawasaki Academy is dedicated to imparting the essential knowledge and skills for a fulfilling life. Our academy is a sanctuary where you can connect with your inner self, restore the natural balance between mind and body, and cultivate the dreams and goals that shape your future.
     <br><br>
     Our guiding philosophy is to teach the foundational principles necessary for living happily and healthily, empowering you to transform your life from the inside out.</p>
-    <a class="academy-story__link">learn more</a>
+    <a class="academy-story__link" href="/#contact_section">learn more</a>
   </div>
 </section>
 
@@ -379,7 +558,7 @@
       <div class="academy-course__right">
         <h3 class="academy-course__rightTitle">About the Course</h3>
         <p class="academy-course__rightText">Whether you're learning as a hobby or aiming to become a professional, our courses offer a comprehensive education. During lectures, professional instructors demonstrate treatments using students as models. By the end of the course, you'll have mastered The Kawasaki Way through hands-on experience.</p>
-        <a class="academy-course__rightLink">learn more</a>
+        <a class="academy-course__rightLink" href="/#contact_section">learn more</a>
       </div>
     </div>
     <h3 class="academy-course__bottomTitle">Special Programs</h3>
@@ -394,7 +573,7 @@
     <h2 class="academy-features__title">4 Reasons to Choose Us</h2>
     <div>
       <div class="academy-features__card">
-        <img class="academy-features__cardImg" src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/kk-academy-slide3.jpg?v=1726203112" />
+        {{ images['kk-academy-slide3.jpg'] | image_url: width: 1000 | image_tag: class: 'academy-features__cardImg' }}
         <h3 class="academy-features__cardTitle">Graduation Ceremony</h3>
         <p class="academy-features__cardText">Celebrate your achievement with a graduation ceremony in prestigious locations like Monaco and Italy, offering a memorable conclusion to your journey.</p>
       </div>
@@ -414,8 +593,164 @@
         <p class="academy-features__cardText">Explore success stories of students who have achieved their dreams post-graduation, inspiring your own journey to success.</p>
       </div>
     </div>
-    <a class="academy-features__button">learn more</a>
+    <a class="academy-features__button" href="/#contact_section">learn more</a>
   </div>
 </section>
 
 {% section 'academy-reviews' %}
+
+{% comment %} FAQ {% endcomment %}
+<style>
+  .faq-accordion__title {
+    color: #111;
+    text-align: center;
+    font-family: "Bodoni Moda", serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 96px */
+    letter-spacing: 4.8px;
+    text-transform: uppercase;
+  }
+  
+  .faq-accordion__category {
+    margin: 60px 0 20px;
+    text-align: center;
+    font-family: "Bodoni Moda", serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .faq-accordion__container {
+    padding: 100px 20px;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .faq-accordion .collapse {
+    border-radius: 0;
+    background: #F6F6F6;
+    padding: 20px;
+  }
+
+  .faq-accordion .collapse:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .faq-accordion .collapse-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  
+  .faq-accordion .collapse h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 10px 0;
+  }
+  
+  .faq-accordion .collapse-content p {
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 20px;
+    color: #111;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+  }
+
+  .faq-accordion__topText {
+    color: #111;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 20px 0 75px;
+  }
+
+  .faq-accordion__button {
+    color: #FFF;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    display: inline-flex;
+    padding: 15px 70px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #00004E;
+    margin: 60px auto 0;
+    display: inline-block;
+  }
+  
+  @media (max-width: 600px) {
+    .faq-accordion__container {
+      padding: 50px 20px;
+    }
+
+    .faq-accordion__title {
+      font-size: 40px;
+    }
+
+    .faq-accordion__category {
+      margin: 40px 0 20px;
+      font-size: 32px;
+    }
+
+    .faq-accordion .collapse-title {
+      font-size: 18px;
+    }
+
+    .faq-accordion .collapse h3 {
+      font-size: 16px;
+    }
+    
+    .faq-accordion .collapse-content p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  }
+</style>
+
+<section class="faq-accordion">
+  <div class="faq-accordion__container page-width">
+    <h1 class="faq-accordion__title">FAQ</h1>
+    <p class="faq-accordion__topText">If you have questions, you can find the answers in the FAQ section.</p>
+
+    <div class="collapse collapse-plus">
+      <input type="radio" name="my-accordion-3" checked="checked" />
+      <div class="collapse-title text-xl font-medium">Kawasaki Academy: Frequently Asked Questions</div>
+      <div class="collapse-content">
+        <h3 class="faq-accordion__subtitle">What courses are offered at Kawasaki Academy?</h3>
+        <p>Kawasaki Academy offers a range of courses designed to enhance both personal and professional development. From basic courses in the Kawasaki Way to specialized programs in beauty, health, and well-being, our curriculum is tailored to meet diverse needs.</p>
+        <h3>Who can enroll in Kawasaki Academy?</h3>
+        <p>Our courses are open to everyone, whether you are pursuing personal growth, a hobby, or a professional career in beauty and wellness. We welcome individuals from all backgrounds who are passionate about improving their inner and outer beauty.</p>
+        <h3>How do I apply for a course at Kawasaki Academy?</h3>
+        <p>To apply, simply visit our website and fill out the online application form. We recommend applying early, as our courses tend to fill up quickly due to high demand.</p>
+        <h3>Are there any prerequisites for enrolling in the Academy's courses?</h3>
+        <p>There are no specific prerequisites for most of our courses. However, for advanced programs, prior experience in the field may be beneficial. Each course description on our website provides detailed information on any recommended experience or background.</p>
+      </div>
+    </div>
+
+    <a href="/pages/faq" class="faq-accordion__button">FAQ</a>
+
+  </div>
+</section>
+{% comment %} FAQ {% endcomment %}

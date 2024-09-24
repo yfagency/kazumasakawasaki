@@ -1,3 +1,43 @@
+<style>
+  .card__information__badge {
+    text-transform: uppercase;
+  }
+
+  .card__information,
+  .card-information {
+    text-align: center;
+  }
+
+  .card__heading {
+    color: #111;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 120% */
+    margin: 10px 0 15px;
+  }
+
+  .card__information__line {
+    width: 96px;
+    height: 1px;
+    background: #000;
+    display: block;
+    margin: 0 auto 15px;
+  }
+
+  .card-information > .price {
+    color: #111;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 133.333% */
+  }
+</style>
+
 {% comment %}
   Renders a product card
 
@@ -145,6 +185,7 @@
       </div>
       <div class="card__content">
         <div class="card__information">
+          <span class="card__information__badge">kazumasa kawasaki</span>
           <h3
             class="card__heading{% if card_product.featured_media or settings.card_style == 'standard' %} h5{% endif %}"
             {% if card_product.featured_media or settings.card_style == 'card' %}
@@ -160,6 +201,7 @@
               {{ card_product.title | escape }}
             </a>
           </h3>
+          <span class="card__information__line"></span>
           <div class="card-information">
             {%- if show_vendor -%}
               <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
