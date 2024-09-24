@@ -1,3 +1,36 @@
+<style>
+  .relatedProducts {
+    background: #F6F6F6;
+  }
+
+  .relatedProducts-title {
+    color: #000;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 0 0 30px;
+  }
+
+  .relatedProducts product-recommendations {
+    padding: 100px 20px !important;
+  }
+
+  .relatedProducts ul.grid.product-grid {
+    gap: 40px;
+    justify-content: center !important;
+  }
+
+  @media (max-width: 768px) {
+    .relatedProducts product-recommendations {
+      padding: 50px 20px !important;
+    }
+  }
+</style>
+
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'section-related-products.css' | asset_url | stylesheet_tag }}
@@ -20,7 +53,7 @@
   }
 {%- endstyle -%}
 
-<div class="color-{{ section.settings.color_scheme }} gradient">
+<div class="relatedProducts">
   <product-recommendations
     class="related-products page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
     data-url="{{ routes.product_recommendations_url }}?limit={{ section.settings.products_to_show }}"
@@ -28,7 +61,7 @@
     data-product-id="{{ product.id }}"
   >
     {% if recommendations.performed and recommendations.products_count > 0 %}
-      <h2 class="related-products__heading inline-richtext {{ section.settings.heading_size }}">
+      <h2 class="relatedProducts-title">
         {{ section.settings.heading }}
       </h2>
       <ul

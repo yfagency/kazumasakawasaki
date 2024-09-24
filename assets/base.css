@@ -3703,3 +3703,8 @@ nav.header__inline-menu {
 .product.grid {
   padding: 20px;
 }
+
+/* SEARCH BAR */
+.predictive-search {
+  background: #fff !important;
+}
