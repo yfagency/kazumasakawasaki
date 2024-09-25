@@ -1,1 +1,484 @@
-<h1>reviews - story</h1>
+<style>
+  .reviews-hero__container {
+    padding: 40px 20px 70px;
+  }
+
+  .reviews-hero__subtitle {
+    color: #DF1616;
+    text-align: center;
+    text-shadow: 0px 4px 44px rgba(0, 0, 78, 0.25);
+    font-family: "Bodoni Moda", serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 1.62px;
+    text-transform: uppercase;
+    display: block;
+  }
+
+  .reviews-hero__title {
+    color: #000;
+    text-align: center;
+    font-family: "Bodoni Moda", serif;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 5.6px;
+    text-transform: uppercase;
+    margin: 20px auto;
+    max-width: 1000px;
+  }
+
+  .reviews-hero__text {
+    color: #111;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0 0 70px;
+  }
+
+  .reviews-hero__profile {
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    max-width: 950px;
+    margin: 0 auto;
+    gap: 100px;
+    align-items: center;
+  }
+
+  .reviews-hero__profileImg {
+    border-radius: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+
+  .reviews-hero__profileTitle {
+    color: #000;
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin: 0 0 20px;
+  }
+
+  .reviews-hero__profileText {
+    color: #111;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  @media (max-width: 1024px) {
+    .reviews-hero__title {
+      font-size: 40px;
+      margin: 20px auto;
+      max-width: 1000px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .reviews-hero__title {
+      font-size: 32px;
+      margin: 20px auto;
+      max-width: 1000px;
+    }
+
+    .reviews-hero__profile {
+      display: grid;
+      grid-template-columns: 1fr;
+      max-width: 950px;
+      margin: 0 auto;
+      gap: 50px;
+      align-items: center;
+      text-align: center;
+    }
+
+    .reviews-hero__profileImg {
+      border-radius: 100%;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+  }
+</style>
+
+<section class="reviews-hero">
+  <div class="reviews-hero__container page-width">
+    <span class="reviews-hero__subtitle">KAWASAKI way</span>
+    <h1 class="reviews-hero__title">A Life Transformed by the Kawasaki Way</h1>
+    <p class="reviews-hero__text">Professional Racing Driver Naoki Yokomizo's Journey</p>
+    <div class="reviews-hero__profile">
+      {{ images['263771813807f8c61362eb4743c2594c.png'] | image_url: width: '400' | image_tag: class: 'reviews-hero__profileImg'}}
+      <div>
+        <h2 class="reviews-hero__profileTitle">Naoki Yokomizo</h2>
+        <p class="reviews-hero__profileText">Naoki Yokomizo, a professional race car driver born in Kanagawa Prefecture in 1980, began his illustrious career with a championship win in his debut race in 1993. Competing in the Formula Toyota race series, the All Japan Formula 3 Championship, and the Super GT series, he claimed victory in the GT300 Class championship in 2012.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% comment %} KK WAY ABOUT {% endcomment %}
+<style>
+  /* ABOUT */
+  .kkWay-about {
+    background: #F6F6F6;
+  }
+
+  .kkWay-about__container {
+    padding: 100px 20px;
+  }
+
+  .kkWay-about__title {
+    color: #000;
+    text-align: center;
+    font-family: "Bodoni Moda", serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+  }
+
+  .kkWay-about__subtitle {
+    color: #000;
+    text-align: center;
+    font-family: "Bodoni Moda", serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 153.846% */
+    letter-spacing: 1.56px;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 0 70px;
+  }
+
+  .kkWay-about__container > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 60px;
+  }
+
+  .kkWay-about__container > div:last-child {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 180px;
+    margin-top: 100px;
+    align-items: center;
+  }
+
+  .kkWay-about__left {
+    position: relative;
+  }
+
+  .kkWay-about__quoteImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .kkWay-about__quote {
+    color: #000;
+    font-family: "Bodoni Moda", serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 153.846% */
+    letter-spacing: 1.56px;
+    text-transform: uppercase;
+    padding-top: 78px;
+    display: block;
+    margin: 0 0 16px;
+  }
+
+  .kkWay-about__signature {
+    display: block;
+    margin: 0 0 40px auto;
+  }
+
+  .kkWay-about__text {
+    color: #111;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    max-width: 70%;
+  }
+
+  .kkWay-about__text2 {
+    color: #111;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .kkWay-about__img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    max-height: 938px;
+    object-position: 0;
+  }
+
+  .kkWay-about__img2 {
+    height: 100%;
+    aspect-ratio: unset;
+    object-fit: cover;
+    max-height: auto;
+    object-position: 0;
+  }
+
+  @media (max-width: 1280px) {
+    .kkWay-about__text {
+      padding-right: 0;
+    }
+
+    .kkWay-about__text {
+      max-width: 100%;
+    }
+
+    .kkWay-about__container > div:last-child {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 100px;
+      margin-top: 100px;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .kkWay-about__container > div {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+      margin-top: 60px;
+    }
+
+    .kkWay-about__container > div:last-child {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 50px;
+      margin-top: 50px;
+      align-items: center;
+    }
+
+    .kkWay-about__img {
+      width: 100%;
+      max-width: 100%;
+      height: 100%;
+      max-height: 100%;
+    }
+  }
+</style>
+
+<section class="kkWay-about">
+  <div class="kkWay-about__container page-width">
+    <h2 class="kkWay-about__title">story</h2>
+    <div>
+      <div class="kkWay-about__left">
+        <img class="kkWay-about__quoteImg" src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/quote-icon.svg?v=1726193824" />
+        <span class="kkWay-about__quote">If we work together, let's aim to compete in the world's best races. Let's win the GT300 Class championship.</span>
+        <img class="kkWay-about__signature" src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/KKsign1_1.svg?v=1726193981" />
+        <p class="kkWay-about__text">When I first met Mr. Kawasaki, I was without a team, having spent a year off the track. For a race car driver, a year without racing often spells retirement. Returning to racing is challenging, and outperforming past achievements is even harder. However, Mr. Kawasaki inspired me, saying, “If we work together, let's aim to compete in the world's best races. Let's win the GT300 Class championship.” With this ambitious goal, he began my treatments.
+        <br><br>
+        The impact of Mr. Kawasaki's treatments varies for each individual, but for me, they brought two significant changes that drove my success in the series championship.</p>
+      </div>
+      {{ images['reviews-story-img-1.png'] | image_url: width: 1000 | image_tag: class: 'kkWay-about__img' }}
+    </div>
+    <div>
+      {{ images['kk-way-effect.jpg'] | image_url: width: 1000 |  image_tag: class: 'kkWay-about__img2' }}
+      <p class="kkWay-about__text2">The first change was enhanced concentration. Inside a race car, summer temperatures can reach 70 to 80 degrees Celsius, and drivers wear helmets and flame-retardant suits. These extreme conditions can lead to exhaustion, causing up to a 5kg weight loss after a race. Even a brief lapse in focus can result in a crash and diminished performance. Thanks to Mr. Kawasaki's treatments, my concentration now endures throughout a 90-minute race, allowing me to unleash my full potential.
+      <br><br>
+      The second transformation was in my field of vision. Clear vision is crucial for racers, and Mr. Kawasaki's treatments sharpened and expanded my vision. Remarkably, I achieved identical lap times at night as during the day—a feat unusual in racing due to typically poorer nighttime visibility.
+      <br><br>
+      Finally, though it may seem unbelievable, Mr. Kawasaki's treatments even reduce the size of my head.
+      <br><br>
+      As a race car driver, I wear a helmet on every track outing. After treatments from Mr. Kawasaki, my helmet fits loosely, requiring extra foam padding to ensure a snug fit.
+      <br><br>
+      Today, I have no negative feelings about myself. Thanks to Mr. Kawasaki, my motivation is high, and I'm a positive thinker, feeling that nothing is impossible. I am committed to working with Mr. Kawasaki, aspiring to become a world champion.</p>
+    </div>
+  </div>
+</section>
+{% comment %} KK WAY ABOUT {% endcomment %}
+
+{% section 'home-kawasaki-way' %}
+
+{% comment %} KK WAY {% endcomment %}
+<style>
+  /* ########## KK WAY ########## */
+  .products-kkWay__container {
+    text-align: center;
+    padding: 100px 20px;
+  }
+
+  .products-kkWay__title {
+    color: #000;
+    text-align: center;
+    font-family: "Bodoni Moda", serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0 0 20px;
+  }
+
+  .products-kkWay__text {
+    color: #111;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 150% */
+    margin: 0 auto 60px;
+    max-width: 700px;
+  }
+
+  .products-kkWay__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+  }
+
+  .products-kkWay__item {
+    aspect-ratio: 5/6;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .products-kkWay__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .products-kkWay__cardTitle {
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 4px 44px rgba(0, 0, 78, 0.25);
+    font-family: "Bodoni Moda", serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    margin: 0 0 5px;
+  }
+
+  .products-kkWay__cardSubtitle {
+    color: #DF1616;
+    text-align: center;
+    text-shadow: 0px 4px 44px rgba(0, 0, 78, 0.25);
+    font-family: "Trivia Serif Regular";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 1.62px;
+    text-transform: uppercase;
+  }
+
+  .products-kkWay__cardBottom {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    background: #1C1952;
+  }
+
+  @media (max-width: 1024px) {
+    .products-kkWay__cardTitle {
+      font-size: 2vw;
+      line-height: 1.25;
+    }
+
+    .products-kkWay__cardSubtitle {
+      font-size: 1vw;
+    }
+
+    .products-kkWay__cards {
+      gap: 10px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .products-kkWay__container {
+      padding: 50px 20px;
+    }
+
+    .products-kkWay__cardTitle {
+      font-size: 24px;
+    }
+
+    .products-kkWay__cardSubtitle {
+      font-size: 14px;
+    }
+
+    .products-kkWay__text {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .products-kkWay__cards {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+</style>
+
+<section class="products-kkWay"></section>
+  <div class="products-kkWay__container page-width">
+    <h2 class="products-kkWay__title">explore the kawasaki way</h2>
+    <p class="products-kkWay__text">Discover how The Kawasaki Way can make your life beautiful and healthy. Try our
+      products and treatments.</p>
+    <div class="products-kkWay__cards">
+      <a href="/pages/products" class="products-kkWay__item">
+        {{ images['0864fe80dc0cfddd09fc6ec53621482b.png'] | image_url: width: 750 | image_tag }}
+        <div class="products-kkWay__cardBottom">
+          <h3 class="products-kkWay__cardTitle">Products</h3>
+          <span class="products-kkWay__cardSubtitle">kazumasa kawasaki</span>
+        </div>
+      </a>
+      <a href="/pages/spa" class="products-kkWay__item">
+        {{ images['4b09b60a99c28451d9171ba20c1b8841.png'] | image_url: width: 750 | image_tag }}
+        <div class="products-kkWay__cardBottom">
+          <h3 class="products-kkWay__cardTitle">le spa de</h3>
+          <span class="products-kkWay__cardSubtitle">kazumasa kawasaki</span>
+        </div>
+      </a>
+      <a href="/pages/academy" class="products-kkWay__item">
+        {{ images['63aa50857e9f6a57ab233f676a2ca893.png'] | image_url: width: 750 | image_tag }}
+        <div class="products-kkWay__cardBottom">
+          <h3 class="products-kkWay__cardTitle">academy</h3>
+          <span class="products-kkWay__cardSubtitle">kazumasa kawasaki</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+{% comment %} KK WAY {% endcomment %}
