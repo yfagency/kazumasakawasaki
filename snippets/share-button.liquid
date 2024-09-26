@@ -1,3 +1,31 @@
+<style>
+  .share-button__button {
+    color: #FFF;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    display: flex;
+    padding: 15px 70px;
+    justify-content: center;
+    align-items: center;
+    background: #00004E;
+  }
+
+  .share-button__button:hover {
+    text-decoration: none;
+  }
+
+  .share-button__button .icon-share {
+    margin: 0;
+    height: auto;
+    min-width: 16px;
+  }
+</style>
+
 {% comment %}
   Renders share button.
   Accepts:
@@ -14,7 +42,7 @@
 
 <share-button id="Share-{{ section.id }}" class="share-button quick-add-hidden" {{ block.shopify_attributes }}>
   <button class="share-button__button hidden">
-    {% render 'icon-share' %}
+    {% render 'icon-share' %}&nbsp;&nbsp;&nbsp;Share
     {{ block.settings.share_label | escape }}
   </button>
   <details id="Details-{{ block.id }}-{{ section.id }}">

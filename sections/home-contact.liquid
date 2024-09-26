@@ -1,4 +1,8 @@
 <style>
+  .h-captcha {
+    display: none !important;
+  }
+
   .home-contact {
     border-bottom: 2px solid rgba(255, 255, 255, 0.50);
     background: #00004E;
@@ -158,18 +162,18 @@
 
 <script>
   // Get the query string from the URL
-const queryString = window.location.search;
+  const queryString = window.location.search;
 
-// Create a URLSearchParams object
-const params = new URLSearchParams(queryString);
+  // Create a URLSearchParams object
+  const params = new URLSearchParams(queryString);
 
-// Check if 'contact_posted' parameter is 'true'
-if (params.get('contact_posted') === 'true') {
-  // The parameter is present and equals 'true'
-  document.getElementById("postMsg").style.display = "block";
-  document.getElementById("contact_form").style.display = "none";
-} else {
-  // The parameter is not present or not 'true'
-  console.log('Contact not posted.');
-}
+  // Check if 'contact_posted' parameter is 'true'
+  if (params.get('contact_posted') === 'true') {
+    // The parameter is present and equals 'true'
+    document.getElementById("postMsg").style.display = "block";
+    document.getElementById("contact_form").style.display = "none";
+  } else {
+    // The parameter is not present or not 'true'
+    console.log('Contact not posted.');
+  }
 </script>
