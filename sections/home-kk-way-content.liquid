@@ -1,6 +1,10 @@
 <style>
   .home-kkWayContent {
-    padding: 200px 0px;
+    position: relative;
+  }
+
+  .home-kkWayContent {
+    padding: 100px 0px;
     background: #080545;
     color: #fff;
   }
@@ -20,9 +24,9 @@
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    /* 150% */
     max-width: 576px;
     margin: 0;
+    z-index: 1;
   }
 
   .home-kkWayContent a {
@@ -36,12 +40,14 @@
     text-transform: uppercase;
     border-bottom: 2px solid #fff;
     padding-bottom: 5px;
+    z-index: 1;
   }
 
   .home-kkWayContent__logo {
-    width: 7.86vw;
+    width: 81px;
     max-width: 125.767px;
     min-width: 48px;
+    z-index: 1;
   }
 
   .home-kkWayContent__title {
@@ -49,13 +55,36 @@
     text-align: center;
     text-shadow: 0px 4px 22.1px rgba(0, 0, 0, 0.40);
     font-family: "Bodoni Moda", serif;
-    font-size: 70px;
+    font-size: 50px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 12.6px;
     text-transform: uppercase;
     margin: 0;
+    z-index: 1;
+  }
+
+  .home-kkWayContent__shape1 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+  }
+
+  .home-kkWayContent__shape2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+  }
+
+  .home-kkWayContent__shape3 {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    z-index: 0;
+    top: 0;
   }
 
   @media (orientation: portrait) {
@@ -76,6 +105,9 @@
     <h1 class="home-kkWayContent__title">KAWASAKI way</h1>
     <p>Transform your beauty and well-being with The Kawasaki Way. Experience the profound connection between your
       appearance and internal health, where change in one inspires change in the other.</p>
-    <a href="/pages/products">Learn More</a>
+    <a href="/pages/kawasaki-way">Learn More</a>
+    <img class="home-kkWayContent__shape1" src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/Vector_6kk-way-content.svg?v=1727418737" >
+    <img class="home-kkWayContent__shape2" src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/Vector_5kk-way-content.svg?v=1727418737" >
+    <img class="home-kkWayContent__shape3" src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/Vector_4kk-way-content.svg?v=1727418737" >
   </div>
 </section>
