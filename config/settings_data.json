@@ -9,8 +9,9 @@
 */
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/KAZUMASA_KAWASAKI_LOGO_WEB_335x30-01_1.svg",
+    "logo": "shopify://shop_images/KAZUMASA_KAWASAKI_LOGO_WEB_335x30-01_1.svg",
     "logo_width": 300,
+    "favicon": "shopify://shop_images/KAZU_1.svg",
     "type_header_font": "assistant_n4",
     "heading_scale": 100,
     "type_body_font": "assistant_n4",
@@ -107,7 +108,7 @@
     "sale_badge_color_scheme": "scheme-4",
     "sold_out_badge_color_scheme": "scheme-3",
     "brand_headline": "",
-    "brand_description": "<p><\/p>",
+    "brand_description": "<p></p>",
     "brand_image_width": 100,
     "social_facebook_link": "",
     "social_instagram_link": "",
@@ -358,7 +359,7 @@
       "sale_badge_color_scheme": "scheme-4",
       "sold_out_badge_color_scheme": "scheme-3",
       "brand_headline": "",
-      "brand_description": "<p><\/p>",
+      "brand_description": "<p></p>",
       "brand_image_width": 100,
       "social_twitter_link": "",
       "social_facebook_link": "",
