@@ -534,9 +534,9 @@
       <div class="swiper-slide products-hero">
         <div class="products-hero__container page-width">
           <div class="products-hero__left">
-            <span class="products-hero__subtitle">Kazumasa Kawasaki</span>
-            <h1 class="products-hero__title">Essence</h1>
-            <p class="products-hero__text">Immerse your skin in the luxurious pleasure of our Beauty Essence. This
+            <span class="products-hero__subtitle products-hero__anim1">Kazumasa Kawasaki</span>
+            <h1 class="products-hero__title products-hero__anim1">Essence</h1>
+            <p class="products-hero__text products-hero__anim1">Immerse your skin in the luxurious pleasure of our Beauty Essence. This
               formula glides smoothly onto your skin, infusing it with moisture and resilience for a youthful glow.
               Suitable for all skin types, it elevates your skincare routine to an art form.</p>
             <a href="/products/kazumasa-kawasaki-essence" class="products-hero__button">View product</a>
@@ -618,9 +618,9 @@
 
 <section class="products-intro">
   <div class="products-intro__container page-width">
-    <span class="products-intro__subtitle">Kazumasa Kawasaki</span>
-    <h2 class="products-intro__title">Original Products</h2>
-    <p class="products-intro__text">At the heart of The Kawasaki Way lies the belief that your appearance and internal
+    <span class="products-intro__subtitle products-intro__anim1">Kazumasa Kawasaki</span>
+    <h2 class="products-intro__title products-intro__anim1">Original Products</h2>
+    <p class="products-intro__text products-intro__anim1">At the heart of The Kawasaki Way lies the belief that your appearance and internal
       health are intimately connected. Our original products, crafted from meticulously selected Japanese plant
       materials, provide a holistic daily care routine for your face and body. Experience the swift, transformative
       power of The Kawasaki Way, bringing balance and vitality to both your inner self and outward beauty.</p>
@@ -779,17 +779,17 @@
 
 <section id="products" class="home-products">
   <div class="page-width home-products__container">
-    <h2>kazumasa kawasaki collection</h2>
-    <p>Crafted for a Beautiful, Healthy Life. Our products are designed to seamlessly support your journey to beauty and
+    <h2 class="home-products__anim1">kazumasa kawasaki collection</h2>
+    <p class="home-products__anim1">Crafted for a Beautiful, Healthy Life. Our products are designed to seamlessly support your journey to beauty and
       wellness, enhancing your daily routine with natural elegance.</p>
       {% render 'products-row' %}
   </div>
 </section>
 
 <section class="products-locations">
-  <h2 class="page-width">shop list</h2>
+  <h2 class="page-width products-locations__anim1">shop list</h2>
   <div class="products-locations__container page-width">
-    <div class="products-locations__list">
+    <div class="products-locations__list products-locations__anim1">
       <div class="products-locations__item" data-index="0">
         <h3 class="products-locations__itemTitle">ALTIS OFFICIAL SHOP (JAPAN)</h3>
         <p class="products-locations__itemAddress">B1 Portofino 3-15-5 Kita-Aoyama, Minato-ku, Tokyo, Japan</p>
@@ -858,7 +858,7 @@
         <span class="products-locations__line"></span>
       </div>
     </div>
-    <div class="products-locations__map">
+    <div class="products-locations__map products-locations__anim1">
       <iframe class="map" data-index="0"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.5119277418194!2d139.70682797723944!3d35.66439487259285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d716aa7febd%3A0xa037ea1b4d4db1c2!2sPortofino%20Aoyama!5e0!3m2!1sen!2sjp!4v1725001339776!5m2!1sen!2sjp"
         width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"
@@ -952,3 +952,61 @@
 </section>
 
 {% section 'kk-way' %}
+
+<script>
+  gsap.from(".products-hero__anim1", {
+    bottom: "-100", // camelCase
+    position: 'relative',
+    opacity: 0,
+    duration: 1, // seconds
+    delay: 0.1,
+    ease: "power3.out",
+    stagger: 0.1, // stagger start times
+    scrollTrigger: {
+      trigger: ".products-hero__anim1",
+      start: "top 80%",
+    }
+  });
+  
+  gsap.from(".products-intro__anim1", {
+    bottom: "-100", // camelCase
+    position: 'relative',
+    opacity: 0,
+    duration: 1, // seconds
+    delay: 0.1,
+    ease: "power3.out",
+    stagger: 0.1, // stagger start times
+    scrollTrigger: {
+      trigger: ".products-intro__anim1",
+      start: "top 80%",
+    }
+  });
+  
+  gsap.from(".home-products__anim1", {
+    bottom: "-100", // camelCase
+    position: 'relative',
+    opacity: 0,
+    duration: 1, // seconds
+    delay: 0.1,
+    ease: "power3.out",
+    stagger: 0.1, // stagger start times
+    scrollTrigger: {
+      trigger: ".home-products__anim1",
+      start: "top 80%",
+    }
+  });
+  
+  gsap.from(".products-locations__anim1", {
+    bottom: "-100", // camelCase
+    position: 'relative',
+    opacity: 0,
+    duration: 1, // seconds
+    delay: 0.1,
+    ease: "power3.out",
+    stagger: 0.1, // stagger start times
+    scrollTrigger: {
+      trigger: ".products-locations__anim1",
+      start: "top 80%",
+    }
+  });
+</script>

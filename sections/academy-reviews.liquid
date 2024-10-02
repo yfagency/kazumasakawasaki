@@ -139,10 +139,10 @@
 
 <section class="academy-reviews">
   <div class="academy-reviews__container page-width">
-    <h2 class="academy-reviews__title">Reviews</h2>
-    <p class="academy-reviews__text">Discover stories from students who have transformed their lives through Kawasaki Academy, achieving personal and professional success.</p>
+    <h2 class="academy-reviews__title academy-reviews__anim1">Reviews</h2>
+    <p class="academy-reviews__text academy-reviews__anim1">Discover stories from students who have transformed their lives through Kawasaki Academy, achieving personal and professional success.</p>
 
-    <div class="swiper3">
+    <div class="swiper3 academy-reviews__anim2">
       <img class="swiper-wrapper__arrow1" src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/Arrow_10.svg?v=1726811084" />
       <img class="swiper-wrapper__arrow2" src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/Arrow_11.svg?v=1726811084" />
 
@@ -201,4 +201,29 @@
       delay: 5000,
     },
   });
+</script>
+
+<script>
+
+  const academyReviewsClasses = [
+    '.academy-reviews__anim1',
+    '.academy-reviews__anim2'
+  ]
+
+  academyReviewsClasses.forEach((cls) => {
+    gsap.from(cls, {
+      bottom: "-100",
+      position: 'relative',
+      opacity: 0,
+      duration: 1,
+      delay: 0.1,
+      ease: "power3.out",
+      stagger: 0.1,
+      scrollTrigger: {
+        trigger: cls,
+        start: "top 80%",
+      }
+    })
+  })
+
 </script>

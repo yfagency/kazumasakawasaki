@@ -292,7 +292,7 @@
   }
 </style>
 
-<section class="academySliderMain">
+<section class="academySliderMain academySliderMain__anim1">
   <div class="swiper2">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
@@ -408,4 +408,28 @@
       delay: 5000,
     },
   });
+</script>
+
+<script>
+
+  const academySliderClasses = [
+    '.academySliderMain__anim1'
+  ]
+
+  academySliderClasses.forEach((cls) => {
+    gsap.from(cls, {
+      bottom: "-100",
+      position: 'relative',
+      opacity: 0,
+      duration: 1,
+      delay: 0.1,
+      ease: "power3.out",
+      stagger: 0.1,
+      scrollTrigger: {
+        trigger: cls,
+        start: "top 80%",
+      }
+    })
+  })
+
 </script>

@@ -87,6 +87,16 @@
     top: 0;
   }
 
+  .home-kkWayContent {
+    display: none !important;
+  }
+
+  @media (max-width: 1024px) {
+    .home-kkWayContent {
+      display: block !important;
+    }
+  }
+
   @media (orientation: portrait) {
     .home-kkWayContent {
       padding: 100px 20px;
@@ -100,10 +110,10 @@
 
 <section id="kkWaySection" class="home-kkWayContent">
   <div class="home-kkWayContent__container page-width">
-    <img class="home-kkWayContent__logo"
+    <img class="home-kkWayContent__logo home-kkWayContent__animation1"
       src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/KAZU.svg?v=1724395912" />
-    <h1 class="home-kkWayContent__title">KAWASAKI way</h1>
-    <p>Transform your beauty and well-being with The Kawasaki Way. Experience the profound connection between your
+    <h1 class="home-kkWayContent__title home-kkWayContent__animation1">KAWASAKI way</h1>
+    <p class="home-kkWayContent__animation1">Transform your beauty and well-being with The Kawasaki Way. Experience the profound connection between your
       appearance and internal health, where change in one inspires change in the other.</p>
     <a href="/pages/kawasaki-way">Learn More</a>
     <img class="home-kkWayContent__shape1" src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/Vector_6kk-way-content.svg?v=1727418737" >

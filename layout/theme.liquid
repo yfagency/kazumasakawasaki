@@ -290,9 +290,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     {% comment %} <script src="https://cdn.tailwindcss.com"></script> {% endcomment %}
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
+
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
     </a>
@@ -362,5 +366,340 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      gsap.to(".home-hero__circle", {
+        bottom: "0",
+        opacity: 1,
+        duration: 0.5,
+        ease: "power4.in",
+        stagger: 0.1,
+      });
+
+      gsap.from(".home-products__animation1", {
+        bottom: "-100", // camelCase
+        position: 'relative',
+        opacity: 0,
+        duration: 1, // seconds
+        delay: 0.1,
+        ease: "power3.out",
+        stagger: 0.1, // stagger start times
+        scrollTrigger: {
+          trigger: ".home-products__animation1",
+        }
+      });
+      
+      gsap.from(".home-products__item", {
+        bottom: "-100", // camelCase
+        position: 'relative',
+        opacity: 0,
+        duration: 1, // seconds
+        delay: 0.1,
+        ease: "power3.out",
+        stagger: 0.1, // stagger start times
+        scrollTrigger: {
+          trigger: ".home-products__item",
+          start: "top 80%",
+        }
+      });
+      
+      gsap.from(".home-kkWay__animation1", {
+        bottom: "-100", // camelCase
+        position: 'relative',
+        opacity: 0,
+        duration: 1, // seconds
+        delay: 0.1,
+        ease: "power3.out",
+        stagger: 0.1, // stagger start times
+        scrollTrigger: {
+          trigger: ".home-kkWay__animation1",
+          start: "top 80%",
+        }
+      });
+      
+      gsap.from(".home-spa__animation1", {
+        bottom: "-100", // camelCase
+        position: 'relative',
+        opacity: 0,
+        duration: 1, // seconds
+        delay: 0.1,
+        ease: "power3.out",
+        stagger: 0.1, // stagger start times
+        scrollTrigger: {
+          trigger: ".home-spa__animation1",
+          start: "top 80%",
+        }
+      });
+
+      gsap.from(".home-spa__animation2", {
+        bottom: "-100", // camelCase
+        position: 'relative',
+        opacity: 0,
+        duration: 1, // seconds
+        delay: 0.1,
+        ease: "power3.out",
+        stagger: 0.1, // stagger start times
+        scrollTrigger: {
+          trigger: ".home-spa__animation2",
+          start: "top 80%",
+        }
+      });
+      
+      gsap.from(".home-spa__animation3", {
+        bottom: "-100", // camelCase
+        position: 'relative',
+        opacity: 0,
+        duration: 1, // seconds
+        delay: 0.1,
+        ease: "power3.out",
+        stagger: 0.1, // stagger start times
+        scrollTrigger: {
+          trigger: ".home-spa__animation3",
+          start: "top 80%",
+        }
+      });
+      
+      gsap.from(".home-academy__animation1", {
+        bottom: "-100", // camelCase
+        position: 'relative',
+        opacity: 0,
+        duration: 1, // seconds
+        delay: 0.1,
+        ease: "power3.out",
+        stagger: 0.1, // stagger start times
+        scrollTrigger: {
+          trigger: ".home-academy__animation1",
+          start: "top 80%",
+        }
+      });
+      
+      gsap.from(".home-academy__animation2", {
+        bottom: "-100", // camelCase
+        position: 'relative',
+        opacity: 0,
+        duration: 1, // seconds
+        delay: 0.1,
+        ease: "power3.out",
+        stagger: 0.1, // stagger start times
+        scrollTrigger: {
+          trigger: ".home-academy__animation2",
+          start: "top 80%",
+        }
+      });
+      
+      gsap.from(".home-academy__animation3", {
+        bottom: "-100", // camelCase
+        position: 'relative',
+        opacity: 0,
+        duration: 1, // seconds
+        delay: 0.1,
+        ease: "power3.out",
+        stagger: 0.1, // stagger start times
+        scrollTrigger: {
+          trigger: ".home-academy__animation3",
+          start: "top 80%",
+        }
+      });
+      
+      gsap.from(".home-academy__animation4", {
+        bottom: "-100", // camelCase
+        position: 'relative',
+        opacity: 0,
+        duration: 1, // seconds
+        delay: 0.1,
+        ease: "power3.out",
+        stagger: 0.1, // stagger start times
+        scrollTrigger: {
+          trigger: ".home-academy__animation4",
+          start: "top 80%",
+        }
+      });
+      
+      gsap.from(".home-contact__animation1", {
+        bottom: "-100", // camelCase
+        position: 'relative',
+        opacity: 0,
+        duration: 1, // seconds
+        delay: 0.1,
+        ease: "power3.out",
+        stagger: 0.1, // stagger start times
+        scrollTrigger: {
+          trigger: ".home-contact__animation1",
+          start: "top 80%",
+        }
+      });
+      
+      gsap.from(".footer__animation1", {
+        bottom: "-100", // camelCase
+        position: 'relative',
+        opacity: 0,
+        duration: 1, // seconds
+        delay: 0.1,
+        ease: "power3.out",
+        stagger: 0.1, // stagger start times
+        scrollTrigger: {
+          trigger: ".footer__animation1",
+          start: "top 80%",
+        }
+      });
+      
+      gsap.from(".footer__animation2", {
+        bottom: "-100", // camelCase
+        position: 'relative',
+        opacity: 0,
+        duration: 1, // seconds
+        delay: 0.1,
+        ease: "power3.out",
+        stagger: 0.1, // stagger start times
+        scrollTrigger: {
+          trigger: ".footer__animation2",
+          start: "top 80%",
+        }
+      });
+      
+      gsap.from(".home-kkWayContent__animation1", {
+        bottom: "-100", // camelCase
+        position: 'relative',
+        opacity: 0,
+        duration: 1, // seconds
+        delay: 0.1,
+        ease: "power3.out",
+        stagger: 0.1, // stagger start times
+        scrollTrigger: {
+          trigger: ".home-kkWayContent__animation1",
+          start: "top 80%",
+        }
+      });
+      
+      // KK WAY PAGE
+      gsap.from(".kkWay-hero__animation1", {
+        bottom: "-100", // camelCase
+        position: 'relative',
+        opacity: 0,
+        duration: 1, // seconds
+        delay: 0.1,
+        ease: "power3.out",
+        stagger: 0.1, // stagger start times
+        scrollTrigger: {
+          trigger: ".kkWay-hero__animation1",
+          start: "top 80%",
+        }
+      });
+      
+      gsap.from(".kkWay-philo__animation1", {
+        bottom: "-100", // camelCase
+        position: 'relative',
+        opacity: 0,
+        duration: 1, // seconds
+        delay: 0.1,
+        ease: "power3.out",
+        stagger: 0.1, // stagger start times
+        scrollTrigger: {
+          trigger: ".kkWay-philo__animation1",
+          start: "top 80%",
+        }
+      });
+      
+      gsap.from(".products-kkWay__animation1", {
+        bottom: "-100", // camelCase
+        position: 'relative',
+        opacity: 0,
+        duration: 1, // seconds
+        delay: 0.1,
+        ease: "power3.out",
+        stagger: 0.1, // stagger start times
+        scrollTrigger: {
+          trigger: ".products-kkWay__animation1",
+          start: "top 80%",
+        }
+      });
+      
+      gsap.from(".products-kkWay__animation2", {
+        bottom: "-100", // camelCase
+        position: 'relative',
+        opacity: 0,
+        duration: 1, // seconds
+        delay: 0.1,
+        ease: "power3.out",
+        stagger: 0.1, // stagger start times
+        scrollTrigger: {
+          trigger: ".products-kkWay__animation2",
+          start: "top 80%",
+        }
+      });
+      
+      gsap.from(".kkWay-about__animation1", {
+        bottom: "-100", // camelCase
+        position: 'relative',
+        opacity: 0,
+        duration: 1, // seconds
+        delay: 0.1,
+        ease: "power3.out",
+        stagger: 0.1, // stagger start times
+        scrollTrigger: {
+          trigger: ".kkWay-about__animation1",
+          start: "top 80%",
+        }
+      });
+      
+      gsap.from(".kkWay-about__animation2", {
+        bottom: "-100", // camelCase
+        position: 'relative',
+        opacity: 0,
+        duration: 1, // seconds
+        delay: 0.1,
+        ease: "power3.out",
+        stagger: 0.1, // stagger start times
+        scrollTrigger: {
+          trigger: ".kkWay-about__animation2",
+          start: "top 80%",
+        }
+      });
+      
+      gsap.from(".kkWay-story__ani1", {
+        bottom: "-100", // camelCase
+        position: 'relative',
+        opacity: 0,
+        duration: 1, // seconds
+        delay: 0.1,
+        ease: "power3.out",
+        stagger: 0.1, // stagger start times
+        scrollTrigger: {
+          trigger: ".kkWay-story__ani1",
+          start: "top 80%",
+        }
+      });
+      
+      gsap.from(".kkWay-story__ani2", {
+        bottom: "-100", // camelCase
+        position: 'relative',
+        opacity: 0,
+        duration: 1, // seconds
+        delay: 0.1,
+        ease: "power3.out",
+        stagger: 0.1, // stagger start times
+        scrollTrigger: {
+          trigger: ".kkWay-story__ani2",
+          start: "top 80%",
+        }
+      });
+      
+      gsap.from(".kkWay-effect__anim1", {
+        bottom: "-100", // camelCase
+        position: 'relative',
+        opacity: 0,
+        duration: 1, // seconds
+        delay: 0.1,
+        ease: "power3.out",
+        stagger: 0.1, // stagger start times
+        scrollTrigger: {
+          trigger: ".kkWay-effect__anim1",
+          start: "top 80%",
+        }
+      });
+
+    </script>
   </body>
 </html>

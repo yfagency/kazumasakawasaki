@@ -180,10 +180,10 @@
 <div class="swiper-slide products-hero">
   <div class="products-hero__container page-width">
     <div class="products-hero__left">
-      <span class="products-hero__subtitle">Kazumasa Kawasaki</span>
-      <h1 class="products-hero__title">{{ slideTitle }}</h1>
-      <h2 class="slideSubtitle">{{ slideSubtitle }}</h2>
-      <p class="products-hero__text">{{ slideText }}</p>
+      <span class="products-hero__subtitle slide__anim1">Kazumasa Kawasaki</span>
+      <h1 class="products-hero__title slide__anim1">{{ slideTitle }}</h1>
+      <h2 class="slideSubtitle slide__anim1">{{ slideSubtitle }}</h2>
+      <p class="products-hero__text slide__anim1">{{ slideText }}</p>
       <a href="{{ btnLink }}" class="products-hero__button">{{ btnText }}</a>
     </div>
   </div>
@@ -191,3 +191,25 @@
     src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/kk-products-hero-blue-background.svg?v=1724993611" />
   <img class="products-hero__picture" src="{{ slideImg }}" />
 </div>
+
+<script>
+  const slideClasses = [
+    '.slide__anim1',
+  ]
+
+  slideClasses.forEach((cls) => {
+    gsap.from(cls, {
+      bottom: "-100",
+      position: 'relative',
+      opacity: 0,
+      duration: 1,
+      delay: 0.1,
+      ease: "power3.out",
+      stagger: 0.1,
+      scrollTrigger: {
+        trigger: cls,
+        start: "top 80%",
+      }
+    })
+  })
+</script>

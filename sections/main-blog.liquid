@@ -249,7 +249,7 @@
 
 {%- paginate blog.articles by 6 -%}
   <div class="main-blog page-width section-{{ section.id }}-padding">
-    <h1 class="title--primary{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+    <h1 class="title--primary{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %} title__anim1">
       {{ blog.title | escape }}
     </h1>
 
@@ -414,25 +414,25 @@
 
 <section class="products-kkWay">
   <div class="products-kkWay__container page-width">
-    <h2 class="products-kkWay__title">explore the kawasaki way</h2>
-    <p class="products-kkWay__text">Discover how The Kawasaki Way can make your life beautiful and healthy. Try our
+    <h2 class="products-kkWay__title products-kkWay__anim1">explore the kawasaki way</h2>
+    <p class="products-kkWay__text products-kkWay__anim1">Discover how The Kawasaki Way can make your life beautiful and healthy. Try our
       products and treatments.</p>
     <div class="products-kkWay__cards">
-      <a href="/pages/products" class="products-kkWay__item">
+      <a href="/pages/products" class="products-kkWay__item products-kkWay__anim2">
         {{ images['0864fe80dc0cfddd09fc6ec53621482b.png'] | image_url: width: 750 | image_tag }}
         <div class="products-kkWay__cardBottom">
           <h3 class="products-kkWay__cardTitle">Products</h3>
           <span class="products-kkWay__cardSubtitle">kazumasa kawasaki</span>
         </div>
       </a>
-      <a href="/pages/spa" class="products-kkWay__item">
+      <a href="/pages/spa" class="products-kkWay__item products-kkWay__anim2">
         {{ images['4b09b60a99c28451d9171ba20c1b8841.png'] | image_url: width: 750 | image_tag }}
         <div class="products-kkWay__cardBottom">
           <h3 class="products-kkWay__cardTitle">le spa de</h3>
           <span class="products-kkWay__cardSubtitle">kazumasa kawasaki</span>
         </div>
       </a>
-      <a href="/pages/academy" class="products-kkWay__item">
+      <a href="/pages/academy" class="products-kkWay__item products-kkWay__anim2">
         {{ images['63aa50857e9f6a57ab233f676a2ca893.png'] | image_url: width: 750 | image_tag }}
         <div class="products-kkWay__cardBottom">
           <h3 class="products-kkWay__cardTitle">academy</h3>
@@ -545,3 +545,28 @@
   ]
 }
 {% endschema %}
+
+<script>
+
+  const classes = [
+    '.products-kkWay__anim1',
+    '.products-kkWay__anim2'
+  ]
+
+  classes.forEach((cls) => {
+    gsap.from(cls, {
+      bottom: "-100",
+      position: 'relative',
+      opacity: 0,
+      duration: 1,
+      delay: 0.1,
+      ease: "power3.out",
+      stagger: 0.1,
+      scrollTrigger: {
+        trigger: cls,
+        start: "top 80%",
+      }
+    })
+  })
+
+</script>

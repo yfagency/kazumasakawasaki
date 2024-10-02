@@ -3714,3 +3714,10 @@ nav.header__inline-menu {
 .predictive-search {
   background: #fff !important;
 }
+
+/* GSAP */
+.fadeInAnimation {
+  opacity: 0;
+  position: relative;
+  bottom: -100px;
+}
