@@ -315,8 +315,8 @@
 
     <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
       <div>
-        <p class="product-topSection__subtitle">Kazumasa Kawasaki</p>
-        <h1 class="product-topSection__title">{{ product.title | escape }}</h1>
+        <p class="product-topSection__subtitle product-topSection__anim1">Kazumasa Kawasaki</p>
+        <h1 class="product-topSection__title product-topSection__anim1">{{ product.title | escape }}</h1>
 
           <div id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
             {%- render 'price',
@@ -951,6 +951,29 @@
     </script>
   </div>
 </product-info>
+
+<script>
+  const classes = [
+    '.product-topSection__anim1',
+    '.price__container'
+  ]
+
+  classes.forEach((cls) => {
+    gsap.from(cls, {
+      bottom: "-100",
+      position: 'relative',
+      opacity: 0,
+      duration: 1,
+      delay: 0.1,
+      ease: "power3.out",
+      stagger: 0.1,
+      scrollTrigger: {
+        trigger: cls,
+        start: "top 80%",
+      }
+    })
+  })
+</script>
 
 {% schema %}
 {

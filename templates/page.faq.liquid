@@ -96,7 +96,7 @@
 
 <section class="faq-accordion">
   <div class="faq-accordion__container page-width">
-    <h1 class="faq-accordion__title">FAQ</h1>
+    <h1 class="faq-accordion__title faq-accordion__anim1">FAQ</h1>
     <h2 class="faq-accordion__category">Shopping Guide</h2>
     <div class="collapse collapse-plus">
       <input type="radio" name="my-accordion-3" checked="checked" />
@@ -320,3 +320,27 @@
     </div>
   </div>
 </section>
+
+<script>
+
+  const classes = [
+    '.faq-accordion__anim1',
+  ]
+
+  classes.forEach((cls) => {
+    gsap.from(cls, {
+      bottom: "-100",
+      position: 'relative',
+      opacity: 0,
+      duration: 1,
+      delay: 0.1,
+      ease: "power3.out",
+      stagger: 0.1,
+      scrollTrigger: {
+        trigger: cls,
+        start: "top 80%",
+      }
+    })
+  })
+
+</script>
