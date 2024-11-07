@@ -3611,7 +3611,7 @@ nav.header__inline-menu a .header__active-menu-item {
 }
 
 .header:not(.drawer-menu).page-width {
-  padding: 0 20px;
+  padding: 0 25px;
   height: 90px;
 }
 
@@ -3641,7 +3641,7 @@ nav.header__inline-menu {
 
 @media (max-width: 1280px) {
   .header:not(.drawer-menu).page-width {
-    padding: 20px;
+    padding: 25px;
     height: auto;
   }
 
@@ -3693,7 +3693,7 @@ nav.header__inline-menu {
 
   ul.menu-drawer__menu.has-submenu.list-menu {
     flex-direction: column;
-    padding: 0 20px;
+    padding: 0 25px;
     text-transform: capitalize;
   }
 
@@ -3707,7 +3707,7 @@ nav.header__inline-menu {
 
 /* ##### Product page ##### */
 .product.grid {
-  padding: 20px;
+  padding: 25px;
 }
 
 /* SEARCH BAR */
@@ -3720,4 +3720,21 @@ nav.header__inline-menu {
   opacity: 0;
   position: relative;
   bottom: -100px;
+}
+
+/* DESIGN SYSTEM */
+.heading {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 2.8px;
+}
+
+.bodyText {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
 }

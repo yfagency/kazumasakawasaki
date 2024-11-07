@@ -9,7 +9,7 @@
   }
 
   .products-hero__container {
-    padding: 100px 20px;
+    padding: 100px 25px;
     width: 100%;
   }
 
@@ -43,7 +43,7 @@
   }
 
   .products-hero__subtitle {
-    color: #DF1616;
+    color: #fff;
     text-shadow: 0px 4px 44px rgba(0, 0, 78, 0.25);
     font-family: "Bodoni Moda", serif;
     font-size: 18px;
@@ -57,11 +57,6 @@
   .products-hero__title {
     color: #FFF;
     font-family: "Bodoni Moda", serif;
-    font-size: clamp(24px, 3.75vw, 60px);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 120%;
-    letter-spacing: 4.8px;
     text-transform: uppercase;
     margin: 5px 0 30px;
   }
@@ -79,11 +74,6 @@
 
   .products-hero__text {
     color: #FFF;
-    font-family: "Open Sans", sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px;
     margin: 0 0 60px;
   }
 
@@ -163,7 +153,7 @@
     }
 
     .products-hero__container {
-      padding: 50px 20px;
+      padding: 50px 25px;
     }
 
     .products-hero__text {
@@ -181,9 +171,9 @@
   <div class="products-hero__container page-width">
     <div class="products-hero__left">
       <span class="products-hero__subtitle slide__anim1">Kazumasa Kawasaki</span>
-      <h1 class="products-hero__title slide__anim1">{{ slideTitle }}</h1>
+      <h1 class="products-hero__title slide__anim1 heading">{{ slideTitle }}</h1>
       <h2 class="slideSubtitle slide__anim1">{{ slideSubtitle }}</h2>
-      <p class="products-hero__text slide__anim1">{{ slideText }}</p>
+      <p class="products-hero__text slide__anim1 bodyText">{{ slideText }}</p>
       <a href="{{ btnLink }}" class="products-hero__button">{{ btnText }}</a>
     </div>
   </div>

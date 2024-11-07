@@ -7,16 +7,12 @@
     color: #000;
     text-align: center;
     font-family: "Open Sans", sans-serif;
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
     text-transform: uppercase;
     margin: 0 0 30px;
   }
 
   .relatedProducts product-recommendations {
-    padding: 100px 20px !important;
+    padding: 100px 25px !important;
   }
 
   .relatedProducts ul.grid.product-grid {
@@ -26,7 +22,7 @@
 
   @media (max-width: 768px) {
     .relatedProducts product-recommendations {
-      padding: 50px 20px !important;
+      padding: 50px 25px !important;
     }
   }
 </style>
@@ -61,7 +57,7 @@
     data-product-id="{{ product.id }}"
   >
     {% if recommendations.performed and recommendations.products_count > 0 %}
-      <h2 class="relatedProducts-title">
+      <h2 class="relatedProducts-title heading">
         {{ section.settings.heading }}
       </h2>
       <ul

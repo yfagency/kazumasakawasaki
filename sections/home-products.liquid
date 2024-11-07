@@ -1,25 +1,15 @@
 <style>
   .home-products h2 {
     color: #000;
-    text-align: center;
-    font-family: "Trivia Serif Regular";
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 2px;
     text-transform: uppercase;
     margin: 0 0 20px;
+    text-align: center;
+    font-family: "Bodoni Moda", serif;
   }
 
   .home-products p {
     color: #111;
     text-align: center;
-    font-family: "Open Sans";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px; /* 150% */
     margin: 0 auto;
     width: 60%;
   }
@@ -55,7 +45,7 @@
   /* Laptop */
   @media screen and (max-width: 1024px) {
     .home-products__container {
-      padding: 50px 20px;
+      padding: 50px 25px;
     }
   }
 
@@ -71,8 +61,8 @@
 
 <section id="products" class="home-products">
   <div class="page-width home-products__container">
-    <h2 class="home-products__animation1">products</h2>
-    <p class="home-products__animation1">Crafted for a Beautiful, Healthy Life. Our products are designed to seamlessly support your journey to beauty and wellness, enhancing your daily routine with natural elegance.</p>
+    <h2 class="home-products__animation1 heading">products</h2>
+    <p class="home-products__animation1 bodyText">Crafted for a Beautiful, Healthy Life. Our products are designed to seamlessly support your journey to beauty and wellness, enhancing your daily routine with natural elegance.</p>
     {% render 'products-row' %}
     <a href="/pages/products" class="home-products__button">buy now</a>
   </div>

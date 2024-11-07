@@ -89,19 +89,12 @@
   .home-hero__circle h2 {
     color: #FFF;
     margin: 0 0 10px;
-    text-align: center;
-    text-shadow: 0px 4px 44px rgba(0, 0, 78, 0.25);
-    font-family: "Bodoni Moda", serif;
-    font-size: 2.5vw;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 100%;
-    letter-spacing: 2.8px;
     text-transform: uppercase;
+    font-family: "Bodoni Moda", serif;
   }
 
   .home-hero__circle span {
-    color: #DF1616;
+    color: #fff;
     text-align: center;
     text-shadow: 0px 4px 44px rgba(0, 0, 78, 0.25);
     font-family: "Bodoni Moda", serif;
@@ -154,18 +147,13 @@
     color: #FFF;
     text-align: center;
     text-shadow: 0px 4px 22.1px rgba(0, 0, 0, 0.40);
-    font-family: "Belfast SF";
-    font-size: 2.604vw;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 9px;
     text-transform: uppercase;
     position: absolute;
     bottom: 0;
     margin: 0 auto 20px;
     width: 100%;
     transition: .3s;
+    font-family: "Bodoni Moda", serif;
   }
   
   .home-hero__bottom:hover {
@@ -340,21 +328,21 @@
   <div class="home-hero__main">
     <div class="home-hero__card">
       <a href="/pages/products" class="home-hero__circle">
-        <h2>products</h2>
+        <h2 class="heading">{{ 'sections.home-hero.heroCard1Title' | t }}</h2>
         <span>kazumasa kawasaki</span>
         <div class="home-hero__button">shop now</div>
       </a>
     </div>
     <div class="home-hero__card">
       <a href="/pages/spa" class="home-hero__circle">
-        <h2>le spa de</h2>
+        <h2 class="heading">le spa de</h2>
         <span>kazumasa kawasaki</span>
         <div class="home-hero__button">book now</div>
       </a>
     </div>
     <div class="home-hero__card">
       <a href="/pages/academy" class="home-hero__circle">
-        <h2>academy</h2>
+        <h2 class="heading">academy</h2>
         <span>kazumasa kawasaki</span>
         <div class="home-hero__button">learn more</div>
       </a>
@@ -369,7 +357,7 @@
       <img src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/KAZU.svg?v=1724395912" />
     </div>
 
-    <h3 class="home-hero__bottomText">KAWASAKI way</h3>
+    <h3 class="home-hero__bottomText heading">KAWASAKI way</h3>
 
     <a href="/pages/kawasaki-way">learn more</a>
   </div>
