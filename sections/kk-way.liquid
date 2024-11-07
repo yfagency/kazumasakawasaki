@@ -2,18 +2,13 @@
   /* ########## KK WAY ########## */
   .products-kkWay__container {
     text-align: center;
-    padding: 100px 20px;
+    padding: 100px 25px;
   }
 
   .products-kkWay__title {
     color: #000;
     text-align: center;
     font-family: "Bodoni Moda", serif;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 2px;
     text-transform: uppercase;
     margin: 0 0 20px;
   }
@@ -21,12 +16,6 @@
   .products-kkWay__text {
     color: #111;
     text-align: center;
-    font-family: "Open Sans", sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px;
-    /* 150% */
     margin: 0 auto 60px;
     max-width: 700px;
   }
@@ -55,18 +44,12 @@
     text-align: center;
     text-shadow: 0px 4px 44px rgba(0, 0, 78, 0.25);
     font-family: "Bodoni Moda", serif;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 100%;
-    /* 40px */
-    letter-spacing: 2.8px;
     text-transform: uppercase;
     margin: 0 0 5px;
   }
 
   .products-kkWay__cardSubtitle {
-    color: #DF1616;
+    color: #fff;
     text-align: center;
     text-shadow: 0px 4px 44px rgba(0, 0, 78, 0.25);
     font-family: "Trivia Serif Regular";
@@ -105,7 +88,7 @@
 
   @media (max-width: 600px) {
     .products-kkWay__container {
-      padding: 50px 20px;
+      padding: 50px 25px;
     }
 
     .products-kkWay__cardTitle {
@@ -130,32 +113,33 @@
 </style>
 
 <section class="products-kkWay"></section>
-  <div class="products-kkWay__container page-width">
-    <h2 class="products-kkWay__title products-kkWay__anim1">explore the kawasaki way</h2>
-    <p class="products-kkWay__text products-kkWay__anim1">Discover how The Kawasaki Way can make your life beautiful and healthy. Try our
-      products and treatments.</p>
-    <div class="products-kkWay__cards">
-      <a href="/pages/kawasaki-way" class="products-kkWay__item products-kkWay__anim2">
-        {{ images['3b041cdc6a82323b4f3ff2aacb9be1bd.png'] | image_url: width: 750 | image_tag }}
-        <div class="products-kkWay__cardBottom">
-          <h3 class="products-kkWay__cardTitle">kawasaki way</h3>
-          <span class="products-kkWay__cardSubtitle">kazumasa kawasaki</span>
-        </div>
-      </a>
-      <a href="/pages/spa" class="products-kkWay__item products-kkWay__anim2">
-        {{ images['4b09b60a99c28451d9171ba20c1b8841.png'] | image_url: width: 750 | image_tag }}
-        <div class="products-kkWay__cardBottom">
-          <h3 class="products-kkWay__cardTitle">le spa de</h3>
-          <span class="products-kkWay__cardSubtitle">kazumasa kawasaki</span>
-        </div>
-      </a>
-      <a href="/pages/academy" class="products-kkWay__item products-kkWay__anim2">
-        {{ images['63aa50857e9f6a57ab233f676a2ca893.png'] | image_url: width: 750 | image_tag }}
-        <div class="products-kkWay__cardBottom">
-          <h3 class="products-kkWay__cardTitle">academy</h3>
-          <span class="products-kkWay__cardSubtitle">kazumasa kawasaki</span>
-        </div>
-      </a>
-    </div>
+<div class="products-kkWay__container page-width">
+  <h2 class="products-kkWay__title products-kkWay__anim1 heading">explore the kawasaki way</h2>
+  <p class="products-kkWay__text products-kkWay__anim1 bodyText">Discover how The Kawasaki Way can make your life
+    beautiful and healthy. Try our
+    products and treatments.</p>
+  <div class="products-kkWay__cards">
+    <a href="/pages/kawasaki-way" class="products-kkWay__item products-kkWay__anim2">
+      {{ images['3b041cdc6a82323b4f3ff2aacb9be1bd.png'] | image_url: width: 750 | image_tag }}
+      <div class="products-kkWay__cardBottom">
+        <h3 class="products-kkWay__cardTitle heading">kawasaki way</h3>
+        <span class="products-kkWay__cardSubtitle">kazumasa kawasaki</span>
+      </div>
+    </a>
+    <a href="/pages/spa" class="products-kkWay__item products-kkWay__anim2">
+      {{ images['4b09b60a99c28451d9171ba20c1b8841.png'] | image_url: width: 750 | image_tag }}
+      <div class="products-kkWay__cardBottom">
+        <h3 class="products-kkWay__cardTitle heading">le spa de</h3>
+        <span class="products-kkWay__cardSubtitle">kazumasa kawasaki</span>
+      </div>
+    </a>
+    <a href="/pages/academy" class="products-kkWay__item products-kkWay__anim2">
+      {{ images['63aa50857e9f6a57ab233f676a2ca893.png'] | image_url: width: 750 | image_tag }}
+      <div class="products-kkWay__cardBottom">
+        <h3 class="products-kkWay__cardTitle heading">academy</h3>
+        <span class="products-kkWay__cardSubtitle">kazumasa kawasaki</span>
+      </div>
+    </a>
   </div>
+</div>
 </section>

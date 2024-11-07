@@ -1,6 +1,6 @@
 <style>
   .main-blog {
-    padding: 0 20px;
+    padding: 0 25px;
   }
 
   .main-blog a {
@@ -11,11 +11,6 @@
     color: #111;
     text-align: center;
     font-family: "Bodoni Moda", serif;
-    font-size: 60px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 160%; /* 96px */
-    letter-spacing: 4.8px;
     text-transform: uppercase;
     margin: 0 auto 70px;
   }
@@ -34,7 +29,7 @@
     aspect-ratio: 1/1;
     max-width: 375px;
   }
-  
+
   .card__inner.ratio {
     display: block;
   }
@@ -56,7 +51,8 @@
     font-size: 22px;
     font-style: normal;
     font-weight: 500;
-    line-height: 140%; /* 30.8px */
+    line-height: 140%;
+    /* 30.8px */
     text-transform: uppercase;
     letter-spacing: 0;
   }
@@ -67,7 +63,8 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px; /* 150% */
+    line-height: 24px;
+    /* 150% */
     letter-spacing: 0;
     margin-left: 0 !important;
   }
@@ -78,7 +75,8 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px; /* 150% */
+    line-height: 24px;
+    /* 150% */
     text-transform: capitalize;
     letter-spacing: 0;
   }
@@ -111,18 +109,13 @@
   /* ########## KK WAY ########## */
   .products-kkWay__container {
     text-align: center;
-    padding: 100px 20px;
+    padding: 100px 25px;
   }
 
   .products-kkWay__title {
     color: #000;
     text-align: center;
     font-family: "Bodoni Moda", serif;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 2px;
     text-transform: uppercase;
     margin: 0 0 20px;
   }
@@ -130,12 +123,6 @@
   .products-kkWay__text {
     color: #111;
     text-align: center;
-    font-family: "Open Sans", sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px;
-    /* 150% */
     margin: 0 auto 60px;
     max-width: 700px;
   }
@@ -164,18 +151,12 @@
     text-align: center;
     text-shadow: 0px 4px 44px rgba(0, 0, 78, 0.25);
     font-family: "Bodoni Moda", serif;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 100%;
-    /* 40px */
-    letter-spacing: 2.8px;
     text-transform: uppercase;
     margin: 0 0 5px;
   }
 
   .products-kkWay__cardSubtitle {
-    color: #DF1616;
+    color: #fff;
     text-align: center;
     text-shadow: 0px 4px 44px rgba(0, 0, 78, 0.25);
     font-family: "Trivia Serif Regular";
@@ -183,7 +164,6 @@
     font-style: normal;
     font-weight: 700;
     line-height: 100%;
-    /* 18px */
     letter-spacing: 1.62px;
     text-transform: uppercase;
   }
@@ -213,7 +193,7 @@
 
   @media (orientation: portrait) {
     .products-kkWay__container {
-      padding: 50px 20px;
+      padding: 50px 25px;
     }
 
     .products-kkWay__text {
@@ -234,51 +214,49 @@
 {{ 'section-main-blog.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-  }
+.section-{{ section.id }}-padding {
+padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+}
 
-  @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
-  }
+@media screen and (min-width: 750px) {
+.section-{{ section.id }}-padding {
+padding-top: {{ section.settings.padding_top }}px;
+padding-bottom: {{ section.settings.padding_bottom }}px;
+}
+}
 {%- endstyle -%}
 
 {%- paginate blog.articles by 6 -%}
-  <div class="main-blog page-width section-{{ section.id }}-padding">
-    <h1 class="title--primary{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %} title__anim1">
-      {{ blog.title | escape }}
-    </h1>
+<div class="main-blog page-width section-{{ section.id }}-padding">
+  <h1
+    class="title--primary{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %} title__anim1 heading">
+    {{ blog.title | escape }}
+  </h1>
 
-    <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
-      {%- for article in blog.articles -%}
-        <div
-          class="blog-articles__article article{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-          {% if settings.animations_reveal_on_scroll %}
-            data-cascade
-            style="--animation-order: {{ forloop.index }};"
-          {% endif %}
-        >
-          {%- render 'article-card',
-            article: article,
-            media_height: section.settings.image_height,
-            media_aspect_ratio: article.image.aspect_ratio,
-            show_image: section.settings.show_image,
-            show_date: section.settings.show_date,
-            show_author: section.settings.show_author,
-            show_excerpt: true
-          -%}
-        </div>
-      {%- endfor -%}
+  <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
+    {%- for article in blog.articles -%}
+    <div
+      class="blog-articles__article article{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+      {% if settings.animations_reveal_on_scroll %} data-cascade style="--animation-order: {{ forloop.index }};" {%
+      endif %}>
+      {%- render 'article-card',
+      article: article,
+      media_height: section.settings.image_height,
+      media_aspect_ratio: article.image.aspect_ratio,
+      show_image: section.settings.show_image,
+      show_date: section.settings.show_date,
+      show_author: section.settings.show_author,
+      show_excerpt: true
+      -%}
     </div>
-
-    {%- if paginate.pages > 1 -%}
-      {%- render 'pagination', paginate: paginate -%}
-    {%- endif -%}
+    {%- endfor -%}
   </div>
+
+  {%- if paginate.pages > 1 -%}
+  {%- render 'pagination', paginate: paginate -%}
+  {%- endif -%}
+</div>
 {%- endpaginate -%}
 
 {% comment %} KK WAY {% endcomment %}
@@ -286,7 +264,7 @@
   /* ########## KK WAY ########## */
   .products-kkWay__container {
     text-align: center;
-    padding: 100px 20px;
+    padding: 100px 25px;
   }
 
   .products-kkWay__title {
@@ -305,12 +283,6 @@
   .products-kkWay__text {
     color: #111;
     text-align: center;
-    font-family: "Open Sans", sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px;
-    /* 150% */
     margin: 0 auto 60px;
     max-width: 700px;
   }
@@ -349,7 +321,7 @@
   }
 
   .products-kkWay__cardSubtitle {
-    color: #DF1616;
+    color: #fff;
     text-align: center;
     text-shadow: 0px 4px 44px rgba(0, 0, 78, 0.25);
     font-family: "Trivia Serif Regular";
@@ -388,7 +360,7 @@
 
   @media (max-width: 600px) {
     .products-kkWay__container {
-      padding: 50px 20px;
+      padding: 50px 25px;
     }
 
     .products-kkWay__cardTitle {
@@ -414,28 +386,29 @@
 
 <section class="products-kkWay">
   <div class="products-kkWay__container page-width">
-    <h2 class="products-kkWay__title products-kkWay__anim1">explore the kawasaki way</h2>
-    <p class="products-kkWay__text products-kkWay__anim1">Discover how The Kawasaki Way can make your life beautiful and healthy. Try our
+    <h2 class="products-kkWay__title products-kkWay__anim1 heading">explore the kawasaki way</h2>
+    <p class="products-kkWay__text products-kkWay__anim1 bodyText">Discover how The Kawasaki Way can make your life
+      beautiful and healthy. Try our
       products and treatments.</p>
     <div class="products-kkWay__cards">
       <a href="/pages/products" class="products-kkWay__item products-kkWay__anim2">
         {{ images['0864fe80dc0cfddd09fc6ec53621482b.png'] | image_url: width: 750 | image_tag }}
         <div class="products-kkWay__cardBottom">
-          <h3 class="products-kkWay__cardTitle">Products</h3>
+          <h3 class="products-kkWay__cardTitle heading">Products</h3>
           <span class="products-kkWay__cardSubtitle">kazumasa kawasaki</span>
         </div>
       </a>
       <a href="/pages/spa" class="products-kkWay__item products-kkWay__anim2">
         {{ images['4b09b60a99c28451d9171ba20c1b8841.png'] | image_url: width: 750 | image_tag }}
         <div class="products-kkWay__cardBottom">
-          <h3 class="products-kkWay__cardTitle">le spa de</h3>
+          <h3 class="products-kkWay__cardTitle heading">le spa de</h3>
           <span class="products-kkWay__cardSubtitle">kazumasa kawasaki</span>
         </div>
       </a>
       <a href="/pages/academy" class="products-kkWay__item products-kkWay__anim2">
         {{ images['63aa50857e9f6a57ab233f676a2ca893.png'] | image_url: width: 750 | image_tag }}
         <div class="products-kkWay__cardBottom">
-          <h3 class="products-kkWay__cardTitle">academy</h3>
+          <h3 class="products-kkWay__cardTitle heading">academy</h3>
           <span class="products-kkWay__cardSubtitle">kazumasa kawasaki</span>
         </div>
       </a>
@@ -446,103 +419,103 @@
 
 {% schema %}
 {
-  "name": "t:sections.main-blog.name",
-  "tag": "section",
-  "class": "section",
-  "settings": [
-    {
-      "type": "header",
-      "content": "t:sections.main-blog.settings.header.content"
-    },
-    {
-      "type": "select",
-      "id": "layout",
-      "options": [
-        {
-          "value": "grid",
-          "label": "t:sections.main-blog.settings.layout.options__1.label"
-        },
-        {
-          "value": "collage",
-          "label": "t:sections.main-blog.settings.layout.options__2.label"
-        }
-      ],
-      "default": "collage",
-      "label": "t:sections.main-blog.settings.layout.label",
-      "info": "t:sections.main-blog.settings.layout.info"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_image",
-      "default": true,
-      "label": "t:sections.main-blog.settings.show_image.label"
-    },
-    {
-      "type": "select",
-      "id": "image_height",
-      "options": [
-        {
-          "value": "adapt",
-          "label": "t:sections.main-blog.settings.image_height.options__1.label"
-        },
-        {
-          "value": "small",
-          "label": "t:sections.main-blog.settings.image_height.options__2.label"
-        },
-        {
-          "value": "medium",
-          "label": "t:sections.main-blog.settings.image_height.options__3.label"
-        },
-        {
-          "value": "large",
-          "label": "t:sections.main-blog.settings.image_height.options__4.label"
-        }
-      ],
-      "default": "medium",
-      "label": "t:sections.main-blog.settings.image_height.label",
-      "info": "t:sections.main-blog.settings.image_height.info"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_date",
-      "default": true,
-      "label": "t:sections.main-blog.settings.show_date.label"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_author",
-      "default": false,
-      "label": "t:sections.main-blog.settings.show_author.label"
-    },
-    {
-      "type": "paragraph",
-      "content": "t:sections.main-blog.settings.paragraph.content"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.all.padding.section_padding_heading"
-    },
-    {
-      "type": "range",
-      "id": "padding_top",
-      "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "t:sections.all.padding.padding_top",
-      "default": 36
-    },
-    {
-      "type": "range",
-      "id": "padding_bottom",
-      "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "t:sections.all.padding.padding_bottom",
-      "default": 36
-    }
-  ]
+"name": "t:sections.main-blog.name",
+"tag": "section",
+"class": "section",
+"settings": [
+{
+"type": "header",
+"content": "t:sections.main-blog.settings.header.content"
+},
+{
+"type": "select",
+"id": "layout",
+"options": [
+{
+"value": "grid",
+"label": "t:sections.main-blog.settings.layout.options__1.label"
+},
+{
+"value": "collage",
+"label": "t:sections.main-blog.settings.layout.options__2.label"
+}
+],
+"default": "collage",
+"label": "t:sections.main-blog.settings.layout.label",
+"info": "t:sections.main-blog.settings.layout.info"
+},
+{
+"type": "checkbox",
+"id": "show_image",
+"default": true,
+"label": "t:sections.main-blog.settings.show_image.label"
+},
+{
+"type": "select",
+"id": "image_height",
+"options": [
+{
+"value": "adapt",
+"label": "t:sections.main-blog.settings.image_height.options__1.label"
+},
+{
+"value": "small",
+"label": "t:sections.main-blog.settings.image_height.options__2.label"
+},
+{
+"value": "medium",
+"label": "t:sections.main-blog.settings.image_height.options__3.label"
+},
+{
+"value": "large",
+"label": "t:sections.main-blog.settings.image_height.options__4.label"
+}
+],
+"default": "medium",
+"label": "t:sections.main-blog.settings.image_height.label",
+"info": "t:sections.main-blog.settings.image_height.info"
+},
+{
+"type": "checkbox",
+"id": "show_date",
+"default": true,
+"label": "t:sections.main-blog.settings.show_date.label"
+},
+{
+"type": "checkbox",
+"id": "show_author",
+"default": false,
+"label": "t:sections.main-blog.settings.show_author.label"
+},
+{
+"type": "paragraph",
+"content": "t:sections.main-blog.settings.paragraph.content"
+},
+{
+"type": "header",
+"content": "t:sections.all.padding.section_padding_heading"
+},
+{
+"type": "range",
+"id": "padding_top",
+"min": 0,
+"max": 100,
+"step": 4,
+"unit": "px",
+"label": "t:sections.all.padding.padding_top",
+"default": 36
+},
+{
+"type": "range",
+"id": "padding_bottom",
+"min": 0,
+"max": 100,
+"step": 4,
+"unit": "px",
+"label": "t:sections.all.padding.padding_bottom",
+"default": 36
+}
+]
 }
 {% endschema %}
 
