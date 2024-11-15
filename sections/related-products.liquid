@@ -58,7 +58,7 @@
   >
     {% if recommendations.performed and recommendations.products_count > 0 %}
       <h2 class="relatedProducts-title heading">
-        {{ section.settings.heading }}
+        {{ 'sections.relatedProducts.sectionTitle' | t }}
       </h2>
       <ul
         class="grid product-grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down"

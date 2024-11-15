@@ -84,6 +84,10 @@
     border: 1px solid #FFF;
   }
 
+  .home-kkWay__container .heading {
+    max-width: 50%;
+  }
+
   @media (max-width: 1024px) {
     .home-kkWay h2 {
       font-size: 3vw;
@@ -136,9 +140,13 @@
 <section class="home-kkWay home-kkWay__animation1">
   <div class="page-width home-kkWay__container">
     <span>KAWASAKI way</span>
-    <h2 class="heading">If your appearance changes, <br>what's inside changes, <br>and vice versa.</h2>
+    <h2 class="heading">
+      {{ 'sections.home-kawasaki-way.title1' | t }}<br>
+      {{ 'sections.home-kawasaki-way.title2' | t }}<br>
+      {{ 'sections.home-kawasaki-way.title3' | t }}
+    </h2>
     <p>Kazumasa Kawasaki</p>
-    <a href="/pages/kawasaki-way">Learn More</a>
+    <a href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/pages/kawasaki-way">{{ 'sections.home-kawasaki-way.button' | t }}</a>
   </div>
 
   <svg class="home-kkWay__bgLeft" xmlns="http://www.w3.org/2000/svg" width="1377" height="947" viewBox="0 0 1377 947"

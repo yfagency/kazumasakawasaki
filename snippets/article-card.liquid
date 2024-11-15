@@ -166,7 +166,9 @@
               {%- endif -%}
             </div>
           {%- endif -%}
-          <a class="article-card__readMoreButton">read more</a>
+          <a class="article-card__readMoreButton">
+            {{ 'snippets.articleCard.readMoreButton' | t }}
+          </a>
         </div>
         {%- if show_badge -%}
           <div class="card__badge {{ settings.badge_position }}">

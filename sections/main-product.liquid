@@ -343,7 +343,9 @@
             {%- endform -%}
           </div>
 
-          <a class="product-topSection__button" href="/#contact_section">Pre Order Now</a>
+          <a class="product-topSection__button" href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/#contact_section">
+            {{ 'sections.mainProduct.preOrderButton' | t }}
+          </a>
       </div>
 
       <div class="grid__item product__media-wrapper">

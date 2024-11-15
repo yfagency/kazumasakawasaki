@@ -154,7 +154,9 @@
 <section class="home-spa">
   <div class="home-spa__container page-width">
     <div class="home-spa__top">
-      <span class="home-spa__animation1">Le Spa de</span>
+      <span class="home-spa__animation1">
+        {{ 'sections.home-spa.topTitle1' | t }}
+      </span>
       <h2 class="home-spa__animation1 heading">KAZUMASA KAWASAKI</h2>
       <span class="home-spa__animation1">TOKYO</span>
     </div>
@@ -162,15 +164,17 @@
       <img class="home-spa__animation2"
         src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/bac01882eda2c89c1b329392853945d2.jpg?v=1724643945" />
       <div class="home-spa__middleRight">
-        <h3 class="home-spa__animation2 heading">about the spa</h3>
-        <p class="home-spa__animation2 bodyText">Experience the unparalleled luxury of our treatments, where multiple
-          therapists work in harmony to rejuvenate
-          your entire body. This unique approach ensures a thorough, holistic treatment, with each therapist focusing on
-          different parts of the body in rotation, delivering results beyond expectations in a remarkably short time.
+        <h3 class="home-spa__animation2 heading">
+          {{ 'sections.home-spa.colTitle' | t }}
+        </h3>
+        <p class="home-spa__animation2 bodyText">
+          {{ 'sections.home-spa.colText1' | t }}
           <br><br>
-          <i>Treatment time 12 minutes</i>
+          <i>{{ 'sections.home-spa.colText2' | t }}</i>
         </p>
-        <a href="/pages/spa">Learn More</a>
+        <a href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/pages/spa">
+          {{ 'sections.home-spa.button' | t }}
+        </a>
       </div>
     </div>
     <div class="home-spa__bottom">

@@ -3651,6 +3651,7 @@ nav.header__inline-menu {
 
   .header__icons {
     padding: 0;
+    align-items: center;
   }
 
   .header img {

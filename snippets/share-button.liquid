@@ -42,7 +42,8 @@
 
 <share-button id="Share-{{ section.id }}" class="share-button quick-add-hidden" {{ block.shopify_attributes }}>
   <button class="share-button__button hidden">
-    {% render 'icon-share' %}&nbsp;&nbsp;&nbsp;Share
+    {% render 'icon-share' %}&nbsp;&nbsp;&nbsp;
+    {{ 'snippets.shareButton' | t }}
     {{ block.settings.share_label | escape }}
   </button>
   <details id="Details-{{ block.id }}-{{ section.id }}">

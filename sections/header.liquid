@@ -76,6 +76,14 @@
       padding-top: 0.5rem;
     }
   }
+
+  .navLang {
+    display: flex;
+    align-items: center;
+    width: 44px;
+    text-align: right;
+    justify-content: end;
+  }
 </style>
 
 {%- style -%}
@@ -278,6 +286,19 @@
           </span>
         </a>
       {%- endif -%}
+
+      <div class="navLang">
+        {% if shop.locale != "en" %}
+          <a href="/">
+            EN
+          </a>
+        {% else %}
+          <a href="/ja">
+            JP
+          </a>
+        {% endif %}
+      </div>
+      
 
       {%- for block in section.blocks -%}
         {%- case block.type -%}

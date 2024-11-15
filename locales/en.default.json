@@ -262,6 +262,276 @@
     "404": {
       "title": "Page not found",
       "subtext": "404"
+    },
+    "kawasaki-way": {
+      "heroSubtitle": "Treatment and Products",
+      "heroText": "Discover the transformative power of The Kawasaki Way, where your appearance and internal health unite in harmonious balance. Our original products, crafted from meticulously selected Japanese plant materials, offer a holistic daily care routine for your face and body. Experience the profound benefits of The Kawasaki Way, a method that swiftly enhances both your inner well-being and outward appearance. Embrace change, for when your appearance transforms, so does your inner self, and when your inner self evolves, your beauty shines even brighter.",
+      "heroButton": "learn more",
+      "philoTitle": "Our Philosophy",
+      "philoText": "At the heart of Kazumasa Kawasaki lies the Japanese character “和 (KAZU),” representing peace, harmony, and Japan itself. This symbol graces our products, embodying the philosophy that internal and external harmony is the key to unlocking your natural beauty. As Kazumasa Kawasaki believes, true beauty emerges when body and mind are in perfect sync.",
+      "philoButton": "shop now",
+      "kkWayTitle": "explore the kawasaki way",
+      "kkWayText": "Discover how The Kawasaki Way can make your life beautiful and healthy. Try our products and treatments.",
+      "aboutTitle": "A Life of Harmony and Transformation",
+      "aboutQuote": "My goal is not only to change the appearance of someone I have been destined to meet, but also to make that person happier. If every single person becomes happy, the earth will be a happier, peaceful place.",
+      "aboutText1": "Kazumasa Kawasaki's journey to well-being and beauty began with a personal health challenge. During his recovery, he discovered the healing power of traditional Japanese fermented foods, which inspired him to develop The Kawasaki Way. This method emphasizes the harmony between inner well-being and outer beauty, bringing out the unique beauty in each individual.",
+      "aboutText2": "Kazumasa Kawasaki's products—Mist, Essence, and Plant Fermentation Food—are crafted with natural ingredients that work synergistically to achieve remarkable results. Since 1998, The Kawasaki Way has transformed the lives of over 100,000 people, including leading sports personalities, actors, musicians, and supermodels worldwide.",
+      "aboutText3": "Kazumasa's philosophy centers on the belief that every person deserves happiness, and through beauty and wellness, we can create a more harmonious world.",
+      "storyTitle": "story",
+      "storyText": "Kazumasa Kawasaki's innovative approach has been featured on TV, in magazines, and across media worldwide. He continues to expand his influence in diverse fields, embodying a commitment to holistic beauty and well-being.",
+      "story1998": "Began beauty and health activities inspired by personal health challenges.",
+      "story2003": "Presented products to Pope John Paul II, receiving gratitude from the Vatican. Invited to perform treatments for cardinals and scholars.",
+      "story2004": "Met with Italian Undersecretary of Foreign Affairs, featured in Italian media. Collaborated with the Italian Association of Friends of Parkinson's Disease.",
+      "story2008": "Gained acclaim in New York, treated VIPs, and featured in international media.",
+      "story2009": "Performed treatments for celebrities, including Miss Universe USA executives, models, and Hollywood stars before the Oscars.",
+      "story2011": "Trained therapists at Thermes Marins Monte Carlo, Royal Spa of Monaco.",
+      "story2013": "Published first book, 'Become the Body You Want to Be! The Miraculous KAWASAKI Method.' Opened KAWASAKI ACADEMY for treatment techniques.",
+      "story2014": "Launched 'ALTIS KZ' brand, participated in charity events, and introduced KAWASAKI WAY in NYC.",
+      "story2015": "Opened Le Spa de KAZUMASA KAWASAKI in Tokyo.",
+      "story2016": "Introduced KAWASAKI WAY treatments at THE SANCHAYA, Indonesia.",
+      "story2017": "Launched products in Monaco, participated in global beauty events, and opened a flagship store in Tokyo.",
+      "story2018": "Presented at TOP MARQUES MONACO, introduced products in Singapore.",
+      "story2019": "Achieved historic product placement at Yacht Club Monaco, knighted for contributions to culture and society, established U.S. presence.",
+      "story2020": "Introduced methods at Yacht Club Monaco.",
+      "effectTitle": "the kawasaki way effect",
+      "effectText": "Please read a story of a professional race car driver Naoki Yokomizo whose life was transformed by the Kawasaki Way.",
+      "effectButton": "learn more",
+      "kkWay": {
+        "card1title": "Products",
+        "card2title": "le spa de",
+        "card3title": "academy"
+      }
+    },
+    "products": {
+      "heroSlide1Title": "Essence",
+      "heroSlide1Text": "Immerse your skin in the luxurious pleasure of our Beauty Essence. This formula glides smoothly onto your skin, infusing it with moisture and resilience for a youthful glow. Suitable for all skin types, it elevates your skincare routine to an art form.",
+      "heroSlide1Button": "view product",
+      "heroSlide2Title": "Original Products",
+      "heroSlide2Text": "At the heart of The Kawasaki Way lies the belief that your appearance and internal health are intimately connected. Our original products, crafted from meticulously selected Japanese plant materials, provide a holistic daily care routine for your face and body. Experience the swift, transformative power of The Kawasaki Way, bringing balance and vitality to both your inner self and outward beauty.",
+      "heroSlide2Button": "view product",
+      "heroSlide3Title": "PLANT FERMENTATION FOOD",
+      "heroSlide3Text": "More than 80 plant materials are fermented and roasted to be used as everyday nutrition, beauty, and health support for people who like to enjoy an active life.",
+      "heroSlide3Button": "view product",
+      "introTitle": "Original Products",
+      "introText": "At the heart of The Kawasaki Way lies the belief that your appearance and internal health are intimately connected. Our original products, crafted from meticulously selected Japanese plant materials, provide a holistic daily care routine for your face and body. Experience the swift, transformative power of The Kawasaki Way, bringing balance and vitality to both your inner self and outward beauty.",
+      "introButton": "buy now",
+      "collectionTitle": "kazumasa kawasaki collection",
+      "collectionText": "Crafted for a Beautiful, Healthy Life. Our products are designed to seamlessly support your journey to beauty and wellness, enhancing your daily routine with natural elegance.",
+      "shopListTitle": "shop list"
+    },
+    "spa": {
+      "heroSlide1Title": "special treatment",
+      "heroSlide1Subtitle": "Rotational Treatment by Multiple Therapists",
+      "heroSlide1Text": "Experience the revolutionary Kawasaki Way, a holistic approach to beauty and health that unveils the true potential within you. Our treatments sculpt the human form into a masterpiece, invigorating your spirit and energizing your body. Feel the vitality flowing through you as our techniques deliver results that transcend language barriers, leaving you refreshed and ready to embrace life's possibilities.",
+      "hero1Button": "About the spa",
+      "heroSlide2Text": "Experience the unparalleled luxury of our treatments, where multiple therapists work in harmony to rejuvenate your entire body. This unique approach ensures a thorough, holistic treatment, with each therapist focusing on different parts of the body in rotation, delivering results beyond expectations in a remarkably short time.",
+      "heroSlide2Text2": "Treatment time 12 minutes",
+      "hero2Button": "About the spa",
+      "heroSlide3Text": "Experience the unparalleled luxury of our treatments, where multiple therapists work in harmony to rejuvenate your entire body. This unique approach ensures a thorough, holistic treatment, with each therapist focusing on different parts of the body in rotation, delivering results beyond expectations in a remarkably short time.",
+      "heroSlide3Text3": "Treatment time 12 minutes",
+      "hero3Button": "About the spa",
+      "technique": {
+        "topRowTitle": "Technique",
+        "topRowText1": "Our innovative treatments are designed to rejuvenate your entire body through the synchronized efforts of multiple therapists. Instead of focusing on isolated areas, therapists rotate seamlessly, ensuring a comprehensive and immersive experience. This synergy delivers extraordinary results, elevating your expectations in an impressively short time.",
+        "topRowText2": "ETRI ESSENCE: Treatment time 12 minutes",
+        "topRowButton": "Get in touch",
+        "sectionSubtitle": "Le Spa de"
+      },
+      "products": {
+        "sectionTitle": "Products & Treatment",
+        "title": "products",
+        "text": "Indulge in the ultimate luxury experience at the Kawasaki SPA, where our expert therapists use only the finest Kawasaki products to work wonders on your skin. Envelop yourself in the soothing scents and textures of these premium products, leaving you feeling refreshed and rejuvenated from head to toe. Also, these products are available in our online shop.",
+        "button": "buy now"
+      },
+      "staff": {
+        "topTitle": "Staff",
+        "topText": "Our dedicated team of professionals has been meticulously trained at Kawasaki Academy, earning official diplomas after advanced training in Italy and Monaco. Their expertise guarantees that each essence treatment is performed with precision, ensuring a transformative experience for every client.",
+        "member1Title": "Manager",
+        "member2Title": "Assistant",
+        "member3Title": "Assistant",
+        "member4Title": "Assistant",
+        "bottomTitle": "academy",
+        "bottomText": "Our dedicated team of professionals has been meticulously trained at Kawasaki Academy, earning official diplomas after advanced training in Italy and Monaco. Their expertise guarantees that each essence treatment is performed with precision, ensuring a transformative experience for every client.",
+        "bottomButton": "learn more"
+      },
+      "treatments": {
+        "title": "Treatments",
+        "card1Title": "ETRI ESSENCE",
+        "card1Text": "Indulge in a luxurious seated massage performed by three therapists in perfect harmony. This technique ensures you remain engaged and alert, achieving visible results swiftly. Perfect for enhancing beauty in specific areas like the face, arms, and lower legs, this treatment offers precision and effectiveness in minimal time.",
+        "tax": "Tax",
+        "card2Title": "MIGLIORE ESSENCE",
+        "card2Text": "Immerse yourself in the ultimate rejuvenation with multiple therapists synchronously massaging your entire body as you recline. This method revitalizes your vitality from the extremities to the core, offering profound transformation. Ideal for those desiring dynamic changes in areas such as the face, upper arms, thighs, stomach, waist, and buttocks, this treatment approaches beauty from deep within.",
+        "button": "get in touch"
+      },
+      "salonList": {
+        "title": "salon list"
+      }
+    },
+    "academy": {
+      "hero": {
+        "slide1Subtitle": "Designing Your Life Like Art",
+        "slide1Text": "The journey to beauty and health often requires effort, which many find challenging. Yet, when we discover a deep-seated 'desire' within us, akin to the instinctual need for food or sleep, this journey becomes joyful and effortless.This is the inspiration behind The Kawasaki Way.",
+        "slide2Subtitle": "Graduation Ceremony",
+        "slide2Text": "Celebrate your achievement with a graduation ceremony in prestigious locations like Monaco and Italy,offering a memorable conclusion to your journey.",
+        "slide3Subtitle": "Visit Monaco",
+        "slide3Text": "Celebrate your achievement with a graduation ceremony in prestigious locations like Monaco and Italy,offering a memorable conclusion to your journey.",
+        "slideButton": "learn more",
+        "slidetitle": "academy"
+      },
+      "story": {
+        "title": "Our story",
+        "text1": "Established in 2013, Kawasaki Academy is dedicated to imparting the essential knowledge and skills for a fulfilling life. Our academy is a sanctuary where you can connect with your inner self, restore the natural balance between mind and body, and cultivate the dreams and goals that shape your future.",
+        "text2": "Our guiding philosophy is to teach the foundational principles necessary for living happily and healthily,empowering you to transform your life from the inside out.",
+        "button": "learn more"
+      },
+      "course": {
+        "sectionTitle": "basic course",
+        "topSubtitle": "Our basic course is ideal for those who want to care for loved ones, improve themselves, or acquire professional skills. Gain the knowledge and techniques of The Kawasaki Way across 30 immersive sessions.",
+        "midTitle": "About the Course",
+        "midText": "Whether you're learning as a hobby or aiming to become a professional, our courses offer a comprehensive education. During lectures, professional instructors demonstrate treatments using students as models. By the end of the course, you'll have mastered The Kawasaki Way through hands-on experience.",
+        "button": "learn more",
+        "bottomTitle": "Special Programs",
+        "bottomText": "Our special programs feature experts from various fields who share insights into beauty and health. Enrich your experience with walking lessons by professional models, cultural and etiquette lectures, golf lessons, and more!"
+      },
+      "features": {
+        "sectionTitle": "4 Reasons to Choose Us",
+        "card1title": "Graduation Ceremony",
+        "card1text": "Celebrate your achievement with a graduation ceremony in prestigious locations like Monaco and Italy, offering a memorable conclusion to your journey.",
+        "card2title": "Special Programs",
+        "card2text": "Learn from industry professionals who offer unique insights into beauty and health, including model walking lessons, cultural etiquette, and more!",
+        "card3title": "Back up",
+        "card3text": "Enjoy exclusive support and resources available only to students, enhancing your educational experience.",
+        "card4title": "Career",
+        "card4text": "Explore success stories of students who have achieved their dreams post-graduation, inspiring your own journey to success.",
+        "button": "learn more"
+      },
+      "FAQ": {
+        "sectionTitle": "FAQ",
+        "subtitle": "If you have questions, you can find the answers in the FAQ section.",
+        "FAQ1": {
+          "mainTitle": "Kawasaki Academy: Frequently Asked Questions",
+          "title1": "What courses are offered at Kawasaki Academy?",
+          "text1": "Kawasaki Academy offers a range of courses designed to enhance both personal and professional development. From basic courses in the Kawasaki Way to specialized programs in beauty, health, and well-being, our curriculum is tailored to meet diverse needs.",
+          "title2": "Who can enroll in Kawasaki Academy?",
+          "text2": "Our courses are open to everyone, whether you are pursuing personal growth, a hobby, or a professional career in beauty and wellness. We welcome individuals from all backgrounds who are passionate about improving their inner and outer beauty.",
+          "title3": "How do I apply for a course at Kawasaki Academy?",
+          "text3": "To apply, simply visit our website and fill out the online application form. We recommend applying early, as our courses tend to fill up quickly due to high demand.",
+          "title4": "Are there any prerequisites for enrolling in the Academy's courses?",
+          "text4": "There are no specific prerequisites for most of our courses. However, for advanced programs, prior experience in the field may be beneficial. Each course description on our website provides detailed information on any recommended experience or background."
+        }
+      }
+    },
+    "locations": {
+      "hero": {
+        "title": "shop & salon"
+      },
+      "shopList": "shop list",
+      "salonList": "salon list",
+      "kkWay": {
+        "title": "explore the kawasaki way",
+        "subtitle": "Discover how The Kawasaki Way can make your life beautiful and healthy. Try our products and treatments.",
+        "card1title": "Products",
+        "card2title": "le spa de",
+        "card3title": "academy"
+      }
+    },
+    "FAQ": {
+      "shoppingGuide": {
+        "sectionTitle": "Shopping Guide",
+        "FAQ1": {
+          "mainTitle": "About Membership Registration",
+          "title1": "New Member Registration",
+          "text1": "Registering as a free member of the **Kazumasa Kawasaki** online shop makes your shopping experience more convenient. To register, please visit our [New Member Registration Page]. Ensure you read our [Privacy Policy] before registering. Choose a secure password to protect your account, and use a valid email address. If the email address is incorrect, you may not receive your registration confirmation. Check your spam folder or adjust your email settings to ensure our messages are delivered. For password resets, select 'Forgot your password?' on the login screen, enter your registered email, and follow the instructions to reset your password."
+        },
+        "FAQ2": {
+          "mainTitle": "About Your Order",
+          "title1": "How to Order",
+          "text1": "Select the quantity on the product page and add items to your shopping cart. You can adjust quantities or remove items before proceeding. Ensure all details, such as product name and price, are correct before completing your order. Stock is not reserved until your purchase is completed, and high demand may result in stock shortages. Please complete your order promptly to secure your items.",
+          "title2": "Confirmation of Your Order",
+          "text2": "Once your order is placed, you'll receive a confirmation email within minutes. Please verify the order details. If you do not receive an email, check your spam folder or verify your email address. Duplicate order confirmations may indicate multiple submissions; please contact the Altis Customer Support Desk for assistance.",
+          "title3": "Additional Orders and Order Consolidation",
+          "text3": "We do not offer consolidation of orders once placed. Please review your cart carefully before finalizing your purchase.",
+          "title4": "Order Cancellation",
+          "text4": "Orders cannot be modified or canceled after completion. Please review your order details carefully. Changes or cancellations can be handled within seven days of product receipt, in accordance with our [Return Policy]. Contact the Altis Customer Support Desk for assistance."
+        },
+        "FAQ3": {
+          "mainTitle": "Payment",
+          "title1": "Payment Methods",
+          "text1": "We accept payments via credit cards, PayPal, and cash on delivery.",
+          "title2": "Credit Cards",
+          "text2": "We accept VISA, MasterCard, AMEX, JCB, and Diners Club. Payments should comply with your card issuer's terms.",
+          "title3": "PayPal",
+          "text3": "Learn more about [PayPal Payments]. For supported cards, visit the [PayPal website]",
+          "title4": "Cash on Delivery",
+          "text4": "We deliver orders using Yamato Transport's COD service, payable to the driver upon arrival. A COD fee applies:htmlbrhtmlbr- Up to ¥10,000: ¥440htmlbr- Up to ¥30,000: ¥660htmlbr- Up to ¥100,000: ¥880htmlbr- Up to ¥300,000: ¥1,100htmlbrhtmlbrCOD is unavailable for orders over ¥300,000. Refusal of delivery may affect future orders."
+        },
+        "FAQ4": {
+          "title": "Delivery and Shipping Charges",
+          "content": "htmlbDelivery Destinationhtml/bhtmlbrWe deliver to the address provided at checkout, both domestically within Japan and internationally to select countries. Each address requires a separate order. Availability is determined based on your location during checkout.htmlbrhtmlbrhtmlbDomestic Shipping (Japan)html/bhtmlbrOrders are delivered via Yamato Transport, a trusted shipping service within Japan. You will receive a shipping confirmation email with tracking information once your order has been dispatched.htmlbrhtmlbrhtmlbDelivery Timehtml/bhtmlbrOrders typically ship within two business days. Delays may occur during busy periods or due to stock availability. We do not ship on weekends, national holidays, or special holidays.htmlbrhtmlbrhtmlbDelivery Date and Time Specificationhtml/bhtmlbrWhile we cannot guarantee specific delivery times, you may request preferred delivery slots during checkout:htmlbrhtmlbrhtmlbMorninghtml/bhtmlbr14:00-16:00htmlbr16:00-18:00htmlbr18:00-20:00htmlbr19:00-21:00htmlbrhtmlbrhtmlbShipping Feeshtml/bhtmlbrEnjoy free shipping across Japan for all orders.htmlbrhtmlbrhtmlbDelivery Statushtml/bhtmlbrYou can track your order using the tracking number provided in your shipping confirmation email via Yamato Transport's tracking system.htmlbrhtmlbrhtmlbAbsentee Ballotshtml/bhtmlbrIf you are not home when the delivery is made, Yamato Transport will leave a 'delivery notice.' You can reschedule your delivery within a week. Failure to arrange redelivery may result in return shipping fees."
+        },
+        "FAQ5": {
+          "title": "Domestic and International Shipping",
+          "content": "htmlbDelivery Destinationhtml/bhtmlbrWe deliver to the address provided at checkout, both domestically within Japan and internationally to select countries. Each address requires a separate order. Availability is determined based on your location during checkout.htmlbrhtmlbrhtmlbDomestic Shipping (Japan)html/bhtmlbrhtmlbDelivery Methodhtml/bhtmlbrOrders are delivered via Yamato Transport, a trusted shipping service within Japan. You will receive a shipping confirmation email with tracking information once your order has been dispatched.htmlbrhtmlbrhtmlbDelivery Timehtml/bhtmlbrOrders typically ship within two business days. Delays may occur during busy periods or due to stock availability. We do not ship on weekends, national holidays, or special holidays.htmlbrhtmlbrhtmlbDelivery Date and Time Specificationhtml/bhtmlbrWhile we cannot guarantee specific delivery times, you may request preferred delivery slots during checkout:htmlbrhtmlbrhtmlbMorninghtml/bhtmlbr14:00-16:00htmlbr16:00-18:00htmlbr18:00-20:00htmlbr19:00-21:00htmlbrhtmlbrhtmlbShipping Feeshtml/bhtmlbrEnjoy free shipping across Japan for all orders.htmlbrhtmlbrhtmlbDelivery Statushtml/bhtmlbrYou can track your order using the tracking number provided in your shipping confirmation email via Yamato Transport's tracking system.htmlbrhtmlbrhtmlbAbsentee Ballotshtml/bhtmlbrIf you are not home when the delivery is made, Yamato Transport will leave a \"delivery notice.\" You can reschedule your delivery within a week. Failure to arrange redelivery may result in return shipping fees."
+        },
+        "FAQ6": {
+          "title": "International Shipping",
+          "content": "htmlbDelivery Methodhtml/bhtmlbr International orders are shipped via Japan Post to select countries. You will receive a shipping confirmation email with tracking details once your order has been dispatched.htmlbrhtmlbrhtmlbDelivery Timehtml/bhtmlbr International shipping typically takes 7–14 business days, depending on the destination. However, delays may occur due to customs clearance, busy seasons, or other unforeseen circumstances.htmlbrhtmlbrhtmlbShipping Feeshtml/bhtmlbr Shipping fees for international orders are automatically calculated during checkout based on the destination and total weight of your order. Complimentary shipping may apply for orders exceeding a certain value.htmlbrhtmlbrhtmlbCustoms and Dutieshtml/bhtmlbr Customs duties, taxes, and additional fees are the responsibility of the customer. These fees vary by country, so we recommend checking with your local customs office for more details.htmlbrhtmlbrhtmlbDelivery Statushtml/bhtmlbr You can track your international order using the tracking number provided in your shipping confirmation email.htmlbrhtmlbrhtmlbDisclaimerhtml/bhtmlbrCustoms procedures and processing times vary by country. Kazumasa Kawasaki cannot be held responsible for any delays caused by customs clearance. If you experience significant delays, please contact your local customs office for further assistance."
+        },
+        "FAQ7": {
+          "title": "Returns and Exchanges",
+          "content": "htmlbWhen the Product Arriveshtml/bhtmlbrUpon receipt, verify that the product is correct and undamaged.htmlbrhtmlbrhtmlbReturns Policyhtml/bhtmlbrReturns are accepted within seven days of receipt. Contact the Altis Customer Support Desk with your order number for assistance.htmlbrReturns cannot be exchanged or replaced with other items. Return conditions apply.htmlbrhtmlbrhtmlbReturn Conditionshtml/bhtmlbrReturns must be initiated within seven days of receipt. We cannot accept returns in the following cases:htmlbrhtmlbr1. Items delivered over eight days agohtmlbr2. Used productshtmlbr3. Damaged products in your possessionhtmlbr4. Customer-modified productshtmlbr5. Opened productshtmlbr6. Products purchased outside this websitehtmlbrhtmlbrContact the Altis Customer Support Desk for return authorization. Refunds are processed after the returned item is inspected.htmlbrhtmlbrhtmlbExchange Policyhtml/bhtmlbrExchanges are not permitted. Please place a new order for the desired product after completing a return.htmlbrhtmlbrhtmlbReturns and Exchanges of Defective Productshtml/bhtmlbrIf you receive a defective or incorrect product, contact us immediately for an exchange or refund. If no stock is available, we'll issue a refund. Contact the Altis Customer Support Desk within seven days of receipt for instructions."
+        },
+        "FAQ8": {
+          "title": "About This Site",
+          "content": "The Kazumasa Kawasaki Online Shop, operated by Altis Co., Ltd., offers 24/7 shopping from your computer or smartphone."
+        },
+        "FAQ9": {
+          "title": "About Customer Service",
+          "content": "For questions about products, orders, or delivery, please contact the Altis Customer Support Desk during business hours:htmlbrhtmlbrReception Hours: 10:00–17:00 Japan time (excluding weekends, national holidays, and long holidays)htmlbrhtmlbrTEL: 03-5774-5530 (Japanese only)htmlbrhtmlbrEmail: [customer_support_desk@altiskz.jp]htmlbrhtmlbrInquiries received outside business hours will be addressed the next business day. All inquiries are recorded for quality assurance."
+        }
+      },
+      "academy": {
+        "sectionTitle": "Academy",
+        "FAQ1": {
+          "title": "Kawasaki Academy: Frequently Asked Questions",
+          "content": "htmlbWhat courses are offered at Kawasaki Academy?html/bhtmlbrKawasaki Academy offers a range of courses designed to enhance both personal and professional development. From basic courses in the Kawasaki Way to specialized programs in beauty, health, and well-being, our curriculum is tailored to meet diverse needs.htmlbrhtmlbWho can enroll in Kawasaki Academy?html/bhtmlbrOur courses are open to everyone, whether you are pursuing personal growth, a hobby, or a professional career in beauty and wellness. We welcome individuals from all backgrounds who are passionate about improving their inner and outer beauty.htmlbrhtmlbHow do I apply for a course at Kawasaki Academy?html/bhtmlbrTo apply, simply visit our website and fill out the online application form. We recommend applying early, as our courses tend to fill up quickly due to high demand.htmlbrhtmlbAre there any prerequisites for enrolling in the Academy’s courses?html/bhtmlbrThere are no specific prerequisites for most of our courses. However, for advanced programs, prior experience in the field may be beneficial. Each course description on our website provides detailed information on any recommended experience or background."
+        }
+      },
+      "spa": {
+        "sectionTitle": "Le Spa",
+        "FAQ1": {
+          "title": "Le Spa: Frequently Asked Questions",
+          "content": "htmlbWhat makes the treatments at Le Spa unique?html/bhtmlbrAt Le Spa, we offer a revolutionary approach to beauty and wellness. Our treatments involve multiple therapists working in perfect harmony, rotating seamlessly to treat your entire body. This method ensures that each area is thoroughly rejuvenated, delivering exceptional results in a short time.htmlbrhtmlbrhtmlbHow long does a typical treatment session last?html/bhtmlbrTreatment sessions at Le Spa typically last 12 minutes. Despite the brief duration, the synergistic approach of our therapists ensures a comprehensive and effective experience that leaves you feeling revitalized.htmlbrhtmlbrhtmlbCan I request a specific therapist for my treatment?html/bhtmlbrWhile we cannot guarantee the availability of specific therapists, all our staff are highly trained professionals who have undergone extensive training at Kawasaki Academy. Rest assured, you will receive exceptional care and expertise with every visit.htmlbrhtmlbrhtmlbHow do I book a treatment at Le Spa?html/bhtmlbrBooking a treatment at Le Spa is easy. You can make a reservation through our online booking system or by contacting us directly. We recommend booking in advance to secure your preferred time slot.htmlbr"
+        }
+      },
+      "general": {
+        "sectionTitle": "General",
+        "FAQ1": {
+          "title": "General: Frequently Asked Questions",
+          "content": "htmlbWhat is the Kawasaki Way?html/bhtmlbrThe Kawasaki Way is a holistic approach to beauty and health, rooted in the belief that true beauty emerges when there is harmony between the body and mind. Our methods and products are designed to enhance both your internal well-being and external appearance.htmlbrhtmlbrhtmlbHow do I contact customer service?html/bhtmlbrFor any inquiries or assistance, please contact our customer service team. We are available Monday through Friday, from 10:00 AM to 5:00 PM Japan time, excluding national holidays. You can reach us by phone or email.htmlbrhtmlbrhtmlbWhat payment methods do you accept?html/bhtmlbrWe accept a variety of payment methods, including credit cards (VISA, MasterCard, AMEX, JCB, Diners Club), PayPal, and cash on delivery for domestic orders within Japan.htmlbrhtmlbrhtmlbCan I return or exchange a product?html/bhtmlbrYes, we offer a return and exchange policy within 7 days of receiving your order. Please refer to our Returns and Exchanges section for detailed instructions on how to proceed."
+        }
+      }
+    },
+    "reviews": {
+      "hero": {
+        "title": "A Life Transformed by the Kawasaki Way",
+        "subtitle": "Professional Racing Driver Naoki Yokomizo's Journey",
+        "name": "Naoki Yokomizo",
+        "text": "Naoki Yokomizo, a professional race car driver born in Kanagawa Prefecture in 1980, began his illustrious career with a championship win in his debut race in 1993. Competing in the Formula Toyota race series, the All Japan Formula 3 Championship, and the Super GT series, he claimed victory in the GT300 Class championship in 2012."
+      },
+      "story": {
+        "sectionTitle": "story",
+        "quote": "If we work together, let's aim to compete in the world's best races. Let's win the GT300 Class championship.",
+        "text1": "When I first met Mr. Kawasaki, I was without a team, having spent a year off the track. For a race car driver, a year without racing often spells retirement. Returning to racing is challenging, and outperforming past achievements is even harder. However, Mr. Kawasaki inspired me, saying, “If we work together, let's aim to compete in the world's best races. Let's win the GT300 Class championship.” With this ambitious goal, he began my treatments.htmlbrhtmlbrThe impact of Mr. Kawasaki's treatments varies for each individual, but for me, they brought two significant changes that drove my success in the series championship.",
+        "text2": "The first change was enhanced concentration. Inside a race car, summer temperatures can reach 70 to 80 degrees Celsius, and drivers wear helmets and flame-retardant suits. These extreme conditions can lead to exhaustion, causing up to a 5kg weight loss after a race. Even a brief lapse in focus can result in a crash and diminished performance. Thanks to Mr. Kawasaki’s treatments, my concentration now endures throughout a 90-minute race, allowing me to unleash my full potential.htmlbrhtmlbrThe second transformation was in my field of vision. Clear vision is crucial for racers, and Mr. Kawasaki’s treatments sharpened and expanded my vision. Remarkably, I achieved identical lap times at night as during the day—a feat unusual in racing due to typically poorer nighttime visibility.htmlbrhtmlbrFinally, though it may seem unbelievable, Mr. Kawasaki’s treatments even reduce the size of my head.htmlbrhtmlbrAs a race car driver, I wear a helmet on every track outing. After treatments from Mr. Kawasaki, my helmet fits loosely, requiring extra foam padding to ensure a snug fit.htmlbrhtmlbrToday, I have no negative feelings about myself. Thanks to Mr. Kawasaki, my motivation is high, and I’m a positive thinker, feeling that nothing is impossible. I am committed to working with Mr. Kawasaki, aspiring to become a world champion."
+      },
+      "kkWay": {
+        "title": "explore the kawasaki way",
+        "subtitle": "Discover how The Kawasaki Way can make your life beautiful and healthy. Try our products and treatments.",
+        "card1title": "Products",
+        "card2title": "le spa de",
+        "card3title": "academy"
+      }
     }
   },
   "sections": {
@@ -313,7 +583,10 @@
       }
     },
     "footer": {
-      "payment": "Payment methods"
+      "payment": "Payment methods",
+      "companyInfo": "Company information",
+      "address": "Address",
+      "email": "Email"
     },
     "featured_blog": {
       "view_all": "View all",
@@ -373,7 +646,112 @@
       "step_error": "You can only add this item in increments of {{ step }}"
     },
     "home-hero": {
-      "heroCard1Title": "Products"
+      "heroCard1Title": "Products",
+      "heroCard2Title": "le spa de",
+      "heroCard3Title": "academy",
+      "kkWayContent": "Transform your beauty and well-being with The Kawasaki Way. Experience the profound connection between your appearance and internal health, where change in one inspires change in the other.",
+      "kkWayContentLink": "learn more",
+      "card1Button": "shop now",
+      "card2Button": "book now",
+      "card3Button": "learn more"
+    },
+    "home-kk-way-content": {
+      "content": "Transform your beauty and well-being with The Kawasaki Way. Experience the profound connection between your appearance and internal health, where change in one inspires change in the other."
+    },
+    "home-products": {
+      "title": "products",
+      "description": "Crafted for a Beautiful, Healthy Life. Our products are designed to seamlessly support your journey to beauty and wellness, enhancing your daily routine with natural elegance.",
+      "button": "buy now"
+    },
+    "home-kawasaki-way": {
+      "title1": "If your appearance changes, ",
+      "title2": "what's inside changes, ",
+      "title3": "and vice versa.",
+      "button": "learn more"
+    },
+    "home-spa": {
+      "colTitle": "about the spa",
+      "colText1": "Experience the unparalleled luxury of our treatments, where multiple therapists work in harmony to rejuvenate your entire body. This unique approach ensures a thorough, holistic treatment, with each therapist focusing on different parts of the body in rotation, delivering results beyond expectations in a remarkably short time.",
+      "colText2": "Treatment time 12 minutes",
+      "button": "learn more",
+      "topTitle1": "Le Spa de"
+    },
+    "home-academy": {
+      "text1": "Since its inception in 2013, KAWASAKI ACADEMY has been a beacon for those seeking to enrich their lives by balancing inner and outer beauty. Our academy offers a space to reconnect with your authentic self, restore balance, and unlock the potential to achieve your dreams, goals, and future aspirations.",
+      "text2": "At KAWASAKI ACADEMY, we teach the essentials for living a happy, fulfilled life, empowering you to shape your journey with creativity and intention.",
+      "bottomText1": "students who have built successful careers",
+      "bottomText2": "self-improvement courses",
+      "bottomText3": "special programs",
+      "ctaText1": "Design Your Life Like Art.",
+      "ctaText2": "Learn the Kawasaki Way.",
+      "button": "learn more",
+      "topTitle1": "academy"
+    },
+    "home-contact": {
+      "title": "contact us",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "sendButton": "Send"
+    },
+    "kk-way": {
+      "title": "explore the kawasaki way",
+      "text": "Discover how The Kawasaki Way can make your life beautiful and healthy. Try our products and treatments.",
+      "card1title": "kawasaki way",
+      "card2title": "le spa de",
+      "card3title": "academy"
+    },
+    "academySlider": {
+      "button": "learn more",
+      "slide1Title": "Kart Exercises",
+      "person1Title": "Naoki Yokomizo",
+      "person1Subtitle": "Racing Driver",
+      "slide2Title": "Makeup",
+      "slide2Text1": "Discover your unique beauty with expert makeup techniques that enhance facial expressions and create stunning looks.",
+      "slide3Title": "Training",
+      "slide4Title": "Dance",
+      "slide1Text1": "Enjoy a fun, fat-burning workout with karting exercises designed by racing driver Naoki Yokomizo to relieve stress and have fun!",
+      "slide1Text2": "A celebrated racing driver with numerous titles in SUPER GT and international races, Naoki is also a fashion model and magazine contributor.",
+      "slide1Text3": "Super GT Series Champion · Asian Le Mans Series Champion · Blancpain World Challenge Asia, First Japanese Winner · CEC Series Champion (First Japanese) · KL City GP First Champion",
+      "person2Title": "Yoko Kinoshita",
+      "person2Subtitle": "Hair and Makeup Artist",
+      "slide2Text2": "Renowned for her 'natural and gorgeous' style, Yoko is a leading figure in the Japanese beauty world, offering makeup lessons to actresses, cultural icons, and corporate clients.",
+      "slide3Text1": "Improve your metabolic efficiency with training lessons that teach functional movements for a more active lifestyle.",
+      "person3Title": "Shigehito Hara",
+      "person3Subtitle": "Trainer",
+      "slide3Text2": "With a degree in advanced fitness techniques, Shigehito has 15 years of experience training diplomats, CEOs, and Hollywood stars, offering personalized fitness solutions.",
+      "slide4Text1": "Awaken your body and mind with joyful dance sessions that energize and rejuvenate, fostering physical and mental well-being.",
+      "person4Title": "Chika Uehara",
+      "person4Subtitle": "Dance Instructor",
+      "slide4Text2": "A Tokyo Disneyland performer and KAZUMASA KAWASAKI ACADEMY graduate, Chika brings her expertise to life as an inspiring dance instructor."
+    },
+    "academyReviews": {
+      "sectionTitle": "Reviews",
+      "subtitle": "Discover stories from students who have transformed their lives through Kawasaki Academy, achieving personal and professional success.",
+      "slide1title": "Overseas Treatment Experience Led to Confidence and Success as a Salon Owner",
+      "slide1text": "I attended the academy to enhance my salon services and found tremendous growth in myself. The opportunity to participate in an international event in Monaco boosted my confidence and reaffirmed my commitment to offering the best to my clients.",
+      "slide2title": "A Life-changing Encounter Led to a New Career in Beauty",
+      "slide2text": "Inspired by an information session at the academy, I transitioned from an office job to a spa career. The courses taught me self-care, professionalism, and opened new horizons, leading to a fulfilling career in beauty.",
+      "slide3title": "Self-love and Transformation Through The Kawasaki Way",
+      "slide3text": "The academy taught me to care for myself and others, transforming my outlook on life. The positive changes I experienced have made me more energetic and youthful, motivating me to share these benefits with my loved ones."
+    },
+    "mainBlog": {
+      "kkWay": {
+        "title": "explore the kawasaki way",
+        "text": "Discover how The Kawasaki Way can make your life beautiful and healthy. Try our products and treatments.",
+        "card1title": "Products",
+        "card2title": "le spa de",
+        "card3title": "academy"
+      }
+    },
+    "mainArticle": {
+      "backButton": "Events & News"
+    },
+    "mainProduct": {
+      "preOrderButton": "Pre Order Now"
+    },
+    "relatedProducts": {
+      "sectionTitle": "You may also like"
     }
   },
   "localization": {
@@ -527,5 +905,14 @@
       "send_on": "YYYY-MM-DD",
       "send_on_label": "Send on (optional)"
     }
+  },
+  "snippets": {
+    "products-row": {
+      "linkText": "buy now"
+    },
+    "articleCard": {
+      "readMoreButton": "read more"
+    },
+    "shareButton": "Share"
   }
 }
