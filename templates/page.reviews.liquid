@@ -294,7 +294,27 @@
       {{ images['kk-way-effect.jpg'] | image_url: width: 1000 | image_tag: class: 'kkWay-about__img2 kkWay-about__anim2'
       }}
       <p class="kkWay-about__text2 kkWay-about__anim2 bodyText">
-        {{ 'templates.reviews.story.text2' | t |  replace: 'htmlbr', '<br>' }}
+        {% if shop.locale == 'en' %}
+        The first change was enhanced concentration. Inside a race car, summer temperatures can reach 70 to 80 degrees Celsius, and drivers wear helmets and flame-retardant suits. These extreme conditions can lead to exhaustion, causing up to a 5kg weight loss after a race. Even a brief lapse in focus can result in a crash and diminished performance. Thanks to Mr. Kawasaki's treatments, my concentration now endures throughout a 90-minute race, allowing me to unleash my full potential.
+        <br><br>
+        The second transformation was in my field of vision. Clear vision is crucial for racers, and Mr. Kawasaki's treatments sharpened and expanded my vision. Remarkably, I achieved identical lap times at night as during the day—a feat unusual in racing due to typically poorer nighttime visibility.
+        <br><br>
+        Finally, though it may seem unbelievable, Mr. Kawasaki's treatments even reduce the size of my head.
+        <br><br>
+        As a race car driver, I wear a helmet on every track outing. After treatments from Mr. Kawasaki, my helmet fits loosely, requiring extra foam padding to ensure a snug fit.
+        <br><br>
+        Today, I have no negative feelings about myself. Thanks to Mr. Kawasaki, my motivation is high, and I'm a positive thinker, feeling that nothing is impossible. I am committed to working with Mr. Kawasaki, aspiring to become a world champion.
+        {% else %}
+        一つ目の変化は、集中力が大幅に向上したことです。夏場、レースカーの車内は70〜80度に達することがあり、ドライバーはヘルメットと防火スーツを着用しています。これらの過酷な条件下では、レース後に5kgも体重が減ることがあり、わずかな集中力の欠如がクラッシュやパフォーマンス低下につながります。しかし、川崎さんのトリートメントのおかげで、90分のレースの間、集中力を保ち、最大限の力を発揮できるようになりました。
+        <br><br>
+        二つ目の変化は、視界が大幅に改善されたことです。レーシングドライバーにとって、クリアな視界は欠かせませんが、川崎さんのトリートメントによって、視界が鮮明になり、さらに広がりました。特に驚いたのは、夜間のレースでも昼間と同じラップタイムを記録できたことです。通常、視界が悪くなる夜間ではラップタイムが落ちることが一般的です。
+        <br><br>
+        最後に、信じられないかもしれませんが、川崎さんのトリートメントを受けると、頭のサイズが小さくなることさえあります。
+        <br><br>
+        レーシングドライバーはトラックに出るたびにヘルメットを着用しますが、川崎さんのトリートメントを受けた後、ヘルメットがゆるくなり、フィット感を保つために追加のパッドを挿入する必要があります。
+        <br><br>
+        現在、私は自分に対してネガティブな感情を一切持っていません。川崎さんのおかげで、モチベーションは高く、何事も不可能ではないと信じています。私は川崎さんと共に、世界チャンピオンを目指し続けることを決意しています。
+        {% endif %}
       </p>
     </div>
   </div>
