@@ -140,17 +140,19 @@
 
 <section id="contact_section" class="home-contact">
   <div class="home-contact__container page-width">
-    <h2 class="home-contact__animation1 heading">contact us</h2>
+    <h2 class="home-contact__animation1 heading">
+      {{ 'sections.home-contact.title' | t }}
+    </h2>
     <form id="contact_form" method="post" action="/contact#postMsg" accept-charset="UTF-8" class="contact-form home-contact__animation1">
       <input type="hidden" name="form_type" value="contact">
       <input type="hidden" name="utf8" value="✓">
       
-      <input placeholder="name" type="text" name="contact[name]" id="contact-name" required>
-      <input placeholder="email" type="email" name="contact[email]" id="contact-email" required>
+      <input placeholder="{{ 'sections.home-contact.name' | t }}" type="text" name="contact[name]" id="contact-name" required>
+      <input placeholder="{{ 'sections.home-contact.email' | t }}" type="email" name="contact[email]" id="contact-email" required>
 
-      <textarea placeholder="message" name="contact[message]" id="contact-message" required></textarea>
+      <textarea placeholder="{{ 'sections.home-contact.message' | t }}" name="contact[message]" id="contact-message" required></textarea>
 
-      <button type="submit">Send</button>
+      <button type="submit">{{ 'sections.home-contact.sendButton' | t }}</button>
     </form>
     <p id="postMsg">Your message has been sent.</p>
   </div>

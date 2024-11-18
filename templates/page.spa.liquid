@@ -784,15 +784,18 @@
         <div class="products-hero__container page-width">
           <div class="products-hero__left">
             <span class="products-hero__subtitle products-hero__anim1">Kazumasa Kawasaki</span>
-            <h1 class="products-hero__title products-hero__anim1 heading">special treatment</h1>
+            <h1 class="products-hero__title products-hero__anim1 heading">
+              {{ 'templates.spa.heroSlide1Title' | t }}
+            </h1>
             <p class="products-hero__text products-hero__anim1 bodyText">
-              <b>Rotational Treatment by Multiple Therapists</b><br><br>
-              Experience the revolutionary Kawasaki Way, a holistic approach to beauty and health that unveils the true
-              potential within you. Our treatments sculpt the human form into a masterpiece, invigorating your spirit
-              and energizing your body. Feel the vitality flowing through you as our techniques deliver results that
-              transcend language barriers, leaving you refreshed and ready to embrace life's possibilities.
+              <b>
+                {{ 'templates.spa.heroSlide1Subtitle' | t }}
+              </b><br><br>
+              {{ 'templates.spa.heroSlide1Text' | t }}
             </p>
-            <a href="#techniqueSection" class="products-hero__button">About the spa</a>
+            <a href="#techniqueSection" class="products-hero__button">
+              {{ 'templates.spa.hero1Button' | t }}
+            </a>
           </div>
         </div>
         <img class="products-hero__blueBg"
@@ -804,15 +807,16 @@
           <div class="products-hero__left">
             <span class="products-hero__subtitle">Le Spa de</span>
             <h1 class="products-hero__title heading">KAZUMASA KAWASAKI</h1>
-            <p class="products-hero__text bodyText"><b>TOKYO</b><br><br>Experience the unparalleled luxury of our
-              treatments,
-              where multiple therapists work in harmony to rejuvenate your entire body. This unique approach ensures a
-              thorough, holistic treatment, with each therapist focusing on different parts of the body in rotation,
-              delivering results beyond expectations in a remarkably short time.
+            <p class="products-hero__text bodyText"><b>TOKYO</b><br><br>
+              {{ 'templates.spa.heroSlide2Text' | t }}
               <br><br>
-              <i>Treatment time 12 minutes</i>
+              <i>
+                {{ 'templates.spa.heroSlide2Text2' | t }}
+              </i>
             </p>
-            <a href="#techniqueSection" class="products-hero__button">About the spa</a>
+            <a href="#techniqueSection" class="products-hero__button">
+              {{ 'templates.spa.hero2Button' | t }}
+            </a>
           </div>
         </div>
         <img class="products-hero__blueBg"
@@ -824,15 +828,16 @@
           <div class="products-hero__left">
             <span class="products-hero__subtitle">Le Spa de</span>
             <h1 class="products-hero__title heading">KAZUMASA KAWASAKI</h1>
-            <p class="products-hero__text bodyText"><b>monaco</b><br><br>Experience the unparalleled luxury of our
-              treatments,
-              where multiple therapists work in harmony to rejuvenate your entire body. This unique approach ensures a
-              thorough, holistic treatment, with each therapist focusing on different parts of the body in rotation,
-              delivering results beyond expectations in a remarkably short time.
+            <p class="products-hero__text bodyText"><b>monaco</b><br><br>
+              {{ 'templates.spa.heroSlide3Text' | t }}
               <br><br>
-              <i>Treatment time 12 minutes</i>
+              <i>
+                {{ 'templates.spa.heroSlide3Text3' | t }}
+              </i>
             </p>
-            <a href="#techniqueSection" class="products-hero__button">About the spa</a>
+            <a href="#techniqueSection" class="products-hero__button">
+              {{ 'templates.spa.hero3Button' | t }}
+            </a>
           </div>
         </div>
         <img class="products-hero__blueBg"
@@ -875,22 +880,27 @@
 
 <section id="techniqueSection" class="spa-technique">
   <div class="spa-technique__container page-width">
-    <span class="spa-technique__subtitle spa-technique__anim1">Le Spa de</span>
+    <span class="spa-technique__subtitle spa-technique__anim1">
+      {{ 'templates.spa.technique.sectionSubtitle' | t }}
+    </span>
     <h2 class="spa-technique__title spa-technique__anim1 heading">KAZUMASA KAWASAKI</h2>
     <div class="spa-technique__topRow">
       {{ images['4b09b60a99c28451d9171ba20c1b8841.png'] | image_url: width: 1000 | image_tag: class:
       'spa-technique__anim2'}}
       <div>
-        <h3 class="spa-technique__topRowTitle spa-technique__anim2 heading">Technique</h3>
-        <p class="spa-technique__topRowText spa-technique__anim2 bodyText">Our innovative treatments are designed to
-          rejuvenate your entire body
-          through the synchronized efforts of multiple therapists. Instead of focusing on isolated areas, therapists
-          rotate seamlessly, ensuring a comprehensive and immersive experience. This synergy delivers extraordinary
-          results, elevating your expectations in an impressively short time.
+        <h3 class="spa-technique__topRowTitle spa-technique__anim2 heading">
+          {{ 'templates.spa.technique.topRowTitle' | t }}
+        </h3>
+        <p class="spa-technique__topRowText spa-technique__anim2 bodyText">
+          {{ 'templates.spa.technique.topRowText1' | t }}
           <br><br>
-          <i>ETRI ESSENCE: Treatment time 12 minutes</i>
+          <i>
+            {{ 'templates.spa.technique.topRowText2' | t }}
+          </i>
         </p>
-        <a href="/#contact_section" class="spa-technique__topRowButton">Get in touch</a>
+        <a href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/#contact_section" class="spa-technique__topRowButton">
+          {{ 'templates.spa.technique.topRowButton' | t }}
+        </a>
       </div>
     </div>
     <div class="spa-technique__bottomRow">
@@ -905,19 +915,23 @@
 
 <section class="spa-products">
   <div class="spa-products__container page-width">
-    <span class="spa-products__subtitle spa-products__anim1">Products & Treatment</span>
+    <span class="spa-products__subtitle spa-products__anim1">
+      {{ 'templates.spa.products.sectionTitle' | t }}
+    </span>
     <h2 class="spa-products__title spa-products__anim1 heading">KAZUMASA KAWASAKI</h2>
     <div class="spa-products__row">
       {{ images['d8c56ab5ff5bdc6d95e4501df800442f.png'] | image_url: width: 1000 | image_tag: class:
       "spa-products__anim2" }}
       <div>
-        <h3 class="spa-products__rowTitle spa-products__anim2 heading">products</h3>
-        <p class="spa-products__rowText spa-products__anim2 bodyText">Indulge in the ultimate luxury experience at the
-          Kawasaki SPA, where our expert
-          therapists use only the finest Kawasaki products to work wonders on your skin. Envelop yourself in the
-          soothing scents and textures of these premium products, leaving you feeling refreshed and rejuvenated from
-          head to toe. Also, these products are available in our online shop.</p>
-        <a href="/pages/products" class="spa-products__rowButton">buy now</a>
+        <h3 class="spa-products__rowTitle spa-products__anim2 heading">
+          {{ 'templates.spa.products.title' | t }}
+        </h3>
+        <p class="spa-products__rowText spa-products__anim2 bodyText">
+          {{ 'templates.spa.products.text' | t }}
+        </p>
+        <a href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/pages/products" class="spa-products__rowButton">
+          {{ 'templates.spa.products.button' | t }}
+        </a>
       </div>
     </div>
   </div>
@@ -927,30 +941,39 @@
 
 <section class="spa-staff">
   <div class="spa-staff__container page-width">
-    <h2 class="spa-staff__title spa-staff__anim1 heading">Staff</h2>
-    <p class="spa-staff__text spa-staff__anim1 bodyText">Our dedicated team of professionals has been meticulously
-      trained at Kawasaki Academy,
-      earning official diplomas after advanced training in Italy and Monaco. Their expertise guarantees that each
-      essence treatment is performed with precision, ensuring a transformative experience for every client.</p>
+    <h2 class="spa-staff__title spa-staff__anim1 heading">
+      {{ 'templates.spa.staff.topTitle' | t }}
+    </h2>
+    <p class="spa-staff__text spa-staff__anim1 bodyText">
+      {{ 'templates.spa.staff.topText' | t }}
+    </p>
     <div class="spa-staff__members">
       <div class="spa-staff__item spa-staff__anim2">
         <img src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/spa-stuff2.png?v=1725263409" />
-        <span class="spa-staff__role">Manager</span>
+        <span class="spa-staff__role">
+          {{ 'templates.spa.staff.member1Title' | t }}
+        </span>
         <h3 class="spa-staff__name">Lisa Shimizu</h3>
       </div>
       <div class="spa-staff__item spa-staff__anim2">
         <img src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/spa-stuff3.png?v=1725263409" />
-        <span class="spa-staff__role">Assistant</span>
+        <span class="spa-staff__role">
+          {{ 'templates.spa.staff.member2Title' | t }}
+        </span>
         <h3 class="spa-staff__name">Harumi Sato</h3>
       </div>
       <div class="spa-staff__item spa-staff__anim2">
         <img src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/spa-stuff1.png?v=1725263409" />
-        <span class="spa-staff__role">Assistant</span>
+        <span class="spa-staff__role">
+          {{ 'templates.spa.staff.member3Title' | t }}
+        </span>
         <h3 class="spa-staff__name">Mari Shinno</h3>
       </div>
       <div class="spa-staff__item spa-staff__anim2">
         <img src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/spa-stuff4.png?v=1725263409" />
-        <span class="spa-staff__role">Assistant</span>
+        <span class="spa-staff__role">
+          {{ 'templates.spa.staff.member4Title' | t }}
+        </span>
         <h3 class="spa-staff__name">Chika Uehara</h3>
       </div>
     </div>
@@ -958,13 +981,15 @@
       <img class="spa-staff__anim3"
         src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/spa-academy.jpg?v=1725263409" />
       <div>
-        <h3 class="spa-staff__academyTitle spa-staff__anim3 heading">academy</h3>
-        <p class="spa-staff__academyText spa-staff__anim3 bodyText">Our dedicated team of professionals has been
-          meticulously trained at Kawasaki
-          Academy, earning official diplomas after advanced training in Italy and Monaco. Their expertise guarantees
-          that each essence treatment is performed with precision, ensuring a transformative experience for every
-          client.</p>
-        <a href="/pages/academy" class="spa-staff__academyButton">learn more</a>
+        <h3 class="spa-staff__academyTitle spa-staff__anim3 heading">
+          {{ 'templates.spa.staff.bottomTitle' | t }}
+        </h3>
+        <p class="spa-staff__academyText spa-staff__anim3 bodyText">
+          {{ 'templates.spa.staff.bottomText' | t }}
+        </p>
+        <a href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/pages/academy" class="spa-staff__academyButton">
+          {{ 'templates.spa.staff.bottomButton' | t }}
+        </a>
       </div>
     </div>
   </div>
@@ -972,35 +997,46 @@
 
 <section class="spa-treatments">
   <div class="spa-treatments__container page-width">
-    <h2 class="spa-treatments__title spa-treatments__anim1 heading">Treatments</h2>
+    <h2 class="spa-treatments__title spa-treatments__anim1 heading">
+      {{ 'templates.spa.treatments.title' | t }}
+    </h2>
     <div class="spa-treatments__cards">
       <div class="spa-treatments__item spa-treatments__anim1">
-        <h3 class="spa-treatments__itemTitle">ETRI ESSENCE</h3>
-        <p class="spa-treatments__itemText bodyText">Indulge in a luxurious seated massage performed by three therapists
-          in
-          perfect harmony. This technique ensures you remain engaged and alert, achieving visible results swiftly.
-          Perfect for enhancing beauty in specific areas like the face, arms, and lower legs, this treatment offers
-          precision and effectiveness in minimal time.</p>
-        <span class="spa-treatments__itemCost">¥50,000 <span>+Tax</span></span>
-        <a href="/#contact_section" class="spa-treatments__itemButton">get in touch</a>
+        <h3 class="spa-treatments__itemTitle">
+          {{ 'templates.spa.treatments.card1Title' | t }}
+        </h3>
+        <p class="spa-treatments__itemText bodyText">
+          {{ 'templates.spa.treatments.card1Text' | t }}
+        </p>
+        <span class="spa-treatments__itemCost">¥50,000 <span>
+          +{{ 'templates.spa.treatments.tax' | t }}
+        </span></span>
+        <a href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/#contact_section" class="spa-treatments__itemButton">
+          {{ 'templates.spa.treatments.button' | t }}
+        </a>
       </div>
       <div class="spa-treatments__item spa-treatments__anim1">
-        <h3 class="spa-treatments__itemTitle">MIGLIORE ESSENCE</h3>
-        <p class="spa-treatments__itemText bodyText">Immerse yourself in the ultimate rejuvenation with multiple
-          therapists
-          synchronously massaging your entire body as you recline. This method revitalizes your vitality from the
-          extremities to the core, offering profound transformation. Ideal for those desiring dynamic changes in areas
-          such as the face, upper arms, thighs, stomach, waist, and buttocks, this treatment approaches beauty from deep
-          within.</p>
-        <span class="spa-treatments__itemCost">¥120,000 <span>+Tax</span></span>
-        <a href="/#contact_section" class="spa-treatments__itemButton">get in touch</a>
+        <h3 class="spa-treatments__itemTitle">
+          {{ 'templates.spa.treatments.card2Title' | t }}
+        </h3>
+        <p class="spa-treatments__itemText bodyText">
+          {{ 'templates.spa.treatments.card2Text' | t }}
+        </p>
+        <span class="spa-treatments__itemCost">¥120,000 <span>
+          +{{ 'templates.spa.treatments.tax' | t }}
+        </span></span>
+        <a href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/#contact_section" class="spa-treatments__itemButton">
+          {{ 'templates.spa.treatments.button' | t }}
+        </a>
       </div>
     </div>
   </div>
 </section>
 
 <section class="products-locations">
-  <h2 class="page-width products-locations__anim1 heading">salon list</h2>
+  <h2 class="page-width products-locations__anim1 heading">
+    {{ 'templates.spa.salonList.title' | t }}
+  </h2>
   <div class="products-locations__container page-width">
     <div class="products-locations__list products-locations__anim1">
       <div class="products-locations__item" data-index="0">

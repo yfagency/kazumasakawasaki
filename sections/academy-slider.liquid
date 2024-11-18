@@ -292,23 +292,33 @@
       <div class="academySlider swiper-slide">
         <div class="academySlider__container page-width">
           <div>
-            <h2 class="academySlider__title heading">Kart Exercises</h2>
-            <p class="academySlider__text1 bodyText">Enjoy a fun, fat-burning workout with karting exercises designed by
-              racing driver Naoki Yokomizo to relieve stress and have fun!</p>
+            <h2 class="academySlider__title heading">
+              {{ 'sections.academySlider.slide1Title' | t }}
+            </h2>
+            <p class="academySlider__text1 bodyText">
+              {{ 'sections.academySlider.slide1Text1' | t }}
+            </p>
             <div class="academySlider__profile">
               <img class="academySlider__profileImg"
                 src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/academy-slider-profileimg-1.png?v=1726206648" />
               <div>
-                <h3 class="academySlider__profileTitle">Naoki Yokomizo</h3>
-                <p class="academySlider__profileText">Racing Driver</p>
+                <h3 class="academySlider__profileTitle">
+                  {{ 'sections.academySlider.person1Title' | t }}
+                </h3>
+                <p class="academySlider__profileText">
+                  {{ 'sections.academySlider.person1Subtitle' | t }}
+                </p>
               </div>
             </div>
-            <p class="academySlider__text2 bodyText">A celebrated racing driver with numerous titles in SUPER GT and
-              international races, Naoki is also a fashion model and magazine contributor.</p>
-            <p class="academySlider__text3">Super GT Series Champion · Asian Le Mans Series Champion · Blancpain World
-              Challenge Asia, First Japanese Winner · CEC Series Champion (First Japanese) · KL City GP First Champion
+            <p class="academySlider__text2 bodyText">
+              {{ 'sections.academySlider.slide1Text2' | t }}
             </p>
-            <a class="academySlider__link" href="/pages/reviews">learn more</a>
+            <p class="academySlider__text3">
+              {{ 'sections.academySlider.slide1Text3' | t }}
+            </p>
+            <a class="academySlider__link" href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/pages/reviews">
+              {{ 'sections.academySlider.button' | t }}
+            </a>
           </div>
         </div>
         <img class="academySlider__shapeBg"
@@ -320,21 +330,30 @@
       <div class="academySlider swiper-slide">
         <div class="academySlider__container page-width">
           <div>
-            <h2 class="academySlider__title heading">Makeup</h2>
-            <p class="academySlider__text1 bodyText">Discover your unique beauty with expert makeup techniques that
-              enhance facial expressions and create stunning looks.</p>
+            <h2 class="academySlider__title heading">
+              {{ 'sections.academySlider.slide2Title' | t }}
+            </h2>
+            <p class="academySlider__text1 bodyText">
+              {{ 'sections.academySlider.slide2Text1' | t }}
+            </p>
             <div class="academySlider__profile">
               <img class="academySlider__profileImg"
                 src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/academy-slider-profileimg-2.jpg?v=1726210921" />
               <div>
-                <h3 class="academySlider__profileTitle">Yoko Kinoshita</h3>
-                <p class="academySlider__profileText">Hair and Makeup Artist</p>
+                <h3 class="academySlider__profileTitle">
+                  {{ 'sections.academySlider.person2Title' | t }}
+                </h3>
+                <p class="academySlider__profileText">
+                  {{ 'sections.academySlider.person2Subtitle' | t }}
+                </p>
               </div>
             </div>
-            <p class="academySlider__text2 bodyText">Renowned for her "natural and gorgeous" style, Yoko is a leading
-              figure in the Japanese beauty world, offering makeup lessons to actresses, cultural icons, and corporate
-              clients.</p>
-            <a class="academySlider__link" href="/#contact_section">learn more</a>
+            <p class="academySlider__text2 bodyText">
+              {{ 'sections.academySlider.slide2Text2' | t }}
+            </p>
+            <a class="academySlider__link" href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/#contact_section">
+              {{ 'sections.academySlider.button' | t }}
+            </a>
           </div>
         </div>
         <img class="academySlider__shapeBg"
@@ -346,21 +365,30 @@
       <div class="academySlider swiper-slide">
         <div class="academySlider__container page-width">
           <div>
-            <h2 class="academySlider__title heading">Training</h2>
-            <p class="academySlider__text1 bodyText">Improve your metabolic efficiency with training lessons that teach
-              functional movements for a more active lifestyle.</p>
+            <h2 class="academySlider__title heading">
+              {{ 'sections.academySlider.slide3Title' | t }}
+            </h2>
+            <p class="academySlider__text1 bodyText">
+              {{ 'sections.academySlider.slide3Text1' | t }}
+            </p>
             <div class="academySlider__profile">
               <img class="academySlider__profileImg"
                 src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/academy-slider-profileimg-3.jpg?v=1726211112" />
               <div>
-                <h3 class="academySlider__profileTitle">Shigehito Hara</h3>
-                <p class="academySlider__profileText">Trainer</p>
+                <h3 class="academySlider__profileTitle">
+                  {{ 'sections.academySlider.person3Title' | t }}
+                </h3>
+                <p class="academySlider__profileText">
+                  {{ 'sections.academySlider.person3Subtitle' | t }}
+                </p>
               </div>
             </div>
-            <p class="academySlider__text2 bodyText">With a degree in advanced fitness techniques, Shigehito has 15
-              years of experience training diplomats, CEOs, and Hollywood stars, offering personalized fitness
-              solutions.</p>
-            <a class="academySlider__link" href="/#contact_section">learn more</a>
+            <p class="academySlider__text2 bodyText">
+              {{ 'sections.academySlider.slide3Text2' | t }}
+            </p>
+            <a class="academySlider__link" href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/#contact_section">
+              {{ 'sections.academySlider.button' | t }}
+            </a>
           </div>
         </div>
         <img class="academySlider__shapeBg"
@@ -372,20 +400,30 @@
       <div class="academySlider swiper-slide">
         <div class="academySlider__container page-width">
           <div>
-            <h2 class="academySlider__title heading">Dance</h2>
-            <p class="academySlider__text1 bodyText">Awaken your body and mind with joyful dance sessions that energize
-              and rejuvenate, fostering physical and mental well-being.</p>
+            <h2 class="academySlider__title heading">
+              {{ 'sections.academySlider.slide4Title' | t }}
+            </h2>
+            <p class="academySlider__text1 bodyText">
+              {{ 'sections.academySlider.slide4Text1' | t }}
+            </p>
             <div class="academySlider__profile">
               <img class="academySlider__profileImg"
                 src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/academy-slider-profileimg-4.png?v=1726211401" />
               <div>
-                <h3 class="academySlider__profileTitle">Chika Uehara</h3>
-                <p class="academySlider__profileText">Dance Instructor</p>
+                <h3 class="academySlider__profileTitle">
+                  {{ 'sections.academySlider.person4Title' | t }}
+                </h3>
+                <p class="academySlider__profileText">
+                  {{ 'sections.academySlider.person4Subtitle' | t }}
+                </p>
               </div>
             </div>
-            <p class="academySlider__text2 bodyText">A Tokyo Disneyland performer and KAZUMASA KAWASAKI ACADEMY
-              graduate, Chika brings her expertise to life as an inspiring dance instructor.</p>
-            <a class="academySlider__link" href="/#contact_section">learn more</a>
+            <p class="academySlider__text2 bodyText">
+              {{ 'sections.academySlider.slide4Text2' | t }}
+            </p>
+            <a class="academySlider__link" href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/#contact_section">
+              {{ 'sections.academySlider.button' | t }}
+            </a>
           </div>
         </div>
         <img class="academySlider__shapeBg"

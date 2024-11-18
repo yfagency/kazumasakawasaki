@@ -61,9 +61,9 @@
 
 <section id="products" class="home-products">
   <div class="page-width home-products__container">
-    <h2 class="home-products__animation1 heading">products</h2>
-    <p class="home-products__animation1 bodyText">Crafted for a Beautiful, Healthy Life. Our products are designed to seamlessly support your journey to beauty and wellness, enhancing your daily routine with natural elegance.</p>
+    <h2 class="home-products__animation1 heading">{{ 'sections.home-products.title' | t }}</h2>
+    <p class="home-products__animation1 bodyText">{{ 'sections.home-products.description' | t }}</p>
     {% render 'products-row' %}
-    <a href="/pages/products" class="home-products__button">buy now</a>
+    <a href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/pages/products" class="home-products__button">{{ 'sections.home-products.button' | t }}</a>
   </div>
 </section>
