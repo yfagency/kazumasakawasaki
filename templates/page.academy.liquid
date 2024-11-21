@@ -2,6 +2,7 @@
   /* ########## HERO ########## */
   .products-hero {
     position: relative;
+    height: auto !important;
     color: #fff;
     display: flex;
     align-items: center;
@@ -89,6 +90,10 @@
     height: auto;
     align-items: center;
     display: flex;
+  }
+
+  .swiper-wrapper {
+    height: auto !important;
   }
 
   /* Laptop */
@@ -431,18 +436,20 @@
 {% assign slide3_text = 'templates.academy.hero.slide3Text' | t %}
 {% assign slide3_Subtitle = 'templates.academy.hero.slide3Subtitle' | t %}
 {% assign slideButton = 'templates.academy.hero.slideButton' | t %}
-{% assign slidetitle = 'templates.academy.hero.slidetitle' | t %}
+{% assign slide1title = 'templates.academy.hero.slide1title' | t %}
+{% assign slide2title = 'templates.academy.hero.slide2title' | t %}
+{% assign slide3title = 'templates.academy.hero.slide3title' | t %}
 
 <section class="products-hero">
   <div class="swiper">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
-      {% render 'slide', slideTitle: slidetitle, slideSubtitle: slide1_Subtitle, slideText: slide1_text, btnText: slideButton, slideImg: image1_url, btnLink:
+      {% render 'slide', slideTitle: slide1title, slideSubtitle: slide1_Subtitle, slideText: slide1_text, btnText: slideButton, slideImg: image1_url, btnLink:
       '#academy-story' %}
 
-      {% render 'slide', slideTitle: slidetitle, slideSubtitle: slide2_Subtitle, slideText: slide2_text, btnText: slideButton, slideImg: image2_url, btnLink: '#academy-story' %}
+      {% render 'slide', slideTitle: slide2title, slideSubtitle: slide2_Subtitle, slideText: slide2_text, btnText: slideButton, slideImg: image2_url, btnLink: '#academy-story' %}
 
-      {% render 'slide', slideTitle: slidetitle, slideSubtitle: slide3_Subtitle, slideText: slide3_text, btnText: slideButton, slideImg: image3_url, btnLink: '#academy-story' %}
+      {% render 'slide', slideTitle: slide3title, slideSubtitle: slide3_Subtitle, slideText: slide3_text, btnText: slideButton, slideImg: image3_url, btnLink: '#academy-story' %}
     </div>
     <!-- If we need pagination -->
     <div class="swiper-pagination"></div>

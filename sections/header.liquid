@@ -249,7 +249,7 @@
           </localization-form>
         {% endif %}
 
-        {%- if section.settings.enable_language_selector and localization.available_languages.size > 1 -%}
+        {% comment %} {%- if section.settings.enable_language_selector and localization.available_languages.size > 1 -%}
           <localization-form class="small-hide medium-hide" data-prevent-hide>
             {%- form 'localization', id: 'HeaderLanguageForm', class: 'localization-form' -%}
               <div>
@@ -258,7 +258,7 @@
               </div>
             {%- endform -%}
           </localization-form>
-        {%- endif -%}
+        {%- endif -%} {% endcomment %}
       </div>
       {% render 'header-search', input_id: 'Search-In-Modal' %}
 
@@ -298,7 +298,6 @@
           </a>
         {% endif %}
       </div>
-      
 
       {%- for block in section.blocks -%}
         {%- case block.type -%}

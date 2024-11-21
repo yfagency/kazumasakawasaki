@@ -811,10 +811,10 @@
               {{ 'templates.spa.heroSlide2Text' | t }}
               <br><br>
               <i>
-                {{ 'templates.spa.heroSlide2Text2' | t }}
+                {{ 'templates.spa.heroSlide2Text2' | t |  replace: 'htmlbr','<br>' }}
               </i>
             </p>
-            <a href="#techniqueSection" class="products-hero__button">
+            <a href="#spa-treatments" class="products-hero__button">
               {{ 'templates.spa.hero2Button' | t }}
             </a>
           </div>
@@ -828,14 +828,14 @@
           <div class="products-hero__left">
             <span class="products-hero__subtitle">Le Spa de</span>
             <h1 class="products-hero__title heading">KAZUMASA KAWASAKI</h1>
-            <p class="products-hero__text bodyText"><b>monaco</b><br><br>
+            <p class="products-hero__text bodyText"><b>MONACO</b><br><br>
               {{ 'templates.spa.heroSlide3Text' | t }}
               <br><br>
               <i>
-                {{ 'templates.spa.heroSlide3Text3' | t }}
+                {{ 'templates.spa.heroSlide3Text3' | t | replace: 'htmlbr','<br>'}}
               </i>
             </p>
-            <a href="#techniqueSection" class="products-hero__button">
+            <a href="#spa-treatments" class="products-hero__button">
               {{ 'templates.spa.hero3Button' | t }}
             </a>
           </div>
@@ -895,7 +895,7 @@
           {{ 'templates.spa.technique.topRowText1' | t }}
           <br><br>
           <i>
-            {{ 'templates.spa.technique.topRowText2' | t }}
+            {{ 'templates.spa.technique.topRowText2' | t |  replace: 'htmlbr','<br>' }}
           </i>
         </p>
         <a href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/#contact_section" class="spa-technique__topRowButton">
@@ -995,7 +995,7 @@
   </div>
 </section>
 
-<section class="spa-treatments">
+<section id="spa-treatments" class="spa-treatments">
   <div class="spa-treatments__container page-width">
     <h2 class="spa-treatments__title spa-treatments__anim1 heading">
       {{ 'templates.spa.treatments.title' | t }}

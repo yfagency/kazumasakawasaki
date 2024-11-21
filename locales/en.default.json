@@ -309,8 +309,8 @@
       "heroSlide2Title": "Original Products",
       "heroSlide2Text": "At the heart of The Kawasaki Way lies the belief that your appearance and internal health are intimately connected. Our original products, crafted from meticulously selected Japanese plant materials, provide a holistic daily care routine for your face and body. Experience the swift, transformative power of The Kawasaki Way, bringing balance and vitality to both your inner self and outward beauty.",
       "heroSlide2Button": "view product",
-      "heroSlide3Title": "PLANT FERMENTATION FOOD",
-      "heroSlide3Text": "More than 80 plant materials are fermented and roasted to be used as everyday nutrition, beauty, and health support for people who like to enjoy an active life.",
+      "heroSlide3Title": "Plant Fermented Food -Kazu-",
+      "heroSlide3Text": "A fermented food product crafted with meticulous care using carefully selected ingredients and methods for beauty and health. Oxidative stress, caused by \"reactive oxygen species,\" is said to account for 90% of aging and disease. \"Kazu - Plant-Based Fermented Food\" was born to address this. It combines enzyme-rich ingredients with SOD-like properties, which help eliminate reactive oxygen species, along with over 80 types of roasted, fermented plant materials, all processed into granules.",
       "heroSlide3Button": "view product",
       "introTitle": "Original Products",
       "introText": "At the heart of The Kawasaki Way lies the belief that your appearance and internal health are intimately connected. Our original products, crafted from meticulously selected Japanese plant materials, provide a holistic daily care routine for your face and body. Experience the swift, transformative power of The Kawasaki Way, bringing balance and vitality to both your inner self and outward beauty.",
@@ -325,16 +325,16 @@
       "heroSlide1Text": "Experience the revolutionary Kawasaki Way, a holistic approach to beauty and health that unveils the true potential within you. Our treatments sculpt the human form into a masterpiece, invigorating your spirit and energizing your body. Feel the vitality flowing through you as our techniques deliver results that transcend language barriers, leaving you refreshed and ready to embrace life's possibilities.",
       "hero1Button": "About the spa",
       "heroSlide2Text": "Experience the unparalleled luxury of our treatments, where multiple therapists work in harmony to rejuvenate your entire body. This unique approach ensures a thorough, holistic treatment, with each therapist focusing on different parts of the body in rotation, delivering results beyond expectations in a remarkably short time.",
-      "heroSlide2Text2": "Treatment time 12 minutes",
+      "heroSlide2Text2": "We offer two tailored spa treatment courses designed to suit your body's condition:htmlbrhtmlbr• E TRI ESSENCE Coursehtmlbr• MIGLIORE ESSENCE Course",
       "hero2Button": "About the spa",
       "heroSlide3Text": "Experience the unparalleled luxury of our treatments, where multiple therapists work in harmony to rejuvenate your entire body. This unique approach ensures a thorough, holistic treatment, with each therapist focusing on different parts of the body in rotation, delivering results beyond expectations in a remarkably short time.",
-      "heroSlide3Text3": "Treatment time 12 minutes",
+      "heroSlide3Text3": "We offer two tailored spa treatment courses designed to suit your body's condition:htmlbrhtmlbr• E TRI ESSENCE Coursehtmlbr• MIGLIORE ESSENCE Course",
       "hero3Button": "About the spa",
       "technique": {
         "topRowTitle": "Technique",
         "topRowText1": "Our innovative treatments are designed to rejuvenate your entire body through the synchronized efforts of multiple therapists. Instead of focusing on isolated areas, therapists rotate seamlessly, ensuring a comprehensive and immersive experience. This synergy delivers extraordinary results, elevating your expectations in an impressively short time.",
-        "topRowText2": "ETRI ESSENCE: Treatment time 12 minutes",
-        "topRowButton": "Get in touch",
+        "topRowText2": "We offer two tailored spa treatment courses designed to suit your body's condition:htmlbrhtmlbr• E TRI ESSENCE Coursehtmlbr• MIGLIORE ESSENCE Course",
+        "topRowButton": "LEARN MORE",
         "sectionSubtitle": "Le Spa de"
       },
       "products": {
@@ -356,12 +356,12 @@
       },
       "treatments": {
         "title": "Treatments",
-        "card1Title": "ETRI ESSENCE",
+        "card1Title": "E TRI ESSENCE",
         "card1Text": "Indulge in a luxurious seated massage performed by three therapists in perfect harmony. This technique ensures you remain engaged and alert, achieving visible results swiftly. Perfect for enhancing beauty in specific areas like the face, arms, and lower legs, this treatment offers precision and effectiveness in minimal time.",
         "tax": "Tax",
         "card2Title": "MIGLIORE ESSENCE",
         "card2Text": "Immerse yourself in the ultimate rejuvenation with multiple therapists synchronously massaging your entire body as you recline. This method revitalizes your vitality from the extremities to the core, offering profound transformation. Ideal for those desiring dynamic changes in areas such as the face, upper arms, thighs, stomach, waist, and buttocks, this treatment approaches beauty from deep within.",
-        "button": "get in touch"
+        "button": "BOOK NOW"
       },
       "salonList": {
         "title": "salon list"
@@ -370,13 +370,15 @@
     "academy": {
       "hero": {
         "slide1Subtitle": "Designing Your Life Like Art",
-        "slide1Text": "The journey to beauty and health often requires effort, which many find challenging. Yet, when we discover a deep-seated 'desire' within us, akin to the instinctual need for food or sleep, this journey becomes joyful and effortless.This is the inspiration behind The Kawasaki Way.",
+        "slide1Text": "The \"KAWASAKI ACADEMY,\" which was established in 2013, is a school that teaches the knowledge and skills necessary to enhance both the inner and outer aspects of a person, enabling them to live a fulfilling life. Many people have learned here, and through their own efforts, they have balanced their mind and body and developed the strength to pursue their dreams and goals. The philosophy of KAWASAKI ACADEMY is to teach the fundamental and most important things that are essential for living a happy life.",
         "slide2Subtitle": "Graduation Ceremony",
-        "slide2Text": "Celebrate your achievement with a graduation ceremony in prestigious locations like Monaco and Italy,offering a memorable conclusion to your journey.",
+        "slide2Text": "Many beauty and health methods require effort, making it challenging for most people to maintain them. Inspired by the idea that such practices could become as natural and desirable as eating or sleeping, KAWASAKI WAY was developed to make the process effortless and enjoyable. KAWASAKI WAY takes a dual approach, focusing on both the inside and outside of the body to enhance not just appearance and physique but also inner qualities and overall presence. Visible improvements build confidence, spark excitement, and encourage people to pursue their dreams and goals. This positive cycle leads to a richer, more beautiful daily life, which is the ultimate goal of KAWASAKI WAY.",
         "slide3Subtitle": "Visit Monaco",
-        "slide3Text": "Celebrate your achievement with a graduation ceremony in prestigious locations like Monaco and Italy,offering a memorable conclusion to your journey.",
+        "slide3Text": "KAWASAKI ACADEMY offers a variety of courses taught by professionals from different fields, sharing valuable knowledge to enhance beauty and health. In addition to walking lessons by professional models, there are also courses on etiquette, manners, and golf lessons planned. Graduates are invited to participate in a special graduation ceremony held at exclusive locations, primarily in Monaco and Italy, offering them a once-in-a-lifetime experience fitting for this significant milestone.",
         "slideButton": "learn more",
-        "slidetitle": "academy"
+        "slide1title": "About KAWASAKI ACADEMY",
+        "slide2title": "Learn the Cutting-Edge Beauty Technique: The KAWASAKI WAY",
+        "slide3title": "EXPERIENCE THE UNPRECEDENTED AT THE ACADEMY"
       },
       "story": {
         "title": "Our story",
