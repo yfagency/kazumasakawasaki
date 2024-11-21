@@ -62,7 +62,7 @@
 <section id="products" class="home-products">
   <div class="page-width home-products__container">
     <h2 class="home-products__animation1 heading">{{ 'sections.home-products.title' | t }}</h2>
-    <p class="home-products__animation1 bodyText">{{ 'sections.home-products.description' | t }}</p>
+    <p class="home-products__animation1 bodyText">{{ 'sections.home-products.description' | t |  replace: 'htmlbr','<br>' }}</p>
     {% render 'products-row' %}
     <a href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/pages/products" class="home-products__button">{{ 'sections.home-products.button' | t }}</a>
   </div>
