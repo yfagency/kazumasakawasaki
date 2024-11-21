@@ -287,7 +287,7 @@
         </a>
       {%- endif -%}
 
-      <div class="navLang">
+      {% comment %} <div class="navLang">
         {% if shop.locale != "en" %}
           <a href="/">
             EN
@@ -297,7 +297,7 @@
             JP
           </a>
         {% endif %}
-      </div>
+      </div> {% endcomment %}
 
       {%- for block in section.blocks -%}
         {%- case block.type -%}
