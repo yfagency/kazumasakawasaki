@@ -766,7 +766,7 @@
     }
 
     .productsHero__container {
-      background: #00004ec9;
+      background: #00004ecc;
     }
 
     .productsHero__backgroundImg {
@@ -817,17 +817,23 @@
         <p class="productsHero__text1">
           {{ 'templates.products.heroSlide1Text' | t }}
         <br>
-        <a href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/products/kazumasa-kawasaki-essence">buy now</a>
+        <a href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/products/kazumasa-kawasaki-essence">
+          {{ 'templates.products.heroSlide1Button' | t }}
+        </a>
         </p>
         <p class="productsHero__text2">
           {{ 'templates.products.heroSlide2Text' | t }}
         <br>
-        <a href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/products/kazumasa-kawasaki-cream">buy now</a>
+        <a href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/products/kazumasa-kawasaki-cream">
+          {{ 'templates.products.heroSlide1Button' | t }}
+        </a>
         </p>
         <p class="productsHero__text3">
           {{ 'templates.products.heroSlide3Text' | t | replace: 'htmlbr','<br>' }}
         <br>
-        <a href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/products/kazumasa-kawasaki-plant-fermentation-food">buy now</a>
+        <a href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/products/kazumasa-kawasaki-plant-fermentation-food">
+          {{ 'templates.products.heroSlide1Button' | t }}
+        </a>
         </p>
       </div>
     </div>
