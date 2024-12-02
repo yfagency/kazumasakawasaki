@@ -97,10 +97,10 @@
     color: #fff;
     text-align: center;
     text-shadow: 0px 4px 44px rgba(0, 0, 78, 0.25);
-    font-family: "Bodoni Moda", serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 1.125vw;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 100%;
     letter-spacing: 1.62px;
     text-transform: uppercase;
@@ -151,14 +151,14 @@
     position: absolute;
     bottom: 0;
     margin: 0 auto 20px;
-    width: 100%;
+    width: auto;
     transition: .3s;
-    font-family: "Bodoni Moda", serif;
+    font-family: "Playfair Display", serif;
+    left: calc(50% - 339.948px/2)
   }
   
-  .home-hero__bottom:hover {
+  .home-hero__bottom.hovered {
     height: 100%;
-    /* background: url('https://cdn.shopify.com/s/files/1/0892/7651/4595/files/kawasaki_way_bg.svg?v=1725525516'); */
     background-color: #00004E;
     background-size: cover;
     background-position: center;
@@ -171,8 +171,8 @@
     transition: .3s;
   }
 
-  .home-hero__bottom:hover .home-hero__wave1,
-  .home-hero__bottom:hover .home-hero__wave2 {
+  .home-hero__bottom.hovered .home-hero__wave1,
+  .home-hero__bottom.hovered .home-hero__wave2 {
     opacity: 0;
     transition: .3s;
   }
@@ -182,7 +182,7 @@
     transition: .3s;
   }
 
-  .home-hero__bottom:hover .home-hero__logo {
+  .home-hero__bottom.hovered .home-hero__logo {
     top: 0;
     bottom: unset;
     position: relative;
@@ -190,14 +190,16 @@
     z-index: 9999;
   }
 
-  .home-hero__bottom:hover .home-hero__bottomText {
+  .home-hero__bottom.hovered .home-hero__bottomText {
     position: relative;
     display: block;
     transition: .3s;
     z-index: 9999;
+    width: 100%;
+    left: unset;
   }
   
-  .home-hero__bottom:hover .home-hero__bottomText::after {
+  .home-hero__bottom.hovered .home-hero__bottomText::after {
     content: '{{ 'sections.home-hero.kkWayContent' | t }}';
     color: #FFF;
     text-align: center;
@@ -216,7 +218,7 @@
     z-index: 9999;
   }
 
-  .home-hero__bottom:hover a {
+  .home-hero__bottom.hovered a {
     color: #FFF;
     font-family: "Open Sans";
     font-size: 20px;
@@ -354,7 +356,7 @@
       </a>
     </div>
   </div>
-  <div class="hovered home-hero__bottom">
+  <div class="home-hero__bottom">
     <img class="home-hero__wave1"
       src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/kk-home-wave1.svg?v=1724821827" />
     <img class="home-hero__wave2"
@@ -368,3 +370,24 @@
     <a href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/pages/kawasaki-way">{{ 'sections.home-hero.kkWayContentLink' | t }}</a>
   </div>
 </section>
+
+<script>
+  // Select the elements
+const bottomTextElement = document.querySelector('.home-hero__bottomText');
+const bottomElement = document.querySelector('.home-hero__bottom');
+const homeHeroElement = document.querySelector('.home-hero');
+
+// Add hover effect when hovering over .home-hero__bottomText
+bottomTextElement.addEventListener('mouseover', () => {
+  bottomElement.classList.add('hovered'); // Add the hover effect
+});
+
+// Remove hover effect when mouse leaves .home-hero
+homeHeroElement.addEventListener('mouseout', (event) => {
+  // Ensure it's leaving the whole .home-hero, not child elements
+  if (!homeHeroElement.contains(event.relatedTarget)) {
+    bottomElement.classList.remove('hovered'); // Remove the hover effect
+  }
+});
+
+</script>

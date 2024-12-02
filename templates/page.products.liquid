@@ -206,10 +206,10 @@
     color: #DF1616;
     text-align: center;
     text-shadow: 0px 4px 44px rgba(0, 0, 78, 0.25);
-    font-family: "Bodoni Moda", serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 18px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 100%;
     letter-spacing: 1.62px;
     text-transform: uppercase;
@@ -718,6 +718,8 @@
     display: flex;
     gap: 40px;
     align-items: center;
+    width: 100%;
+    justify-content: center;
   }
 
   .productsHero .controls button.active {
@@ -727,11 +729,11 @@
   }
   
   .productsHero .controls button {
-    width: 15px;
-    height: 15px;
-    background-color: #fff;
+    width: 7.5px;
+    height: 7.5px;
+    background-color: #F32652;
     opacity: .5;
-    color: #fff;
+    color: #F32652;
     border: none;
     border-radius: 100px;
     transition: .3s;
@@ -845,7 +847,7 @@
     </div>
   </div>
 
-  <img class="productsHero__backgroundImg" src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/products-hero-background-v2.svg?v=1731910303" >
+  <img class="productsHero__backgroundImg" src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/kk-products-hero-blue-background.svg?v=1724993611" >
 
   <img class="productsHero__img1" src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/PMAWT5R9_output_0_1.jpg?v=1724995435" />
 
@@ -873,8 +875,8 @@ tlCombined.add("group1Start") // Label for the start of group 1
   .to([".productsHero__title1", ".productsHero__text1", ".productsHero__img1"], {
     bottom: '-600px',
     opacity: 0,
-    duration: 0.5,
-    delay: 5
+    duration: 0.75,
+    delay: 7.5
   });
 
 // Group 2 (Title 2, Text 2, Image 2 fades in)
@@ -883,13 +885,13 @@ tlCombined.add("group2Start") // Label for the start of group 2
   .to([".productsHero__title2", ".productsHero__text2", ".productsHero__img2"], {
     bottom: 'auto',
     opacity: 1,
-    duration: 0.8
+    duration: 1
   }, "<")
   .to([".productsHero__title2", ".productsHero__text2", ".productsHero__img2"], {
     bottom: '-600px',
     opacity: 0,
-    duration: 0.5,
-    delay: 5
+    duration: 0.75,
+    delay: 7.5
   });
 
 // Group 3 (Title 3, Text 3, Image 3 fades in)
@@ -898,20 +900,20 @@ tlCombined.add("group3Start") // Label for the start of group 3
   .to([".productsHero__title3", ".productsHero__text3", ".productsHero__img3"], {
     bottom: 'auto',
     opacity: 1,
-    duration: 0.8
+    duration: 1
   }, "<")
   .to([".productsHero__title3", ".productsHero__text3", ".productsHero__img3"], {
     bottom: '-600px',
     opacity: 0,
-    duration: 0.5,
-    delay: 5
+    duration: 0.75,
+    delay: 7.5
   });
 
 // Return to Group 1
 tlCombined.to([".productsHero__title1", ".productsHero__text1", ".productsHero__img1"], {
   bottom: 'auto',
   opacity: 1,
-  duration: 0.8
+  duration: 1
 }, "<");
 
 // Get button elements

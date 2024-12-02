@@ -90,10 +90,10 @@
   .product-topSection__subtitle {
     color: #fff;
     text-shadow: 0px 4px 44px rgba(0, 0, 78, 0.25);
-    font-family: "Bodoni Moda", serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 18px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 100%;
     letter-spacing: 1.62px;
     text-transform: uppercase;
@@ -104,7 +104,18 @@
     color: #FFF;
     font-family: "Bodoni Moda", serif;
     text-transform: uppercase;
-    margin: 0 0 20px;
+    margin: 0;
+  }
+
+  .product-topSection__type {
+    margin: 10px 0 20px;
+    display: block;
+    color: #FFF;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
   }
 
   .product-topSection .product__description {
@@ -307,6 +318,7 @@
       <div>
         <p class="product-topSection__subtitle product-topSection__anim1">Kazumasa Kawasaki</p>
         <h1 class="product-topSection__title product-topSection__anim1 heading">{{ product.title | escape }}</h1>
+        <span class="product-topSection__type">{{ product.type }}</span>
 
           <div id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
             {%- render 'price',
