@@ -746,6 +746,28 @@
 </section>
 
 <script>
+  document.addEventListener('click', function(event) {
+    // Check if the clicked element is the desired input
+    if (event.target.matches('input[name="my-accordion-3"]')) {
+      // Find the parent div with the class "collapse-plus"
+      const parentCollapse = event.target.closest('.collapse-plus');
+      if (parentCollapse) {
+        // Toggle between the classes
+        if (parentCollapse.classList.contains('collapse-close')) {
+          parentCollapse.classList.remove('collapse-close');
+          parentCollapse.classList.add('collapse-open');
+        } else if (parentCollapse.classList.contains('collapse-open')) {
+          parentCollapse.classList.remove('collapse-open');
+          parentCollapse.classList.add('collapse-close');
+        } else {
+          parentCollapse.classList.add('collapse-open');
+        }
+      }
+    }
+  });
+</script>
+
+<script>
 
   const classes = [
     '.faq-accordion__anim1',

@@ -186,7 +186,7 @@
   .academy-story__title {
     color: #000;
     text-align: center;
-    font-family: "Bodoni Moda", serif;
+    font-family: "Open Sans", sans-serif;
     text-transform: uppercase;
     margin: 0 0 40px;
   }
@@ -237,12 +237,11 @@
     color: #DF1616;
     text-align: center;
     text-shadow: 0px 4px 44px rgba(0, 0, 78, 0.25);
-    font-family: "Bodoni Moda", serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 18px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 100%;
-    /* 18px */
     letter-spacing: 1.62px;
     text-transform: uppercase;
     margin: 0;
@@ -440,7 +439,7 @@
 {% assign slide2title = 'templates.academy.hero.slide2title' | t %}
 {% assign slide3title = 'templates.academy.hero.slide3title' | t %}
 
-<section class="products-hero">
+{% comment %} <section class="products-hero">
   <div class="swiper">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
@@ -458,7 +457,395 @@
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
   </div>
+</section> {% endcomment %}
+
+{% comment %} NEW HERO {% endcomment %}
+<style>
+  .productsHero {
+    position: relative;
+  }
+
+  .productsHero__container {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 120px 20px 150px;
+    z-index: 3;
+    position: relative;
+  }
+
+  .productsHero__subtitle {
+    color: #F32652;
+    text-shadow: 0px 4px 44px rgba(0, 0, 78, 0.25);
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 18px */
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  .productsHero__content {
+    width: 600px;
+  }
+
+  .productsHero__titleBox {
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .productsHero__title1,
+  .productsHero__title2,
+  .productsHero__title3 {
+    position: absolute;
+    color: #fff;
+    font-family: "Bodoni Moda", serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 3.6px;
+    text-transform: uppercase;
+  }
+
+  .productsHero__title2,
+  .productsHero__title3 {
+    bottom: -600px;
+  }
+
+  .productsHero__textBox {
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .productsHero__text1,
+  .productsHero__text2,
+  .productsHero__text3 {
+    position: absolute;
+    color: #fff;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  .productsHero__text2,
+  .productsHero__text3 {
+    bottom: -600px;
+  }
+
+  .productsHero__text1 a,
+  .productsHero__text2 a,
+  .productsHero__text3 a {
+    color: #fff;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    display: inline-flex;
+    height: 52px;
+    padding: 15px 70px;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border: 1px solid #fff;
+    margin: 40px 0 0;
+  }
+
+  .productsHero__backgroundImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    width: 75vw;
+    object-fit: cover;
+    object-position: right;
+  }
+
+  .productsHero__img1,
+  .productsHero__img2,
+  .productsHero__img3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    width: 100%;
+  }
+
+  .productsHero__img2,
+  .productsHero__img3 {
+    opacity: 0;
+  }
+
+  .productsHero .controls {
+    position: absolute;
+    z-index: 3;
+    bottom: 50px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .productsHero .controls button.active {
+    opacity: 1;
+    transition: .3s;
+    transform: scale(1.5);
+  }
+  
+  .productsHero .controls button {
+    width: 7.5px;
+    height: 7.5px;
+    background-color: #F32652;
+    opacity: .5;
+    color: #F32652;
+    border: none;
+    border-radius: 100px;
+    transition: .3s;
+  }
+
+  @media (max-width: 1440px) {
+    .productsHero__content {
+      width: 500px;
+    }
+
+    .productsHero__title1,
+    .productsHero__title2,
+    .productsHero__title3 {
+      font-size: 32px;
+      line-height: 140%;
+    }
+
+    .productsHero__titleBox {
+      height: 200px;
+    }
+
+    .productsHero__text1,
+    .productsHero__text2,
+    .productsHero__text3 {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 1279px) {
+    .productsHero__content {
+      width: 100%;
+    }
+
+    .productsHero__container {
+      background: #00004ecc;
+    }
+
+    .productsHero__backgroundImg {
+      display: none;
+    }
+
+    .productsHero__title1,
+    .productsHero__title2,
+    .productsHero__title3 {
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    .productsHero__titleBox {
+      height: 150px;
+    }
+
+    .productsHero__text1,
+    .productsHero__text2,
+    .productsHero__text3 {
+      font-size: 12px;
+    }
+
+    .productsHero__img1,
+    .productsHero__img2,
+    .productsHero__img3 {
+      object-position: 80%;
+    }
+
+    .productsHero .controls {
+      margin-left: -20px;
+    }
+  }
+</style>
+
+<section class="productsHero">
+  <div class="productsHero__container">
+    <div class="productsHero__content">
+      <span class="productsHero__subtitle">Kazumasa Kawasaki</span>
+      <div class="productsHero__titleBox">
+        <h1 class="productsHero__title1">
+          {{ 'templates.academy.hero.slide1title' | t }}
+        </h1>
+
+        <h1 class="productsHero__title2">
+          {{ 'templates.academy.hero.slide2title' | t }}
+        </h1>
+
+        <h1 class="productsHero__title3">
+          {{ 'templates.academy.hero.slide3title' | t }}
+        </h1>
+
+      </div>
+      <div class="productsHero__textBox">
+        <p class="productsHero__text1">
+
+        <b>
+          {{ 'templates.academy.hero.slide1Subtitle' | t }}
+        </b><br><br>
+        {{ 'templates.academy.hero.slide1Text' | t }}
+        <br>
+        <a href="#academy-story">
+          {{ 'templates.academy.hero.slideButton' | t }}
+        </a>
+        </p>
+
+        <p class="productsHero__text2">
+          <b>
+            {{ 'templates.academy.hero.slide2Subtitle' | t }}
+          </b><br><br>
+          {{ 'templates.academy.hero.slide2Text' | t }}
+          <br>
+          <a href="#academy-story">
+            {{ 'templates.academy.hero.slideButton' | t }}
+          </a>
+        </p>
+
+        <p class="productsHero__text3">
+          <b>
+            {{ 'templates.academy.hero.slide3Subtitle' | t }}
+          </b><br><br>
+          {{ 'templates.academy.hero.slide3Text' | t }}
+          <br>
+          <a href="#academy-story">
+            {{ 'templates.academy.hero.slideButton' | t }}
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="group1Btn" data-label="group1Start"></button>
+      <button id="group2Btn" data-label="group2Start"></button>
+      <button id="group3Btn" data-label="group3Start"></button>
+    </div>
+  </div>
+
+  <img class="productsHero__backgroundImg" src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/kk-products-hero-blue-background.svg?v=1724993611" >
+
+  {{ images['kz-diploma.png'] | image_url: width: 1000 | image_tag: class: 'productsHero__img1' }}
+  
+  {{ images['kk-academy-slide2.jpg'] | image_url: width: 1000 | image_tag: class: 'productsHero__img2' }}
+  
+  {{ images['kk-academy-slide3.jpg'] | image_url: width: 1000 | image_tag: class: 'productsHero__img3' }}
+
 </section>
+
+<script>
+
+// Function to update active button
+function setActiveButton(label) {
+  document.querySelectorAll(".controls button").forEach((button) => {
+    button.classList.toggle("active", button.dataset.label === label);
+  });
+}
+
+// Combined Timeline
+var tlCombined = gsap.timeline({ repeat: -1 });
+
+// Group 1 (Title 1, Text 1, Image 1 fades out)
+tlCombined.add("group1Start") // Label for the start of group 1
+  .call(() => setActiveButton("group1Start")) // Update active button
+  .to([".productsHero__title1", ".productsHero__text1", ".productsHero__img1"], {
+    bottom: '-600px',
+    opacity: 0,
+    duration: 0.75,
+    delay: 7.5
+  });
+
+// Group 2 (Title 2, Text 2, Image 2 fades in)
+tlCombined.add("group2Start") // Label for the start of group 2
+  .call(() => setActiveButton("group2Start")) // Update active button
+  .to([".productsHero__title2", ".productsHero__text2", ".productsHero__img2"], {
+    bottom: 'auto',
+    opacity: 1,
+    duration: 1
+  }, "<")
+  .to([".productsHero__title2", ".productsHero__text2", ".productsHero__img2"], {
+    bottom: '-600px',
+    opacity: 0,
+    duration: 0.75,
+    delay: 7.5
+  });
+
+// Group 3 (Title 3, Text 3, Image 3 fades in)
+tlCombined.add("group3Start") // Label for the start of group 3
+  .call(() => setActiveButton("group3Start")) // Update active button
+  .to([".productsHero__title3", ".productsHero__text3", ".productsHero__img3"], {
+    bottom: 'auto',
+    opacity: 1,
+    duration: 1
+  }, "<")
+  .to([".productsHero__title3", ".productsHero__text3", ".productsHero__img3"], {
+    bottom: '-600px',
+    opacity: 0,
+    duration: 0.75,
+    delay: 7.5
+  });
+
+// Return to Group 1
+tlCombined.to([".productsHero__title1", ".productsHero__text1", ".productsHero__img1"], {
+  bottom: 'auto',
+  opacity: 1,
+  duration: 1
+}, "<");
+
+// Get button elements
+const buttons = document.querySelectorAll(".controls button");
+
+// Function to update active button class
+function updateActiveButton(activeLabel) {
+  buttons.forEach((button) => {
+    if (button.dataset.label === activeLabel) {
+      button.classList.add("active");
+    } else {
+      button.classList.remove("active");
+    }
+  });
+}
+
+// Button controls
+document.getElementById("group1Btn").addEventListener("click", function () {
+  tlCombined.seek("group1Start").play();
+  updateActiveButton("group1Start");
+});
+
+document.getElementById("group2Btn").addEventListener("click", function () {
+  tlCombined.seek("group2Start").play();
+  updateActiveButton("group2Start");
+});
+
+document.getElementById("group3Btn").addEventListener("click", function () {
+  tlCombined.seek("group3Start").play();
+  updateActiveButton("group3Start");
+});
+
+</script>
+{% comment %} NEW HERO {% endcomment %}
 
 <script>
   const swiper = new Swiper('.swiper', {
@@ -719,7 +1106,7 @@
       {{ 'templates.academy.FAQ.subtitle' | t }}
     </p>
 
-    <div class="collapse collapse-plus faq-accordion__anim2">
+    <div class="collapse collapse-plus">
       <input type="radio" name="my-accordion-3" checked="checked" />
       <div class="collapse-title text-xl font-medium">
         {{ 'templates.academy.FAQ.FAQ1.mainTitle' | t }}
@@ -756,6 +1143,27 @@
 
   </div>
 </section>
+
+<script>
+  document.addEventListener('click', function(event) {
+    // Check if the clicked element is the desired input
+    if (event.target.matches('input[name="my-accordion-3"]')) {
+        // Find the parent div with the class "collapse-plus"
+        const parentCollapse = event.target.closest('.collapse-plus');
+        if (parentCollapse) {
+            // Toggle between the classes
+            if (parentCollapse.classList.contains('collapse-close')) {
+                parentCollapse.classList.remove('collapse-close');
+                parentCollapse.classList.add('collapse-open');
+            } else {
+                parentCollapse.classList.remove('collapse-open');
+                parentCollapse.classList.add('collapse-close');
+            }
+        }
+    }
+  });
+</script>
+
 {% comment %} FAQ {% endcomment %}
 
 <script>

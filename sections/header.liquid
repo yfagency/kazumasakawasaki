@@ -287,15 +287,38 @@
         </a>
       {%- endif -%}
 
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const localeToggleEN = document.getElementById('locale-toggle-en');
+          const localeToggleJA = document.getElementById('locale-toggle-ja');
+
+          if (localeToggleEN && localeToggleJA) {
+            const currentPath = window.location.pathname;
+
+            // Check if the current path is in the "ja" namespace
+            const isJapanese = currentPath === '/ja' || currentPath.startsWith('/ja/');
+
+            // Remove '/ja' if it exists
+            const cleanPath = isJapanese ? currentPath.replace(/^\/ja/, '') : currentPath;
+
+            // Handle edge case for homepage
+            const enPath = cleanPath === '' ? '/' : cleanPath;
+            const jaPath = cleanPath === '/' ? '/ja' : `/ja${cleanPath}`;
+
+            // Set toggle hrefs
+            localeToggleEN.href = enPath; // For English
+            localeToggleJA.href = jaPath; // For Japanese
+          }
+        });
+      </script>
+
       <div class="navLang">
         {% if shop.locale != "en" %}
-          <a href="/">
-            EN
-          </a>
+          <a id="locale-toggle-en" href="#">EN</a>
+          <a style="display: none;" id="locale-toggle-ja" href="#">JP</a>
         {% else %}
-          <a href="/ja">
-            JP
-          </a>
+          <a style="display: none;" id="locale-toggle-en" href="#">EN</a>
+          <a id="locale-toggle-ja" href="#">JP</a>
         {% endif %}
       </div>
 
