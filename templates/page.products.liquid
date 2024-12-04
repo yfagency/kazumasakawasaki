@@ -244,6 +244,13 @@
     align-items: center;
     gap: 10px;
     background: #00004E;
+    transition: .5s;
+  }
+
+  .products-intro__link:hover {
+    background: #332CB1;
+    color: #fff;
+    transition: .5s;
   }
 
   /* Mobile */
@@ -681,6 +688,15 @@
     flex-shrink: 0;
     border: 1px solid #fff;
     margin: 40px 0 0;
+    transition: .5s;
+  }
+
+  .productsHero__text1 a:hover,
+  .productsHero__text2 a:hover,
+  .productsHero__text3 a:hover {
+    background: #fff;
+    color: #00004E;
+    transition: .5s;
   }
 
   .productsHero__backgroundImg {
@@ -798,6 +814,46 @@
       object-position: 80%;
     }
   }
+
+  .products-progressBar1 {
+    width: 0px;
+    height: 5px;
+    background: #fff;
+    display: block;
+    position: absolute;
+    z-index: 3;
+    bottom: 50px;
+    z-index: 10;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(255,255,255, .5);
+  }
+  
+  .products-progressBar2 {
+    width: 100px;
+    height: 5px;
+    background: #fff;
+    display: block;
+    position: absolute;
+    z-index: 3;
+    bottom: 50px;
+    z-index: 10;
+    opacity: .25;
+    border-radius: 4px;
+  }
+
+  @media (max-width: 600px) {
+    .productsHero .controls {
+      right: 20px;
+      width: auto;
+      bottom: 20px;
+    }
+
+    .products-progressBar1,
+    .products-progressBar2 {
+      left: 20px;
+      bottom: 20px;
+    }
+  }
 </style>
 
 <section class="productsHero">
@@ -845,6 +901,9 @@
       <button id="group2Btn" data-label="group2Start"></button>
       <button id="group3Btn" data-label="group3Start"></button>
     </div>
+
+    <span class="products-progressBar1"></span>
+    <span class="products-progressBar2"></span>
   </div>
 
   <img class="productsHero__backgroundImg" src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/kk-products-hero-blue-background.svg?v=1724993611" >
@@ -861,6 +920,9 @@
 
 // Function to update active button
 function setActiveButton(label) {
+
+  progressBarAnimation()
+
   document.querySelectorAll(".controls button").forEach((button) => {
     button.classList.toggle("active", button.dataset.label === label);
   });
@@ -921,6 +983,7 @@ const buttons = document.querySelectorAll(".controls button");
 
 // Function to update active button class
 function updateActiveButton(activeLabel) {
+
   buttons.forEach((button) => {
     if (button.dataset.label === activeLabel) {
       button.classList.add("active");
@@ -945,6 +1008,21 @@ document.getElementById("group3Btn").addEventListener("click", function () {
   tlCombined.seek("group3Start").play();
   updateActiveButton("group3Start");
 });
+
+const progressBarAnimation = () => {
+
+  const newTl = gsap.timeline()
+
+  newTl.to(".products-progressBar1", {
+    width: "0",
+    duration: .2
+  })
+
+  newTl.to(".products-progressBar1", {
+    width: "100px",
+    duration: 8.5
+  })
+}
 
 </script>
 
@@ -1091,6 +1169,12 @@ document.getElementById("group3Btn").addEventListener("click", function () {
     margin-top: 35px;
     border-bottom: 2px solid #00004E;
     padding-bottom: 5px;
+    transition: .5s;
+  }
+
+  .products-productLink:hover {
+    border-color: transparent;
+    transition: .5s;
   }
 
   /* Laptop */

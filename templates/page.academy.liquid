@@ -225,6 +225,13 @@
     align-items: center;
     gap: 10px;
     background: #00004E;
+    transition: .5s;
+  }
+
+  .academy-story__link:hover {
+    background: #332CB1;
+    color: #fff;
+    transition: .5s;
   }
 
   /* COURSE */
@@ -286,6 +293,7 @@
     text-transform: uppercase;
     margin: 0 0 15px;
     font-size: 26px;
+    letter-spacing: 0;
   }
 
   .academy-course__rightText {
@@ -308,6 +316,13 @@
     align-items: center;
     gap: 10px;
     background: #00004E;
+    transition: .5s;
+  }
+
+  .academy-course__rightLink:hover {
+    background: #332CB1;
+    color: #fff;
+    transition: .5s;
   }
 
   .academy-course__bottomTitle {
@@ -380,7 +395,7 @@
     font-weight: 600;
     line-height: 120%;
     text-transform: uppercase;
-    margin: 20px 0 10px;
+    margin: 30px 0 10px;
   }
 
   .academy-features__cardText {
@@ -405,6 +420,13 @@
     background: #00004E;
     margin-top: 80px;
     display: inline-block;
+    transition: .5s;
+  }
+
+  .academy-features__button:hover {
+    background: #332CB1;
+    color: #fff;
+    transition: .5s;
   }
 
   @media (max-width: 768px) {
@@ -559,6 +581,15 @@
     flex-shrink: 0;
     border: 1px solid #fff;
     margin: 40px 0 0;
+    transition: .5s;
+  }
+
+  .productsHero__text1 a:hover,
+  .productsHero__text2 a:hover,
+  .productsHero__text3 a:hover {
+    background: #fff;
+    color: #00004E;
+    transition: .5s;
   }
 
   .productsHero__backgroundImg {
@@ -681,6 +712,46 @@
       margin-left: -20px;
     }
   }
+
+  .products-progressBar1 {
+    width: 0px;
+    height: 5px;
+    background: #fff;
+    display: block;
+    position: absolute;
+    z-index: 3;
+    bottom: 50px;
+    z-index: 10;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(255,255,255, .5);
+  }
+  
+  .products-progressBar2 {
+    width: 100px;
+    height: 5px;
+    background: #fff;
+    display: block;
+    position: absolute;
+    z-index: 3;
+    bottom: 50px;
+    z-index: 10;
+    opacity: .25;
+    border-radius: 4px;
+  }
+
+  @media (max-width: 600px) {
+    .productsHero .controls {
+      right: 20px;
+      width: auto;
+      bottom: 20px;
+    }
+
+    .products-progressBar1,
+    .products-progressBar2 {
+      left: 20px;
+      bottom: 20px;
+    }
+  }
 </style>
 
 <section class="productsHero">
@@ -743,6 +814,9 @@
       <button id="group2Btn" data-label="group2Start"></button>
       <button id="group3Btn" data-label="group3Start"></button>
     </div>
+
+    <span class="products-progressBar1"></span>
+    <span class="products-progressBar2"></span>
   </div>
 
   <img class="productsHero__backgroundImg" src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/kk-products-hero-blue-background.svg?v=1724993611" >
@@ -759,6 +833,9 @@
 
 // Function to update active button
 function setActiveButton(label) {
+
+  progressBarAnimation()
+
   document.querySelectorAll(".controls button").forEach((button) => {
     button.classList.toggle("active", button.dataset.label === label);
   });
@@ -843,6 +920,21 @@ document.getElementById("group3Btn").addEventListener("click", function () {
   tlCombined.seek("group3Start").play();
   updateActiveButton("group3Start");
 });
+
+const progressBarAnimation = () => {
+
+  const newTl = gsap.timeline()
+
+  newTl.to(".products-progressBar1", {
+    width: "0",
+    duration: .2
+  })
+
+  newTl.to(".products-progressBar1", {
+    width: "100px",
+    duration: 8.5
+  })
+}
 
 </script>
 {% comment %} NEW HERO {% endcomment %}
@@ -1018,7 +1110,7 @@ document.getElementById("group3Btn").addEventListener("click", function () {
 
   .faq-accordion .collapse-title {
     font-family: 'Open Sans', sans-serif;
-    font-size: 26px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -1066,6 +1158,13 @@ document.getElementById("group3Btn").addEventListener("click", function () {
     background: #00004E;
     margin: 60px auto 0;
     display: inline-block;
+    transition: .5s;
+  }
+
+  .faq-accordion__button:hover {
+    background: #332CB1;
+    color: #fff;
+    transition: .5s;
   }
 
   @media (max-width: 600px) {
