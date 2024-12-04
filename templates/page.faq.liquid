@@ -2,14 +2,14 @@
   .faq-accordion__title {
     color: #111;
     text-align: center;
-    font-family: "Bodoni Moda", serif;
+    font-family: "Playfair Display", serif;
     text-transform: uppercase;
   }
 
   .faq-accordion__category {
     margin: 60px 0 20px;
     text-align: center;
-    font-family: "Bodoni Moda", serif;
+    font-family: "Playfair Display", serif;
     text-transform: uppercase;
   }
 
@@ -91,7 +91,7 @@
       {{ 'templates.FAQ.shoppingGuide.sectionTitle' | t }}
     </h2>
     <div class="collapse collapse-plus">
-      <input type="radio" name="my-accordion-3" checked="checked" />
+      <input type="radio" name="my-accordion-3" />
       <div class="collapse-title text-xl font-medium">
         {{ 'templates.FAQ.shoppingGuide.FAQ1.mainTitle' | t }}
       </div>
@@ -591,51 +591,81 @@
       {{ 'templates.FAQ.academy.sectionTitle' | t }}
     </h2>
     <div class="collapse collapse-plus">
-      <input type="radio" name="my-accordion-3" checked="checked" />
+      <input type="radio" name="my-accordion-3" />
       <div class="collapse-title text-xl font-medium">
-        {{ 'templates.FAQ.academy.FAQ1.title' | t }}
+        {% if shop.locale == 'en' %}
+        What courses are offered at Kawasaki Academy?
+        {% else %}
+        Kawasaki Academyーではどのようなコースが提供されていますか？
+        {% endif %}
       </div>
       <div class="collapse-content">
         {% if shop.locale == 'en' %}
-        <b>What courses are offered at Kawasaki Academy?</b>
-        <br>
         Kawasaki Academy offers a range of courses designed to enhance both personal and professional development. From
         basic courses in the Kawasaki Way to specialized programs in beauty, health, and well-being, our curriculum is
         tailored to meet diverse needs.
-        <br><br>
-        <b>Who can enroll in Kawasaki Academy?</b>
-        <br>
+        {% else %}
+        Kawasaki
+        Academyーでは、個人およびプロフェッショナルの成長を促進するさまざまなコースを提供しています。Kawasaki
+        Wayの基礎コースから、美と健康に関する専門プログラムまで、幅広いニーズに応えるカリキュラムを用意しています。
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="collapse collapse-plus">
+      <input type="radio" name="my-accordion-3" />
+      <div class="collapse-title text-xl font-medium">
+        {% if shop.locale == 'en' %}
+        Who can enroll in Kawasaki Academy?
+        {% else %}
+        Kawasaki Academyーには誰が入学できますか？
+        {% endif %}
+      </div>
+      <div class="collapse-content">
+        {% if shop.locale == 'en' %}
         Our courses are open to everyone, whether you are pursuing personal growth, a hobby, or a professional career in
         beauty and wellness. We welcome individuals from all backgrounds who are passionate about improving their inner
         and outer beauty.
-        <br><br>
-        <b>How do I apply for a course at Kawasaki Academy?</b>
-        <br>
+        {% else %}
+        私たちのコースは、自己成長を追求する方、趣味として学びたい方、美とウェルネスのプロフェッショナルキャリアを目指す方など、すべての方に開かれています。内面と外見の美を向上させることに情熱を持つ方を歓迎します。
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="collapse collapse-plus">
+      <input type="radio" name="my-accordion-3" />
+      <div class="collapse-title text-xl font-medium">
+        {% if shop.locale == 'en' %}
+        How do I apply for a course at Kawasaki Academy?
+        {% else %}
+        Kawasaki Academyーのコースに申し込むにはどうすればよいですか？
+        {% endif %}
+      </div>
+      <div class="collapse-content">
+        {% if shop.locale == 'en' %}
         To apply, simply visit our website and fill out the online application form. We recommend applying early, as our
         courses tend to fill up quickly due to high demand.
-        <br><br>
-        <b>Are there any prerequisites for enrolling in the Academy's courses?</b>
-        <br>
+        {% else %}
+        申し込みは、当社ウェブサイトからオンライン申し込みフォームに記入するだけで簡単にできます。高い需要によりコースが早期に満席となるため、お早めの申し込みをお勧めします。
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="collapse collapse-plus">
+      <input type="radio" name="my-accordion-3" />
+      <div class="collapse-title text-xl font-medium">
+        {% if shop.locale == 'en' %}
+        Are there any prerequisites for enrolling in the Academy's courses?
+        {% else %}
+        アカデミーのコースに参加するための前提条件はありますか？
+        {% endif %}
+      </div>
+      <div class="collapse-content">
+        {% if shop.locale == 'en' %}
         There are no specific prerequisites for most of our courses. However, for advanced programs, prior experience in
         the field may be beneficial. Each course description on our website provides detailed information on any
         recommended experience or background.
         {% else %}
-        <b>Kawasaki Academyーではどのようなコースが提供されていますか？</b>
-        <br>
-        Kawasaki
-        Academyーでは、個人およびプロフェッショナルの成長を促進するさまざまなコースを提供しています。Kawasaki
-        Wayの基礎コースから、美と健康に関する専門プログラムまで、幅広いニーズに応えるカリキュラムを用意しています。
-        <br><br>
-        <b>Kawasaki Academyーには誰が入学できますか？</b>
-        <br>
-        私たちのコースは、自己成長を追求する方、趣味として学びたい方、美とウェルネスのプロフェッショナルキャリアを目指す方など、すべての方に開かれています。内面と外見の美を向上させることに情熱を持つ方を歓迎します。
-        <br><br>
-        <b>Kawasaki Academyーのコースに申し込むにはどうすればよいですか？</b>
-        <br>
-        申し込みは、当社ウェブサイトからオンライン申し込みフォームに記入するだけで簡単にできます。高い需要によりコースが早期に満席となるため、お早めの申し込みをお勧めします。
-        <br><br>
-        <b>アカデミーのコースに参加するための前提条件はありますか？</b>
-        <br>
         ほとんどのコースには特定の前提条件はありません。ただし、上級プログラムについては、事前の経験が役立つ場合があります。各コースの説明には、推奨される経験や背景についての詳細情報が記載されていますのでご確認ください。
         {% endif %}
       </div>
@@ -645,49 +675,79 @@
       {{ 'templates.FAQ.spa.sectionTitle' | t }}
     </h2>
     <div class="collapse collapse-plus">
-      <input type="radio" name="my-accordion-3" checked="checked" />
+      <input type="radio" name="my-accordion-3" />
       <div class="collapse-title text-xl font-medium">
-        {{ 'templates.FAQ.spa.FAQ1.title' | t }}
+        {% if shop.locale == 'en' %}
+        What makes the treatments at Le Spa unique?
+        {% else %}
+        ル・スパのトリートメントの特長は何ですか？
+        {% endif %}
       </div>
       <div class="collapse-content">
         {% if shop.locale == 'en' %}
-        <b>What makes the treatments at Le Spa unique?</b>
-        <br>
         At Le Spa, we offer a revolutionary approach to beauty and wellness. Our treatments involve multiple therapists
         working in perfect harmony, rotating seamlessly to treat your entire body. This method ensures that each area is
         thoroughly rejuvenated, delivering exceptional results in a short time.
-        <br><br>
-        <b>How long does a typical treatment session last?</b>
-        <br>
+        {% else %}
+        ル・スパでは、美とウェルネスへの革新的なアプローチを提供しています。複数のセラピストが調和して全身をトリートメントし、各部位を徹底的にリフレッシュします。この方法により、短時間で優れた結果をもたらします。
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="collapse collapse-plus">
+      <input type="radio" name="my-accordion-3" />
+      <div class="collapse-title text-xl font-medium">
+        {% if shop.locale == 'en' %}
+        How long does a typical treatment session last?
+        {% else %}
+        通常のトリートメントセッションの時間はどれくらいですか？
+        {% endif %}
+      </div>
+      <div class="collapse-content">
+        {% if shop.locale == 'en' %}
         Treatment sessions at Le Spa typically last 12 minutes. Despite the brief duration, the synergistic approach of
         our therapists ensures a comprehensive and effective experience that leaves you feeling revitalized.
-        <br><br>
-        <b>Can I request a specific therapist for my treatment?</b>
-        <br>
+        {% else %}
+        ル・スパでのトリートメントセッションは通常12分間です。短時間にもかかわらず、セラピストのシナジー効果により、包括的で効果的な体験を提供し、活力を取り戻すことができます。
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="collapse collapse-plus">
+      <input type="radio" name="my-accordion-3" />
+      <div class="collapse-title text-xl font-medium">
+        {% if shop.locale == 'en' %}
+        Can I request a specific therapist for my treatment?
+        {% else %}
+        トリートメントに特定のセラピストを指名できますか？
+        {% endif %}
+      </div>
+      <div class="collapse-content">
+        {% if shop.locale == 'en' %}
         While we cannot guarantee the availability of specific therapists, all our staff are highly trained
         professionals who have undergone extensive training at Kawasaki Academy. Rest assured, you will receive
         exceptional care and expertise with every visit.
-        <br><br>
-        <b>How do I book a treatment at Le Spa?</b>
-        <br>
+        {% else %}
+        特定のセラピストのご指名は保証できませんが、全てのスタッフはKawasaki
+        Academyーで徹底的な訓練を受けた高い技術を持つプロフェッショナルです。どの訪問でも優れたケアと専門知識を受けることができますのでご安心ください。
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="collapse collapse-plus">
+      <input type="radio" name="my-accordion-3" />
+      <div class="collapse-title text-xl font-medium">
+        {% if shop.locale == 'en' %}
+        How do I book a treatment at Le Spa?
+        {% else %}
+        ル・スパでのトリートメント予約方法を教えてください。
+        {% endif %}
+      </div>
+      <div class="collapse-content">
+        {% if shop.locale == 'en' %}
         Booking a treatment at Le Spa is easy. You can make a reservation through our online booking system or by
         contacting us directly. We recommend booking in advance to secure your preferred time slot.
         {% else %}
-        <b>ル・スパのトリートメントの特長は何ですか？</b>
-        <br>
-        ル・スパでは、美とウェルネスへの革新的なアプローチを提供しています。複数のセラピストが調和して全身をトリートメントし、各部位を徹底的にリフレッシュします。この方法により、短時間で優れた結果をもたらします。
-        <br><br>
-        <b>通常のトリートメントセッションの時間はどれくらいですか？</b>
-        <br>
-        ル・スパでのトリートメントセッションは通常12分間です。短時間にもかかわらず、セラピストのシナジー効果により、包括的で効果的な体験を提供し、活力を取り戻すことができます。
-        <br><br>
-        <b>トリートメントに特定のセラピストを指名できますか？</b>
-        <br>
-        特定のセラピストのご指名は保証できませんが、全てのスタッフはKawasaki
-        Academyーで徹底的な訓練を受けた高い技術を持つプロフェッショナルです。どの訪問でも優れたケアと専門知識を受けることができますのでご安心ください。
-        <br><br>
-        <b>ル・スパでのトリートメント予約方法を教えてください。</b>
-        <br>
         ル・スパでのトリートメント予約は簡単です。オンライン予約システムから、または直接ご連絡いただくことで予約が可能です。お好みの時間帯を確保するため、事前予約をお勧めします。
         {% endif %}
       </div>
@@ -697,47 +757,77 @@
       {{ 'templates.FAQ.general.sectionTitle' | t }}
     </h2>
     <div class="collapse collapse-plus">
-      <input type="radio" name="my-accordion-3" checked="checked" />
+      <input type="radio" name="my-accordion-3" />
       <div class="collapse-title text-xl font-medium">
-        {{ 'templates.FAQ.general.FAQ1.title' | t }}
+        {% if shop.locale == 'en' %}
+        What is the Kawasaki Way?
+        {% else %}
+        Kawasaki Wayとは何ですか？
+        {% endif %}
       </div>
       <div class="collapse-content">
         {% if shop.locale == 'en' %}
-        <b>What is the Kawasaki Way?</b>
-        <br>
         The Kawasaki Way is a holistic approach to beauty and health, rooted in the belief that true beauty emerges when
         there is harmony between the body and mind. Our methods and products are designed to enhance both your internal
         well-being and external appearance.
-        <br><br>
-        <b>How do I contact customer service?</b>
-        <br>
+        {% else %}
+        Kawasaki Wayは、心身の調和が取れたときに真の美が生まれるという信念に基づいた、美と健康への包括的なアプローチです。私たちの方法と製品は、内面的な健康と外見の美しさを同時に高めるよう設計されています。
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="collapse collapse-plus">
+      <input type="radio" name="my-accordion-3" />
+      <div class="collapse-title text-xl font-medium">
+        {% if shop.locale == 'en' %}
+        How do I contact customer service?
+        {% else %}
+        カスタマーサービスに連絡するにはどうすればよいですか？
+        {% endif %}
+      </div>
+      <div class="collapse-content">
+        {% if shop.locale == 'en' %}
         For any inquiries or assistance, please contact our customer service team. We are available Monday through
         Friday, from 10:00 AM to 5:00 PM Japan time, excluding national holidays. You can reach us by phone or email.
-        <br><br>
-        <b>What payment methods do you accept?</b>
-        <br>
+        {% else %}
+        お問い合わせやサポートが必要な場合は、カスタマーサービスチームまでご連絡ください。対応時間は、月曜日から金曜日の午前10時から午後5時まで（日本時間、祝日を除く）です。お電話またはメールでお問い合わせいただけます。
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="collapse collapse-plus">
+      <input type="radio" name="my-accordion-3" />
+      <div class="collapse-title text-xl font-medium">
+        {% if shop.locale == 'en' %}
+        What payment methods do you accept?
+        {% else %}
+        どのような支払い方法が利用できますか？
+        {% endif %}
+      </div>
+      <div class="collapse-content">
+        {% if shop.locale == 'en' %}
         We accept a variety of payment methods, including credit cards (VISA, MasterCard, AMEX, JCB, Diners Club),
         PayPal, and cash on delivery for domestic orders within Japan.
-        <br><br>
-        <b>Can I return or exchange a product?</b>
-        <br>
+        {% else %}
+        クレジットカード（VISA、MasterCard、AMEX、JCB、ダイナースクラブ）、PayPal、国内注文に限り代金引換がご利用いただけます。
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="collapse collapse-plus">
+      <input type="radio" name="my-accordion-3" />
+      <div class="collapse-title text-xl font-medium">
+        {% if shop.locale == 'en' %}
+        Can I return or exchange a product?
+        {% else %}
+        製品の返品または交換はできますか？
+        {% endif %}
+      </div>
+      <div class="collapse-content">
+        {% if shop.locale == 'en' %}
         Yes, we offer a return and exchange policy within 7 days of receiving your order. Please refer to our Returns
         and Exchanges section for detailed instructions on how to proceed.
         {% else %}
-        <b>Kawasaki Wayとは何ですか？</b>
-        <br>
-        Kawasaki Wayは、心身の調和が取れたときに真の美が生まれるという信念に基づいた、美と健康への包括的なアプローチです。私たちの方法と製品は、内面的な健康と外見の美しさを同時に高めるよう設計されています。
-        <br> <br>
-        <b>カスタマーサービスに連絡するにはどうすればよいですか？</b>
-        <br>
-        お問い合わせやサポートが必要な場合は、カスタマーサービスチームまでご連絡ください。対応時間は、月曜日から金曜日の午前10時から午後5時まで（日本時間、祝日を除く）です。お電話またはメールでお問い合わせいただけます。
-        <br> <br>
-        <b>どのような支払い方法が利用できますか？</b>
-        <br>
-        クレジットカード（VISA、MasterCard、AMEX、JCB、ダイナースクラブ）、PayPal、国内注文に限り代金引換がご利用いただけます。
-        <br> <br>
-        <b>製品の返品または交換はできますか？</b>
-        <br>
         はい、ご注文の受領から7日以内であれば、返品および交換を承っております。詳細な手順については、「返品および交換」のセクションをご参照ください。
         {% endif %}
       </div>

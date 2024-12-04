@@ -186,7 +186,7 @@
   .academy-story__title {
     color: #000;
     text-align: center;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Playfair Display", serif;
     text-transform: uppercase;
     margin: 0 0 40px;
   }
@@ -250,7 +250,7 @@
   .academy-course__title {
     color: #111;
     text-align: center;
-    font-family: "Bodoni Moda", serif;
+    font-family: "Playfair Display", serif;
     text-transform: uppercase;
     margin: 0 0 20px;
   }
@@ -285,6 +285,7 @@
     font-family: "Open Sans", sans-serif;
     text-transform: uppercase;
     margin: 0 0 15px;
+    font-size: 26px;
   }
 
   .academy-course__rightText {
@@ -312,7 +313,7 @@
   .academy-course__bottomTitle {
     color: #000;
     text-align: center;
-    font-family: "Bodoni Moda", serif;
+    font-family: "Playfair Display", serif;
     text-transform: uppercase;
     margin: 100px 0 20px;
   }
@@ -350,7 +351,7 @@
   .academy-features__title {
     color: #000;
     text-align: center;
-    font-family: "Bodoni Moda", serif;
+    font-family: "Playfair Display", serif;
     text-transform: uppercase;
     margin: 0 0 80px;
   }
@@ -374,11 +375,10 @@
     color: #000;
     text-align: center;
     font-family: "Open Sans", sans-serif;
-    font-size: 22px;
+    font-size: 26px;
     font-style: normal;
     font-weight: 600;
     line-height: 120%;
-    /* 26.4px */
     text-transform: uppercase;
     margin: 20px 0 10px;
   }
@@ -503,7 +503,7 @@
   .productsHero__title3 {
     position: absolute;
     color: #fff;
-    font-family: "Bodoni Moda", serif;
+    font-family: "Playfair Display", serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 500;
@@ -982,7 +982,7 @@ document.getElementById("group3Btn").addEventListener("click", function () {
   .faq-accordion__title {
     color: #111;
     text-align: center;
-    font-family: "Bodoni Moda", serif;
+    font-family: "Playfair Display", serif;
     text-transform: uppercase;
   }
 
@@ -1107,32 +1107,47 @@ document.getElementById("group3Btn").addEventListener("click", function () {
     </p>
 
     <div class="collapse collapse-plus">
-      <input type="radio" name="my-accordion-3" checked="checked" />
+      <input type="radio" name="my-accordion-3" />
       <div class="collapse-title text-xl font-medium">
-        {{ 'templates.academy.FAQ.FAQ1.mainTitle' | t }}
+        {{ 'templates.academy.FAQ.FAQ1.title1' | t }}
       </div>
       <div class="collapse-content">
-        <h3 class="faq-accordion__subtitle">
-          {{ 'templates.academy.FAQ.FAQ1.title1' | t }}
-        </h3>
         <p>
           {{ 'templates.academy.FAQ.FAQ1.text1' | t }}
         </p>
-        <h3>
-          {{ 'templates.academy.FAQ.FAQ1.title2' | t }}
-        </h3>
+      </div>
+    </div>
+
+    <div class="collapse collapse-plus">
+      <input type="radio" name="my-accordion-3" />
+      <div class="collapse-title text-xl font-medium">
+        {{ 'templates.academy.FAQ.FAQ1.title2' | t }}
+      </div>
+      <div class="collapse-content">
         <p>
           {{ 'templates.academy.FAQ.FAQ1.text2' | t }}
         </p>
-        <h3>
-          {{ 'templates.academy.FAQ.FAQ1.title3' | t }}
-          </h3>
+      </div>
+    </div>
+
+    <div class="collapse collapse-plus">
+      <input type="radio" name="my-accordion-3" />
+      <div class="collapse-title text-xl font-medium">
+        {{ 'templates.academy.FAQ.FAQ1.title3' | t }}
+      </div>
+      <div class="collapse-content">
         <p>
           {{ 'templates.academy.FAQ.FAQ1.text3' | t }}
         </p>
-        <h3>
-          {{ 'templates.academy.FAQ.FAQ1.title4' | t }}
-        </h3>
+      </div>
+    </div>
+
+    <div class="collapse collapse-plus">
+      <input type="radio" name="my-accordion-3" />
+      <div class="collapse-title text-xl font-medium">
+        {{ 'templates.academy.FAQ.FAQ1.title4' | t }}
+      </div>
+      <div class="collapse-content">
         <p>
           {{ 'templates.academy.FAQ.FAQ1.text4' | t }}
         </p>
@@ -1148,18 +1163,20 @@ document.getElementById("group3Btn").addEventListener("click", function () {
   document.addEventListener('click', function(event) {
     // Check if the clicked element is the desired input
     if (event.target.matches('input[name="my-accordion-3"]')) {
-        // Find the parent div with the class "collapse-plus"
-        const parentCollapse = event.target.closest('.collapse-plus');
-        if (parentCollapse) {
-            // Toggle between the classes
-            if (parentCollapse.classList.contains('collapse-close')) {
-                parentCollapse.classList.remove('collapse-close');
-                parentCollapse.classList.add('collapse-open');
-            } else {
-                parentCollapse.classList.remove('collapse-open');
-                parentCollapse.classList.add('collapse-close');
-            }
+      // Find the parent div with the class "collapse-plus"
+      const parentCollapse = event.target.closest('.collapse-plus');
+      if (parentCollapse) {
+        // Toggle between the classes
+        if (parentCollapse.classList.contains('collapse-close')) {
+          parentCollapse.classList.remove('collapse-close');
+          parentCollapse.classList.add('collapse-open');
+        } else if (parentCollapse.classList.contains('collapse-open')) {
+          parentCollapse.classList.remove('collapse-open');
+          parentCollapse.classList.add('collapse-close');
+        } else {
+          parentCollapse.classList.add('collapse-open');
         }
+      }
     }
   });
 </script>

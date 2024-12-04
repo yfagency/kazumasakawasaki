@@ -84,6 +84,24 @@
     text-align: right;
     justify-content: end;
   }
+
+  .header .list-menu {
+    margin-top: 0 !important;
+  }
+
+  @media (min-width: 990px) {
+    .header__icons {
+      grid-area: navigation !important;
+    }
+
+    .header__search {
+      grid-area: navigation !important;
+    }
+
+    .header:not(.header--middle-left, .header--middle-center) .header__inline-menu {
+      margin-top: 0 !important;
+    }
+  }
 </style>
 
 {%- style -%}
