@@ -20,9 +20,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4, 1fr);
-    row-gap: 30px;
+    row-gap: 20px;
     column-gap: 100px;
     grid-auto-flow: column;
+    height: fit-content;
   }
 
   .footer__columns {
@@ -73,7 +74,7 @@
   .footer__socialMedia {
     display: flex;
     gap: 30px;
-    margin: 20px 0 0;
+    margin: 60px 0 0;
   }
 
   .footer__socialMedia a {
@@ -128,30 +129,13 @@
   <div class="footer__container page-width">
     <img class="footer__logo footer__animation1" src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/KAZUMASA_KAWASAKI_LOGO_WEB_335x30-01_2.svg?v=1733214284" />
     <div class="footer__columns">
-      <div class="footer__nav footer__animation2">
-          {% for link in linklists.main-menu.links %}
-            <a href="{{ link.url }}">{{ link.title }}</a>
-          {% endfor %}
-      </div>
-      <div class="footer__contact footer__animation2">
-        <div>
-          <h3>
-            {{ 'sections.footer.companyInfo' | t }}
-          </h3>
-          <p>S.A.R.L NEODERM Monaco</p>
-          <br />
-          <h3>
-            {{ 'sections.footer.address' | t }}
-          </h3>
-          <p>3, Rue Plati - MC98000, Principaute de Monaco</p>
-        </div>
-        <div>
-          <h3>
-            {{ 'sections.footer.email' | t }}
-          </h3>
-          <p>contact@kazumasakawasaki.com</p>
-        </div>
-        <div class="footer__socialMedia">
+      <div class="footer__animation2">
+          <div class="footer__nav">
+            {% for link in linklists.main-menu.links %}
+              <a href="{{ link.url }}">{{ link.title }}</a>
+            {% endfor %}
+          </div>
+          <div class="footer__socialMedia">
           <a href="https://www.facebook.com/kazumasakawasakimonaco" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
   <g clip-path="url(#clip0_624_74)">
@@ -177,6 +161,25 @@
             </defs>
           </svg>
           </a>
+        </div>
+      </div>
+      <div class="footer__contact footer__animation2">
+        <div>
+          <h3>
+            {{ 'sections.footer.companyInfo' | t }}
+          </h3>
+          <p>S.A.R.L NEODERM Monaco</p>
+          <br />
+          <h3>
+            {{ 'sections.footer.address' | t }}
+          </h3>
+          <p>3, Rue Plati - MC98000, Principaute de Monaco</p>
+        </div>
+        <div>
+          <h3>
+            {{ 'sections.footer.email' | t }}
+          </h3>
+          <p>contact@kazumasakawasaki.com</p>
         </div>
       </div>
     </div>

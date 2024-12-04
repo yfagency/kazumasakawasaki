@@ -3593,12 +3593,13 @@ nav.header__inline-menu a {
   text-decoration: none;
 }
 
-nav.header__inline-menu a .header__active-menu-item {
+/* nav.header__inline-menu a .header__active-menu-item {
   border-bottom: thin solid #DF1616;
-}
+} */
 
 .header__heading-logo {
-  width: 424px;
+  padding-top: 10px;
+  width: 320px;
 }
 
 .header--middle-left {
