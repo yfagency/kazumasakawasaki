@@ -315,6 +315,10 @@
 
   .kkWay-story__container {
     padding: 100px 25px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .kkWay-story__timelineBox {
@@ -1222,6 +1226,10 @@
   .kkWay-story__timelineBox *::selection {
     background: none;
   }
+
+  .pin-spacer {
+    padding: 0 !important;
+  }
 </style>
 
 <script>
@@ -1271,7 +1279,7 @@ if (window.innerWidth > 1024) {
       x: () => window.innerWidth,
       ease: "power1.inOut",
       scrollTrigger: {
-          trigger: ".kkWay-story__timelineBox",
+          trigger: ".kkWay-story__container",
           pin: true,
           scrub: 0.5,
           start: "top top", // Adjust scroll-trigger start
