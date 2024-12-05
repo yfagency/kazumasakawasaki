@@ -802,6 +802,10 @@
     .products-locations__item.active {
       background: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
     }
+
+    .products-locations__list > h3 {
+      display: none;
+    }
   }
 </style>
 
@@ -1120,20 +1124,20 @@
   .products-progressBar1 {
     width: 0px;
     height: 5px;
-    background: #fff;
+    background: #F32652;
     display: block;
     position: absolute;
     z-index: 3;
     bottom: 50px;
     z-index: 10;
     border-radius: 4px;
-    box-shadow: 0 0 10px rgba(255,255,255, .5);
+    box-shadow: 0 0 10px rgba(255,0,0, .5);
   }
   
   .products-progressBar2 {
     width: 100px;
     height: 5px;
-    background: #fff;
+    background: #F32652;
     display: block;
     position: absolute;
     z-index: 3;
@@ -1534,16 +1538,18 @@ const progressBarAnimation = () => {
   </h2>
   <div class="products-locations__container page-width">
     <div class="products-locations__list products-locations__anim1">
+      <h3>JAPAN</h3>
       <div class="products-locations__item" data-index="0">
-        <h3 class="products-locations__itemTitle">Le Spa de KAZUMASA KAWASAKI (JAPAN)</h3>
+        <h3 class="products-locations__itemTitle">Le Spa de KAZUMASA KAWASAKI</h3>
         <p class="products-locations__itemAddress">B1 Portofino 3-15-5 Kita-Aoyama, Minato-ku, Tokyo, Japan</p>
         <a class="products-locations__gMapLink" href="https://maps.app.goo.gl/aTxvRXEoBxzoJw789" target="_blank">Google
           Maps</a>
         <span class="products-locations__line"></span>
       </div>
 
+      <h3>FRANCE</h3>
       <div class="products-locations__item" data-index="1">
-        <h3 class="products-locations__itemTitle">NEODERME MEDICAL SPA (FRANCE)</h3>
+        <h3 class="products-locations__itemTitle">NEODERME MEDICAL SPA</h3>
         <p class="products-locations__itemAddress">25 Bd General Leclerc , 06240 Beausoleil , France<br>+33 4 22 16 48
           15</p>
         <a class="products-locations__gMapLink" href="https://maps.app.goo.gl/abcrfzgfhc6ofmxQA" target="_blank">Google
@@ -1551,16 +1557,18 @@ const progressBarAnimation = () => {
         <span class="products-locations__line"></span>
       </div>
 
+      <h3>INDONESIA</h3>
       <div class="products-locations__item" data-index="2">
-        <h3 class="products-locations__itemTitle">The Sanchaya (INDONESIA)</h3>
+        <h3 class="products-locations__itemTitle">The Sanchaya</h3>
         <p class="products-locations__itemAddress">Lagoi Bay, Bintan, Riau Islands, Indonesia<br>www.thesanchaya.com</p>
         <a class="products-locations__gMapLink" href="https://maps.app.goo.gl/ubU4y5upiS5o3ELh9" target="_blank">Google
           Maps</a>
         <span class="products-locations__line"></span>
       </div>
 
+      <h3>SINGAPORE</h3>
       <div class="products-locations__item" data-index="3">
-        <h3 class="products-locations__itemTitle">ST. GREGORY SPA Pan Pacific Singapore (SINGAPORE)</h3>
+        <h3 class="products-locations__itemTitle">ST. GREGORY SPA Pan Pacific Singapore</h3>
         <p class="products-locations__itemAddress">7 Raffles Boulevard Marina Square, Level 4, Singapore 039595<br>+65
           6826 8140</p>
         <a class="products-locations__gMapLink" href="https://maps.app.goo.gl/o5cjp5g8QghgLXZE8" target="_blank">Google
@@ -1569,7 +1577,7 @@ const progressBarAnimation = () => {
       </div>
 
       <div class="products-locations__item" data-index="4">
-        <h3 class="products-locations__itemTitle">ST. GREGORY SPA PARKROYAL on BeachRoad (SINGAPORE)</h3>
+        <h3 class="products-locations__itemTitle">ST. GREGORY SPA PARKROYAL on BeachRoad</h3>
         <p class="products-locations__itemAddress">7500 Beach Road, Level 4, Singapore 199591<br>+65 6505
           5755<br>www.stgregoryspa.com</p>
         <a class="products-locations__gMapLink" href="https://maps.app.goo.gl/ME8PDptrisgnv8zb9" target="_blank">Google
@@ -1578,7 +1586,7 @@ const progressBarAnimation = () => {
       </div>
 
       <div class="products-locations__item" data-index="5">
-        <h3 class="products-locations__itemTitle">ST. GREGORY SPA PARKROYAL on Pickering (SINGAPORE)</h3>
+        <h3 class="products-locations__itemTitle">ST. GREGORY SPA PARKROYAL on Pickering</h3>
         <p class="products-locations__itemAddress">3 Upper Pickering Street, Level 5, Singapore 058289<br>+65 6809
           8870<br>www.stgregoryspa.com</p>
         <a class="products-locations__gMapLink" href="https://maps.app.goo.gl/TKE89hvVei5hV7gWA" target="_blank">Google
