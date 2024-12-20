@@ -1478,7 +1478,7 @@ const progressBarAnimation = () => {
     </div>
     <div class="spa-staff__academy">
       <img class="spa-staff__anim3"
-        src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/spa-academy.jpg?v=1725263409" />
+        src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/1dcbb36b0ccd28e64b95c8f577c9065e.jpg?v=1734688178" />
       <div>
         <h3 class="spa-staff__academyTitle spa-staff__anim3 heading">
           {{ 'templates.spa.staff.bottomTitle' | t }}
@@ -1541,51 +1541,20 @@ const progressBarAnimation = () => {
       <h3>JAPAN</h3>
       <div class="products-locations__item" data-index="0">
         <h3 class="products-locations__itemTitle">Le Spa de KAZUMASA KAWASAKI</h3>
-        <p class="products-locations__itemAddress">B1 Portofino 3-15-5 Kita-Aoyama, Minato-ku, Tokyo, Japan</p>
-        <a class="products-locations__gMapLink" href="https://maps.app.goo.gl/aTxvRXEoBxzoJw789" target="_blank">Google
-          Maps</a>
-        <span class="products-locations__line"></span>
-      </div>
-
-      <h3>FRANCE</h3>
-      <div class="products-locations__item" data-index="1">
-        <h3 class="products-locations__itemTitle">NEODERME MEDICAL SPA</h3>
-        <p class="products-locations__itemAddress">25 Bd General Leclerc , 06240 Beausoleil , France<br>+33 4 22 16 48
-          15</p>
-        <a class="products-locations__gMapLink" href="https://maps.app.goo.gl/abcrfzgfhc6ofmxQA" target="_blank">Google
-          Maps</a>
-        <span class="products-locations__line"></span>
-      </div>
-
-      <h3>INDONESIA</h3>
-      <div class="products-locations__item" data-index="2">
-        <h3 class="products-locations__itemTitle">The Sanchaya</h3>
-        <p class="products-locations__itemAddress">Lagoi Bay, Bintan, Riau Islands, Indonesia<br>www.thesanchaya.com</p>
-        <a class="products-locations__gMapLink" href="https://maps.app.goo.gl/ubU4y5upiS5o3ELh9" target="_blank">Google
+        <p class="products-locations__itemAddress">
+          {% if shop.locale == 'en' %}
+          1-3-1-B1F, Ginza, Chuo-ku, Tokyo, 10400061
+          {% else %}
+          〒104-0061 東京都中央区銀座１丁目３−１ 銀座富士屋ビル B1
+          {% endif %}
+        </p>
+        <a class="products-locations__gMapLink" href="https://maps.app.goo.gl/GcLRj1qnFf9n68Ma8" target="_blank">Google
           Maps</a>
         <span class="products-locations__line"></span>
       </div>
 
       <h3>SINGAPORE</h3>
-      <div class="products-locations__item" data-index="3">
-        <h3 class="products-locations__itemTitle">ST. GREGORY SPA Pan Pacific Singapore</h3>
-        <p class="products-locations__itemAddress">7 Raffles Boulevard Marina Square, Level 4, Singapore 039595<br>+65
-          6826 8140</p>
-        <a class="products-locations__gMapLink" href="https://maps.app.goo.gl/o5cjp5g8QghgLXZE8" target="_blank">Google
-          Maps</a>
-        <span class="products-locations__line"></span>
-      </div>
-
-      <div class="products-locations__item" data-index="4">
-        <h3 class="products-locations__itemTitle">ST. GREGORY SPA PARKROYAL on BeachRoad</h3>
-        <p class="products-locations__itemAddress">7500 Beach Road, Level 4, Singapore 199591<br>+65 6505
-          5755<br>www.stgregoryspa.com</p>
-        <a class="products-locations__gMapLink" href="https://maps.app.goo.gl/ME8PDptrisgnv8zb9" target="_blank">Google
-          Maps</a>
-        <span class="products-locations__line"></span>
-      </div>
-
-      <div class="products-locations__item" data-index="5">
+      <div class="products-locations__item" data-index="1">
         <h3 class="products-locations__itemTitle">ST. GREGORY SPA PARKROYAL on Pickering</h3>
         <p class="products-locations__itemAddress">3 Upper Pickering Street, Level 5, Singapore 058289<br>+65 6809
           8870<br>www.stgregoryspa.com</p>
@@ -1596,31 +1565,11 @@ const progressBarAnimation = () => {
     </div>
     <div class="products-locations__map products-locations__anim1">
       <iframe class="map" data-index="0"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.5119277418225!2d139.70682797723953!3d35.66439487259277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d716aa7febd%3A0xa037ea1b4d4db1c2!2sPortofino%20Aoyama!5e0!3m2!1sen!2sjp!4v1725266216214!5m2!1sen!2sjp"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.0658392640516!2d139.76134159417296!3d35.67538080191248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188be4ec05c373%3A0xb250760d376c4272!2z44CSMTA0LTAwNjEgVG9reW8sIENodW8gQ2l0eSwgR2luemEsIDEtY2jFjW1l4oiSM-KIkjEg6YqA5bqn5a-M5aOr5bGL44OT44OrIGIxZg!5e0!3m2!1sen!2sjp!4v1734685445968!5m2!1sen!2sjp"
         width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
 
       <iframe class="map" data-index="1"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.4135577328284!2d7.424807377473073!3d43.74350817109789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cdc27cd2c6caff%3A0x8dbdfcba04a237f!2s25%20Bd%20du%20General%20Leclerc%2C%2006240%20Beausoleil%2C%20France!5e0!3m2!1sen!2sjp!4v1725266492345!5m2!1sen!2sjp"
-        width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-      <iframe class="map" data-index="2"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31911.808831202678!2d104.35221176843139!3d1.177282173932743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31dbd5f97bb0fea1%3A0xcc1356fcbd567b86!2sPublic%20Lagoi%20Bay!5e0!3m2!1sen!2sjp!4v1725266562249!5m2!1sen!2sjp"
-        width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-      <iframe class="map" data-index="3"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8033223788707!2d103.85601027675291!3d1.2924175986953115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19a8f0c90bb1%3A0xd68bb4dc42f9f2f4!2sPan%20Pacific%20Singapore!5e0!3m2!1sen!2sjp!4v1725266640822!5m2!1sen!2sjp"
-        width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-      <iframe class="map" data-index="4"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7916517580666!2d103.85803067675293!3d1.299826898687831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19b1be74cdb7%3A0xdc01759f24971744!2sPARKROYAL%20on%20Beach%20Road!5e0!3m2!1sen!2sjp!4v1725266721578!5m2!1sen!2sjp"
-        width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-      <iframe class="map" data-index="5"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.813782077765!2d103.84355407675301!3d1.2857407987020455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da190b152d690b%3A0xcceead8c67161ae3!2s3%20Upper%20Pickering%20St%2C%20Level%205%2C%20Singapore%20058289!5e0!3m2!1sen!2sjp!4v1725266795023!5m2!1sen!2sjp"
         width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
