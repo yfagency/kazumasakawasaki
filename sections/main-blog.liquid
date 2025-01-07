@@ -10,7 +10,7 @@
   h1.title--primary {
     color: #111;
     text-align: center;
-    font-family: "Playfair Display", serif;
+    font-family: "Playfair Display", serif !important;
     text-transform: uppercase;
     margin: 0 auto 70px;
   }
@@ -52,7 +52,6 @@
     font-style: normal;
     font-weight: 500;
     line-height: 140%;
-    /* 30.8px */
     text-transform: uppercase;
     letter-spacing: 0;
   }
@@ -394,7 +393,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
     </p>
     <div class="products-kkWay__cards">
       <a href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/pages/products" class="products-kkWay__item products-kkWay__anim2">
-        {{ images['0864fe80dc0cfddd09fc6ec53621482b.png'] | image_url: width: 750 | image_tag }}
+        {{ images['KK_product.png'] | image_url: width: 750 | image_tag }}
         <div class="products-kkWay__cardBottom">
           <h3 class="products-kkWay__cardTitle heading">
             {{ 'sections.mainBlog.kkWay.card1title' | t }}
