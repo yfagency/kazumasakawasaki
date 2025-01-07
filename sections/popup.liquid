@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Styles for the popup container */
+    .popup-overlay {
+      display: none; /* Hidden by default */
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    /* Styles for the popup content */
+    .popup-content {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      width: 800px;
+      text-align: center;
+      position: relative;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .popup-content h2 {
+      font-family: "Playfair Display", serif;
+      margin-bottom: 20px;
+    }
+
+    .popup-content a {
+      display: inline-block;
+      margin-top: 20px;
+      color: #FFF;
+      text-align: center;
+      font-family: "Open Sans";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
+      display: flex;
+      padding: 15px 70px;
+      justify-content: center;
+      align-items: center;
+      background: #00004E;
+      margin: 50px auto 0;
+      align-self: auto;
+      position: relative;
+      width: fit-content;
+      transition: .5s;
+    }
+
+    .popup-content a:hover {
+      background: #332CB1;
+      color: #fff;
+      transition: .5s;
+    }
+
+    /* Close button styles */
+    .popup-close {
+      position: absolute;
+      top: -30px;
+      right: -30px;
+      border: none;
+      cursor: pointer;
+      color: #fff;
+      background: #000;
+      width: 50px;
+      height: 50px;
+      border-radius: 100px;
+      font-size: 40px;
+      line-height: 1;
+    }
+
+    @media screen and (max-width: 900px) {
+      .popup-content {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        width: 300px;
+        text-align: center;
+        position: relative;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Popup structure -->
+  <div class="popup-overlay" id="popup">
+    <div class="popup-content">
+      <button class="popup-close" id="closePopup">&times;</button>
+      <div>
+        {% if shop.locale == 'en' %}
+          <h2>2025 KK Academy<br>Special Presents</h2>
+          <p>The founder of KAWASAKI WAY, Kazumasa Kawasaki, will directly share the secret that has captivated celebrities from all over the world!</p>
+          <a href="/blogs/news/2025-kka-special-presents">More details here</a>
+        {% else %}
+          <h2>2025 KKアカデミー<br>スペシャルプレゼント</h2>
+          <p>KAWASAKI WAYの創始者である川崎和雅本人が世界中のセレブリティを魅了してきた秘訣を直接お伝えいたします！</p>
+          <a href="/ja/blogs/news/2025-kka-special-presents">詳細はコチラ</a>
+        {% endif %}
+      </div>
+      <img src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/2025_newyear_popup.jpg?v=1736217865">
+    </div>
+  </div>
+
+  <script>
+    // JavaScript to handle popup functionality
+    const popup = document.getElementById('popup');
+    const closePopupBtn = document.getElementById('closePopup');
+    const html = document.documentElement;
+
+    // Function to disable scrolling
+    const disableScroll = () => {
+      html.style.overflow = 'hidden';
+    };
+
+    // Function to enable scrolling
+    const enableScroll = () => {
+      html.style.overflow = '';
+    };
+
+    // Show the popup automatically after 3 seconds
+    setTimeout(() => {
+      popup.style.display = 'flex';
+      disableScroll();
+    }, 3000); // Delay in milliseconds
+
+    // Close the popup
+    closePopupBtn.addEventListener('click', () => {
+      popup.style.display = 'none';
+      enableScroll();
+    });
+
+    // Close the popup when clicking outside the content
+    popup.addEventListener('click', (event) => {
+      if (event.target === popup) {
+        popup.style.display = 'none';
+        enableScroll();
+      }
+    });
+  </script>
+</body>
+</html>

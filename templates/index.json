@@ -23,9 +23,14 @@
     },
     "home-kk-way-content": {
       "type": "home-kk-way-content"
+    },
+    "popup": {
+      "type": "popup",
+      "settings": {}
     }
   },
   "order": [
+    "popup",
     "home-hero",
     "home-kk-way-content",
     "home-products",
