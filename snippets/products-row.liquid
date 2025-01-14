@@ -106,9 +106,9 @@
         <h3>{{ product.title }}</h3>
         <span class="home-products__line"></span>
         <p>{{ product.price | money }}</p>
-        <a class="products-productLink" href="{{ product.url }}">
+        {% comment %} <a class="products-productLink" href="{{ product.url }}">
           {{ 'snippets.products-row.linkText' | t }}
-        </a>
+        </a> {% endcomment %}
       </a>
     </div>
   {% endfor %}

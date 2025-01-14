@@ -111,6 +111,24 @@
     width: 100%;
   }
 
+  .home-spa__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .home-spa__buttons a:nth-child(2) {
+    border: 2px solid #332CB1;
+    background: none;
+    color: #332CB1;
+  }
+  
+  .home-spa__buttons a:nth-child(2):hover {
+    border: 2px solid #332CB1;
+    background: #332CB1;
+    color: #fff;
+  }
+
   /* Laptop */
   @media (max-width: 1024px) {
     .home-spa__middle {
@@ -178,9 +196,14 @@
           <br><br>
           <i>{{ 'sections.home-spa.colText2' | t }}</i>
         </p>
-        <a href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/pages/spa">
-          {{ 'sections.home-spa.button' | t }}
-        </a>
+        <div class="home-spa__buttons">
+          <a href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/pages/spa#spa-treatments">
+            {{ 'sections.home-spa.button' | t }}
+          </a>
+          <a href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/pages/spa">
+            {{ 'sections.home-spa.button2' | t }}
+          </a>
+        </div>
       </div>
     </div>
     <div class="home-spa__bottom">

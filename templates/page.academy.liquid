@@ -780,7 +780,7 @@
         </b><br><br>
         {{ 'templates.academy.hero.slide1Text' | t }}
         <br>
-        <a href="#academy-story">
+        <a href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/blogs/news/2025-kka-special-presents">
           {{ 'templates.academy.hero.slideButton' | t }}
         </a>
         </p>
@@ -791,7 +791,7 @@
           </b><br><br>
           {{ 'templates.academy.hero.slide2Text' | t }}
           <br>
-          <a href="#academy-story">
+          <a href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/blogs/news/2025-kka-special-presents">
             {{ 'templates.academy.hero.slideButton' | t }}
           </a>
         </p>
@@ -802,7 +802,7 @@
           </b><br><br>
           {{ 'templates.academy.hero.slide3Text' | t }}
           <br>
-          <a href="#academy-story">
+          <a href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/blogs/news/2025-kka-special-presents">
             {{ 'templates.academy.hero.slideButton' | t }}
           </a>
         </p>
@@ -974,9 +974,9 @@ const progressBarAnimation = () => {
       <br><br>
       {{ 'templates.academy.story.text2' | t }}
     </p>
-    <a class="academy-story__link" href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/#contact_section">
+    {% comment %} <a class="academy-story__link" href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/#contact_section">
       {{ 'templates.academy.story.button' | t }}
-    </a>
+    </a> {% endcomment %}
   </div>
 </section>
 
@@ -999,7 +999,7 @@ const progressBarAnimation = () => {
         <p class="academy-course__rightText academy-course__anim2 bodyText">
           {{ 'templates.academy.course.midText' | t }}
         </p>
-        <a class="academy-course__rightLink" href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/#contact_section">
+        <a class="academy-course__rightLink" href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/blogs/news/2025-kka-special-presents">
           {{ 'templates.academy.course.button' | t }}
         </a>
       </div>
@@ -1061,7 +1061,7 @@ const progressBarAnimation = () => {
         </p>
       </div>
     </div>
-    <a class="academy-features__button" href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/#contact_section">
+    <a class="academy-features__button" href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/blogs/news/2025-kka-special-presents">
       {{ 'templates.academy.features.button' | t }}
     </a>
   </div>
@@ -1253,7 +1253,7 @@ const progressBarAnimation = () => {
       </div>
     </div>
 
-    <a href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/pages/faq" class="faq-accordion__button">FAQ</a>
+    {% comment %} <a href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/pages/faq" class="faq-accordion__button">FAQ</a> {% endcomment %}
 
   </div>
 </section>
