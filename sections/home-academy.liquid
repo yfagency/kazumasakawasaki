@@ -126,6 +126,23 @@
     transition: .5s;
   }
 
+  .home-academy__buttons {
+    display: flex;
+    gap: 16px;
+  }
+
+  .home-academy__buttons a:nth-child(2) {
+    border: 2px solid #332CB1;
+    background: none;
+    color: #332CB1;
+  }
+  
+  .home-academy__buttons a:nth-child(2):hover {
+    border: 2px solid #332CB1;
+    background: #332CB1;
+    color: #fff;
+  }
+
   /* Laptop */
   @media screen and (max-width: 1024px) {
     .home-academy {
@@ -220,9 +237,14 @@
       <br>
         {{ 'sections.home-academy.ctaText2' | t }}
       </h2>
-      <a href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/pages/academy" class="home-academy__ctaButton">
-        {{ 'sections.home-academy.button' | t }}
-      </a>
+      <div class="home-academy__buttons">
+        <a href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/blogs/news/2025-kka-special-presents" class="home-academy__ctaButton">
+          {{ 'sections.home-academy.button' | t }}
+        </a>
+        <a href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/pages/academy" class="home-academy__ctaButton">
+          {{ 'sections.home-academy.button2' | t }}
+        </a>
+      </div>
     </div>
   </div>
 </section>

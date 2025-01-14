@@ -269,7 +269,7 @@
       "heroButton": "learn more",
       "philoTitle": "Our Philosophy",
       "philoText": "At the heart of Kazumasa Kawasaki lies the Japanese character “和 (KAZU),” representing peace, harmony, and Japan itself. This symbol graces our products, embodying the philosophy that internal and external harmony is the key to unlocking your natural beauty. As Kazumasa Kawasaki believes, true beauty emerges when body and mind are in perfect sync.",
-      "philoButton": "shop now",
+      "philoButton": "learn more",
       "kkWayTitle": "explore the kawasaki way",
       "kkWayText": "Discover how The Kawasaki Way can make your life beautiful and healthy. Try our products and treatments.",
       "aboutTitle": "A Life of Harmony and Transformation",
@@ -295,7 +295,7 @@
       "story2020": "Introduced methods at Yacht Club Monaco.",
       "effectTitle": "the kawasaki way effect",
       "effectText": "Please read a story of a professional race car driver Naoki Yokomizo whose life was transformed by the Kawasaki Way.",
-      "effectButton": "learn more",
+      "effectButton": "Read the story",
       "kkWay": {
         "card1title": "Products",
         "card2title": "le spa de",
@@ -323,25 +323,25 @@
       "heroSlide1Title": "special treatment",
       "heroSlide1Subtitle": "Rotational Treatment by Multiple Therapists",
       "heroSlide1Text": "Experience the revolutionary Kawasaki Way, a holistic approach to beauty and health that unveils the true potential within you. Our treatments sculpt the human form into a masterpiece, invigorating your spirit and energizing your body. Feel the vitality flowing through you as our techniques deliver results that transcend language barriers, leaving you refreshed and ready to embrace life's possibilities.",
-      "hero1Button": "About the spa",
+      "hero1Button": "Book Now",
       "heroSlide2Text": "Experience the unparalleled luxury of our treatments, where multiple therapists work in harmony to rejuvenate your entire body. This unique approach ensures a thorough, holistic treatment, with each therapist focusing on different parts of the body in rotation, delivering results beyond expectations in a remarkably short time.",
       "heroSlide2Text2": "We offer two tailored spa treatment courses designed to suit your body's condition:htmlbrhtmlbr• E TRI ESSENCE Coursehtmlbr• MIGLIORE ESSENCE Course",
-      "hero2Button": "About the spa",
+      "hero2Button": "Book Now",
       "heroSlide3Text": "Experience the unparalleled luxury of our treatments, where multiple therapists work in harmony to rejuvenate your entire body. This unique approach ensures a thorough, holistic treatment, with each therapist focusing on different parts of the body in rotation, delivering results beyond expectations in a remarkably short time.",
       "heroSlide3Text3": "We offer two tailored spa treatment courses designed to suit your body's condition:htmlbrhtmlbr• E TRI ESSENCE Coursehtmlbr• MIGLIORE ESSENCE Course",
-      "hero3Button": "About the spa",
+      "hero3Button": "Book Now",
       "technique": {
         "topRowTitle": "Technique",
         "topRowText1": "Our innovative treatments are designed to rejuvenate your entire body through the synchronized efforts of multiple therapists. Instead of focusing on isolated areas, therapists rotate seamlessly, ensuring a comprehensive and immersive experience. This synergy delivers extraordinary results, elevating your expectations in an impressively short time.",
         "topRowText2": "We offer two tailored spa treatment courses designed to suit your body's condition:htmlbrhtmlbr• E TRI ESSENCE Coursehtmlbr• MIGLIORE ESSENCE Course",
-        "topRowButton": "LEARN MORE",
+        "topRowButton": "Book Now",
         "sectionSubtitle": "Le Spa de"
       },
       "products": {
         "sectionTitle": "Products & Treatment",
         "title": "products",
         "text": "Indulge in the ultimate luxury experience at the Kawasaki SPA, where our expert therapists use only the finest Kawasaki products to work wonders on your skin. Envelop yourself in the soothing scents and textures of these premium products, leaving you feeling refreshed and rejuvenated from head to toe. Also, these products are available in our online shop.",
-        "button": "buy now"
+        "button": "Learn More"
       },
       "staff": {
         "topTitle": "Staff",
@@ -352,7 +352,7 @@
         "member4Title": "Assistant",
         "bottomTitle": "academy",
         "bottomText": "Our dedicated team of professionals has been meticulously trained at Kawasaki Academy, earning official diplomas after advanced training in Italy and Monaco. Their expertise guarantees that each essence treatment is performed with precision, ensuring a transformative experience for every client.",
-        "bottomButton": "learn more"
+        "bottomButton": "Register Now"
       },
       "treatments": {
         "title": "Treatments",
@@ -361,7 +361,7 @@
         "tax": "Tax",
         "card2Title": "MIGLIORE ESSENCE",
         "card2Text": "Immerse yourself in the ultimate rejuvenation with multiple therapists synchronously massaging your entire body as you recline. This method revitalizes your vitality from the extremities to the core, offering profound transformation. Ideal for those desiring dynamic changes in areas such as the face, upper arms, thighs, stomach, waist, and buttocks, this treatment approaches beauty from deep within.",
-        "button": "BOOK NOW"
+        "button": "Contact Us"
       },
       "salonList": {
         "title": "salon list"
@@ -375,7 +375,7 @@
         "slide2Text": "Many beauty and health methods require effort, making it challenging for most people to maintain them. Inspired by the idea that such practices could become as natural and desirable as eating or sleeping, KAWASAKI WAY was developed to make the process effortless and enjoyable. KAWASAKI WAY takes a dual approach, focusing on both the inside and outside of the body to enhance not just appearance and physique but also inner qualities and overall presence. Visible improvements build confidence, spark excitement, and encourage people to pursue their dreams and goals. This positive cycle leads to a richer, more beautiful daily life, which is the ultimate goal of KAWASAKI WAY.",
         "slide3Subtitle": "Visit Monaco",
         "slide3Text": "KAWASAKI ACADEMY offers a variety of courses taught by professionals from different fields, sharing valuable knowledge to enhance beauty and health. In addition to walking lessons by professional models, there are also courses on etiquette, manners, and golf lessons planned. Graduates are invited to participate in a special graduation ceremony held at exclusive locations, primarily in Monaco and Italy, offering them a once-in-a-lifetime experience fitting for this significant milestone.",
-        "slideButton": "learn more",
+        "slideButton": "Register now",
         "slide1title": "About KAWASAKI ACADEMY",
         "slide2title": "Learn the Cutting-Edge Beauty Technique: The KAWASAKI WAY",
         "slide3title": "EXPERIENCE THE UNPRECEDENTED AT THE ACADEMY"
@@ -391,7 +391,7 @@
         "topSubtitle": "Our basic course is ideal for those who want to care for loved ones, improve themselves, or acquire professional skills. Gain the knowledge and techniques of The Kawasaki Way across 30 immersive sessions.",
         "midTitle": "About the Course",
         "midText": "Whether you're learning as a hobby or aiming to become a professional, our courses offer a comprehensive education. During lectures, professional instructors demonstrate treatments using students as models. By the end of the course, you'll have mastered The Kawasaki Way through hands-on experience.",
-        "button": "learn more",
+        "button": "Register Now",
         "bottomTitle": "Special Programs",
         "bottomText": "Our special programs feature experts from various fields who share insights into beauty and health. Enrich your experience with walking lessons by professional models, cultural and etiquette lectures, golf lessons, and more!"
       },
@@ -405,7 +405,7 @@
         "card3text": "Enjoy exclusive support and resources available only to students, enhancing your educational experience.",
         "card4title": "Career",
         "card4text": "Explore success stories of students who have achieved their dreams post-graduation, inspiring your own journey to success.",
-        "button": "learn more"
+        "button": "Register Now"
       },
       "FAQ": {
         "sectionTitle": "FAQ",
@@ -635,7 +635,7 @@
     "home-products": {
       "title": "products",
       "description": "Crafted for a Beautiful, Healthy Life. Our products are designed to seamlessly support your journey to beauty and wellness, enhancing your daily routine with natural elegance.",
-      "button": "buy now"
+      "button": "Learn More"
     },
     "home-kawasaki-way": {
       "title1": "If your appearance changes, ",
@@ -647,7 +647,8 @@
       "colTitle": "about the spa",
       "colText1": "Experience the unparalleled luxury of our treatments, where multiple therapists work in harmony to rejuvenate your entire body. This unique approach ensures a thorough, holistic treatment, with each therapist focusing on different parts of the body in rotation, delivering results beyond expectations in a remarkably short time.",
       "colText2": "Treatment time 12 minutes",
-      "button": "learn more",
+      "button": "Book Now",
+      "button2": "Learn More",
       "topTitle1": "Le Spa de"
     },
     "home-academy": {
@@ -658,7 +659,8 @@
       "bottomText3": "special programs",
       "ctaText1": "Design Your Life Like Art.",
       "ctaText2": "Learn the Kawasaki Way.",
-      "button": "learn more",
+      "button": "Register Now",
+      "button2": "learn more",
       "topTitle1": "academy"
     },
     "home-contact": {
