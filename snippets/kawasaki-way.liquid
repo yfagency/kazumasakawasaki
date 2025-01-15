@@ -1,0 +1,160 @@
+<style>
+  /* ########## KK WAY ########## */
+  .products-kkWay__container {
+    text-align: center;
+    padding: 100px 25px;
+  }
+
+  .products-kkWay__title {
+    color: #000;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+    margin: 0 0 20px;
+  }
+
+  .products-kkWay__text {
+    color: #111;
+    text-align: center;
+    margin: 0 auto 60px;
+    max-width: 700px;
+  }
+
+  .products-kkWay__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+  }
+
+  .products-kkWay__item {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .products-kkWay__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    transition: .3s;
+  }
+
+  .products-kkWay__item:hover img {
+    transform: scale(1.1);
+    transition: .3s;
+  }
+
+  .products-kkWay__cardTitle {
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 4px 44px rgba(0, 0, 78, 0.25);
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+    margin: 0 0 5px;
+  }
+
+  .products-kkWay__cardSubtitle {
+    color: #F32652;
+    text-align: center;
+    text-shadow: 0px 4px 44px rgba(0, 0, 78, 0.25);
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 1.62px;
+    text-transform: uppercase;
+  }
+
+  .products-kkWay__cardBottom {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    background: #1C1952;
+    z-index: 2;
+  }
+
+  @media (max-width: 1024px) {
+    .products-kkWay__cardTitle {
+      font-size: 2vw;
+      line-height: 1.25;
+    }
+
+    .products-kkWay__cardSubtitle {
+      font-size: 1vw;
+    }
+
+    .products-kkWay__cards {
+      gap: 10px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .products-kkWay__container {
+      padding: 50px 25px;
+    }
+
+    .products-kkWay__cardTitle {
+      font-size: 24px;
+    }
+
+    .products-kkWay__cardSubtitle {
+      font-size: 14px;
+    }
+
+    .products-kkWay__text {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .products-kkWay__cards {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+</style>
+
+<section class="products-kkWay"></section>
+<div class="products-kkWay__container page-width">
+  <h2 class="products-kkWay__title products-kkWay__anim1 heading">
+    {{ 'sections.kk-way.title' | t }}
+  </h2>
+  <p class="products-kkWay__text products-kkWay__anim1 bodyText">
+    {{ 'sections.kk-way.text' | t }}
+  </p>
+  <div class="products-kkWay__cards">
+    <a href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/pages/kawasaki-way" class="products-kkWay__item products-kkWay__anim2">
+      {{ images['3b041cdc6a82323b4f3ff2aacb9be1bd.png'] | image_url: width: 750 | image_tag }}
+      <div class="products-kkWay__cardBottom">
+        <h3 class="products-kkWay__cardTitle heading">
+          {{ 'sections.kk-way.card1title' | t }}
+        </h3>
+        <span class="products-kkWay__cardSubtitle">kazumasa kawasaki</span>
+      </div>
+    </a>
+    <a href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/pages/spa" class="products-kkWay__item products-kkWay__anim2">
+      {{ images['4b09b60a99c28451d9171ba20c1b8841.png'] | image_url: width: 750 | image_tag }}
+      <div class="products-kkWay__cardBottom">
+        <h3 class="products-kkWay__cardTitle heading">
+          {{ 'sections.kk-way.card2title' | t }}
+        </h3>
+        <span class="products-kkWay__cardSubtitle">kazumasa kawasaki</span>
+      </div>
+    </a>
+    <a href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/pages/academy" class="products-kkWay__item products-kkWay__anim2">
+      {{ images['kk-diplo.jpg'] | image_url: width: 750 | image_tag }}
+      <div class="products-kkWay__cardBottom">
+        <h3 class="products-kkWay__cardTitle heading">
+          {{ 'sections.kk-way.card3title' | t }}
+        </h3>
+        <span class="products-kkWay__cardSubtitle">kazumasa kawasaki</span>
+      </div>
+    </a>
+  </div>
+</div>
+</section>
