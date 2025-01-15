@@ -1,0 +1,169 @@
+<style>
+  .academy-register {
+    padding: 100px 25px;
+    color: #111;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+  }
+
+ .academy-register a {
+  color: blue;
+ }
+
+ .academy-register h2,
+ .academy-register h3,
+ .academy-register h4,
+ .academy-register h5,
+ .academy-register h6 {
+  color: #111;
+  font-family: "Open Sans";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+ }
+
+ .academy-register h1 {
+  margin-bottom: 0;
+  color: #111;
+  text-shadow: 0px 4px 44px rgba(0, 0, 78, 0.25);
+  font-family: "Playfair Display";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+ }
+
+ .academy-register > img {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  object-position: top;
+  margin-bottom: 100px;
+ }
+
+ .academy-register__line {
+  display: inline-flex;
+  align-items: center;
+  background: #00B900;
+  color: #fff !important;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: .3s;
+  letter-spacing: 0;
+  font-size: 20px;
+ }
+
+ .academy-register__line:hover {
+  opacity: .9;
+  transition: .3s;
+ }
+
+ .academy-register__line img {
+  width: 80px;
+ }
+
+ .academy-register__line span {
+  padding: 0 20px;
+ }
+</style>
+
+<section class="academy-register page-width">
+
+  <img src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/3b041cdc6a82323b4f3ff2aacb9be1bd.png?v=1725005473">
+
+  {% if shop.locale == 'en' %}
+    <p>
+      <h1>Kazumasa Kawasaki Academy 2025</h1>
+      <br><br>
+      <h2>Recommended for</h2>
+      ・Those interested in Mr. Kawasaki's activities!
+      <br>
+      ・Those interested in Kazumasa Kawasaki products!
+      <br>
+      ・Those who want to challenge themselves with something new for further growth!
+      <br>
+      ・Those who want an opportunity to change their lives!
+      <br><br>
+      <h2>How to Apply</h2>
+      <b>Participation Fee</b>: Free.
+      <br>
+      <b>Location</b>: Tokyo (details will be provided to applicants).
+      <br><br>
+      Please register as a friend on the official LINE account below!
+      <br>
+      After completing the registration, guidance will be sent sequentially.
+      <br>
+      *Note that sending your name after registration will complete the process.
+      <br>
+      *If you have difficulty registering via LINE, please contact us through the <a href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/pages/contact">inquiry form</a>.
+      <br><br>
+      <a href="https://lin.ee/5kHHDIy" class="academy-register__line">
+        <img src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/line-official.svg?v=1736920044">
+        <span>Apply with LINE</span>
+      </a>
+      <br><br>
+      <br><br>
+      <h2>For inquiries by phone</h2>
+      TEL: 03-3528-6916
+      <br>
+      11:00-19:00 (Tuesday-Sunday) / Closed on Mondays
+      <br><br>
+      <h2>Address</h2>
+      1-3-1 Ginza, Chuo-ku, Tokyo 104-0061 Ginza Fujiya Building, B1 Floor.
+      <br>
+      <a href="https://maps.app.goo.gl/4eZPPp76F2tZUgB38" target="_blank">View on Google Maps</a>
+    </p>
+  {% else %}
+  <p>
+      <h1>Kazumasa Kawasaki Academy 2025</h1>
+      <br><br>
+      <h2>こんな方にオススメ</h2>
+      ・川崎先生の活動に興味がある！
+      <br>
+      ・和やクリーム(製品)に興味がある！
+      <br>
+      ・さらなる成長に向けて、新しいことにチャレンジしたい！
+      <br>
+      ・人生を変えるきっかけがほしい！
+      <br><br>
+      <h2>申込方法</h2>
+      【参加費】無料
+      <br>
+      【開催日、場所】随時都内
+      <br>
+      （詳細はお申込の方にご案内いたします。）​
+      <br>
+      下記のアカデミーLINE公式アカウントをお友だち登録してください！
+      <br>
+      登録完了後、順次ご案内をご送信いたします。
+      <br>
+      ＊登録後に名前等の送信をもって完了となりますのでご注意ください。
+      <br>
+      ＊LINE登録が難しい方は、<a href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/pages/contact">お問合せフォームよりご連絡ください</a>。
+      <br><br>
+      <a href="https://lin.ee/5kHHDIy" class="academy-register__line">
+        <img src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/line-official.svg?v=1736920044">
+        <span>LINE公式アカウント</span>
+      </a>
+      <br><br>
+      <br><br>
+      <h2>お電話でのお問い合わせはこちら</h2>
+      TEL: 03-3528-6916
+      <br>
+      11:00-19:00（火～日曜日）/ 月曜定休 ​
+      <br><br>
+      <h2>一般社団法人 KAZUMASA KAWASAKI ACADEMY</h2>
+      〒104-0061 東京都中央区銀座1-3-1 銀座富士屋ビルB1
+      <br>
+      <a href="https://maps.app.goo.gl/4eZPPp76F2tZUgB38" target="_blank">Googleマップで見る</a>
+    </p>
+  {% endif %}
+
+</section>
