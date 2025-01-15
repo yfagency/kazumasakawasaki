@@ -1510,7 +1510,7 @@ const progressBarAnimation = () => {
         <span class="spa-treatments__itemCost">¥50,000 <span>
           +{{ 'templates.spa.treatments.tax' | t }}
         </span></span>
-        <a href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/#contact_section" class="spa-treatments__itemButton">
+        <a href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/pages/contact" class="spa-treatments__itemButton">
           {{ 'templates.spa.treatments.button' | t }}
         </a>
       </div>
@@ -1524,7 +1524,7 @@ const progressBarAnimation = () => {
         <span class="spa-treatments__itemCost">¥120,000 <span>
           +{{ 'templates.spa.treatments.tax' | t }}
         </span></span>
-        <a href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/#contact_section" class="spa-treatments__itemButton">
+        <a href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/pages/contact" class="spa-treatments__itemButton">
           {{ 'templates.spa.treatments.button' | t }}
         </a>
       </div>

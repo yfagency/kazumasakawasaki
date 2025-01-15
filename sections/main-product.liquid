@@ -165,13 +165,14 @@
     gap: 10px;
     border: 1px solid #FFF;
     transition: .5s;
+    pointer-events: none;
   }
 
-  .product-topSection__button:hover {
+  /* .product-topSection__button:hover {
     background: #fff;
     color: #00004E;
     transition: .5s;
-  }
+  } */
 
   .product-topSection__description {
     width: 100% !important;
@@ -369,7 +370,7 @@
             {%- endform -%}
           </div>
 
-          <a class="product-topSection__button" href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/#contact_section">
+          <a class="product-topSection__button">
             {{ 'sections.mainProduct.preOrderButton' | t }}
           </a>
       </div>
