@@ -3708,6 +3708,13 @@ nav.header__inline-menu {
   }
 }
 
+.header-localization:not(.menu-drawer__localization) .desktop-localization-wrapper,
+a.header__icon.header__icon--account.link,
+.menu-drawer__localization,
+.menu-drawer__navigation-container .menu-drawer__utility-links {
+  display: none !important;
+}
+
 /* ##### Product page ##### */
 .product.grid {
   padding: 25px;

@@ -14,6 +14,27 @@
   }
 {%- endstyle -%}
 
+<style>
+  .main-page-title {
+    color: #111;
+    text-align: center;
+    text-shadow: 0px 4px 44px rgba(0, 0, 78, 0.25);
+    font-family: "Playfair Display";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 40px */
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 1024px) {
+    main#MainContent {
+      padding: 50px 25px;
+    }
+  }
+</style>
+
 <div class="page-width page-width--narrow section-{{ section.id }}-padding">
   <h1 class="main-page-title page-title h0{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
     {{ page.title | escape }}
