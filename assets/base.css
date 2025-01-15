@@ -2337,8 +2337,9 @@ input[type='checkbox'] {
 .header {
   display: grid;
   grid-template-areas: 'left-icons heading icons';
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: auto 2fr auto;
   align-items: center;
+  gap: 16px;
 }
 
 @media screen and (max-width: 749px) {
@@ -3681,6 +3682,11 @@ nav.header__inline-menu {
     grid-row-end: 2;
     grid-column-start: 1;
   }
+
+  .header__icon, .header__icon--cart .icon {
+    height: 20px !important;
+    width: 20px !important;
+  }
 }
 
 @media (orientation: portrait) {
@@ -3688,10 +3694,6 @@ nav.header__inline-menu {
     grid-template-columns: auto 1fr auto;
     /* grid-template-areas: 'heading navigation icons'; */
     text-align: center;
-  }
-
-  .header__heading-link {
-    margin-right: 40px !important;
   }
 
   ul.menu-drawer__menu.has-submenu.list-menu {
@@ -3705,6 +3707,10 @@ nav.header__inline-menu {
     font-family: 'Open Sans', sans-serif;
     font-weight: 500;
     background: none;
+  }
+
+  .header__heading .header__heading-logo {
+    padding: 0 !important;
   }
 }
 
