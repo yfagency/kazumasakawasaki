@@ -148,6 +148,11 @@
         "type": "shopify://apps/popupsmart-popup-sales-email/blocks/app-embed/cca16dd6-0222-4342-9519-bc3a8c43228c",
         "disabled": true,
         "settings": {}
+      },
+      "246135896087123374": {
+        "type": "shopify://apps/1clickpopup/blocks/main/233742b9-16cb-4f75-9de7-3fe92c29fdff",
+        "disabled": false,
+        "settings": {}
       }
     },
     "color_schemes": {
