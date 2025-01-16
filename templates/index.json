@@ -30,7 +30,6 @@
     }
   },
   "order": [
-    "popup",
     "home-hero",
     "home-kk-way-content",
     "home-products",
