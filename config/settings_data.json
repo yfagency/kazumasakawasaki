@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
     "logo": "shopify://shop_images/KAZUMASA_KAWASAKI_LOGO_WEB_335x30-01_1.svg",
@@ -142,9 +142,14 @@
         }
       }
     },
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
+    "blocks": {
+      "152906827736512534": {
+        "type": "shopify://apps/popupsmart-popup-sales-email/blocks/app-embed/cca16dd6-0222-4342-9519-bc3a8c43228c",
+        "disabled": false,
+        "settings": {}
+      }
+    },
     "color_schemes": {
       "scheme-1": {
         "settings": {
