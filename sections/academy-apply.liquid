@@ -6,14 +6,21 @@
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 28px;
+    line-height: 24px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 100px;
+    gap: 300px;
+    letter-spacing: 0;
   }
 
- .academy-register a {
-  color: blue;
+ .academy-register a:not(.academy-register__line) {
+  color: #111;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-decoration: underline;
  }
 
  .academy-register h2,
@@ -44,11 +51,66 @@
   text-transform: uppercase;
  }
 
+ .academy-register__topText {
+  color: #F32652;
+  text-shadow: 0px 4px 44px rgba(0, 0, 78, 0.25);
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+ }
+
+ .academy-register__topSection {
+  text-align: center;
+  margin-top: 40px;
+  display: block;
+ }
+
+ .academy-register__topSection span {
+  color: #111;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 4.8px;
+  display: block;
+  margin: 0 0 10px;
+ }
+
+ .academy-register__topSection h1 {
+  color: #111;
+  text-align: center;
+  font-family: "Playfair Display";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+ }
+
+ .academy-register__topSection p {
+  color: #111;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+ }
+
  .academy-register > img {
-  aspect-ratio: 16/9;
   object-fit: cover;
   object-position: top;
   margin-bottom: 100px;
+  width: 100%;
+  aspect-ratio: 4/5;
  }
 
  .academy-register__line {
@@ -61,6 +123,7 @@
   transition: .3s;
   letter-spacing: 0;
   font-size: 20px;
+  margin-bottom: 50px;
  }
 
  .academy-register__line:hover {
@@ -75,47 +138,65 @@
  .academy-register__line span {
   padding: 0 20px;
  }
+
+ @media (max-width: 600px) {
+  .academy-register__topSection {
+    padding: 25px;
+  }
+
+  .academy-register {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 100px;
+    padding: 50px 25px;
+  }
+
+  .academy-register > img {
+    object-fit: cover;
+    object-position: top;
+    margin-bottom: 0;
+    width: 100%;
+    aspect-ratio: 4/5;
+  }
+ }
 </style>
+
+<section class="academy-register__topSection">
+  <span>ACADEMY</span>
+  <h1>KAZUMASA KAWASAKI</h1>
+  <p>Learn the Cutting-Edge Beauty Technique: The KAWASAKI WAY</p>
+</section>
 
 <section class="academy-register page-width">
 
   <div>
     {% if shop.locale == 'en' %}
       <p>
-        <h1>Kazumasa Kawasaki Academy 2025</h1>
-        <br><br>
-        <h2>Recommended for</h2>
-        ・Those interested in Mr. Kawasaki's activities!
-        <br>
-        ・Those interested in Kazumasa Kawasaki products!
-        <br>
-        ・Those who want to challenge themselves with something new for further growth!
-        <br>
-        ・Those who want an opportunity to change their lives!
+        <div class="academy-register__topText">
+          Participation Fee: Free<br>
+          Location: Tokyo (details will be provided to applicants).
+        </div>
         <br><br>
         <h2>How to Apply</h2>
-        <b>Participation Fee</b>: Free.
-        <br>
-        <b>Location</b>: Tokyo (details will be provided to applicants).
-        <br><br>
         Please register as a friend on the official LINE account below!
         <br>
         After completing the registration, guidance will be sent sequentially.
         <br>
         *Note that sending your name after registration will complete the process.
-        <br>
-        *If you have difficulty registering via LINE, please contact us through the <a href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/pages/contact">inquiry form</a>.
         <br><br>
         <a href="https://lin.ee/5kHHDIy" class="academy-register__line">
           <img src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/line-official.svg?v=1736920044">
           <span>Apply with LINE</span>
         </a>
+        <h2>Apply with form</h2>
+        *If you have difficulty registering via LINE, please contact us through the <a href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/pages/contact">inquiry form</a>.
         <br><br>
         <br><br>
         <h2>For inquiries by phone</h2>
         TEL: 03-3528-6916
         <br>
         11:00-19:00 (Tuesday-Sunday) / Closed on Mondays
+        <br><br>
         <br><br>
         <h2>Address</h2>
         1-3-1 Ginza, Chuo-ku, Tokyo 104-0061 Ginza Fujiya Building, B1 Floor.
@@ -124,8 +205,6 @@
       </p>
     {% else %}
     <p>
-        <h1>Kazumasa Kawasaki Academy 2025</h1>
-        <br><br>
         <h2>こんな方にオススメ</h2>
         ・川崎先生の活動に興味がある！
         <br>
@@ -169,7 +248,7 @@
     {% endif %}
   </div>
 
-  <img src="{{ section.settings.custom_image | img_url: 'medium' }}" alt="Default Image">
+  <img src="{{ section.settings.custom_image | img_url: 'large' }}" alt="Default Image">
 
 </section>
 
