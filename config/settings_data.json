@@ -140,6 +140,12 @@
         "settings": {
           "color_scheme": "scheme-1"
         }
+      },
+      "academy-apply": {
+        "type": "academy-apply",
+        "settings": {
+          "custom_image": "shopify://shop_images/academy_apply_pic.jpg"
+        }
       }
     },
     "content_for_index": [],
