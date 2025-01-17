@@ -11,6 +11,7 @@
   "current": {
     "logo": "shopify://shop_images/KAZUMASA_KAWASAKI_LOGO_WEB_335x30-01_1.svg",
     "logo_width": 300,
+    "favicon": "shopify://shop_images/KAZU_2.svg",
     "type_header_font": "assistant_n4",
     "heading_scale": 100,
     "type_body_font": "assistant_n4",
@@ -148,6 +149,33 @@
       }
     },
     "content_for_index": [],
+    "blocks": {
+      "152906827736512534": {
+        "type": "shopify://apps/popupsmart-popup-sales-email/blocks/app-embed/cca16dd6-0222-4342-9519-bc3a8c43228c",
+        "disabled": true,
+        "settings": {}
+      },
+      "246135896087123374": {
+        "type": "shopify://apps/1clickpopup/blocks/main/233742b9-16cb-4f75-9de7-3fe92c29fdff",
+        "disabled": true,
+        "settings": {}
+      },
+      "4015264832934714879": {
+        "type": "shopify://apps/ecomsend-popups/blocks/app/a5670cf8-5705-4b01-ad9e-447033feae26",
+        "disabled": true,
+        "settings": {}
+      },
+      "13070091535480640111": {
+        "type": "shopify://apps/attrac/blocks/app-embed/b783956d-47a9-4434-91ad-4ec960bd74b0",
+        "disabled": true,
+        "settings": {}
+      },
+      "13375938897875554821": {
+        "type": "shopify://apps/qikify-sales-pop-up/blocks/app-embed/688dd516-1cdc-4008-8329-23089a1c4e24",
+        "disabled": false,
+        "settings": {}
+      }
+    },
     "color_schemes": {
       "scheme-1": {
         "settings": {
