@@ -40,7 +40,7 @@
   .home-spa__middle {
     margin: 70px 0 40px;
     display: inline-grid;
-    grid-template-columns: 1.25fr .75fr;
+    grid-template-columns: 1fr 1fr;
     gap: 6.063vw;
     align-items: center;
   }
@@ -113,7 +113,6 @@
 
   .home-spa__buttons {
     display: flex;
-    flex-direction: column;
     gap: 16px;
   }
 
@@ -172,6 +171,11 @@
       grid-template-columns: 1fr;
       gap: 20px;
       margin-top: 40px;
+    }
+
+    .home-spa__buttons {
+      flex-direction: column;
+      margin: 0 auto;
     }
   }
 </style>
