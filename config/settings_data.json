@@ -150,16 +150,6 @@
     },
     "content_for_index": [],
     "blocks": {
-      "152906827736512534": {
-        "type": "shopify://apps/popupsmart-popup-sales-email/blocks/app-embed/cca16dd6-0222-4342-9519-bc3a8c43228c",
-        "disabled": true,
-        "settings": {}
-      },
-      "246135896087123374": {
-        "type": "shopify://apps/1clickpopup/blocks/main/233742b9-16cb-4f75-9de7-3fe92c29fdff",
-        "disabled": true,
-        "settings": {}
-      },
       "4015264832934714879": {
         "type": "shopify://apps/ecomsend-popups/blocks/app/a5670cf8-5705-4b01-ad9e-447033feae26",
         "disabled": true,
@@ -172,6 +162,11 @@
       },
       "13375938897875554821": {
         "type": "shopify://apps/qikify-sales-pop-up/blocks/app-embed/688dd516-1cdc-4008-8329-23089a1c4e24",
+        "disabled": false,
+        "settings": {}
+      },
+      "13768625480086291342": {
+        "type": "shopify://apps/forms/blocks/forms/8744a304-fcb1-4347-b211-bb6b4759a76a",
         "disabled": false,
         "settings": {}
       }
