@@ -15,9 +15,71 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "collapsible_content_fedyyd": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_BeHE8c": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "About Treatments",
+            "icon": "check_mark",
+            "row_content": "<p><strong>What makes the treatments at Le Spa unique?</strong><br/>At Le Spa, we offer a revolutionary approach to beauty and wellness. Our treatments involve multiple therapists working in perfect harmony, rotating seamlessly to treat your entire body. This method ensures that each area is thoroughly rejuvenated, delivering exceptional results in a short time.<br/>    <br/><strong>How long does a treatment take?</strong><br/>The duration varies depending on the menu. Including time for changing, showering, makeup touch-ups, and consultations, treatments generally take about 1.5 hours for women and 1 hour 15 minutes for men. Please consult with our staff if you have specific requests.<br/>    <br/><strong>Can I request a specific therapist for my treatment?<br/></strong>While we cannot guarantee the availability of specific therapists, all our staff are highly trained professionals who have undergone extensive training at Kawasaki Academy. Rest assured, you will receive exceptional care and expertise with every visit.<br/>    <br/><strong>Can two people receive treatments at the same time?</strong><br/>Since multiple therapists treat one client simultaneously, we currently do not accept appointments for two or more people at the same time. We kindly ask you to book separate reservations.<br/>    <br/><strong>Can I bring my child during the treatment?</strong><br/>Unfortunately, we cannot accommodate children as we do not have dedicated childcare facilities.<br/>    <br/><strong>Will I see results with just one treatment?</strong><br/>Yes, you can feel the effects even after just one session.<br/>    <br/>For more noticeable changes, we recommend visiting once a week for the first month.<br/>    <br/><strong>Do you offer treatment courses?</strong><br/>Yes, we do. After your first session, we will provide a consultation tailored to your body’s condition to suggest the most suitable course for you.<br/>    <br/><strong>How long do the effects last?<br/></strong>The duration varies depending on your health and lifestyle. Our staff will provide personalized advice on home care and daily habits.<br/>    <br/><strong>Is the treatment painful?</strong><br/>Some clients may experience slight discomfort during their first session. However, this decreases with subsequent treatments.<br/>    <br/><strong>Do I need to undress for the treatment?</strong><br/>We provide disposable paper shorts and comfortable wear for treatments.<br/>    <br/>(Women: Bra top and shorts; Men: Tank top and shorts.)<br/>    <br/><strong>Are there any dietary restrictions?</strong><br/>While we may offer advice for those with concerns, we generally do not recommend strict dietary restrictions as they may cause stress or rebound effects.<br/>    <br/><strong>Are the treatments available for men?</strong><br/>Yes, men are welcome to enjoy our treatments.<br/>    <br/><strong>Can I receive a treatment during my menstrual period?</strong><br/>Yes, treatments are possible. We provide disposable shorts upon request, or you can use your own.<br/>    <br/><strong>Can I receive treatments while pregnant?</strong><br/>Yes, but this depends on your physical condition. Please inform us at the time of booking if you are pregnant.<br/>    <br/><strong>How soon after childbirth can I receive a treatment?</strong><br/>This depends on your condition, but many clients start around one month postpartum.<br/>    <br/><strong>How many days in advance should I schedule a bridal treatment before my wedding?</strong><br/>While treatments can be received on the wedding day, we recommend scheduling a session two weeks prior to ensure your body adapts well. Bridal treatment consultations are also available upon request.<br/>    <br/><strong>Can I receive treatment directly from Kazumasa Kawasaki?</strong><br/>All treatments are performed by our trained spa staff. Currently, Kazumasa Kawasaki is involved in therapist training at the KAWASAKI ACADEMY.<br/>    </p><p>Learn more about <a href=\"/pages/academy\" title=\"Academy\">KAZUMASA KAWASAKI ACADEMY</a></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_tA7GdA": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_rqCg6V": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_pUjxax": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_BeHE8c",
+        "collapsible_row_tA7GdA",
+        "collapsible_row_rqCg6V",
+        "collapsible_row_pUjxax"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Le Spa",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "collapsible_content_fedyyd"
   ]
 }
