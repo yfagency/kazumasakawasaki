@@ -1,0 +1,85 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "collapsible_content_fedyyd": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_BeHE8c": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "About Treatments",
+            "icon": "check_mark",
+            "row_content": "<p><strong>What makes the treatments at Le Spa unique?</strong><br/>At Le Spa, we offer a revolutionary approach to beauty and wellness. Our treatments involve multiple therapists working in perfect harmony, rotating seamlessly to treat your entire body. This method ensures that each area is thoroughly rejuvenated, delivering exceptional results in a short time.<br/>    <br/><strong>How long does a treatment take?</strong><br/>The duration varies depending on the menu. Including time for changing, showering, makeup touch-ups, and consultations, treatments generally take about 1.5 hours for women and 1 hour 15 minutes for men. Please consult with our staff if you have specific requests.<br/>    <br/><strong>Can I request a specific therapist for my treatment?<br/></strong>While we cannot guarantee the availability of specific therapists, all our staff are highly trained professionals who have undergone extensive training at Kawasaki Academy. Rest assured, you will receive exceptional care and expertise with every visit.<br/>    <br/><strong>Can two people receive treatments at the same time?</strong><br/>Since multiple therapists treat one client simultaneously, we currently do not accept appointments for two or more people at the same time. We kindly ask you to book separate reservations.<br/>    <br/><strong>Can I bring my child during the treatment?</strong><br/>Unfortunately, we cannot accommodate children as we do not have dedicated childcare facilities.<br/>    <br/><strong>Will I see results with just one treatment?</strong><br/>Yes, you can feel the effects even after just one session.<br/>    <br/>For more noticeable changes, we recommend visiting once a week for the first month.<br/>    <br/><strong>Do you offer treatment courses?</strong><br/>Yes, we do. After your first session, we will provide a consultation tailored to your body’s condition to suggest the most suitable course for you.<br/>    <br/><strong>How long do the effects last?<br/></strong>The duration varies depending on your health and lifestyle. Our staff will provide personalized advice on home care and daily habits.<br/>    <br/><strong>Is the treatment painful?</strong><br/>Some clients may experience slight discomfort during their first session. However, this decreases with subsequent treatments.<br/>    <br/><strong>Do I need to undress for the treatment?</strong><br/>We provide disposable paper shorts and comfortable wear for treatments.<br/>    <br/>(Women: Bra top and shorts; Men: Tank top and shorts.)<br/>    <br/><strong>Are there any dietary restrictions?</strong><br/>While we may offer advice for those with concerns, we generally do not recommend strict dietary restrictions as they may cause stress or rebound effects.<br/>    <br/><strong>Are the treatments available for men?</strong><br/>Yes, men are welcome to enjoy our treatments.<br/>    <br/><strong>Can I receive a treatment during my menstrual period?</strong><br/>Yes, treatments are possible. We provide disposable shorts upon request, or you can use your own.<br/>    <br/><strong>Can I receive treatments while pregnant?</strong><br/>Yes, but this depends on your physical condition. Please inform us at the time of booking if you are pregnant.<br/>    <br/><strong>How soon after childbirth can I receive a treatment?</strong><br/>This depends on your condition, but many clients start around one month postpartum.<br/>    <br/><strong>How many days in advance should I schedule a bridal treatment before my wedding?</strong><br/>While treatments can be received on the wedding day, we recommend scheduling a session two weeks prior to ensure your body adapts well. Bridal treatment consultations are also available upon request.<br/>    <br/><strong>Can I receive treatment directly from Kazumasa Kawasaki?</strong><br/>All treatments are performed by our trained spa staff. Currently, Kazumasa Kawasaki is involved in therapist training at the KAWASAKI ACADEMY.<br/>    </p><p>Learn more about <a href=\"/pages/academy\" title=\"Academy\">KAZUMASA KAWASAKI ACADEMY</a></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_tA7GdA": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "About Reservations",
+            "icon": "check_mark",
+            "row_content": "<p><strong>Can I come without a reservation?<br/></strong>Treatments are by appointment only. Same-day reservations may be available, so feel free to call us to check availability.<br/>    <br/><strong>How can I make a reservation?</strong><br/>Reservations can be made via phone or through our website's reservation form.<br/>    <br/>Online reservations must be made at least two days in advance. For same-day or next-day appointments, please contact us directly by phone.<br/>    <br/><strong>TEL</strong>: 03-3409-0260<br/><strong>Hours</strong>: Tuesday to Saturday, 11:00–19:00 (Closed on Mondays)</p><p><strong>Can I book a consultation only?</strong><br/>Standalone consultations are not available, but you can visit the **ALTIS OFFICIAL SHOP** adjacent to the spa to try products used during treatments.<br/>    <br/><strong>ALTIS OFFICIAL SHOP</strong><br/>- Address: B05, Portofino B1, 3-15-5 Kita-Aoyama, Minato-ku, Tokyo<br/>- Hours: Tuesday–Saturday: 11:00–19:00, Sunday: 11:00–17:00<br/>- Closed: Mondays<br/>        <br/><a href=\"https://www.altis-shop.com/\" target=\"_blank\" title=\"https://www.altis-shop.com/\">Shop Website</a><br/>        <br/><strong>Can I discuss the menu options before booking?</strong><br/>Absolutely. If you’re unsure which menu suits you, feel free to consult us.<br/>    <br/><strong>E TRI ESSENCE</strong><br/>is recommended for enhancing specific areas such as the face, arms, and lower legs.</p><p><strong>MIGLIORE ESSENCE</strong><br/>deeply rejuvenates and is ideal for areas like the face, upper arms, thighs, stomach, and waist.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_rqCg6V": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "About Facilities",
+            "icon": "check_mark",
+            "row_content": "<p><strong>Do you have showers?</strong><br/>Yes, showers are available. You may shower after the treatment.<br/>    <br/><strong>Are basic skincare products provided?</strong><br/>Yes, we provide skincare products and hair dryers.</p><p>However, makeup products are not available, so please bring your own.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_pUjxax": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Other",
+            "icon": "check_mark",
+            "row_content": "<p><strong>What payment methods do you accept?</strong><br/>We accept cash and credit cards.<br/>    <br/><strong>Are there membership fees or admission fees?</strong><br/>No, there are no membership or admission fees.<br/>    <br/><strong>Will I be subjected to aggressive sales tactics?</strong><br/>Rest assured, while we may introduce products, we never engage in high-pressure sales tactics.<br/>    <br/><strong>Do celebrities use your services?</strong><br/>We cannot provide information regarding individual clients due to privacy concerns.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_BeHE8c",
+        "collapsible_row_tA7GdA",
+        "collapsible_row_rqCg6V",
+        "collapsible_row_pUjxax"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Le Spa",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "collapsible_content_fedyyd"
+  ]
+}
