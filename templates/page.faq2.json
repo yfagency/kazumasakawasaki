@@ -31,27 +31,27 @@
         "collapsible_row_tA7GdA": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "About Reservations",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p><strong>Can I come without a reservation?<br/></strong>Treatments are by appointment only. Same-day reservations may be available, so feel free to call us to check availability.<br/>    <br/><strong>How can I make a reservation?</strong><br/>Reservations can be made via phone or through our website's reservation form.<br/>    <br/>Online reservations must be made at least two days in advance. For same-day or next-day appointments, please contact us directly by phone.<br/>    <br/><strong>TEL</strong>: 03-3409-0260<br/><strong>Hours</strong>: Tuesday to Saturday, 11:00–19:00 (Closed on Mondays)</p><p><strong>Can I book a consultation only?</strong><br/>Standalone consultations are not available, but you can visit the **ALTIS OFFICIAL SHOP** adjacent to the spa to try products used during treatments.<br/>    <br/><strong>ALTIS OFFICIAL SHOP</strong><br/>- Address: B05, Portofino B1, 3-15-5 Kita-Aoyama, Minato-ku, Tokyo<br/>- Hours: Tuesday–Saturday: 11:00–19:00, Sunday: 11:00–17:00<br/>- Closed: Mondays<br/>        <br/><a href=\"https://www.altis-shop.com/\" target=\"_blank\" title=\"https://www.altis-shop.com/\">Shop Website</a><br/>        <br/><strong>Can I discuss the menu options before booking?</strong><br/>Absolutely. If you’re unsure which menu suits you, feel free to consult us.<br/>    <br/><strong>E TRI ESSENCE</strong><br/>is recommended for enhancing specific areas such as the face, arms, and lower legs.</p><p><strong>MIGLIORE ESSENCE</strong><br/>deeply rejuvenates and is ideal for areas like the face, upper arms, thighs, stomach, and waist.</p>",
             "page": ""
           }
         },
         "collapsible_row_rqCg6V": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "About Facilities",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p><strong>Do you have showers?</strong><br/>Yes, showers are available. You may shower after the treatment.<br/>    <br/><strong>Are basic skincare products provided?</strong><br/>Yes, we provide skincare products and hair dryers.</p><p>However, makeup products are not available, so please bring your own.</p>",
             "page": ""
           }
         },
         "collapsible_row_pUjxax": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "Other",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p><strong>What payment methods do you accept?</strong><br/>We accept cash and credit cards.<br/>    <br/><strong>Are there membership fees or admission fees?</strong><br/>No, there are no membership or admission fees.<br/>    <br/><strong>Will I be subjected to aggressive sales tactics?</strong><br/>Rest assured, while we may introduce products, we never engage in high-pressure sales tactics.<br/>    <br/><strong>Do celebrities use your services?</strong><br/>We cannot provide information regarding individual clients due to privacy concerns.</p>",
             "page": ""
           }
         }
