@@ -336,7 +336,7 @@
   <div class="home-hero__main">
     <div class="home-hero__card">
       <a href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/pages/products" class="home-hero__circle">
-        <h2 class="heading">{{ 'sections.home-hero.heroCard1Title' | t }}</h2>
+        <h2 class="heading">{{ settings.hero_card_1_title | default: 'sections.home-hero.heroCard1Title' | t }}</h2>
         <span>kazumasa kawasaki</span>
         <div class="home-hero__button">
           {{ 'sections.home-hero.card1Button' | t }}
@@ -345,7 +345,7 @@
     </div>
     <div class="home-hero__card">
       <a href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/pages/spa" class="home-hero__circle">
-        <h2 class="heading">{{ 'sections.home-hero.heroCard2Title' | t }}</h2>
+        <h2 class="heading">{{ settings.hero_card_2_title | default: 'sections.home-hero.heroCard2Title' | t }}</h2>
         <span>kazumasa kawasaki</span>
         <div class="home-hero__button">
           {{ 'sections.home-hero.card2Button' | t }}
@@ -354,7 +354,7 @@
     </div>
     <div class="home-hero__card">
       <a href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/pages/academy" class="home-hero__circle">
-        <h2 class="heading">{{ 'sections.home-hero.heroCard3Title' | t }}</h2>
+        <h2 class="heading">{{ settings.hero_card_3_title | default: 'sections.home-hero.heroCard3Title' | t }}</h2>
         <span>kazumasa kawasaki</span>
         <div class="home-hero__button">
           {{ 'sections.home-hero.card3Button' | t }}
@@ -397,3 +397,30 @@ homeHeroElement.addEventListener('mouseout', (event) => {
 });
 
 </script>
+
+{%  schema  %}
+{
+  "name": "Home Hero Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "hero_card_1_title",
+      "label": "Hero Card 1 Title",
+      "default": ""
+    },
+    {
+      "type": "text",
+      "id": "hero_card_2_title",
+      "label": "Hero Card 2 Title",
+      "default": ""
+    },
+    {
+      "type": "text",
+      "id": "hero_card_3_title",
+      "label": "Hero Card 3 Title",
+      "default": ""
+    }
+  ],
+  "blocks": []
+}
+{% endschema %}
