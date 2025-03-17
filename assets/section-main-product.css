@@ -203,7 +203,7 @@ product-info {
 
 /* Overrides */
 .shopify-payment-button__more-options {
-  color: rgb(var(--color-foreground));
+  color: white;
 }
 
 .shopify-payment-button__button {
@@ -614,7 +614,7 @@ a.product__text {
 .product-media-modal[open] {
   visibility: visible;
   opacity: 1;
-  z-index: 101;
+  z-index: 9999;
 }
 
 .product-media-modal__dialog {

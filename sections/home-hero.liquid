@@ -354,7 +354,7 @@
     </div>
     <div class="home-hero__card">
       <a href="{% unless shop.locale == 'en' %}/{{ shop.locale }}{% endunless %}/pages/academy" class="home-hero__circle">
-        <h2 class="heading">Spa</h2>
+        <h2 class="heading">{{ section.settings.card3_title }}</h2>
         <span>kazumasa kawasaki</span>
         <div class="home-hero__button">
           {{ 'sections.home-hero.card3Button' | t }}
