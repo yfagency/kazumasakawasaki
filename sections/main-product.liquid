@@ -6,12 +6,6 @@
     --gradient-background: none !important;
   }
 
-  /* Hide Quantity, Add to cart, and Buy buttons */
-  .product-form__input,
-  .product-form__buttons {
-    display: none !important;
-  }
-
   .related-products {
     padding: 0 25px;
   }
@@ -248,6 +242,15 @@
       grid-row: 2;
     }
   }
+
+  .quantity * {
+    color: #fff;
+  }
+
+  .quantity::before,
+  .quantity::after {
+    border-color: #fff;
+  }
 </style>
 
 <product-info
@@ -371,17 +374,11 @@
             {%- endform -%}
           </div>
 
-          <a class="product-topSection__button">
+          {% comment %} <a class="product-topSection__button">
             {{ 'sections.mainProduct.preOrderButton' | t }}
-          </a>
-      </div>
+          </a> {% endcomment %}
 
-      <div class="grid__item product__media-wrapper">
-        {% render 'product-media-gallery', variant_images: variant_images %}
-      </div>
-
-      <div class="product-topSection__description product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-        <section
+          <section
           id="ProductInfo-{{ section.id }}"
           class="product__info-container{% if section.settings.enable_sticky_info %} product__column-sticky{% endif %}"
         >
@@ -447,12 +444,7 @@
                     {%- endif -%}
                   {%- endif -%}
                 </p>
-              {%- when 'description' -%}
-                {%- if product.description != blank -%}
-                  <div class="product__description rte quick-add-hidden bodyText" {{ block.shopify_attributes }}>
-                    {{ product.description }}
-                  </div>
-                {%- endif -%}
+              
               {%- when 'sku' -%}
                 <p
                   class="product__sku{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.sku.size == 0 %} visibility-hidden{% endif %}"
@@ -915,6 +907,18 @@
             {% render 'icon-arrow' %}
           </a>
         </section>
+      </div>
+
+      <div class="grid__item product__media-wrapper">
+        {% render 'product-media-gallery', variant_images: variant_images %}
+      </div>
+
+      <div class="product-topSection__description product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+        {%- if product.description != blank -%}
+          <div class="product__description rte quick-add-hidden bodyText" {{ block.shopify_attributes }}>
+            {{ product.description }}
+          </div>
+        {%- endif -%}
       </div>
     </div>
 
