@@ -127,9 +127,9 @@
 
 <footer>
   <div class="footer__container page-width">
-    <img class="footer__logo footer__animation1" src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/KAZUMASA_KAWASAKI_LOGO_WEB_335x30-01_2.svg?v=1733214284" />
+    <img class="footer__logo" src="https://cdn.shopify.com/s/files/1/0892/7651/4595/files/KAZUMASA_KAWASAKI_LOGO_WEB_335x30-01_2.svg?v=1733214284" />
     <div class="footer__columns">
-      <div class="footer__animation2">
+      <div>
           <div class="footer__nav">
             {% for link in linklists.main-menu.links %}
               <a href="{{ link.url }}">{{ link.title }}</a>
@@ -163,7 +163,7 @@
           </a>
         </div>
       </div>
-      <div class="footer__contact footer__animation2">
+      <div class="footer__contact">
         <div>
           <h3>
             {{ 'sections.footer.companyInfo' | t }}
