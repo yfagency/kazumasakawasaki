@@ -86,6 +86,17 @@
         {% endfor %}
       </ul>
     {% endif %}
+    {% if recommendations.products_count < 1 %}
+      <style>
+        .relatedProducts product-recommendations {
+          padding: 0 !important;
+        }
+        
+        .relatedProducts {
+          padding: 0 !important;
+        }
+      </style>
+    {% endif %}
   </product-recommendations>
   {% if section.settings.image_shape == 'arch' %}
     {% render 'mask-arch' %}

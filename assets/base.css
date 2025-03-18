@@ -3765,3 +3765,8 @@ a.header__icon.header__icon--account.link,
   font-weight: 400;
   line-height: 150%;
 }
+
+/* CART page */
+shopify-accelerated-checkout-cart {
+  --shopify-accelerated-checkout-inline-alignment: space-between;
+}
