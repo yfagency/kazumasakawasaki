@@ -119,8 +119,39 @@
             "row_content": "<p><strong>What courses are offered?</strong></p><p>The Academy offers programs in beauty, wellness, and the Kawasaki Way.</p><p>‎ </p><p><strong>Who can enroll?</strong></p><p>Open to anyone seeking personal or professional growth.</p><p>‎ </p><p><strong>How do I apply?</strong></p><p>Apply online via our website. Early applications are encouraged.</p><p>‎ </p><p><strong>Are there prerequisites for courses?</strong></p><p>Most courses do not require prior experience. Advanced courses may recommend relevant background knowledge.</p>",
             "page": ""
           }
+        }
+      },
+      "block_order": [
+        "collapsible_row_kg3J7b"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Academy",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_EY6664": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_RgNMQ9": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Treatments",
+            "icon": "check_mark",
+            "row_content": "<p><strong>How long does a treatment take?</strong></p><p>Women: ~1.5 hours. Men: ~1 hour 15 minutes. Includes changing, showering, and consultations.</p><p>‎ </p><p><strong>Can two people receive treatments at the same time?</strong></p><p>Due to our multi-therapist approach, simultaneous bookings for two or more people are not possible.</p><p>‎ </p><p><strong>Can I bring my child during the treatment?</strong></p><p>Unfortunately, we cannot accommodate children as we do not have childcare facilities.</p><p>‎ </p><p><strong>Will I see results with just one treatment?</strong></p><p>Yes, noticeable results can be achieved in a single session. Weekly sessions are recommended initially for enhanced benefits.</p><p>‎ </p><p><strong>Do you offer treatment courses?</strong></p><p>Yes, we provide personalized consultations to recommend suitable courses.</p><p>‎ </p><p><strong>How long do the effects last?</strong></p><p>The duration varies depending on your health and lifestyle. Personalized home care advice is provided.</p><p>‎ </p><p><strong>Is the treatment painful?</strong></p><p>Some clients may experience slight discomfort during the first session. This typically decreases with subsequent treatments.</p><p>‎ </p><p><strong>Do I need to undress for the treatment?</strong></p><p>We provide disposable paper shorts and comfortable wear for treatments. (Women: Bra top and shorts; Men: Tank top and shorts.)</p><p>‎ </p><p><strong>Are the treatments available for men?</strong></p><p>Yes, all treatments are available for men.</p><p>‎ </p><p><strong>Can I receive a treatment during my menstrual period?</strong></p><p>Yes, treatments are possible. Disposable shorts are available, or you may use your own.</p><p>‎ </p><p><strong>Can I receive treatments while pregnant?</strong></p><p>Yes, depending on your condition. Please inform us during booking.</p><p>‎ </p><p><strong>How soon after childbirth can I receive a treatment?</strong></p><p>Many clients start around one month postpartum.</p><p>‎ </p><p><strong>How many days in advance should I schedule a bridal treatment before my wedding?</strong></p><p>We recommend scheduling at least two weeks prior to your wedding for optimal results.</p><p>‎ </p><p><strong>Can I receive treatment directly from Kazumasa Kawasaki?</strong></p><p>All treatments are performed by our trained spa staff. Kazumasa Kawasaki is currently focused on training therapists at the <strong>KAWASAKI ACADEMY</strong>, ensuring that every team member delivers treatments of the highest standard.</p>",
+            "page": ""
+          }
         },
-        "collapsible_row_g93pRj": {
+        "collapsible_row_jFRmH9": {
           "type": "collapsible_row",
           "settings": {
             "heading": "Collapsible row",
@@ -129,7 +160,7 @@
             "page": ""
           }
         },
-        "collapsible_row_VWbHfX": {
+        "collapsible_row_AwRFFg": {
           "type": "collapsible_row",
           "settings": {
             "heading": "Collapsible row",
@@ -138,16 +169,7 @@
             "page": ""
           }
         },
-        "collapsible_row_jzkkng": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "collapsible_row_Qgc4Tn": {
+        "collapsible_row_nVKQR6": {
           "type": "collapsible_row",
           "settings": {
             "heading": "Collapsible row",
@@ -158,15 +180,14 @@
         }
       },
       "block_order": [
-        "collapsible_row_kg3J7b",
-        "collapsible_row_g93pRj",
-        "collapsible_row_VWbHfX",
-        "collapsible_row_jzkkng",
-        "collapsible_row_Qgc4Tn"
+        "collapsible_row_RgNMQ9",
+        "collapsible_row_jFRmH9",
+        "collapsible_row_AwRFFg",
+        "collapsible_row_nVKQR6"
       ],
       "settings": {
         "caption": "",
-        "heading": "Academy",
+        "heading": "Le Spa",
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "none",
@@ -184,6 +205,7 @@
     "main",
     "collapsible_content_W4dfR4",
     "collapsible_content_pGkbP3",
-    "collapsible_content_yjtbWt"
+    "collapsible_content_yjtbWt",
+    "collapsible_content_EY6664"
   ]
 }
