@@ -86,8 +86,68 @@
             "row_content": "<p><strong>Domestic Shipping (Japan):</strong><br/><br/>- <strong>Delivery Time:</strong> Ships within 2-5 business days (excluding holidays).<br/>- <strong>Delivery Slots:</strong> Morning, 14:00–16:00, 16:00–18:00, 18:00–20:00, 19:00–21:00.<br/>- <strong>Fees:</strong> Fixed rate of 800yen within Japan.<br/>- <strong>Tracking:</strong> Provided via Yamato Transport's tracking system.<br/><br/><strong>International Shipping:</strong><br/><br/>- <strong>Delivery Time:</strong> 7–14 business days, depending on destination.<br/>- <strong>Fees:</strong> Fixed rate of USD25 worldwide<br/>- <strong>Customs Duties:</strong> Customers are responsible for any duties or fees.<br/><br/><strong>Disclaimer:</strong> Customs clearance times vary by country. Delays caused by customs are beyond our control.<br/><br/>- <strong>Returns and Exchange Policy</strong><br/>    <br/>    <strong>Can I return or exchange a product?</strong><br/>    <br/>    Yes, we offer a return policy within seven days of receiving your order.<br/>    <br/>    <strong>Return Conditions</strong><br/>    <br/>    Returns must be initiated within seven days of receipt. We cannot accept returns in the following cases:<br/>    <br/>    1. Items delivered over eight days ago.<br/>    2. Used products.<br/>    3. Damaged products in your possession.<br/>    4. Customer-modified products.<br/>    5. Opened products.<br/>    6. Products purchased outside this website.<br/>    <br/>    Contact the Altis Customer Support Desk for return authorization. Refunds are processed after the returned item is inspected.</p>",
             "page": ""
           }
+        }
+      },
+      "block_order": [
+        "collapsible_row_gppAKt",
+        "collapsible_row_Eg6HNn",
+        "collapsible_row_RWVxbD"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Shopping Guide",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_yjtbWt": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_kg3J7b": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "About Kawasaki Academy",
+            "icon": "check_mark",
+            "row_content": "<p><strong>What courses are offered?</strong></p><p>The Academy offers programs in beauty, wellness, and the Kawasaki Way.</p><p>‎ </p><p><strong>Who can enroll?</strong></p><p>Open to anyone seeking personal or professional growth.</p><p>‎ </p><p><strong>How do I apply?</strong></p><p>Apply online via our website. Early applications are encouraged.</p><p>‎ </p><p><strong>Are there prerequisites for courses?</strong></p><p>Most courses do not require prior experience. Advanced courses may recommend relevant background knowledge.</p>",
+            "page": ""
+          }
         },
-        "collapsible_row_GMAUqi": {
+        "collapsible_row_g93pRj": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_VWbHfX": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_jzkkng": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_Qgc4Tn": {
           "type": "collapsible_row",
           "settings": {
             "heading": "Collapsible row",
@@ -98,14 +158,15 @@
         }
       },
       "block_order": [
-        "collapsible_row_gppAKt",
-        "collapsible_row_Eg6HNn",
-        "collapsible_row_RWVxbD",
-        "collapsible_row_GMAUqi"
+        "collapsible_row_kg3J7b",
+        "collapsible_row_g93pRj",
+        "collapsible_row_VWbHfX",
+        "collapsible_row_jzkkng",
+        "collapsible_row_Qgc4Tn"
       ],
       "settings": {
         "caption": "",
-        "heading": "Shopping Guide",
+        "heading": "Academy",
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "none",
@@ -122,6 +183,7 @@
   "order": [
     "main",
     "collapsible_content_W4dfR4",
-    "collapsible_content_pGkbP3"
+    "collapsible_content_pGkbP3",
+    "collapsible_content_yjtbWt"
   ]
 }
