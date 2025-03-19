@@ -150,44 +150,147 @@
             "row_content": "<p><strong>How long does a treatment take?</strong></p><p>Women: ~1.5 hours. Men: ~1 hour 15 minutes. Includes changing, showering, and consultations.</p><p>‎ </p><p><strong>Can two people receive treatments at the same time?</strong></p><p>Due to our multi-therapist approach, simultaneous bookings for two or more people are not possible.</p><p>‎ </p><p><strong>Can I bring my child during the treatment?</strong></p><p>Unfortunately, we cannot accommodate children as we do not have childcare facilities.</p><p>‎ </p><p><strong>Will I see results with just one treatment?</strong></p><p>Yes, noticeable results can be achieved in a single session. Weekly sessions are recommended initially for enhanced benefits.</p><p>‎ </p><p><strong>Do you offer treatment courses?</strong></p><p>Yes, we provide personalized consultations to recommend suitable courses.</p><p>‎ </p><p><strong>How long do the effects last?</strong></p><p>The duration varies depending on your health and lifestyle. Personalized home care advice is provided.</p><p>‎ </p><p><strong>Is the treatment painful?</strong></p><p>Some clients may experience slight discomfort during the first session. This typically decreases with subsequent treatments.</p><p>‎ </p><p><strong>Do I need to undress for the treatment?</strong></p><p>We provide disposable paper shorts and comfortable wear for treatments. (Women: Bra top and shorts; Men: Tank top and shorts.)</p><p>‎ </p><p><strong>Are the treatments available for men?</strong></p><p>Yes, all treatments are available for men.</p><p>‎ </p><p><strong>Can I receive a treatment during my menstrual period?</strong></p><p>Yes, treatments are possible. Disposable shorts are available, or you may use your own.</p><p>‎ </p><p><strong>Can I receive treatments while pregnant?</strong></p><p>Yes, depending on your condition. Please inform us during booking.</p><p>‎ </p><p><strong>How soon after childbirth can I receive a treatment?</strong></p><p>Many clients start around one month postpartum.</p><p>‎ </p><p><strong>How many days in advance should I schedule a bridal treatment before my wedding?</strong></p><p>We recommend scheduling at least two weeks prior to your wedding for optimal results.</p><p>‎ </p><p><strong>Can I receive treatment directly from Kazumasa Kawasaki?</strong></p><p>All treatments are performed by our trained spa staff. Kazumasa Kawasaki is currently focused on training therapists at the <strong>KAWASAKI ACADEMY</strong>, ensuring that every team member delivers treatments of the highest standard.</p>",
             "page": ""
           }
-        },
-        "collapsible_row_jFRmH9": {
+        }
+      },
+      "block_order": [
+        "collapsible_row_RgNMQ9"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Le Spa",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_xh8fkj": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_AQt3QB": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "Do I need a reservation?",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>Yes, treatments are by appointment only. Same-day reservations may be available by phone.</p>",
             "page": ""
           }
         },
-        "collapsible_row_AwRFFg": {
+        "collapsible_row_mUADKc": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "How do I book?",
             "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "collapsible_row_nVKQR6": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p><strong>Phone:</strong> 03-3409-0260</p><p><strong>Hours:</strong> Tuesday–Saturday, 11:00–19:00</p>",
             "page": ""
           }
         }
       },
       "block_order": [
-        "collapsible_row_RgNMQ9",
-        "collapsible_row_jFRmH9",
-        "collapsible_row_AwRFFg",
-        "collapsible_row_nVKQR6"
+        "collapsible_row_AQt3QB",
+        "collapsible_row_mUADKc"
       ],
       "settings": {
         "caption": "",
-        "heading": "Le Spa",
+        "heading": "Reservations",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_zVBxFJ": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_XqRRTE": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Are showers available?",
+            "icon": "check_mark",
+            "row_content": "<p>Yes, showers are provided for post-treatment use.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_PVndqr": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do you provide skincare products?",
+            "icon": "check_mark",
+            "row_content": "<p>Basic skincare products and hair dryers are available, but makeup is not provided.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_XqRRTE",
+        "collapsible_row_PVndqr"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Facilities",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_rU9T8U": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_jNj4PR": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Are there membership fees or admission fees?",
+            "icon": "check_mark",
+            "row_content": "<p>No, there are no membership or admission fees.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_9mqx7f": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Will I be subjected to aggressive sales tactics?",
+            "icon": "check_mark",
+            "row_content": "<p>Rest assured, while we may introduce products, we never engage in high-pressure sales tactics.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_jT7VJE": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do celebrities use your services?",
+            "icon": "check_mark",
+            "row_content": "<p>We cannot provide information regarding individual clients due to privacy concerns.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_jNj4PR",
+        "collapsible_row_9mqx7f",
+        "collapsible_row_jT7VJE"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Other",
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "none",
@@ -206,6 +309,9 @@
     "collapsible_content_W4dfR4",
     "collapsible_content_pGkbP3",
     "collapsible_content_yjtbWt",
-    "collapsible_content_EY6664"
+    "collapsible_content_EY6664",
+    "collapsible_content_xh8fkj",
+    "collapsible_content_zVBxFJ",
+    "collapsible_content_rU9T8U"
   ]
 }
