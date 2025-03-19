@@ -56,10 +56,72 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "collapsible_content_pGkbP3": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_gppAKt": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Orders",
+            "icon": "check_mark",
+            "row_content": "<p><strong>How do I place an order?</strong></p><p>Add items to your cart, confirm quantities, and proceed to checkout. Orders are not reserved until payment is completed.</p><p>‎ </p><p><strong>What happens after I place an order?</strong></p><p>You will receive a confirmation email within minutes. If not received, check your spam folder or contact us.</p><p>‎ </p><p><strong>Can I cancel or modify my order?</strong></p><p>Once an order is placed, it cannot be modified or canceled. Returns are accepted within seven days of receipt.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_Eg6HNn": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Payment",
+            "icon": "check_mark",
+            "row_content": "<p><strong>What payment methods are accepted?</strong></p><p>- Credit cards:</p><p>VISA, MasterCard, AMEX, JCB, Diners Club.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_RWVxbD": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Shipping",
+            "icon": "check_mark",
+            "row_content": "<p><strong>Domestic Shipping (Japan):</strong><br/><br/>- <strong>Delivery Time:</strong> Ships within 2-5 business days (excluding holidays).<br/>- <strong>Delivery Slots:</strong> Morning, 14:00–16:00, 16:00–18:00, 18:00–20:00, 19:00–21:00.<br/>- <strong>Fees:</strong> Fixed rate of 800yen within Japan.<br/>- <strong>Tracking:</strong> Provided via Yamato Transport's tracking system.<br/><br/><strong>International Shipping:</strong><br/><br/>- <strong>Delivery Time:</strong> 7–14 business days, depending on destination.<br/>- <strong>Fees:</strong> Fixed rate of USD25 worldwide<br/>- <strong>Customs Duties:</strong> Customers are responsible for any duties or fees.<br/><br/><strong>Disclaimer:</strong> Customs clearance times vary by country. Delays caused by customs are beyond our control.<br/><br/>- **Returns and Exchange Policy**<br/>    <br/>    **Can I return or exchange a product?**<br/>    <br/>    Yes, we offer a return policy within seven days of receiving your order.<br/>    <br/>    **Return Conditions**<br/>    <br/>    Returns must be initiated within seven days of receipt. We cannot accept returns in the following cases:<br/>    <br/>    1. Items delivered over eight days ago.<br/>    2. Used products.<br/>    3. Damaged products in your possession.<br/>    4. Customer-modified products.<br/>    5. Opened products.<br/>    6. Products purchased outside this website.<br/>    <br/>    Contact the Altis Customer Support Desk for return authorization. Refunds are processed after the returned item is inspected.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_GMAUqi": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_gppAKt",
+        "collapsible_row_Eg6HNn",
+        "collapsible_row_RWVxbD",
+        "collapsible_row_GMAUqi"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Shopping Guide",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
-    "collapsible_content_W4dfR4"
+    "collapsible_content_W4dfR4",
+    "collapsible_content_pGkbP3"
   ]
 }
